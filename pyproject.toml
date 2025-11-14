@@ -16,6 +16,7 @@ dependencies = [
 "jupyter>=1.0.0",
 "ipykernel>=6.20.0",
 "tavily-python>=0.5.0",
+"python-dotenv>=1.0.0",
 ]
 
 [project.optional-dependencies]
@@ -26,10 +27,11 @@ requires = ["setuptools>=73.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = ["deep_research_from_scratch"]
+packages = ["deep_research_from_scratch", "profile_enrichment"]
 
 [tool.setuptools.package-dir]
 "deep_research_from_scratch" = "src/deep_research_from_scratch"
+"profile_enrichment" = "src/profile_enrichment"
 
 [tool.setuptools.package-data]
 "*" = ["py.typed"]

@@ -1,0 +1,1396 @@
+{
+  "candidato_id": "ec142b18-befd-4f89-9f3d-98a7b53c3fr2",
+  "timestamp": "2025-11-14T15:06:15.627427",
+  "metadata": {
+    "timestamp": "2025-11-14T15:06:15.627427",
+    "source": "linkedin_scraper_v2",
+    "sector_objetivo": "industrial|utilities"
+  },
+  "perfil_raw": {
+    "id": "uuid-auto2025",
+    "full_name": "Luis Hidalgo",
+    "heading": "Técnico de automatización y sistemas de control industrial",
+    "description": "Especialista en automatización de plantas desalinizadoras mediante SCADA, PLC (Siemens S7-300/1200), HMI y sistemas de telecontrol de procesos. Experiencia en integración de sensores y actuadores para optimización energética, validación de alarmas y control remoto. En proyectos recientes, también colaboré con equipos de desarrollo en pruebas automáticas con Python y selenium para la validación de software industrial.",
+    "experience_years": 6,
+    "skills": [
+      {
+        "name": "automatización",
+        "level": "Advanced"
+      },
+      {
+        "name": "SCADA",
+        "level": "Advanced"
+      },
+      {
+        "name": "PLC",
+        "level": "Advanced"
+      },
+      {
+        "name": "Python",
+        "level": "Intermediate"
+      },
+      {
+        "name": "pruebas automáticas",
+        "level": "Intermediate"
+      },
+      {
+        "name": "telecontrol",
+        "level": "Intermediate"
+      }
+    ],
+    "experiences": [
+      {
+        "role": "Técnico de Automatización",
+        "description": "Diseño y mantenimiento de sistemas de control PLC y SCADA en plantas desalinizadoras, integración de sensores y HMI para supervisión remota.",
+        "company": "ICR Agua y Energía"
+      },
+      {
+        "role": "Ingeniero de Validación",
+        "description": "Colaboración con desarrolladores en automatización de pruebas con Python y Selenium sobre entorno SCADA industrial.",
+        "company": "Tecnología Industrial Avanzada"
+      }
+    ]
+  },
+  "semantic_enrichment": {
+    "version": "1.0",
+    "enrichment_timestamp": "2025-11-14T15:06:15.627427",
+    "analysis_components": {
+      "context_analysis": {
+        "key_indicators": [
+          "ICR Agua y Energía (water and energy plant operator)",
+          "Tecnología Industrial Avanzada (industrial technology; probable automation)",
+          "Técnico de Automatización (industrial automation technician)",
+          "Ingeniero de Validación (validation engineer, industrial context)",
+          "Automatización de plantas desalinizadoras (desalination plant automation)",
+          "SCADA and PLC (Siemens S7-300/1200)",
+          "Python and Selenium (for testing in industrial systems)"
+        ],
+        "domain_signals": [
+          "plant desalination automation",
+          "industrial SCADA systems",
+          "PLC (Siemens S7-300/1200)",
+          "telecontrol and HMI integration",
+          "energy optimization in process control"
+        ],
+        "technology_mentions": [
+          "SCADA",
+          "PLC (Siemens S7-300/1200)",
+          "HMI",
+          "Python",
+          "Selenium",
+          "sensores",
+          "actuadores",
+          "sistemas de telecontrol"
+        ],
+        "activity_patterns": [
+          "system design and maintenance (automation)",
+          "integration of sensors and actuators",
+          "energy optimization in industrial processes",
+          "alarm validation and remote supervision",
+          "collaboration with software developers",
+          "test automation for industrial software using Python and Selenium"
+        ],
+        "language_context": "Heavy use of industrial automation/control systems terminology—predominantly in Spanish but with standard technical terms. Focus on SCADA, PLC, process optimization, industrial testing tools (Selenium, Python), and plant-level systems. Jargon includes terms like 'automatización', 'validación de alarmas', 'supervisión remota', 'integración de sensores', and domain-specific mention of 'planta desalinizadora'."
+      },
+      "sector_inference": {
+        "primary_sector": "industrial_automation",
+        "secondary_sectors": [
+          "industrial_iot",
+          "software_test_automation"
+        ],
+        "confidence": 0.97,
+        "evidence": [
+          "Heading: 'Técnico de automatización y sistemas de control industrial'",
+          "Description: 'Especialista en automatización de plantas desalinizadoras mediante SCADA, PLC (Siemens S7-300/1200), HMI y sistemas de telecontrol de procesos.'",
+          "Job Role: 'Técnico de Automatización en ICR Agua y Energía' (plant automation company)",
+          "Integration of sensors and actuators for process optimization, alarm validation, and remote supervision",
+          "Experience with Python and Selenium is limited to testing for SCADA/industrial systems (not general software development)"
+        ],
+        "reasoning": "All primary activities, technologies, and contexts are focused on automation and control of industrial processes (specifically desalination plants), with SCADA, PLCs, HMI, and telecontrol systems mentioned throughout. Python and Selenium are used in service of industrial automation tasks (industrial software validation), not generic software development or test automation. Company names and job titles further reinforce this is an industrial/plant automation professional. Secondary sectors include industrial IoT (due to sensor/actuator integration) and software test automation (because of involvement in Python+Selenium, but within industrial systems)."
+      },
+      "disambiguation": {
+        "disambiguated_terms": [
+          {
+            "original_term": "automatización",
+            "interpreted_meaning": "Industrial process automation (programming and configuring control systems for plant operations, using PLCs, SCADA, sensors/actuators)",
+            "domain": "industrial_control_systems",
+            "confidence": 1.0,
+            "evidence": "Heading: 'Técnico de automatización y sistemas de control industrial'; Description: 'Especialista en automatización de plantas desalinizadoras mediante SCADA, PLC (Siemens S7-300/1200)'",
+            "alternative_meanings_rejected": [
+              "Software automation (e.g., test scripts, workflow automation; ruled out because all context is about industrial plant operations, not generic software workflows or CI/CD)"
+            ]
+          },
+          {
+            "original_term": "SCADA",
+            "interpreted_meaning": "Supervisory Control and Data Acquisition system used for centralized monitoring and control of industrial processes/plants",
+            "domain": "industrial_control_systems",
+            "confidence": 1.0,
+            "evidence": "'automatización de plantas desalinizadoras mediante SCADA, PLC (Siemens S7-300/1200)', 'entorno SCADA industrial'",
+            "alternative_meanings_rejected": [
+              "SCADA as a brand or niche software tool in other domains (No evidence for other uses; always used with PLC, plant, or industrial context)"
+            ]
+          },
+          {
+            "original_term": "PLC",
+            "interpreted_meaning": "Programmable Logic Controller: industrial digital computers for automating and controlling plant processes",
+            "domain": "industrial_control_systems",
+            "confidence": 1.0,
+            "evidence": "'automatización de plantas desalinizadoras mediante SCADA, PLC (Siemens S7-300/1200)', 'sistemas de control PLC'",
+            "alternative_meanings_rejected": [
+              "PL/SQL (database language), project lifecycle, or other acronyms (ruled out as always paired with Siemens models, SCADA, plants)"
+            ]
+          },
+          {
+            "original_term": "Python",
+            "interpreted_meaning": "Python programming language used primarily for scripting and automated testing of industrial software (not for standalone software development)",
+            "domain": "industrial_software_test_automation",
+            "confidence": 0.98,
+            "evidence": "'pruebas automáticas con Python y Selenium para la validación de software industrial'; Skill: 'Python' (Intermediate)",
+            "alternative_meanings_rejected": [
+              "Python as a reference to the animal (irrelevant); Python for general-purpose software development (no evidence of web/dev work, always related to industrial validation/testing)"
+            ]
+          },
+          {
+            "original_term": "Selenium",
+            "interpreted_meaning": "Automated testing framework for web-based UIs, here co-opted for industrial software interface validation within SCADA or similar HMIs",
+            "domain": "industrial_software_test_automation",
+            "confidence": 0.98,
+            "evidence": "Description: 'colaboré con equipos de desarrollo en pruebas automáticas con Python y selenium para la validación de software industrial...'",
+            "alternative_meanings_rejected": [
+              "Selenium (chemical element/nutritional supplement) (no dietary, chemical, or scientific research context present); Generic browser automation (being used for industrial interface/software validation)"
+            ]
+          },
+          {
+            "original_term": "HMI",
+            "interpreted_meaning": "Human-Machine Interface: operator interface panels/screens used to interact with industrial automation/control systems",
+            "domain": "industrial_control_systems",
+            "confidence": 1.0,
+            "evidence": "Description: 'HMI y sistemas de telecontrol de procesos', Experience: 'integración de sensores y HMI para supervisión remota'",
+            "alternative_meanings_rejected": [
+              "Health Management Information system (irrelevant, not healthcare); Hybrid Mobile Interface (not mobile dev context)"
+            ]
+          },
+          {
+            "original_term": "telecontrol",
+            "interpreted_meaning": "Remote control of industrial processes/equipment, typically via telecommunications over networks integrated into industrial plants (as opposed to remote computer/software control)",
+            "domain": "industrial_control_systems",
+            "confidence": 0.95,
+            "evidence": "Skill: 'sistemas de telecontrol de procesos', 'supervisión remota'",
+            "alternative_meanings_rejected": [
+              "Remote IT administration (context is industrial plant equipment/processes not computers); Teleoperation for robotics (not explicit, and plant operations are focus)"
+            ]
+          },
+          {
+            "original_term": "integración de sensores y actuadores",
+            "interpreted_meaning": "Physical and logical integration of hardware sensors and actuators into an industrial automation system for process measurement and control",
+            "domain": "industrial_iot",
+            "confidence": 1.0,
+            "evidence": "'integración de sensores y actuadores para optimización energética'",
+            "alternative_meanings_rejected": [
+              "API/software integration (these are physical devices, not software modules), sensor networks for research hardware prototyping (context is plant operations)"
+            ]
+          },
+          {
+            "original_term": "validación de alarmas",
+            "interpreted_meaning": "Testing and confirming that process alarms in plant control systems function correctly (safety/compliance context)",
+            "domain": "industrial_control_systems",
+            "confidence": 0.97,
+            "evidence": "'validación de alarmas y control remoto'",
+            "alternative_meanings_rejected": [
+              "QA testing of software notification features (not generic software, but industrial alarms); Alarm system installation (security or residential alarms, not relevant)"
+            ]
+          },
+          {
+            "original_term": "pruebas automáticas",
+            "interpreted_meaning": "Automated testing of industrial software/SCADA applications, typically through scripts or frameworks like Python and Selenium",
+            "domain": "industrial_software_test_automation",
+            "confidence": 0.98,
+            "evidence": "'pruebas automáticas con Python y selenium para la validación de software industrial'",
+            "alternative_meanings_rejected": [
+              "Automated process/factory simulation (this is about software testing, not process simulation); General unit/integration testing of consumer software (context is industrial software interface/validation not generic software products)"
+            ]
+          },
+          {
+            "original_term": "control remoto",
+            "interpreted_meaning": "Remote control and supervision of industrial processes/systems (as opposed to home automation; refers to secure plant equipment/process management)",
+            "domain": "industrial_control_systems",
+            "confidence": 1.0,
+            "evidence": "'control remoto', 'supervisión remota', 'sistemas de telecontrol de procesos'",
+            "alternative_meanings_rejected": [
+              "Consumer remote control devices (e.g. TV remotes); Remote access in IT/admin (always paired with plant/process context)"
+            ]
+          },
+          {
+            "original_term": "validación de software industrial",
+            "interpreted_meaning": "Quality assurance/testing activities focused on confirming correct operation, reliability, and compliance of industrial-system software (esp. SCADA/HMI)",
+            "domain": "industrial_software_test_automation",
+            "confidence": 0.97,
+            "evidence": "'validación de software industrial', 'automatización de pruebas con Python y Selenium sobre entorno SCADA industrial'",
+            "alternative_meanings_rejected": [
+              "General software validation (website/app); Regulatory certification of consumer software (context always industrial, not commercial/consumer software)"
+            ]
+          },
+          {
+            "original_term": "supervisión remota",
+            "interpreted_meaning": "Remote supervision and monitoring of plant operations/processes, using digital control systems (e.g., SCADA, HMI)",
+            "domain": "industrial_control_systems",
+            "confidence": 1.0,
+            "evidence": "Experience: 'supervisión remota', 'telecontrol de procesos'",
+            "alternative_meanings_rejected": [
+              "Remote IT monitoring (not servers/applications, but plant processes); Security camera monitoring (irrelevant, not mentioned)"
+            ]
+          }
+        ],
+        "summary": "All ambiguous terms present in Luis Hidalgo's profile pertain directly to industrial automation, plant operations, and test automation for industrial software. In every case, sector context, technology co-occurrence, company type, and activity descriptions strongly support industrial/process control interpretations—never generic IT, consumer electronics, or non-engineering meanings. Terms like 'automatización', 'SCADA', 'PLC', 'HMI', and 'telecontrol' are unambiguously industrial. Python and Selenium, while usually associated with software QA, are here explicitly tied to industrial system validation. Alternative common meanings (e.g., PLC=database, HMI=healthcare) are confidently ruled out based on attached context. All interpretations have extremely high confidence, given profile details and co-occurrence patterns."
+      },
+      "skills_extraction": {
+        "explicit_skills": [
+          {
+            "name": "automatización",
+            "category": "domain_specific",
+            "level": "advanced",
+            "source": "explicit",
+            "evidence": "Skill: \"automatización\" (Advanced)",
+            "confidence": 1.0
+          },
+          {
+            "name": "SCADA",
+            "category": "technical",
+            "level": "advanced",
+            "source": "explicit",
+            "evidence": "Skill: \"SCADA\" (Advanced)",
+            "confidence": 1.0
+          },
+          {
+            "name": "PLC",
+            "category": "technical",
+            "level": "advanced",
+            "source": "explicit",
+            "evidence": "Skill: \"PLC\" (Advanced)",
+            "confidence": 1.0
+          },
+          {
+            "name": "Python",
+            "category": "technical",
+            "level": "intermediate",
+            "source": "explicit",
+            "evidence": "Skill: \"Python\" (Intermediate)",
+            "confidence": 1.0
+          },
+          {
+            "name": "pruebas automáticas",
+            "category": "functional",
+            "level": "intermediate",
+            "source": "explicit",
+            "evidence": "Skill: \"pruebas automáticas\" (Intermediate)",
+            "confidence": 1.0
+          },
+          {
+            "name": "telecontrol",
+            "category": "technical",
+            "level": "intermediate",
+            "source": "explicit",
+            "evidence": "Skill: \"telecontrol\" (Intermediate)",
+            "confidence": 1.0
+          }
+        ],
+        "implicit_skills": [
+          {
+            "name": "HMI (Human Machine Interface)",
+            "category": "technical",
+            "level": "advanced",
+            "source": "implicit",
+            "evidence": "\"Especialista en automatización de plantas desalinizadoras mediante SCADA, PLC (Siemens S7-300/1200), HMI y sistemas de telecontrol de procesos\"; \"integración de sensores y HMI para supervisión remota\"",
+            "confidence": 1.0
+          },
+          {
+            "name": "Selenium (test automation)",
+            "category": "technical",
+            "level": "intermediate",
+            "source": "implicit",
+            "evidence": "\"Colaboré con equipos de desarrollo en pruebas automáticas con Python y selenium para la validación de software industrial\"",
+            "confidence": 0.98
+          },
+          {
+            "name": "integración de sensores y actuadores",
+            "category": "domain_specific",
+            "level": "advanced",
+            "source": "implicit",
+            "evidence": "\"Experiencia en integración de sensores y actuadores para optimización energética, validación de alarmas y control remoto\"",
+            "confidence": 1.0
+          },
+          {
+            "name": "optimización energética (industrial)",
+            "category": "domain_specific",
+            "level": "advanced",
+            "source": "implicit",
+            "evidence": "\"integración de sensores y actuadores para optimización energética\"",
+            "confidence": 0.9
+          },
+          {
+            "name": "validación de alarmas (procesos industriales)",
+            "category": "functional",
+            "level": "advanced",
+            "source": "implicit",
+            "evidence": "\"validación de alarmas\" en contexto de procesos industriales",
+            "confidence": 0.97
+          },
+          {
+            "name": "control remoto de procesos industriales",
+            "category": "domain_specific",
+            "level": "advanced",
+            "source": "implicit",
+            "evidence": "\"control remoto\", \"supervisión remota\", \"sistemas de telecontrol de procesos\"",
+            "confidence": 1.0
+          },
+          {
+            "name": "automatización y mantenimiento de sistemas de control",
+            "category": "functional",
+            "level": "advanced",
+            "source": "implicit",
+            "evidence": "\"Diseño y mantenimiento de sistemas de control PLC y SCADA en plantas desalinizadoras\"",
+            "confidence": 1.0
+          },
+          {
+            "name": "supervisión remota (procesos industriales)",
+            "category": "functional",
+            "level": "advanced",
+            "source": "implicit",
+            "evidence": "\"supervisión remota\" en experiencia de integración de sensores y HMI",
+            "confidence": 1.0
+          },
+          {
+            "name": "pruebas y validación de software industrial",
+            "category": "functional",
+            "level": "advanced",
+            "source": "implicit",
+            "evidence": "\"validación de software industrial\", \"automatización de pruebas con Python y Selenium sobre entorno SCADA industrial\"",
+            "confidence": 0.97
+          },
+          {
+            "name": "protocolos industriales (comunicación, integración)",
+            "category": "technical",
+            "level": "advanced",
+            "source": "implicit",
+            "evidence": "Necesario para integración de PLC, SCADA, sensores y HMI en plantas industriales (no explicitado pero inherente a estas tareas)",
+            "confidence": 0.9
+          },
+          {
+            "name": "troubleshooting de sistemas de control",
+            "category": "functional",
+            "level": "advanced",
+            "source": "implicit",
+            "evidence": "\"mantenimiento de sistemas de control PLC y SCADA\" implica resolución de fallas complejas en entorno industrial",
+            "confidence": 0.95
+          },
+          {
+            "name": "procesos de desalación",
+            "category": "domain_specific",
+            "level": "advanced",
+            "source": "implicit",
+            "evidence": "\"automatización de plantas desalinizadoras\" y trabajo en ICR Agua y Energía (sector desalación)",
+            "confidence": 0.9
+          }
+        ],
+        "skill_clusters": [
+          {
+            "cluster_name": "Industrial Automation Systems",
+            "skills": [
+              "automatización",
+              "SCADA",
+              "PLC",
+              "HMI (Human Machine Interface)",
+              "integración de sensores y actuadores",
+              "telecontrol",
+              "control remoto de procesos industriales",
+              "supervisión remota (procesos industriales)",
+              "protocolos industriales (comunicación, integración)",
+              "optimización energética (industrial)",
+              "procesos de desalación"
+            ]
+          },
+          {
+            "cluster_name": "Industrial Software Testing & Validation",
+            "skills": [
+              "Python",
+              "Selenium (test automation)",
+              "pruebas automáticas",
+              "pruebas y validación de software industrial",
+              "validación de alarmas (procesos industriales)"
+            ]
+          },
+          {
+            "cluster_name": "Functional Operations & Maintenance",
+            "skills": [
+              "automatización y mantenimiento de sistemas de control",
+              "troubleshooting de sistemas de control"
+            ]
+          }
+        ]
+      },
+      "competencies_analysis": {
+        "competencies": [
+          {
+            "competency": "problem_solving",
+            "type": "soft",
+            "level": "senior",
+            "source": "experience",
+            "evidence": "Experiencia en integración de sensores y actuadores para optimización energética, validación de alarmas y control remoto; \"mantenimiento de sistemas de control PLC y SCADA\" implica resolución de fallas complejas"
+          },
+          {
+            "competency": "cross_functional_collaboration",
+            "type": "soft",
+            "level": "mid",
+            "source": "experience",
+            "evidence": "Colaboración con equipos de desarrollo en pruebas automáticas con Python y selenium para la validación de software industrial"
+          },
+          {
+            "competency": "communication",
+            "type": "soft",
+            "level": "mid",
+            "source": "experience",
+            "evidence": "Colaboración con desarrolladores en automatización de pruebas"
+          },
+          {
+            "competency": "adaptability",
+            "type": "soft",
+            "level": "mid",
+            "source": "experience",
+            "evidence": "Participación en proyectos tanto de automatización industrial como de validación de software y automatización de pruebas"
+          },
+          {
+            "competency": "initiative",
+            "type": "soft",
+            "level": "mid",
+            "source": "experience",
+            "evidence": "Optimización energética, integración de nuevas tecnologías como Python y selenium en validación de software"
+          },
+          {
+            "competency": "process_improvement",
+            "type": "functional",
+            "level": "senior",
+            "source": "project",
+            "evidence": "Optimización energética, integración de sensores y actuadores para eficiencia de procesos"
+          },
+          {
+            "competency": "quality_assurance",
+            "type": "functional",
+            "level": "senior",
+            "source": "experience",
+            "evidence": "Validación de alarmas, pruebas automáticas, validación de software industrial"
+          },
+          {
+            "competency": "system_design",
+            "type": "functional",
+            "level": "senior",
+            "source": "experience",
+            "evidence": "Diseño y mantenimiento de sistemas de control PLC y SCADA en plantas desalinizadoras"
+          },
+          {
+            "competency": "project_execution",
+            "type": "functional",
+            "level": "mid",
+            "source": "role",
+            "evidence": "Responsable del diseño, integración y validación de sistemas automatizados en proyectos de plantas industriales"
+          }
+        ],
+        "leadership_indicators": [],
+        "collaboration_indicators": [
+          "Colaboración con equipos de desarrollo en pruebas automáticas con Python y selenium para la validación de software industrial",
+          "Colaboración con desarrolladores en automatización de pruebas"
+        ]
+      },
+      "normalization": {
+        "normalized_synonyms": [
+          {
+            "term": "automatización",
+            "synonyms": [
+              "automatización",
+              "automatización industrial",
+              "automatización de procesos",
+              "industrial automation",
+              "process automation"
+            ]
+          },
+          {
+            "term": "SCADA",
+            "synonyms": [
+              "SCADA",
+              "Supervisory Control and Data Acquisition",
+              "sistema SCADA"
+            ]
+          },
+          {
+            "term": "PLC",
+            "synonyms": [
+              "PLC",
+              "PLCs",
+              "Programmable Logic Controller",
+              "Programmable Logic Controllers"
+            ]
+          },
+          {
+            "term": "Siemens S7",
+            "synonyms": [
+              "Siemens S7",
+              "S7-300",
+              "S7-1200",
+              "Siemens S7-300",
+              "Siemens S7-1200",
+              "Step 7"
+            ]
+          },
+          {
+            "term": "HMI",
+            "synonyms": [
+              "HMI",
+              "Human-Machine Interface",
+              "Human Machine Interface",
+              "interfaz hombre-máquina",
+              "pantalla HMI"
+            ]
+          },
+          {
+            "term": "telecontrol",
+            "synonyms": [
+              "telecontrol",
+              "control remoto industrial",
+              "remote control (industrial)",
+              "sistemas de telecontrol",
+              "industrial remote control"
+            ]
+          },
+          {
+            "term": "Python",
+            "synonyms": [
+              "Python",
+              "python scripting",
+              "Python language"
+            ]
+          },
+          {
+            "term": "Selenium",
+            "synonyms": [
+              "Selenium",
+              "Selenium WebDriver",
+              "selenium automation"
+            ]
+          },
+          {
+            "term": "pruebas automáticas",
+            "synonyms": [
+              "pruebas automáticas",
+              "automated testing",
+              "test automation",
+              "pruebas automatizadas"
+            ]
+          },
+          {
+            "term": "integración de sensores y actuadores",
+            "synonyms": [
+              "integración de sensores y actuadores",
+              "sensor/actuator integration",
+              "integración sensores-actuadores"
+            ]
+          },
+          {
+            "term": "validación de alarmas",
+            "synonyms": [
+              "validación de alarmas",
+              "alarm validation",
+              "alarmas industriales"
+            ]
+          },
+          {
+            "term": "control remoto",
+            "synonyms": [
+              "control remoto",
+              "supervisión remota",
+              "remote supervision",
+              "industrial remote control"
+            ]
+          },
+          {
+            "term": "validación de software industrial",
+            "synonyms": [
+              "validación de software industrial",
+              "industrial software validation",
+              "testing industrial software"
+            ]
+          },
+          {
+            "term": "protocolos industriales",
+            "synonyms": [
+              "protocolos industriales",
+              "industrial protocols",
+              "industrial communication protocols"
+            ]
+          },
+          {
+            "term": "optimización energética (industrial)",
+            "synonyms": [
+              "optimización energética (industrial)",
+              "energy optimization (industrial)",
+              "optimización energética industrial"
+            ]
+          },
+          {
+            "term": "procesos de desalación",
+            "synonyms": [
+              "procesos de desalación",
+              "desalination processes",
+              "plantas desalinizadoras"
+            ]
+          },
+          {
+            "term": "automatización y mantenimiento de sistemas de control",
+            "synonyms": [
+              "automatización y mantenimiento de sistemas de control",
+              "automation and maintenance of control systems",
+              "mantenimiento de sistemas de control"
+            ]
+          },
+          {
+            "term": "troubleshooting de sistemas de control",
+            "synonyms": [
+              "troubleshooting de sistemas de control",
+              "solución de problemas de sistemas de control",
+              "troubleshooting control systems"
+            ]
+          }
+        ],
+        "canonical_terms": [
+          {
+            "variation": "automatización industrial",
+            "canonical": "automatización"
+          },
+          {
+            "variation": "industrial automation",
+            "canonical": "automatización"
+          },
+          {
+            "variation": "process automation",
+            "canonical": "automatización"
+          },
+          {
+            "variation": "Supervisory Control and Data Acquisition",
+            "canonical": "SCADA"
+          },
+          {
+            "variation": "sistema SCADA",
+            "canonical": "SCADA"
+          },
+          {
+            "variation": "PLCs",
+            "canonical": "PLC"
+          },
+          {
+            "variation": "Programmable Logic Controller",
+            "canonical": "PLC"
+          },
+          {
+            "variation": "Programmable Logic Controllers",
+            "canonical": "PLC"
+          },
+          {
+            "variation": "S7-300",
+            "canonical": "Siemens S7"
+          },
+          {
+            "variation": "S7-1200",
+            "canonical": "Siemens S7"
+          },
+          {
+            "variation": "Siemens S7-300",
+            "canonical": "Siemens S7"
+          },
+          {
+            "variation": "Siemens S7-1200",
+            "canonical": "Siemens S7"
+          },
+          {
+            "variation": "Step 7",
+            "canonical": "Siemens S7"
+          },
+          {
+            "variation": "Human-Machine Interface",
+            "canonical": "HMI"
+          },
+          {
+            "variation": "Human Machine Interface",
+            "canonical": "HMI"
+          },
+          {
+            "variation": "interfaz hombre-máquina",
+            "canonical": "HMI"
+          },
+          {
+            "variation": "pantalla HMI",
+            "canonical": "HMI"
+          },
+          {
+            "variation": "control remoto industrial",
+            "canonical": "telecontrol"
+          },
+          {
+            "variation": "remote control (industrial)",
+            "canonical": "telecontrol"
+          },
+          {
+            "variation": "sistemas de telecontrol",
+            "canonical": "telecontrol"
+          },
+          {
+            "variation": "industrial remote control",
+            "canonical": "telecontrol"
+          },
+          {
+            "variation": "python scripting",
+            "canonical": "Python"
+          },
+          {
+            "variation": "Python language",
+            "canonical": "Python"
+          },
+          {
+            "variation": "Selenium WebDriver",
+            "canonical": "Selenium"
+          },
+          {
+            "variation": "selenium automation",
+            "canonical": "Selenium"
+          },
+          {
+            "variation": "automated testing",
+            "canonical": "pruebas automáticas"
+          },
+          {
+            "variation": "test automation",
+            "canonical": "pruebas automáticas"
+          },
+          {
+            "variation": "pruebas automatizadas",
+            "canonical": "pruebas automáticas"
+          },
+          {
+            "variation": "sensor/actuator integration",
+            "canonical": "integración de sensores y actuadores"
+          },
+          {
+            "variation": "integración sensores-actuadores",
+            "canonical": "integración de sensores y actuadores"
+          },
+          {
+            "variation": "alarm validation",
+            "canonical": "validación de alarmas"
+          },
+          {
+            "variation": "alarmas industriales",
+            "canonical": "validación de alarmas"
+          },
+          {
+            "variation": "supervisión remota",
+            "canonical": "control remoto"
+          },
+          {
+            "variation": "remote supervision",
+            "canonical": "control remoto"
+          },
+          {
+            "variation": "industrial remote control",
+            "canonical": "control remoto"
+          },
+          {
+            "variation": "industrial software validation",
+            "canonical": "validación de software industrial"
+          },
+          {
+            "variation": "testing industrial software",
+            "canonical": "validación de software industrial"
+          },
+          {
+            "variation": "industrial protocols",
+            "canonical": "protocolos industriales"
+          },
+          {
+            "variation": "industrial communication protocols",
+            "canonical": "protocolos industriales"
+          },
+          {
+            "variation": "energy optimization (industrial)",
+            "canonical": "optimización energética (industrial)"
+          },
+          {
+            "variation": "optimización energética industrial",
+            "canonical": "optimización energética (industrial)"
+          },
+          {
+            "variation": "desalination processes",
+            "canonical": "procesos de desalación"
+          },
+          {
+            "variation": "plantas desalinizadoras",
+            "canonical": "procesos de desalación"
+          },
+          {
+            "variation": "automation and maintenance of control systems",
+            "canonical": "automatización y mantenimiento de sistemas de control"
+          },
+          {
+            "variation": "mantenimiento de sistemas de control",
+            "canonical": "automatización y mantenimiento de sistemas de control"
+          },
+          {
+            "variation": "solución de problemas de sistemas de control",
+            "canonical": "troubleshooting de sistemas de control"
+          },
+          {
+            "variation": "troubleshooting control systems",
+            "canonical": "troubleshooting de sistemas de control"
+          }
+        ],
+        "technology_taxonomy": [
+          {
+            "category": "industrial_control_systems",
+            "technologies": [
+              "SCADA",
+              "PLC",
+              "Siemens S7",
+              "HMI",
+              "automatización",
+              "telecontrol",
+              "integración de sensores y actuadores",
+              "protocolos industriales",
+              "control remoto",
+              "procesos de desalación",
+              "automatización y mantenimiento de sistemas de control",
+              "troubleshooting de sistemas de control"
+            ]
+          },
+          {
+            "category": "industrial_software_test_automation",
+            "technologies": [
+              "Python",
+              "Selenium",
+              "pruebas automáticas",
+              "validación de alarmas",
+              "pruebas y validación de software industrial",
+              "validación de software industrial"
+            ]
+          },
+          {
+            "category": "energy_optimization",
+            "technologies": [
+              "optimización energética (industrial)"
+            ]
+          }
+        ]
+      },
+      "seniority_inference": {
+        "seniority_level": "senior",
+        "confidence": 0.87,
+        "evidence": [
+          "6 years of experience in industrial automation (directly stated)",
+          "Role as 'Técnico de Automatización' with design and maintenance of control systems (PLC, SCADA) in desalination plants, indicating high autonomy and technical complexity",
+          "Advanced skills in SCADA, PLC, automatización, HMI, and integration of sensors and actuators; multiple explicit and implicit advanced-level technical skills",
+          "Led process optimization initiatives (e.g., integration for energy optimization, alarm validation), showing strategic/initiative elements beyond execution-only roles",
+          "Participated cross-functionally in validation/QA with development teams (e.g., using Python/Selenium for industrial software validation)",
+          "Evidence of process improvement, system design, and quality assurance as senior functional competencies",
+          "No direct evidence of formal team leadership or people management (would be needed for lead/managerial level)"
+        ],
+        "years_experience_estimate": 6,
+        "reasoning": "Luis Hidalgo demonstrates 6 years of direct, relevant experience in advanced industrial automation roles, including responsibility for design, integration, and ongoing maintenance of complex SCADA/PLC systems within desalination plants. His technical skills are consistently at the advanced level and span a wide range of automation and industrial IT domains, including process optimization (energy, alarms), HMI, and remote control—all indicating mastery beyond mid-level. While he collaborates cross-functionally and leads process initiatives, there is no concrete evidence of formal team leadership or strategic/organizational impact at a lead level or higher. This places him squarely in the senior individual contributor segment. Confidence is high (0.87) due to the alignment of role complexity, competencies, and explicit years of experience with industry norms for 'senior' engineering/automation talent. The absence of clear team or organizational leadership keeps the assessment (conservatively) at senior rather than lead."
+      }
+    },
+    "key_insights": {
+      "primary_sector": "industrial_automation",
+      "sector_confidence": 0.97,
+      "seniority_level": "senior",
+      "years_experience": 6,
+      "total_skills_identified": 18,
+      "competencies_count": 9,
+      "disambiguated_terms_count": 13
+    },
+    "structured_skills": {
+      "explicit": [
+        {
+          "name": "automatización",
+          "category": "domain_specific",
+          "level": "advanced",
+          "source": "explicit",
+          "evidence": "Skill: \"automatización\" (Advanced)",
+          "confidence": 1.0
+        },
+        {
+          "name": "SCADA",
+          "category": "technical",
+          "level": "advanced",
+          "source": "explicit",
+          "evidence": "Skill: \"SCADA\" (Advanced)",
+          "confidence": 1.0
+        },
+        {
+          "name": "PLC",
+          "category": "technical",
+          "level": "advanced",
+          "source": "explicit",
+          "evidence": "Skill: \"PLC\" (Advanced)",
+          "confidence": 1.0
+        },
+        {
+          "name": "Python",
+          "category": "technical",
+          "level": "intermediate",
+          "source": "explicit",
+          "evidence": "Skill: \"Python\" (Intermediate)",
+          "confidence": 1.0
+        },
+        {
+          "name": "pruebas automáticas",
+          "category": "functional",
+          "level": "intermediate",
+          "source": "explicit",
+          "evidence": "Skill: \"pruebas automáticas\" (Intermediate)",
+          "confidence": 1.0
+        },
+        {
+          "name": "telecontrol",
+          "category": "technical",
+          "level": "intermediate",
+          "source": "explicit",
+          "evidence": "Skill: \"telecontrol\" (Intermediate)",
+          "confidence": 1.0
+        }
+      ],
+      "implicit": [
+        {
+          "name": "HMI (Human Machine Interface)",
+          "category": "technical",
+          "level": "advanced",
+          "source": "implicit",
+          "evidence": "\"Especialista en automatización de plantas desalinizadoras mediante SCADA, PLC (Siemens S7-300/1200), HMI y sistemas de telecontrol de procesos\"; \"integración de sensores y HMI para supervisión remota\"",
+          "confidence": 1.0
+        },
+        {
+          "name": "Selenium (test automation)",
+          "category": "technical",
+          "level": "intermediate",
+          "source": "implicit",
+          "evidence": "\"Colaboré con equipos de desarrollo en pruebas automáticas con Python y selenium para la validación de software industrial\"",
+          "confidence": 0.98
+        },
+        {
+          "name": "integración de sensores y actuadores",
+          "category": "domain_specific",
+          "level": "advanced",
+          "source": "implicit",
+          "evidence": "\"Experiencia en integración de sensores y actuadores para optimización energética, validación de alarmas y control remoto\"",
+          "confidence": 1.0
+        },
+        {
+          "name": "optimización energética (industrial)",
+          "category": "domain_specific",
+          "level": "advanced",
+          "source": "implicit",
+          "evidence": "\"integración de sensores y actuadores para optimización energética\"",
+          "confidence": 0.9
+        },
+        {
+          "name": "validación de alarmas (procesos industriales)",
+          "category": "functional",
+          "level": "advanced",
+          "source": "implicit",
+          "evidence": "\"validación de alarmas\" en contexto de procesos industriales",
+          "confidence": 0.97
+        },
+        {
+          "name": "control remoto de procesos industriales",
+          "category": "domain_specific",
+          "level": "advanced",
+          "source": "implicit",
+          "evidence": "\"control remoto\", \"supervisión remota\", \"sistemas de telecontrol de procesos\"",
+          "confidence": 1.0
+        },
+        {
+          "name": "automatización y mantenimiento de sistemas de control",
+          "category": "functional",
+          "level": "advanced",
+          "source": "implicit",
+          "evidence": "\"Diseño y mantenimiento de sistemas de control PLC y SCADA en plantas desalinizadoras\"",
+          "confidence": 1.0
+        },
+        {
+          "name": "supervisión remota (procesos industriales)",
+          "category": "functional",
+          "level": "advanced",
+          "source": "implicit",
+          "evidence": "\"supervisión remota\" en experiencia de integración de sensores y HMI",
+          "confidence": 1.0
+        },
+        {
+          "name": "pruebas y validación de software industrial",
+          "category": "functional",
+          "level": "advanced",
+          "source": "implicit",
+          "evidence": "\"validación de software industrial\", \"automatización de pruebas con Python y Selenium sobre entorno SCADA industrial\"",
+          "confidence": 0.97
+        },
+        {
+          "name": "protocolos industriales (comunicación, integración)",
+          "category": "technical",
+          "level": "advanced",
+          "source": "implicit",
+          "evidence": "Necesario para integración de PLC, SCADA, sensores y HMI en plantas industriales (no explicitado pero inherente a estas tareas)",
+          "confidence": 0.9
+        },
+        {
+          "name": "troubleshooting de sistemas de control",
+          "category": "functional",
+          "level": "advanced",
+          "source": "implicit",
+          "evidence": "\"mantenimiento de sistemas de control PLC y SCADA\" implica resolución de fallas complejas en entorno industrial",
+          "confidence": 0.95
+        },
+        {
+          "name": "procesos de desalación",
+          "category": "domain_specific",
+          "level": "advanced",
+          "source": "implicit",
+          "evidence": "\"automatización de plantas desalinizadoras\" y trabajo en ICR Agua y Energía (sector desalación)",
+          "confidence": 0.9
+        }
+      ],
+      "clusters": {
+        "Industrial Automation Systems": [
+          "automatización",
+          "SCADA",
+          "PLC",
+          "HMI (Human Machine Interface)",
+          "integración de sensores y actuadores",
+          "telecontrol",
+          "control remoto de procesos industriales",
+          "supervisión remota (procesos industriales)",
+          "protocolos industriales (comunicación, integración)",
+          "optimización energética (industrial)",
+          "procesos de desalación"
+        ],
+        "Industrial Software Testing & Validation": [
+          "Python",
+          "Selenium (test automation)",
+          "pruebas automáticas",
+          "pruebas y validación de software industrial",
+          "validación de alarmas (procesos industriales)"
+        ],
+        "Functional Operations & Maintenance": [
+          "automatización y mantenimiento de sistemas de control",
+          "troubleshooting de sistemas de control"
+        ]
+      }
+    },
+    "structured_competencies": [
+      {
+        "competency": "problem_solving",
+        "type": "soft",
+        "level": "senior",
+        "source": "experience",
+        "evidence": "Experiencia en integración de sensores y actuadores para optimización energética, validación de alarmas y control remoto; \"mantenimiento de sistemas de control PLC y SCADA\" implica resolución de fallas complejas"
+      },
+      {
+        "competency": "cross_functional_collaboration",
+        "type": "soft",
+        "level": "mid",
+        "source": "experience",
+        "evidence": "Colaboración con equipos de desarrollo en pruebas automáticas con Python y selenium para la validación de software industrial"
+      },
+      {
+        "competency": "communication",
+        "type": "soft",
+        "level": "mid",
+        "source": "experience",
+        "evidence": "Colaboración con desarrolladores en automatización de pruebas"
+      },
+      {
+        "competency": "adaptability",
+        "type": "soft",
+        "level": "mid",
+        "source": "experience",
+        "evidence": "Participación en proyectos tanto de automatización industrial como de validación de software y automatización de pruebas"
+      },
+      {
+        "competency": "initiative",
+        "type": "soft",
+        "level": "mid",
+        "source": "experience",
+        "evidence": "Optimización energética, integración de nuevas tecnologías como Python y selenium en validación de software"
+      },
+      {
+        "competency": "process_improvement",
+        "type": "functional",
+        "level": "senior",
+        "source": "project",
+        "evidence": "Optimización energética, integración de sensores y actuadores para eficiencia de procesos"
+      },
+      {
+        "competency": "quality_assurance",
+        "type": "functional",
+        "level": "senior",
+        "source": "experience",
+        "evidence": "Validación de alarmas, pruebas automáticas, validación de software industrial"
+      },
+      {
+        "competency": "system_design",
+        "type": "functional",
+        "level": "senior",
+        "source": "experience",
+        "evidence": "Diseño y mantenimiento de sistemas de control PLC y SCADA en plantas desalinizadoras"
+      },
+      {
+        "competency": "project_execution",
+        "type": "functional",
+        "level": "mid",
+        "source": "role",
+        "evidence": "Responsable del diseño, integración y validación de sistemas automatizados en proyectos de plantas industriales"
+      }
+    ],
+    "disambiguation_map": {
+      "automatización": {
+        "meaning": "Industrial process automation (programming and configuring control systems for plant operations, using PLCs, SCADA, sensors/actuators)",
+        "domain": "industrial_control_systems",
+        "confidence": 1.0
+      },
+      "SCADA": {
+        "meaning": "Supervisory Control and Data Acquisition system used for centralized monitoring and control of industrial processes/plants",
+        "domain": "industrial_control_systems",
+        "confidence": 1.0
+      },
+      "PLC": {
+        "meaning": "Programmable Logic Controller: industrial digital computers for automating and controlling plant processes",
+        "domain": "industrial_control_systems",
+        "confidence": 1.0
+      },
+      "Python": {
+        "meaning": "Python programming language used primarily for scripting and automated testing of industrial software (not for standalone software development)",
+        "domain": "industrial_software_test_automation",
+        "confidence": 0.98
+      },
+      "Selenium": {
+        "meaning": "Automated testing framework for web-based UIs, here co-opted for industrial software interface validation within SCADA or similar HMIs",
+        "domain": "industrial_software_test_automation",
+        "confidence": 0.98
+      },
+      "HMI": {
+        "meaning": "Human-Machine Interface: operator interface panels/screens used to interact with industrial automation/control systems",
+        "domain": "industrial_control_systems",
+        "confidence": 1.0
+      },
+      "telecontrol": {
+        "meaning": "Remote control of industrial processes/equipment, typically via telecommunications over networks integrated into industrial plants (as opposed to remote computer/software control)",
+        "domain": "industrial_control_systems",
+        "confidence": 0.95
+      },
+      "integración de sensores y actuadores": {
+        "meaning": "Physical and logical integration of hardware sensors and actuators into an industrial automation system for process measurement and control",
+        "domain": "industrial_iot",
+        "confidence": 1.0
+      },
+      "validación de alarmas": {
+        "meaning": "Testing and confirming that process alarms in plant control systems function correctly (safety/compliance context)",
+        "domain": "industrial_control_systems",
+        "confidence": 0.97
+      },
+      "pruebas automáticas": {
+        "meaning": "Automated testing of industrial software/SCADA applications, typically through scripts or frameworks like Python and Selenium",
+        "domain": "industrial_software_test_automation",
+        "confidence": 0.98
+      },
+      "control remoto": {
+        "meaning": "Remote control and supervision of industrial processes/systems (as opposed to home automation; refers to secure plant equipment/process management)",
+        "domain": "industrial_control_systems",
+        "confidence": 1.0
+      },
+      "validación de software industrial": {
+        "meaning": "Quality assurance/testing activities focused on confirming correct operation, reliability, and compliance of industrial-system software (esp. SCADA/HMI)",
+        "domain": "industrial_software_test_automation",
+        "confidence": 0.97
+      },
+      "supervisión remota": {
+        "meaning": "Remote supervision and monitoring of plant operations/processes, using digital control systems (e.g., SCADA, HMI)",
+        "domain": "industrial_control_systems",
+        "confidence": 1.0
+      }
+    },
+    "synonym_map": {
+      "automatización": [
+        "automatización",
+        "automatización industrial",
+        "automatización de procesos",
+        "industrial automation",
+        "process automation"
+      ],
+      "SCADA": [
+        "SCADA",
+        "Supervisory Control and Data Acquisition",
+        "sistema SCADA"
+      ],
+      "PLC": [
+        "PLC",
+        "PLCs",
+        "Programmable Logic Controller",
+        "Programmable Logic Controllers"
+      ],
+      "Siemens S7": [
+        "Siemens S7",
+        "S7-300",
+        "S7-1200",
+        "Siemens S7-300",
+        "Siemens S7-1200",
+        "Step 7"
+      ],
+      "HMI": [
+        "HMI",
+        "Human-Machine Interface",
+        "Human Machine Interface",
+        "interfaz hombre-máquina",
+        "pantalla HMI"
+      ],
+      "telecontrol": [
+        "telecontrol",
+        "control remoto industrial",
+        "remote control (industrial)",
+        "sistemas de telecontrol",
+        "industrial remote control"
+      ],
+      "Python": [
+        "Python",
+        "python scripting",
+        "Python language"
+      ],
+      "Selenium": [
+        "Selenium",
+        "Selenium WebDriver",
+        "selenium automation"
+      ],
+      "pruebas automáticas": [
+        "pruebas automáticas",
+        "automated testing",
+        "test automation",
+        "pruebas automatizadas"
+      ],
+      "integración de sensores y actuadores": [
+        "integración de sensores y actuadores",
+        "sensor/actuator integration",
+        "integración sensores-actuadores"
+      ],
+      "validación de alarmas": [
+        "validación de alarmas",
+        "alarm validation",
+        "alarmas industriales"
+      ],
+      "control remoto": [
+        "control remoto",
+        "supervisión remota",
+        "remote supervision",
+        "industrial remote control"
+      ],
+      "validación de software industrial": [
+        "validación de software industrial",
+        "industrial software validation",
+        "testing industrial software"
+      ],
+      "protocolos industriales": [
+        "protocolos industriales",
+        "industrial protocols",
+        "industrial communication protocols"
+      ],
+      "optimización energética (industrial)": [
+        "optimización energética (industrial)",
+        "energy optimization (industrial)",
+        "optimización energética industrial"
+      ],
+      "procesos de desalación": [
+        "procesos de desalación",
+        "desalination processes",
+        "plantas desalinizadoras"
+      ],
+      "automatización y mantenimiento de sistemas de control": [
+        "automatización y mantenimiento de sistemas de control",
+        "automation and maintenance of control systems",
+        "mantenimiento de sistemas de control"
+      ],
+      "troubleshooting de sistemas de control": [
+        "troubleshooting de sistemas de control",
+        "solución de problemas de sistemas de control",
+        "troubleshooting control systems"
+      ]
+    },
+    "canonical_terms": {
+      "automatización industrial": "automatización",
+      "industrial automation": "automatización",
+      "process automation": "automatización",
+      "Supervisory Control and Data Acquisition": "SCADA",
+      "sistema SCADA": "SCADA",
+      "PLCs": "PLC",
+      "Programmable Logic Controller": "PLC",
+      "Programmable Logic Controllers": "PLC",
+      "S7-300": "Siemens S7",
+      "S7-1200": "Siemens S7",
+      "Siemens S7-300": "Siemens S7",
+      "Siemens S7-1200": "Siemens S7",
+      "Step 7": "Siemens S7",
+      "Human-Machine Interface": "HMI",
+      "Human Machine Interface": "HMI",
+      "interfaz hombre-máquina": "HMI",
+      "pantalla HMI": "HMI",
+      "control remoto industrial": "telecontrol",
+      "remote control (industrial)": "telecontrol",
+      "sistemas de telecontrol": "telecontrol",
+      "industrial remote control": "control remoto",
+      "python scripting": "Python",
+      "Python language": "Python",
+      "Selenium WebDriver": "Selenium",
+      "selenium automation": "Selenium",
+      "automated testing": "pruebas automáticas",
+      "test automation": "pruebas automáticas",
+      "pruebas automatizadas": "pruebas automáticas",
+      "sensor/actuator integration": "integración de sensores y actuadores",
+      "integración sensores-actuadores": "integración de sensores y actuadores",
+      "alarm validation": "validación de alarmas",
+      "alarmas industriales": "validación de alarmas",
+      "supervisión remota": "control remoto",
+      "remote supervision": "control remoto",
+      "industrial software validation": "validación de software industrial",
+      "testing industrial software": "validación de software industrial",
+      "industrial protocols": "protocolos industriales",
+      "industrial communication protocols": "protocolos industriales",
+      "energy optimization (industrial)": "optimización energética (industrial)",
+      "optimización energética industrial": "optimización energética (industrial)",
+      "desalination processes": "procesos de desalación",
+      "plantas desalinizadoras": "procesos de desalación",
+      "automation and maintenance of control systems": "automatización y mantenimiento de sistemas de control",
+      "mantenimiento de sistemas de control": "automatización y mantenimiento de sistemas de control",
+      "solución de problemas de sistemas de control": "troubleshooting de sistemas de control",
+      "troubleshooting control systems": "troubleshooting de sistemas de control"
+    }
+  },
+  "explainability": {
+    "sector_reasoning": "All primary activities, technologies, and contexts are focused on automation and control of industrial processes (specifically desalination plants), with SCADA, PLCs, HMI, and telecontrol systems mentioned throughout. Python and Selenium are used in service of industrial automation tasks (industrial software validation), not generic software development or test automation. Company names and job titles further reinforce this is an industrial/plant automation professional. Secondary sectors include industrial IoT (due to sensor/actuator integration) and software test automation (because of involvement in Python+Selenium, but within industrial systems).",
+    "sector_evidence": [
+      "Heading: 'Técnico de automatización y sistemas de control industrial'",
+      "Description: 'Especialista en automatización de plantas desalinizadoras mediante SCADA, PLC (Siemens S7-300/1200), HMI y sistemas de telecontrol de procesos.'",
+      "Job Role: 'Técnico de Automatización en ICR Agua y Energía' (plant automation company)",
+      "Integration of sensors and actuators for process optimization, alarm validation, and remote supervision",
+      "Experience with Python and Selenium is limited to testing for SCADA/industrial systems (not general software development)"
+    ],
+    "seniority_reasoning": "Luis Hidalgo demonstrates 6 years of direct, relevant experience in advanced industrial automation roles, including responsibility for design, integration, and ongoing maintenance of complex SCADA/PLC systems within desalination plants. His technical skills are consistently at the advanced level and span a wide range of automation and industrial IT domains, including process optimization (energy, alarms), HMI, and remote control—all indicating mastery beyond mid-level. While he collaborates cross-functionally and leads process initiatives, there is no concrete evidence of formal team leadership or strategic/organizational impact at a lead level or higher. This places him squarely in the senior individual contributor segment. Confidence is high (0.87) due to the alignment of role complexity, competencies, and explicit years of experience with industry norms for 'senior' engineering/automation talent. The absence of clear team or organizational leadership keeps the assessment (conservatively) at senior rather than lead.",
+    "seniority_evidence": [
+      "6 years of experience in industrial automation (directly stated)",
+      "Role as 'Técnico de Automatización' with design and maintenance of control systems (PLC, SCADA) in desalination plants, indicating high autonomy and technical complexity",
+      "Advanced skills in SCADA, PLC, automatización, HMI, and integration of sensors and actuators; multiple explicit and implicit advanced-level technical skills",
+      "Led process optimization initiatives (e.g., integration for energy optimization, alarm validation), showing strategic/initiative elements beyond execution-only roles",
+      "Participated cross-functionally in validation/QA with development teams (e.g., using Python/Selenium for industrial software validation)",
+      "Evidence of process improvement, system design, and quality assurance as senior functional competencies",
+      "No direct evidence of formal team leadership or people management (would be needed for lead/managerial level)"
+    ],
+    "disambiguation_summary": "All ambiguous terms present in Luis Hidalgo's profile pertain directly to industrial automation, plant operations, and test automation for industrial software. In every case, sector context, technology co-occurrence, company type, and activity descriptions strongly support industrial/process control interpretations—never generic IT, consumer electronics, or non-engineering meanings. Terms like 'automatización', 'SCADA', 'PLC', 'HMI', and 'telecontrol' are unambiguously industrial. Python and Selenium, while usually associated with software QA, are here explicitly tied to industrial system validation. Alternative common meanings (e.g., PLC=database, HMI=healthcare) are confidently ruled out based on attached context. All interpretations have extremely high confidence, given profile details and co-occurrence patterns."
+  }
+}
