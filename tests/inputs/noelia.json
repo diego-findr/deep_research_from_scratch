@@ -1,0 +1,136 @@
+{
+  "id": "19013e2e-c1d7-437b-870e-b7cb1cabf1eb",
+  "first_name": "Noelia",
+  "last_name": "Antelo",
+  "full_name": "Noelia Antelo",
+  "heading": "Managed Services - Technical Support Manager",
+  "description": null,
+  "linkedin_url": "https://www.linkedin.com/in/noelia-antelo-837a57b1/",
+  "email": null,
+  "current_city": "Getafe",
+  "current_country": "Spain",
+  "experience_years": 16,
+  "verified": false,
+  "skills": [
+    {
+      "id": "15e3a03d-7423-44fe-87c8-425edee3b32f",
+      "name": "Liderazgo de equipo",
+      "level": "Beginner"
+    },
+    {
+      "id": "359fa20f-4aa2-4e6d-9c36-f1f357b88449",
+      "name": "Servicio al cliente",
+      "level": "Beginner"
+    },
+    {
+      "id": "b9af9532-593a-44fa-a697-5aacaf868d6e",
+      "name": "Resolución de problemas",
+      "level": "Beginner"
+    },
+    {
+      "id": "459da7de-00e9-4dca-8b34-3d577265737c",
+      "name": "Gestión del tiempo",
+      "level": "Beginner"
+    },
+    {
+      "id": "47498a48-e824-4a8e-8c07-556270753f42",
+      "name": "Gestión de proyectos",
+      "level": "Beginner"
+    },
+    {
+      "id": "a4ab563c-b553-4943-a396-f4e8278d13ad",
+      "name": "Technical troubleshooting skills",
+      "level": "Beginner"
+    },
+    {
+      "id": "48b46c7c-dee3-4caf-b266-1ad99ff47187",
+      "name": "Capacitación y desarrollo",
+      "level": "Beginner"
+    },
+    {
+      "id": "3e0eebeb-afc6-47b3-8bb5-aaaf33153f28",
+      "name": "Collaboration",
+      "level": "Beginner"
+    },
+    {
+      "id": "565ae85b-385d-4c7a-aca9-99540e020120",
+      "name": "Habilidades analíticas",
+      "level": "Beginner"
+    },
+    {
+      "id": "8bb2b998-caa0-485e-9adc-4238246f3bbe",
+      "name": "Adaptability",
+      "level": "Beginner"
+    },
+    {
+      "id": "0a16c404-834e-475e-ba2a-4d4a9dab69b5",
+      "name": "Configuración de red",
+      "level": "Beginner"
+    },
+    {
+      "id": "654ebee2-6cfe-4443-9f3e-cd75d6d5512a",
+      "name": "\" habilidades de comunicación\"",
+      "level": "Beginner"
+    },
+    {
+      "id": "637cc497-f24c-4d1c-bd5d-65f0bba9364c",
+      "name": "Client relationship management",
+      "level": "Beginner"
+    },
+    {
+      "id": "11c7403f-482d-4fe6-b4a4-c56e1ab73581",
+      "name": "Mejora de procesos",
+      "level": "Beginner"
+    },
+    {
+      "id": "2a4605bc-513c-4c1b-b6b9-ca41fd432617",
+      "name": "Documentación técnica",
+      "level": "Beginner"
+    },
+    {
+      "id": "8eab63f4-5c40-4dfb-932b-b7108877802c",
+      "name": "Attention to detail",
+      "level": "Beginner"
+    }
+  ],
+  "languages": [],
+  "experiences": [
+    {
+      "id": "d5669e38-9e9e-4bc0-b798-c6d22f16eac0",
+      "created_at": "2025-10-15T09:35:57.765981+00:00",
+      "candidate_id": "19013e2e-c1d7-437b-870e-b7cb1cabf1eb",
+      "role": "Tecnico Provisiones de red y puestas en servicio",
+      "description": null,
+      "start_date": "2021-10-01",
+      "end_date": null,
+      "location": null,
+      "contract": null,
+      "company": "Makenai Solutions, Innovation & Creative Ideas"
+    },
+    {
+      "id": "2651c59d-d466-4acb-8fc8-ee436df8da90",
+      "created_at": "2025-10-15T09:35:57.765981+00:00",
+      "candidate_id": "19013e2e-c1d7-437b-870e-b7cb1cabf1eb",
+      "role": "Managed Services - Technical Support Manager",
+      "description": null,
+      "start_date": "2021-10-01",
+      "end_date": null,
+      "location": null,
+      "contract": null,
+      "company": "Makenai Solutions, Innovation & Creative Ideas"
+    },
+    {
+      "id": "a4f2f226-581f-45c8-a3d3-e0ba0071168f",
+      "created_at": "2025-10-15T09:35:57.765981+00:00",
+      "candidate_id": "19013e2e-c1d7-437b-870e-b7cb1cabf1eb",
+      "role": "Provisiones de red y puestas en servicio",
+      "description": "- Coordinación del grupo y formación de nuevas incorporaciones.\n- Configuración Servicios de capacidad Carrier Ethernet (Raisecom, RAD, Cisco).\n- Configuración Servicios MPLS-IP (Cisco, Huawei).\n- Configuración servicios FTTH (ultimas millas con proveedores Offnet).\n- Configuración servicios ISP/Tránsito.\n- Asignación direccionamiento y configuraciones necesarias para integración de equipos en red.\n- Trato directo con:\no Clientes (facilitar información técnica y apoyo en la puesta en marcha del servicio).\no Técnicos (apoyo en configuraciones e instalaciones)\no Jefes de Proyecto (apoyo técnico para nuevos servicios, así como análisis de cambios necesarios sobre servicios ya existentes).\no Planificación/Desarrollo (participación en conjunto para definición de nuevos servicios).",
+      "start_date": "2019-11-01",
+      "end_date": "2021-10-31",
+      "location": null,
+      "contract": null,
+      "company": "Indra"
+    }
+  ]
+}
+

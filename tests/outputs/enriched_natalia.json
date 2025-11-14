@@ -1,0 +1,1468 @@
+{
+  "candidato_id": "1e038af0-717e-49ed-a00e-775cb00c1488",
+  "timestamp": "2025-11-14T15:59:25.075483",
+  "metadata": {
+    "timestamp": "2025-11-14T15:59:25.075483",
+    "source": "database",
+    "sector_objetivo": "industrial|utilities"
+  },
+  "perfil_raw": {
+    "id": "1e038af0-717e-49ed-a00e-775cb00c1488",
+    "first_name": "Natalia",
+    "last_name": "López Andrés",
+    "full_name": "Natalia López Andrés",
+    "heading": "Técnico superior PRL en Cobra Instalaciones y Servicios",
+    "description": null,
+    "linkedin_url": "https://www.linkedin.com/in/natalia-l%C3%B3pez-andr%C3%A9s-9479a561/",
+    "email": null,
+    "current_city": null,
+    "current_country": "Spain",
+    "experience_years": 9,
+    "verified": false,
+    "skills": [
+      {
+        "id": "ccb3c198-bc56-49ad-8bdd-f018fda32897",
+        "name": "Learning agility",
+        "level": "Beginner"
+      },
+      {
+        "id": "19065096-8aa0-4d16-be17-4e59e40e7b98",
+        "name": "Detail-oriented and responsible at work.",
+        "level": "Beginner"
+      },
+      {
+        "id": "9430e934-2b7e-44df-9401-1df0c687155e",
+        "name": "Dinámica",
+        "level": "Beginner"
+      },
+      {
+        "id": "a4ebf1ad-d9ca-47c1-b8f6-f22b1fe01b65",
+        "name": "Strong adaptability to work in foreign countries.",
+        "level": "Beginner"
+      },
+      {
+        "id": "3d15f3a1-4c33-4ae0-9f99-37c823393339",
+        "name": "Microsoft office suite",
+        "level": "Beginner"
+      },
+      {
+        "id": "c27b497d-1db6-4a55-a707-1159dcb010a2",
+        "name": "Teamwork",
+        "level": "Beginner"
+      },
+      {
+        "id": "d78db2cd-acec-41ad-a707-355c3386a48c",
+        "name": "Microsoft excel",
+        "level": "Beginner"
+      },
+      {
+        "id": "ff6771d2-0b7d-47fc-8fae-833eb1b602f4",
+        "name": "Microsoft word",
+        "level": "Beginner"
+      },
+      {
+        "id": "295ac8ac-de70-4c24-b07f-43a9ddc90466",
+        "name": "Teamwork",
+        "level": "Beginner"
+      },
+      {
+        "id": "78456785-5cec-4cf8-9638-3ac00d26de86",
+        "name": "Inglés",
+        "level": "Beginner"
+      },
+      {
+        "id": "7358e758-e0c0-4f91-9ca8-75891659101b",
+        "name": "Negociación",
+        "level": "Beginner"
+      },
+      {
+        "id": "78403c69-857e-4673-9b41-c9165a9919b0",
+        "name": "Adaptability to teamwork",
+        "level": "Beginner"
+      },
+      {
+        "id": "f180d287-c840-4e74-915c-41ecb66077af",
+        "name": "Team leadership",
+        "level": "Beginner"
+      },
+      {
+        "id": "96d8c4db-9d21-4d52-a218-528a451181e7",
+        "name": "Gestión del tiempo",
+        "level": "Beginner"
+      }
+    ],
+    "languages": [
+      {
+        "id": "157b643b-ba14-4cbc-893f-ef9e57e69238",
+        "name": "English",
+        "level": "C1"
+      }
+    ],
+    "experiences": [
+      {
+        "id": "b64b08af-302c-4f13-bfdb-f2bb320f6b2e",
+        "created_at": "2025-11-13T09:58:08.435292+00:00",
+        "candidate_id": "1e038af0-717e-49ed-a00e-775cb00c1488",
+        "role": "Responsable de PRL",
+        "description": "Responsable de PRL en la UTE Itercón-Cobra para la construcción de un centro de procesamiento de datos de AWS",
+        "start_date": "2024-01-01",
+        "end_date": "2024-07-31",
+        "location": "Villanueva de Gállego, Aragón, España",
+        "contract": null,
+        "company": "COBRA INSTALACIONES Y SERVICIOS SA"
+      },
+      {
+        "id": "5cc3fe1f-fed9-4fb5-a076-075416b00a26",
+        "created_at": "2025-11-13T09:58:08.435292+00:00",
+        "candidate_id": "1e038af0-717e-49ed-a00e-775cb00c1488",
+        "role": "Responsable de PRL",
+        "description": "Responsable de PRL en la construcción de un centro de procesamiento de datos de AWS",
+        "start_date": "2020-08-01",
+        "end_date": "2021-08-31",
+        "location": "Zaragoza",
+        "contract": null,
+        "company": "UTE Itercon-Cobra"
+      },
+      {
+        "id": "f194420d-7d4b-431b-b6de-b0c45907da62",
+        "created_at": "2025-11-13T09:58:08.435292+00:00",
+        "candidate_id": "1e038af0-717e-49ed-a00e-775cb00c1488",
+        "role": "Técnico superior en prevención de riesgos laborales",
+        "description": "Gestión de proyecto internacional con cliente del sector retail",
+        "start_date": "2018-04-01",
+        "end_date": "2020-08-31",
+        "location": "Barcelona, Cataluña, España",
+        "contract": null,
+        "company": "SGS"
+      }
+    ]
+  },
+  "semantic_enrichment": {
+    "version": "1.0",
+    "enrichment_timestamp": "2025-11-14T15:59:25.075483",
+    "analysis_components": {
+      "context_analysis": {
+        "key_indicators": [
+          "COBRA INSTALACIONES Y SERVICIOS SA (engineering/services, large infrastructure/construction)",
+          "UTE Itercon-Cobra (engineering/construction joint venture)",
+          "SGS (international compliance/control/inspection, safety sector)",
+          "Responsable de PRL (Health & Safety Manager/OSH) for large-scale construction and data center projects",
+          "Técnico superior en prevención de riesgos laborales (Senior OSH technician) internation projects, retail sector"
+        ],
+        "domain_signals": [
+          "PRL (Prevención de Riesgos Laborales/Occupational Health & Safety)",
+          "large-scale construction projects (data center for AWS)",
+          "project management in engineering/construction context",
+          "compliance with health, safety, and labor standards"
+        ],
+        "technology_mentions": [
+          "Microsoft Office suite",
+          "Microsoft Excel",
+          "Microsoft Word"
+        ],
+        "activity_patterns": [
+          "Health and safety (OSH) management on construction sites",
+          "Responsibility for risk prevention in large infrastructure projects (data center construction)",
+          "Teamwork and leadership",
+          "Project management, including international coordination",
+          "Use of standard office productivity software (Excel, Word)",
+          "Negotiation and time management"
+        ],
+        "language_context": "Profile uses language typical for Spanish engineering/construction and occupational health and safety (PRL) sectors—terms like 'Responsable de PRL', 'Gestión de proyecto internacional', 'construcción de centro de procesamiento de datos', and references to compliance, teamwork, and adaptability are prevalent; corresponding to regulatory, technical, and project delivery context, predominantly within Spanish-speaking environments but includes English proficiency (C1)."
+      },
+      "sector_inference": {
+        "primary_sector": "occupational_health_and_safety_in_construction",
+        "secondary_sectors": [
+          "construction_project_management",
+          "engineering_services",
+          "facilities_management"
+        ],
+        "confidence": 0.95,
+        "evidence": [
+          "Roles: 'Responsable de PRL', 'Técnico superior en prevención de riesgos laborales'",
+          "Companies: 'COBRA INSTALACIONES Y SERVICIOS SA' and 'UTE Itercon-Cobra' (both engineering/construction sector), 'SGS' (compliance/RL sector)",
+          "Experience: Health and safety management for large-scale construction projects (data center for AWS)",
+          "Role activities: 'Gestión de proyecto internacional con cliente del sector retail', 'Responsable de PRL en la construcción de un centro de procesamiento de datos'",
+          "Domain signals: PRL (Prevención de Riesgos Laborales/Occupational Health & Safety), compliance with safety standards, risk prevention in construction contexts"
+        ],
+        "reasoning": "All core evidence points to lead responsibilities in occupational health and safety (PRL, OSH) specifically within large-scale construction and engineering projects. The repeated references to being 'Responsable de PRL' for major construction sites, with experience in both domestic and international projects, and employment with companies specialized in infrastructure and compliance (Cobra, UTE Itercon-Cobra, SGS), clearly situate the candidate within the domain of occupational safety in the construction sector. Although experienced in project management and compliance, the primary and repeated job function is as a senior OSH specialist within construction environments, making 'occupational_health_and_safety_in_construction' the most specific, accurate sector label."
+      },
+      "disambiguation": {
+        "disambiguated_terms": [
+          {
+            "original_term": "PRL",
+            "interpreted_meaning": "Prevención de Riesgos Laborales (Occupational Health & Safety, OSH)",
+            "domain": "occupational_health_and_safety_in_construction",
+            "confidence": 1.0,
+            "evidence": "Roles: 'Responsable de PRL', 'Técnico superior en prevención de riesgos laborales' at Cobra Instalaciones y Servicios and UTE Itercon-Cobra during construction of AWS data center",
+            "alternative_meanings_rejected": [
+              "Project Resource List (IT/Project Management) - no IT project context",
+              "Portable Runoff Level (environmental engineering) - not referenced in safety context",
+              "Other unrelated acronyms (ruled out by regulatory/safety context)"
+            ]
+          },
+          {
+            "original_term": "UTE",
+            "interpreted_meaning": "Unión Temporal de Empresas (Temporary Joint Venture in Construction/Engineering)",
+            "domain": "construction_project_management",
+            "confidence": 1.0,
+            "evidence": "Company: 'UTE Itercon-Cobra', role: 'Responsable de PRL en la UTE Itercón-Cobra para la construcción de un centro de procesamiento de datos de AWS'",
+            "alternative_meanings_rejected": [
+              "Other meanings of 'UTE' (utility vehicle, Australian car reference) – context is Spanish construction companies"
+            ]
+          },
+          {
+            "original_term": "Responsable de PRL",
+            "interpreted_meaning": "Health & Safety Manager (Occupational Health & Safety Responsible)",
+            "domain": "occupational_health_and_safety_in_construction",
+            "confidence": 1.0,
+            "evidence": "Role title for safety oversight and risk prevention during large-scale construction projects (data center for AWS, companies: Cobra and UTE Itercon-Cobra)",
+            "alternative_meanings_rejected": [
+              "Project resource lead - not referenced, all descriptions point to health & safety"
+            ]
+          },
+          {
+            "original_term": "Centro de procesamiento de datos",
+            "interpreted_meaning": "Data Center (Physical facility for IT infrastructure)",
+            "domain": "construction_project_management",
+            "confidence": 0.98,
+            "evidence": "Description: 'construcción de un centro de procesamiento de datos de AWS' — construction context, AWS (Amazon Web Services)",
+            "alternative_meanings_rejected": [
+              "Data processing operations (abstract IT context) - ruled out, physical build site described"
+            ]
+          },
+          {
+            "original_term": "Gestión de proyecto internacional",
+            "interpreted_meaning": "Management of an international construction/engineering project, especially regarding OSH compliance",
+            "domain": "construction_project_management",
+            "confidence": 0.95,
+            "evidence": "Experience at SGS: 'Gestión de proyecto internacional con cliente del sector retail' — management role, compliance, project delivery context",
+            "alternative_meanings_rejected": [
+              "Generic project management (non-engineering) – construction and OSH context specified"
+            ]
+          },
+          {
+            "original_term": "Microsoft Office suite",
+            "interpreted_meaning": "Productivity software package (Word, Excel, etc.), used for project documentation, reporting, and administration",
+            "domain": "office_productivity_software",
+            "confidence": 1.0,
+            "evidence": "Skill: 'Microsoft office suite', co-occurs with Excel, Word; administrative/project management tasks are assumed in these roles",
+            "alternative_meanings_rejected": [
+              "Office (physical workspace) – reference is explicitly to software suite"
+            ]
+          },
+          {
+            "original_term": "Microsoft Excel",
+            "interpreted_meaning": "Spreadsheet application used for data analysis, reporting, and safety documentation in project management",
+            "domain": "office_productivity_software",
+            "confidence": 1.0,
+            "evidence": "Skill: 'Microsoft excel', in context of project admin, risk assessment documentation",
+            "alternative_meanings_rejected": [
+              "Excel as verb ('to excel') – software is clearly intended"
+            ]
+          },
+          {
+            "original_term": "Microsoft Word",
+            "interpreted_meaning": "Word processing software used for writing reports, safety protocols, and documentation",
+            "domain": "office_productivity_software",
+            "confidence": 1.0,
+            "evidence": "Skill: 'Microsoft word', reporting, documentation activities in construction/OSH roles",
+            "alternative_meanings_rejected": [
+              "Word (as generic term) – specifically software"
+            ]
+          }
+        ],
+        "summary": "All potentially ambiguous terms have been contextually disambiguated based on a primary domain of occupational health & safety in construction and major project management. Core domain/sector signals (company types, job titles, project activities) provide high confidence in all main disambiguations. No references found to software frameworks, general technology acronyms (e.g., SAP, Python, React), or domain-shifting terms. The role of 'PRL' is unambiguously occupational safety (not project or resource-related), 'UTE' is the joint venture vehicle typical in Spanish construction, data center refers to a physical build (not pure IT), and all Microsoft mentions indicate productivity software indispensable for documentation and compliance. No unresolved or remaining ambiguities identified."
+      },
+      "skills_extraction": {
+        "explicit_skills": [
+          {
+            "name": "Learning agility",
+            "category": "soft",
+            "level": "novice",
+            "source": "explicit",
+            "evidence": "Skill explicitly listed: 'Learning agility' (Beginner)",
+            "confidence": 1.0
+          },
+          {
+            "name": "Detail-oriented and responsible at work.",
+            "category": "soft",
+            "level": "novice",
+            "source": "explicit",
+            "evidence": "Skill explicitly listed: 'Detail-oriented and responsible at work.' (Beginner)",
+            "confidence": 1.0
+          },
+          {
+            "name": "Dinámica",
+            "category": "soft",
+            "level": "novice",
+            "source": "explicit",
+            "evidence": "Skill explicitly listed: 'Dinámica' (Beginner)",
+            "confidence": 1.0
+          },
+          {
+            "name": "Strong adaptability to work in foreign countries.",
+            "category": "soft",
+            "level": "novice",
+            "source": "explicit",
+            "evidence": "Skill explicitly listed: 'Strong adaptability to work in foreign countries.' (Beginner)",
+            "confidence": 1.0
+          },
+          {
+            "name": "Microsoft office suite",
+            "category": "technical",
+            "level": "novice",
+            "source": "explicit",
+            "evidence": "Skill explicitly listed: 'Microsoft office suite' (Beginner)",
+            "confidence": 1.0
+          },
+          {
+            "name": "Teamwork",
+            "category": "soft",
+            "level": "novice",
+            "source": "explicit",
+            "evidence": "Skill explicitly listed: 'Teamwork' (Beginner), appears twice.",
+            "confidence": 1.0
+          },
+          {
+            "name": "Microsoft excel",
+            "category": "technical",
+            "level": "novice",
+            "source": "explicit",
+            "evidence": "Skill explicitly listed: 'Microsoft excel' (Beginner)",
+            "confidence": 1.0
+          },
+          {
+            "name": "Microsoft word",
+            "category": "technical",
+            "level": "novice",
+            "source": "explicit",
+            "evidence": "Skill explicitly listed: 'Microsoft word' (Beginner)",
+            "confidence": 1.0
+          },
+          {
+            "name": "Inglés",
+            "category": "soft",
+            "level": "novice",
+            "source": "explicit",
+            "evidence": "Skill explicitly listed: 'Inglés' (Beginner)",
+            "confidence": 1.0
+          },
+          {
+            "name": "Negociación",
+            "category": "soft",
+            "level": "novice",
+            "source": "explicit",
+            "evidence": "Skill explicitly listed: 'Negociación' (Beginner)",
+            "confidence": 1.0
+          },
+          {
+            "name": "Adaptability to teamwork",
+            "category": "soft",
+            "level": "novice",
+            "source": "explicit",
+            "evidence": "Skill explicitly listed: 'Adaptability to teamwork' (Beginner)",
+            "confidence": 1.0
+          },
+          {
+            "name": "Team leadership",
+            "category": "soft",
+            "level": "novice",
+            "source": "explicit",
+            "evidence": "Skill explicitly listed: 'Team leadership' (Beginner)",
+            "confidence": 1.0
+          },
+          {
+            "name": "Gestión del tiempo",
+            "category": "soft",
+            "level": "novice",
+            "source": "explicit",
+            "evidence": "Skill explicitly listed: 'Gestión del tiempo' (Beginner)",
+            "confidence": 1.0
+          },
+          {
+            "name": "English",
+            "category": "technical",
+            "level": "advanced",
+            "source": "explicit",
+            "evidence": "Language skill: 'English' (C1)",
+            "confidence": 1.0
+          }
+        ],
+        "implicit_skills": [
+          {
+            "name": "Occupational health and safety (OHS) management in construction",
+            "category": "domain_specific",
+            "level": "advanced",
+            "source": "implicit",
+            "evidence": "Roles: 'Responsable de PRL', 'Técnico superior en prevención de riesgos laborales' at Cobra Instalaciones y Servicios, UTE Itercón-Cobra, and SGS for AWS data center and international projects. 9 years in OSH roles in construction sector.",
+            "confidence": 0.95
+          },
+          {
+            "name": "Risk assessment and mitigation (construction)",
+            "category": "domain_specific",
+            "level": "advanced",
+            "source": "implicit",
+            "evidence": "Direct responsibility for occupational health and safety on major construction projects (AWS data center). Repeated 'Responsable de PRL' roles.",
+            "confidence": 0.9
+          },
+          {
+            "name": "Implementation of safety protocols and compliance (construction/OSH regulations)",
+            "category": "domain_specific",
+            "level": "advanced",
+            "source": "implicit",
+            "evidence": "'Responsable de PRL' roles require knowledge and application of site safety rules, labor law, and regulatory standards for data center construction.",
+            "confidence": 0.9
+          },
+          {
+            "name": "Incident investigation and reporting (OSH context)",
+            "category": "domain_specific",
+            "level": "intermediate",
+            "source": "implicit",
+            "evidence": "End-to-end health & safety management would entail identifying, documenting, and reporting workplace incidents during construction.",
+            "confidence": 0.8
+          },
+          {
+            "name": "Construction project management (focus on safety)",
+            "category": "functional",
+            "level": "intermediate",
+            "source": "implicit",
+            "evidence": "Responsabilidad de PRL in several construction projects indicates experience managing the safety dimension in overall project delivery.",
+            "confidence": 0.85
+          },
+          {
+            "name": "International project coordination (OSH focus)",
+            "category": "functional",
+            "level": "intermediate",
+            "source": "implicit",
+            "evidence": "'Gestión de proyecto internacional con cliente del sector retail' (SGS) - managing projects with international clients, compliance oversight.",
+            "confidence": 0.7
+          },
+          {
+            "name": "Client communication and stakeholder management (OSH/project context)",
+            "category": "soft",
+            "level": "intermediate",
+            "source": "implicit",
+            "evidence": "Work with international clients in SGS; repeated project management context requires clear client communication on safety/compliance matters.",
+            "confidence": 0.7
+          },
+          {
+            "name": "Documentation and report writing (MS Office, compliance focus)",
+            "category": "functional",
+            "level": "intermediate",
+            "source": "implicit",
+            "evidence": "MS Office, Excel, Word explicitly listed; required for compliance documentation, reporting accidents & audits in OSH roles.",
+            "confidence": 0.85
+          },
+          {
+            "name": "Team collaboration in construction/engineering environments",
+            "category": "soft",
+            "level": "intermediate",
+            "source": "implicit",
+            "evidence": "Teamwork explicitly stated; roles require daily interaction with multidisciplinary project teams (engineers, contractors) for safety compliance.",
+            "confidence": 0.85
+          },
+          {
+            "name": "Training and safety awareness raising",
+            "category": "functional",
+            "level": "intermediate",
+            "source": "implicit",
+            "evidence": "Typical responsibility of 'Responsable de PRL' is ensuring on-site staff adherence to protocols—implies delivery of safety inductions and trainings.",
+            "confidence": 0.8
+          },
+          {
+            "name": "Spanish language (native proficiency)",
+            "category": "technical",
+            "level": "expert",
+            "source": "implicit",
+            "evidence": "All roles in Spain, Spanish job titles (e.g., 'Responsable de PRL')—native speaker assumed.",
+            "confidence": 0.99
+          }
+        ],
+        "skill_clusters": [
+          {
+            "cluster_name": "OSH & Safety Management (Construction)",
+            "skills": [
+              "Occupational health and safety (OHS) management in construction",
+              "Risk assessment and mitigation (construction)",
+              "Implementation of safety protocols and compliance (construction/OSH regulations)",
+              "Incident investigation and reporting (OSH context)",
+              "Training and safety awareness raising"
+            ]
+          },
+          {
+            "cluster_name": "Project & Client Coordination",
+            "skills": [
+              "Construction project management (focus on safety)",
+              "International project coordination (OSH focus)",
+              "Client communication and stakeholder management (OSH/project context)"
+            ]
+          },
+          {
+            "cluster_name": "Administrative and Productivity Software",
+            "skills": [
+              "Microsoft office suite",
+              "Microsoft excel",
+              "Microsoft word",
+              "Documentation and report writing (MS Office, compliance focus)"
+            ]
+          },
+          {
+            "cluster_name": "Languages",
+            "skills": [
+              "English",
+              "Spanish language (native proficiency)"
+            ]
+          },
+          {
+            "cluster_name": "Soft Skills for Project Environments",
+            "skills": [
+              "Teamwork",
+              "Team leadership",
+              "Learning agility",
+              "Detail-oriented and responsible at work.",
+              "Dinámica",
+              "Adaptability to teamwork",
+              "Strong adaptability to work in foreign countries.",
+              "Gestión del tiempo"
+            ]
+          }
+        ]
+      },
+      "competencies_analysis": {
+        "competencies": [
+          {
+            "competency": "team_leadership",
+            "type": "soft",
+            "level": "junior",
+            "source": "skills; role",
+            "evidence": "Skill explicitly listed: 'Team leadership' (Beginner); 'Responsable de PRL' roles involve some degree of safety team or crew guidance."
+          },
+          {
+            "competency": "teamwork",
+            "type": "soft",
+            "level": "mid",
+            "source": "skills; experience",
+            "evidence": "Skill explicitly listed: 'Teamwork' (Beginner), appears twice; roles require collaboration with multidisciplinary project teams (engineers, contractors) for safety compliance."
+          },
+          {
+            "competency": "adaptability",
+            "type": "soft",
+            "level": "mid",
+            "source": "skills; experience",
+            "evidence": "Explicit skills: 'Learning agility', 'Adaptability to teamwork', 'Strong adaptability to work in foreign countries.'"
+          },
+          {
+            "competency": "stakeholder_communication",
+            "type": "soft",
+            "level": "mid",
+            "source": "experience; skills",
+            "evidence": "Project with international client (SGS): 'Gestión de proyecto internacional con cliente del sector retail'; required clear communication on safety/compliance matters."
+          },
+          {
+            "competency": "problem_solving",
+            "type": "soft",
+            "level": "mid",
+            "source": "experience",
+            "evidence": "Risk assessment and mitigation work for OSH in construction requires analytical thinking and troubleshooting to ensure safety under variable construction conditions."
+          },
+          {
+            "competency": "self_management",
+            "type": "soft",
+            "level": "mid",
+            "source": "skills",
+            "evidence": "Explicit: 'Gestión del tiempo' (Beginner); multiple long-term roles in independent roles ('Responsable de PRL')."
+          },
+          {
+            "competency": "project_management",
+            "type": "functional",
+            "level": "mid",
+            "source": "experience",
+            "evidence": "'Responsable de PRL' in several large construction and international projects, overseeing safety/planning, executing OSH aspects."
+          },
+          {
+            "competency": "quality_assurance",
+            "type": "functional",
+            "level": "mid",
+            "source": "experience",
+            "evidence": "Implementation of safety protocols and compliance, repeated experience ensuring site adherence to regulatory standards."
+          },
+          {
+            "competency": "training_and_awareness",
+            "type": "functional",
+            "level": "mid",
+            "source": "experience",
+            "evidence": "Typical responsibility as 'Responsable de PRL' includes delivering safety inductions and awareness to construction teams."
+          },
+          {
+            "competency": "documentation_and_reporting",
+            "type": "functional",
+            "level": "mid",
+            "source": "skills; experience",
+            "evidence": "Explicit MS Office, Excel, Word; required for compliance documentation, incident reporting in OSH roles."
+          },
+          {
+            "competency": "client_management",
+            "type": "managerial",
+            "level": "mid",
+            "source": "experience",
+            "evidence": "'Gestión de proyecto internacional con cliente del sector retail' (SGS) — international client interface; role involved alignment and communication."
+          }
+        ],
+        "leadership_indicators": [
+          "Explicit skill: 'Team leadership' (Beginner).",
+          "'Responsable de PRL' — accountable for safety, likely led safety crews or subcontractors."
+        ],
+        "collaboration_indicators": [
+          "Explicit skill: 'Teamwork' (Beginner), repeated.",
+          "Project management roles in cross-functional context (construction requires collaborating with engineers, contractors, management).",
+          "'Gestión de proyecto internacional con cliente del sector retail' — international cross-company collaboration (SGS)."
+        ]
+      },
+      "normalization": {
+        "normalized_synonyms": [
+          {
+            "term": "Microsoft Office suite",
+            "synonyms": [
+              "Microsoft Office suite",
+              "MS Office",
+              "Microsoft Office",
+              "Office suite",
+              "Microsoft office suite"
+            ]
+          },
+          {
+            "term": "Microsoft Excel",
+            "synonyms": [
+              "Microsoft Excel",
+              "MS Excel",
+              "Excel",
+              "Microsoft excel"
+            ]
+          },
+          {
+            "term": "Microsoft Word",
+            "synonyms": [
+              "Microsoft Word",
+              "MS Word",
+              "Word",
+              "Microsoft word"
+            ]
+          },
+          {
+            "term": "English",
+            "synonyms": [
+              "English",
+              "Inglés"
+            ]
+          },
+          {
+            "term": "Spanish",
+            "synonyms": [
+              "Spanish",
+              "Español"
+            ]
+          },
+          {
+            "term": "Occupational Health and Safety",
+            "synonyms": [
+              "Occupational Health and Safety",
+              "OHS",
+              "OSH",
+              "Prevención de Riesgos Laborales",
+              "PRL",
+              "Health & Safety",
+              "Occupational health & safety"
+            ]
+          },
+          {
+            "term": "Unión Temporal de Empresas",
+            "synonyms": [
+              "Unión Temporal de Empresas",
+              "UTE",
+              "Temporary Joint Venture",
+              "Joint Venture"
+            ]
+          },
+          {
+            "term": "Data Center",
+            "synonyms": [
+              "Data Center",
+              "Centro de procesamiento de datos",
+              "Datacenter",
+              "Data Centre"
+            ]
+          },
+          {
+            "term": "Teamwork",
+            "synonyms": [
+              "Teamwork",
+              "Trabajo en equipo",
+              "Adaptability to teamwork"
+            ]
+          },
+          {
+            "term": "Negotiation",
+            "synonyms": [
+              "Negotiation",
+              "Negociación"
+            ]
+          },
+          {
+            "term": "Time Management",
+            "synonyms": [
+              "Time Management",
+              "Gestión del tiempo"
+            ]
+          },
+          {
+            "term": "Learning Agility",
+            "synonyms": [
+              "Learning Agility",
+              "Learning agility"
+            ]
+          },
+          {
+            "term": "Detail-oriented",
+            "synonyms": [
+              "Detail-oriented",
+              "Detail-oriented and responsible at work.",
+              "Attention to detail"
+            ]
+          },
+          {
+            "term": "Dynamic",
+            "synonyms": [
+              "Dynamic",
+              "Dinámica"
+            ]
+          },
+          {
+            "term": "Team Leadership",
+            "synonyms": [
+              "Team Leadership",
+              "Team leadership"
+            ]
+          },
+          {
+            "term": "Adaptability",
+            "synonyms": [
+              "Adaptability",
+              "Strong adaptability to work in foreign countries.",
+              "Adaptability to teamwork"
+            ]
+          }
+        ],
+        "canonical_terms": [
+          {
+            "variation": "MS Office",
+            "canonical": "Microsoft Office suite"
+          },
+          {
+            "variation": "Microsoft Office",
+            "canonical": "Microsoft Office suite"
+          },
+          {
+            "variation": "Office suite",
+            "canonical": "Microsoft Office suite"
+          },
+          {
+            "variation": "Microsoft office suite",
+            "canonical": "Microsoft Office suite"
+          },
+          {
+            "variation": "MS Excel",
+            "canonical": "Microsoft Excel"
+          },
+          {
+            "variation": "Excel",
+            "canonical": "Microsoft Excel"
+          },
+          {
+            "variation": "Microsoft excel",
+            "canonical": "Microsoft Excel"
+          },
+          {
+            "variation": "MS Word",
+            "canonical": "Microsoft Word"
+          },
+          {
+            "variation": "Word",
+            "canonical": "Microsoft Word"
+          },
+          {
+            "variation": "Microsoft word",
+            "canonical": "Microsoft Word"
+          },
+          {
+            "variation": "Inglés",
+            "canonical": "English"
+          },
+          {
+            "variation": "Español",
+            "canonical": "Spanish"
+          },
+          {
+            "variation": "OHS",
+            "canonical": "Occupational Health and Safety"
+          },
+          {
+            "variation": "OSH",
+            "canonical": "Occupational Health and Safety"
+          },
+          {
+            "variation": "Prevención de Riesgos Laborales",
+            "canonical": "Occupational Health and Safety"
+          },
+          {
+            "variation": "PRL",
+            "canonical": "Occupational Health and Safety"
+          },
+          {
+            "variation": "Health & Safety",
+            "canonical": "Occupational Health and Safety"
+          },
+          {
+            "variation": "Occupational health & safety",
+            "canonical": "Occupational Health and Safety"
+          },
+          {
+            "variation": "UTE",
+            "canonical": "Unión Temporal de Empresas"
+          },
+          {
+            "variation": "Temporary Joint Venture",
+            "canonical": "Unión Temporal de Empresas"
+          },
+          {
+            "variation": "Joint Venture",
+            "canonical": "Unión Temporal de Empresas"
+          },
+          {
+            "variation": "Centro de procesamiento de datos",
+            "canonical": "Data Center"
+          },
+          {
+            "variation": "Datacenter",
+            "canonical": "Data Center"
+          },
+          {
+            "variation": "Data Centre",
+            "canonical": "Data Center"
+          },
+          {
+            "variation": "Trabajo en equipo",
+            "canonical": "Teamwork"
+          },
+          {
+            "variation": "Adaptability to teamwork",
+            "canonical": "Teamwork"
+          },
+          {
+            "variation": "Negociación",
+            "canonical": "Negotiation"
+          },
+          {
+            "variation": "Gestión del tiempo",
+            "canonical": "Time Management"
+          },
+          {
+            "variation": "Learning agility",
+            "canonical": "Learning Agility"
+          },
+          {
+            "variation": "Detail-oriented and responsible at work.",
+            "canonical": "Detail-oriented"
+          },
+          {
+            "variation": "Attention to detail",
+            "canonical": "Detail-oriented"
+          },
+          {
+            "variation": "Dinámica",
+            "canonical": "Dynamic"
+          },
+          {
+            "variation": "Team leadership",
+            "canonical": "Team Leadership"
+          },
+          {
+            "variation": "Strong adaptability to work in foreign countries.",
+            "canonical": "Adaptability"
+          }
+        ],
+        "technology_taxonomy": [
+          {
+            "category": "office_productivity_software",
+            "technologies": [
+              "Microsoft Office suite",
+              "Microsoft Excel",
+              "Microsoft Word"
+            ]
+          },
+          {
+            "category": "domain_specific",
+            "technologies": [
+              "Occupational Health and Safety"
+            ]
+          },
+          {
+            "category": "project_management",
+            "technologies": [
+              "Unión Temporal de Empresas",
+              "Data Center"
+            ]
+          },
+          {
+            "category": "soft_skills",
+            "technologies": [
+              "Teamwork",
+              "Negotiation",
+              "Time Management",
+              "Learning Agility",
+              "Detail-oriented",
+              "Dynamic",
+              "Team Leadership",
+              "Adaptability",
+              "Client communication and stakeholder management"
+            ]
+          },
+          {
+            "category": "languages",
+            "technologies": [
+              "English",
+              "Spanish"
+            ]
+          }
+        ]
+      },
+      "seniority_inference": {
+        "seniority_level": "lead",
+        "confidence": 0.83,
+        "evidence": [
+          "9 years total experience in OSH roles: stated in profile",
+          "Job title: 'Responsable de PRL' (OSH Manager/Responsible), a lead-level title, repeatedly held in large-scale construction projects (AWS data centers) at two separate companies",
+          "Held ultimate responsibility for occupational health & safety in high-stakes construction environments (data centers, international projects)",
+          "Evidence of managing OSH project delivery: 'Gestión de proyecto internacional con cliente del sector retail'",
+          "Likely direct oversight/leadership of site safety teams or specialist crews (per industry and role norms)",
+          "Competencies in project management, stakeholder communication, and training/awareness raising, consistent with lead-level roles",
+          "No evidence of C-level or principal/expert indicators, but stronger than pure 'senior' (due to repeat project-level OSH leadership, scale, duration)"
+        ],
+        "years_experience_estimate": 9,
+        "reasoning": "Natalia López Andrés shows 9 years of experience in occupational safety roles within the construction sector, primarily as 'Responsable de PRL' (OSH manager/responsible), which in Spanish contexts equates to a lead-level responsibility. She led safety for major projects (notably data center builds for AWS, with international complexity) and demonstrated competencies in project oversight, stakeholder management, and project-specific training. While most listed explicit skills are marked at 'beginner', her role history denotes de facto technical and soft skill mastery necessary for project and site leadership. The combination of experience duration, title, and proven scope of responsibility firmly places her above 'senior', into 'lead' level. No evidence yet for principal (company- or industry-wide influence, >12 years). Confidence is moderate-high due to consistent evidence of project leadership, though explicit large team size or hierarchy management is not specified."
+      }
+    },
+    "key_insights": {
+      "primary_sector": "occupational_health_and_safety_in_construction",
+      "sector_confidence": 0.95,
+      "seniority_level": "lead",
+      "years_experience": 9,
+      "total_skills_identified": 25,
+      "competencies_count": 11,
+      "disambiguated_terms_count": 8
+    },
+    "structured_skills": {
+      "explicit": [
+        {
+          "name": "Learning agility",
+          "category": "soft",
+          "level": "novice",
+          "source": "explicit",
+          "evidence": "Skill explicitly listed: 'Learning agility' (Beginner)",
+          "confidence": 1.0
+        },
+        {
+          "name": "Detail-oriented and responsible at work.",
+          "category": "soft",
+          "level": "novice",
+          "source": "explicit",
+          "evidence": "Skill explicitly listed: 'Detail-oriented and responsible at work.' (Beginner)",
+          "confidence": 1.0
+        },
+        {
+          "name": "Dinámica",
+          "category": "soft",
+          "level": "novice",
+          "source": "explicit",
+          "evidence": "Skill explicitly listed: 'Dinámica' (Beginner)",
+          "confidence": 1.0
+        },
+        {
+          "name": "Strong adaptability to work in foreign countries.",
+          "category": "soft",
+          "level": "novice",
+          "source": "explicit",
+          "evidence": "Skill explicitly listed: 'Strong adaptability to work in foreign countries.' (Beginner)",
+          "confidence": 1.0
+        },
+        {
+          "name": "Microsoft office suite",
+          "category": "technical",
+          "level": "novice",
+          "source": "explicit",
+          "evidence": "Skill explicitly listed: 'Microsoft office suite' (Beginner)",
+          "confidence": 1.0
+        },
+        {
+          "name": "Teamwork",
+          "category": "soft",
+          "level": "novice",
+          "source": "explicit",
+          "evidence": "Skill explicitly listed: 'Teamwork' (Beginner), appears twice.",
+          "confidence": 1.0
+        },
+        {
+          "name": "Microsoft excel",
+          "category": "technical",
+          "level": "novice",
+          "source": "explicit",
+          "evidence": "Skill explicitly listed: 'Microsoft excel' (Beginner)",
+          "confidence": 1.0
+        },
+        {
+          "name": "Microsoft word",
+          "category": "technical",
+          "level": "novice",
+          "source": "explicit",
+          "evidence": "Skill explicitly listed: 'Microsoft word' (Beginner)",
+          "confidence": 1.0
+        },
+        {
+          "name": "Inglés",
+          "category": "soft",
+          "level": "novice",
+          "source": "explicit",
+          "evidence": "Skill explicitly listed: 'Inglés' (Beginner)",
+          "confidence": 1.0
+        },
+        {
+          "name": "Negociación",
+          "category": "soft",
+          "level": "novice",
+          "source": "explicit",
+          "evidence": "Skill explicitly listed: 'Negociación' (Beginner)",
+          "confidence": 1.0
+        },
+        {
+          "name": "Adaptability to teamwork",
+          "category": "soft",
+          "level": "novice",
+          "source": "explicit",
+          "evidence": "Skill explicitly listed: 'Adaptability to teamwork' (Beginner)",
+          "confidence": 1.0
+        },
+        {
+          "name": "Team leadership",
+          "category": "soft",
+          "level": "novice",
+          "source": "explicit",
+          "evidence": "Skill explicitly listed: 'Team leadership' (Beginner)",
+          "confidence": 1.0
+        },
+        {
+          "name": "Gestión del tiempo",
+          "category": "soft",
+          "level": "novice",
+          "source": "explicit",
+          "evidence": "Skill explicitly listed: 'Gestión del tiempo' (Beginner)",
+          "confidence": 1.0
+        },
+        {
+          "name": "English",
+          "category": "technical",
+          "level": "advanced",
+          "source": "explicit",
+          "evidence": "Language skill: 'English' (C1)",
+          "confidence": 1.0
+        }
+      ],
+      "implicit": [
+        {
+          "name": "Occupational health and safety (OHS) management in construction",
+          "category": "domain_specific",
+          "level": "advanced",
+          "source": "implicit",
+          "evidence": "Roles: 'Responsable de PRL', 'Técnico superior en prevención de riesgos laborales' at Cobra Instalaciones y Servicios, UTE Itercón-Cobra, and SGS for AWS data center and international projects. 9 years in OSH roles in construction sector.",
+          "confidence": 0.95
+        },
+        {
+          "name": "Risk assessment and mitigation (construction)",
+          "category": "domain_specific",
+          "level": "advanced",
+          "source": "implicit",
+          "evidence": "Direct responsibility for occupational health and safety on major construction projects (AWS data center). Repeated 'Responsable de PRL' roles.",
+          "confidence": 0.9
+        },
+        {
+          "name": "Implementation of safety protocols and compliance (construction/OSH regulations)",
+          "category": "domain_specific",
+          "level": "advanced",
+          "source": "implicit",
+          "evidence": "'Responsable de PRL' roles require knowledge and application of site safety rules, labor law, and regulatory standards for data center construction.",
+          "confidence": 0.9
+        },
+        {
+          "name": "Incident investigation and reporting (OSH context)",
+          "category": "domain_specific",
+          "level": "intermediate",
+          "source": "implicit",
+          "evidence": "End-to-end health & safety management would entail identifying, documenting, and reporting workplace incidents during construction.",
+          "confidence": 0.8
+        },
+        {
+          "name": "Construction project management (focus on safety)",
+          "category": "functional",
+          "level": "intermediate",
+          "source": "implicit",
+          "evidence": "Responsabilidad de PRL in several construction projects indicates experience managing the safety dimension in overall project delivery.",
+          "confidence": 0.85
+        },
+        {
+          "name": "International project coordination (OSH focus)",
+          "category": "functional",
+          "level": "intermediate",
+          "source": "implicit",
+          "evidence": "'Gestión de proyecto internacional con cliente del sector retail' (SGS) - managing projects with international clients, compliance oversight.",
+          "confidence": 0.7
+        },
+        {
+          "name": "Client communication and stakeholder management (OSH/project context)",
+          "category": "soft",
+          "level": "intermediate",
+          "source": "implicit",
+          "evidence": "Work with international clients in SGS; repeated project management context requires clear client communication on safety/compliance matters.",
+          "confidence": 0.7
+        },
+        {
+          "name": "Documentation and report writing (MS Office, compliance focus)",
+          "category": "functional",
+          "level": "intermediate",
+          "source": "implicit",
+          "evidence": "MS Office, Excel, Word explicitly listed; required for compliance documentation, reporting accidents & audits in OSH roles.",
+          "confidence": 0.85
+        },
+        {
+          "name": "Team collaboration in construction/engineering environments",
+          "category": "soft",
+          "level": "intermediate",
+          "source": "implicit",
+          "evidence": "Teamwork explicitly stated; roles require daily interaction with multidisciplinary project teams (engineers, contractors) for safety compliance.",
+          "confidence": 0.85
+        },
+        {
+          "name": "Training and safety awareness raising",
+          "category": "functional",
+          "level": "intermediate",
+          "source": "implicit",
+          "evidence": "Typical responsibility of 'Responsable de PRL' is ensuring on-site staff adherence to protocols—implies delivery of safety inductions and trainings.",
+          "confidence": 0.8
+        },
+        {
+          "name": "Spanish language (native proficiency)",
+          "category": "technical",
+          "level": "expert",
+          "source": "implicit",
+          "evidence": "All roles in Spain, Spanish job titles (e.g., 'Responsable de PRL')—native speaker assumed.",
+          "confidence": 0.99
+        }
+      ],
+      "clusters": {
+        "OSH & Safety Management (Construction)": [
+          "Occupational health and safety (OHS) management in construction",
+          "Risk assessment and mitigation (construction)",
+          "Implementation of safety protocols and compliance (construction/OSH regulations)",
+          "Incident investigation and reporting (OSH context)",
+          "Training and safety awareness raising"
+        ],
+        "Project & Client Coordination": [
+          "Construction project management (focus on safety)",
+          "International project coordination (OSH focus)",
+          "Client communication and stakeholder management (OSH/project context)"
+        ],
+        "Administrative and Productivity Software": [
+          "Microsoft office suite",
+          "Microsoft excel",
+          "Microsoft word",
+          "Documentation and report writing (MS Office, compliance focus)"
+        ],
+        "Languages": [
+          "English",
+          "Spanish language (native proficiency)"
+        ],
+        "Soft Skills for Project Environments": [
+          "Teamwork",
+          "Team leadership",
+          "Learning agility",
+          "Detail-oriented and responsible at work.",
+          "Dinámica",
+          "Adaptability to teamwork",
+          "Strong adaptability to work in foreign countries.",
+          "Gestión del tiempo"
+        ]
+      }
+    },
+    "structured_competencies": [
+      {
+        "competency": "team_leadership",
+        "type": "soft",
+        "level": "junior",
+        "source": "skills; role",
+        "evidence": "Skill explicitly listed: 'Team leadership' (Beginner); 'Responsable de PRL' roles involve some degree of safety team or crew guidance."
+      },
+      {
+        "competency": "teamwork",
+        "type": "soft",
+        "level": "mid",
+        "source": "skills; experience",
+        "evidence": "Skill explicitly listed: 'Teamwork' (Beginner), appears twice; roles require collaboration with multidisciplinary project teams (engineers, contractors) for safety compliance."
+      },
+      {
+        "competency": "adaptability",
+        "type": "soft",
+        "level": "mid",
+        "source": "skills; experience",
+        "evidence": "Explicit skills: 'Learning agility', 'Adaptability to teamwork', 'Strong adaptability to work in foreign countries.'"
+      },
+      {
+        "competency": "stakeholder_communication",
+        "type": "soft",
+        "level": "mid",
+        "source": "experience; skills",
+        "evidence": "Project with international client (SGS): 'Gestión de proyecto internacional con cliente del sector retail'; required clear communication on safety/compliance matters."
+      },
+      {
+        "competency": "problem_solving",
+        "type": "soft",
+        "level": "mid",
+        "source": "experience",
+        "evidence": "Risk assessment and mitigation work for OSH in construction requires analytical thinking and troubleshooting to ensure safety under variable construction conditions."
+      },
+      {
+        "competency": "self_management",
+        "type": "soft",
+        "level": "mid",
+        "source": "skills",
+        "evidence": "Explicit: 'Gestión del tiempo' (Beginner); multiple long-term roles in independent roles ('Responsable de PRL')."
+      },
+      {
+        "competency": "project_management",
+        "type": "functional",
+        "level": "mid",
+        "source": "experience",
+        "evidence": "'Responsable de PRL' in several large construction and international projects, overseeing safety/planning, executing OSH aspects."
+      },
+      {
+        "competency": "quality_assurance",
+        "type": "functional",
+        "level": "mid",
+        "source": "experience",
+        "evidence": "Implementation of safety protocols and compliance, repeated experience ensuring site adherence to regulatory standards."
+      },
+      {
+        "competency": "training_and_awareness",
+        "type": "functional",
+        "level": "mid",
+        "source": "experience",
+        "evidence": "Typical responsibility as 'Responsable de PRL' includes delivering safety inductions and awareness to construction teams."
+      },
+      {
+        "competency": "documentation_and_reporting",
+        "type": "functional",
+        "level": "mid",
+        "source": "skills; experience",
+        "evidence": "Explicit MS Office, Excel, Word; required for compliance documentation, incident reporting in OSH roles."
+      },
+      {
+        "competency": "client_management",
+        "type": "managerial",
+        "level": "mid",
+        "source": "experience",
+        "evidence": "'Gestión de proyecto internacional con cliente del sector retail' (SGS) — international client interface; role involved alignment and communication."
+      }
+    ],
+    "disambiguation_map": {
+      "PRL": {
+        "meaning": "Prevención de Riesgos Laborales (Occupational Health & Safety, OSH)",
+        "domain": "occupational_health_and_safety_in_construction",
+        "confidence": 1.0
+      },
+      "UTE": {
+        "meaning": "Unión Temporal de Empresas (Temporary Joint Venture in Construction/Engineering)",
+        "domain": "construction_project_management",
+        "confidence": 1.0
+      },
+      "Responsable de PRL": {
+        "meaning": "Health & Safety Manager (Occupational Health & Safety Responsible)",
+        "domain": "occupational_health_and_safety_in_construction",
+        "confidence": 1.0
+      },
+      "Centro de procesamiento de datos": {
+        "meaning": "Data Center (Physical facility for IT infrastructure)",
+        "domain": "construction_project_management",
+        "confidence": 0.98
+      },
+      "Gestión de proyecto internacional": {
+        "meaning": "Management of an international construction/engineering project, especially regarding OSH compliance",
+        "domain": "construction_project_management",
+        "confidence": 0.95
+      },
+      "Microsoft Office suite": {
+        "meaning": "Productivity software package (Word, Excel, etc.), used for project documentation, reporting, and administration",
+        "domain": "office_productivity_software",
+        "confidence": 1.0
+      },
+      "Microsoft Excel": {
+        "meaning": "Spreadsheet application used for data analysis, reporting, and safety documentation in project management",
+        "domain": "office_productivity_software",
+        "confidence": 1.0
+      },
+      "Microsoft Word": {
+        "meaning": "Word processing software used for writing reports, safety protocols, and documentation",
+        "domain": "office_productivity_software",
+        "confidence": 1.0
+      }
+    },
+    "synonym_map": {
+      "Microsoft Office suite": [
+        "Microsoft Office suite",
+        "MS Office",
+        "Microsoft Office",
+        "Office suite",
+        "Microsoft office suite"
+      ],
+      "Microsoft Excel": [
+        "Microsoft Excel",
+        "MS Excel",
+        "Excel",
+        "Microsoft excel"
+      ],
+      "Microsoft Word": [
+        "Microsoft Word",
+        "MS Word",
+        "Word",
+        "Microsoft word"
+      ],
+      "English": [
+        "English",
+        "Inglés"
+      ],
+      "Spanish": [
+        "Spanish",
+        "Español"
+      ],
+      "Occupational Health and Safety": [
+        "Occupational Health and Safety",
+        "OHS",
+        "OSH",
+        "Prevención de Riesgos Laborales",
+        "PRL",
+        "Health & Safety",
+        "Occupational health & safety"
+      ],
+      "Unión Temporal de Empresas": [
+        "Unión Temporal de Empresas",
+        "UTE",
+        "Temporary Joint Venture",
+        "Joint Venture"
+      ],
+      "Data Center": [
+        "Data Center",
+        "Centro de procesamiento de datos",
+        "Datacenter",
+        "Data Centre"
+      ],
+      "Teamwork": [
+        "Teamwork",
+        "Trabajo en equipo",
+        "Adaptability to teamwork"
+      ],
+      "Negotiation": [
+        "Negotiation",
+        "Negociación"
+      ],
+      "Time Management": [
+        "Time Management",
+        "Gestión del tiempo"
+      ],
+      "Learning Agility": [
+        "Learning Agility",
+        "Learning agility"
+      ],
+      "Detail-oriented": [
+        "Detail-oriented",
+        "Detail-oriented and responsible at work.",
+        "Attention to detail"
+      ],
+      "Dynamic": [
+        "Dynamic",
+        "Dinámica"
+      ],
+      "Team Leadership": [
+        "Team Leadership",
+        "Team leadership"
+      ],
+      "Adaptability": [
+        "Adaptability",
+        "Strong adaptability to work in foreign countries.",
+        "Adaptability to teamwork"
+      ]
+    },
+    "canonical_terms": {
+      "MS Office": "Microsoft Office suite",
+      "Microsoft Office": "Microsoft Office suite",
+      "Office suite": "Microsoft Office suite",
+      "Microsoft office suite": "Microsoft Office suite",
+      "MS Excel": "Microsoft Excel",
+      "Excel": "Microsoft Excel",
+      "Microsoft excel": "Microsoft Excel",
+      "MS Word": "Microsoft Word",
+      "Word": "Microsoft Word",
+      "Microsoft word": "Microsoft Word",
+      "Inglés": "English",
+      "Español": "Spanish",
+      "OHS": "Occupational Health and Safety",
+      "OSH": "Occupational Health and Safety",
+      "Prevención de Riesgos Laborales": "Occupational Health and Safety",
+      "PRL": "Occupational Health and Safety",
+      "Health & Safety": "Occupational Health and Safety",
+      "Occupational health & safety": "Occupational Health and Safety",
+      "UTE": "Unión Temporal de Empresas",
+      "Temporary Joint Venture": "Unión Temporal de Empresas",
+      "Joint Venture": "Unión Temporal de Empresas",
+      "Centro de procesamiento de datos": "Data Center",
+      "Datacenter": "Data Center",
+      "Data Centre": "Data Center",
+      "Trabajo en equipo": "Teamwork",
+      "Adaptability to teamwork": "Teamwork",
+      "Negociación": "Negotiation",
+      "Gestión del tiempo": "Time Management",
+      "Learning agility": "Learning Agility",
+      "Detail-oriented and responsible at work.": "Detail-oriented",
+      "Attention to detail": "Detail-oriented",
+      "Dinámica": "Dynamic",
+      "Team leadership": "Team Leadership",
+      "Strong adaptability to work in foreign countries.": "Adaptability"
+    }
+  },
+  "explainability": {
+    "sector_reasoning": "All core evidence points to lead responsibilities in occupational health and safety (PRL, OSH) specifically within large-scale construction and engineering projects. The repeated references to being 'Responsable de PRL' for major construction sites, with experience in both domestic and international projects, and employment with companies specialized in infrastructure and compliance (Cobra, UTE Itercon-Cobra, SGS), clearly situate the candidate within the domain of occupational safety in the construction sector. Although experienced in project management and compliance, the primary and repeated job function is as a senior OSH specialist within construction environments, making 'occupational_health_and_safety_in_construction' the most specific, accurate sector label.",
+    "sector_evidence": [
+      "Roles: 'Responsable de PRL', 'Técnico superior en prevención de riesgos laborales'",
+      "Companies: 'COBRA INSTALACIONES Y SERVICIOS SA' and 'UTE Itercon-Cobra' (both engineering/construction sector), 'SGS' (compliance/RL sector)",
+      "Experience: Health and safety management for large-scale construction projects (data center for AWS)",
+      "Role activities: 'Gestión de proyecto internacional con cliente del sector retail', 'Responsable de PRL en la construcción de un centro de procesamiento de datos'",
+      "Domain signals: PRL (Prevención de Riesgos Laborales/Occupational Health & Safety), compliance with safety standards, risk prevention in construction contexts"
+    ],
+    "seniority_reasoning": "Natalia López Andrés shows 9 years of experience in occupational safety roles within the construction sector, primarily as 'Responsable de PRL' (OSH manager/responsible), which in Spanish contexts equates to a lead-level responsibility. She led safety for major projects (notably data center builds for AWS, with international complexity) and demonstrated competencies in project oversight, stakeholder management, and project-specific training. While most listed explicit skills are marked at 'beginner', her role history denotes de facto technical and soft skill mastery necessary for project and site leadership. The combination of experience duration, title, and proven scope of responsibility firmly places her above 'senior', into 'lead' level. No evidence yet for principal (company- or industry-wide influence, >12 years). Confidence is moderate-high due to consistent evidence of project leadership, though explicit large team size or hierarchy management is not specified.",
+    "seniority_evidence": [
+      "9 years total experience in OSH roles: stated in profile",
+      "Job title: 'Responsable de PRL' (OSH Manager/Responsible), a lead-level title, repeatedly held in large-scale construction projects (AWS data centers) at two separate companies",
+      "Held ultimate responsibility for occupational health & safety in high-stakes construction environments (data centers, international projects)",
+      "Evidence of managing OSH project delivery: 'Gestión de proyecto internacional con cliente del sector retail'",
+      "Likely direct oversight/leadership of site safety teams or specialist crews (per industry and role norms)",
+      "Competencies in project management, stakeholder communication, and training/awareness raising, consistent with lead-level roles",
+      "No evidence of C-level or principal/expert indicators, but stronger than pure 'senior' (due to repeat project-level OSH leadership, scale, duration)"
+    ],
+    "disambiguation_summary": "All potentially ambiguous terms have been contextually disambiguated based on a primary domain of occupational health & safety in construction and major project management. Core domain/sector signals (company types, job titles, project activities) provide high confidence in all main disambiguations. No references found to software frameworks, general technology acronyms (e.g., SAP, Python, React), or domain-shifting terms. The role of 'PRL' is unambiguously occupational safety (not project or resource-related), 'UTE' is the joint venture vehicle typical in Spanish construction, data center refers to a physical build (not pure IT), and all Microsoft mentions indicate productivity software indispensable for documentation and compliance. No unresolved or remaining ambiguities identified."
+  }
+}

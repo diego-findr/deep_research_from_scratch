@@ -5,6 +5,8 @@ to analyze and enrich professional profiles.
 """
 
 import json
+import argparse
+from pathlib import Path
 from datetime import datetime
 
 # Load environment variables
@@ -14,62 +16,98 @@ load_dotenv()
 from profile_enrichment.enrichment_agent import enrich_profile
 
 
-def run_example():
-    """Run example profile enrichment."""
-    # Example profile: Industrial Automation Technician
-    industrial_profile = {
-        "id": "uuid-auto2025",
-        "full_name": "Luis Hidalgo",
-        "heading": "Técnico de automatización y sistemas de control industrial",
-        "description": (
-            "Especialista en automatización de plantas desalinizadoras mediante SCADA, "
-            "PLC (Siemens S7-300/1200), HMI y sistemas de telecontrol de procesos. "
-            "Experiencia en integración de sensores y actuadores para optimización energética, "
-            "validación de alarmas y control remoto. En proyectos recientes, también colaboré "
-            "con equipos de desarrollo en pruebas automáticas con Python y selenium para la "
-            "validación de software industrial."
-        ),
-        "experience_years": 6,
-        "skills": [
-            {"name": "automatización", "level": "Advanced"},
-            {"name": "SCADA", "level": "Advanced"},
-            {"name": "PLC", "level": "Advanced"},
-            {"name": "Python", "level": "Intermediate"},
-            {"name": "pruebas automáticas", "level": "Intermediate"},
-            {"name": "telecontrol", "level": "Intermediate"},
-        ],
-        "experiences": [
-            {
-                "role": "Técnico de Automatización",
-                "description": (
-                    "Diseño y mantenimiento de sistemas de control PLC y SCADA en plantas "
-                    "desalinizadoras, integración de sensores y HMI para supervisión remota."
-                ),
-                "company": "ICR Agua y Energía",
-            },
-            {
-                "role": "Ingeniero de Validación",
-                "description": (
-                    "Colaboración con desarrolladores en automatización de pruebas con "
-                    "Python y Selenium sobre entorno SCADA industrial."
-                ),
-                "company": "Tecnología Industrial Avanzada",
-            },
-        ],
-    }
+def load_profile_from_file(file_path: str) -> dict:
+    """Load a profile from a JSON file.
+    
+    Args:
+        file_path: Path to the JSON file containing the profile data.
+                  Can be a full path or just a filename (will look in tests/inputs/)
+        
+    Returns:
+        dict: The profile data
+    """
+    path = Path(file_path)
+    
+    # If it's just a name (no directory), look in tests/inputs/
+    if not path.parent.name and path.suffix != '.json':
+        path = Path('tests/inputs') / f"{file_path}.json"
+    elif not path.parent.name:
+        path = Path('tests/inputs') / file_path
+    
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
 
-    candidate_id = "ec142b18-befd-4f89-9f3d-98a7b53c3fr2"
+
+def run_example(input_file: str = None):
+    """Run example profile enrichment.
+    
+    Args:
+        input_file: Optional path to a JSON file containing profile data.
+                   If not provided, uses the hardcoded example profile.
+    """
+    # Load profile from file or use hardcoded example
+    if input_file:
+        print(f"📂 Loading profile from: {input_file}\n")
+        raw_profile = load_profile_from_file(input_file)
+        candidate_id = raw_profile.get("id", "unknown")
+        profile_name = raw_profile.get("full_name", "Unknown")
+    else:
+        print("📋 Using hardcoded example profile\n")
+        # Example profile: Industrial Automation Technician
+        raw_profile = {
+            "id": "uuid-auto2025",
+            "full_name": "Luis Hidalgo",
+            "heading": "Técnico de automatización y sistemas de control industrial",
+            "description": (
+                "Especialista en automatización de plantas desalinizadoras mediante SCADA, "
+                "PLC (Siemens S7-300/1200), HMI y sistemas de telecontrol de procesos. "
+                "Experiencia en integración de sensores y actuadores para optimización energética, "
+                "validación de alarmas y control remoto. En proyectos recientes, también colaboré "
+                "con equipos de desarrollo en pruebas automáticas con Python y selenium para la "
+                "validación de software industrial."
+            ),
+            "experience_years": 6,
+            "skills": [
+                {"name": "automatización", "level": "Advanced"},
+                {"name": "SCADA", "level": "Advanced"},
+                {"name": "PLC", "level": "Advanced"},
+                {"name": "Python", "level": "Intermediate"},
+                {"name": "pruebas automáticas", "level": "Intermediate"},
+                {"name": "telecontrol", "level": "Intermediate"},
+            ],
+            "experiences": [
+                {
+                    "role": "Técnico de Automatización",
+                    "description": (
+                        "Diseño y mantenimiento de sistemas de control PLC y SCADA en plantas "
+                        "desalinizadoras, integración de sensores y HMI para supervisión remota."
+                    ),
+                    "company": "ICR Agua y Energía",
+                },
+                {
+                    "role": "Ingeniero de Validación",
+                    "description": (
+                        "Colaboración con desarrolladores en automatización de pruebas con "
+                        "Python y Selenium sobre entorno SCADA industrial."
+                    ),
+                    "company": "Tecnología Industrial Avanzada",
+                },
+            ],
+        }
+        candidate_id = "ec142b18-befd-4f89-9f3d-98a7b53c3fr2"
+        profile_name = raw_profile["full_name"]
+
     metadata = {
         "timestamp": datetime.now().isoformat(),
-        "source": "linkedin_scraper_v2",
+        "source": "linkedin_scraper_v2" if not input_file else "database",
         "sector_objetivo": "industrial|utilities",
     }
 
-    print("🔄 Enriching industrial profile...\n")
+    print(f"🔄 Enriching profile for: {profile_name}...\n")
 
     # Enrich the profile
     enriched = enrich_profile(
-        raw_profile=industrial_profile,
+        raw_profile=raw_profile,
         candidate_id=candidate_id,
         metadata=metadata,
     )
@@ -99,7 +137,18 @@ def run_example():
         print(f"   Confidence: {details['confidence']:.2f}")
 
     # Save enriched profile
-    output_path = "enriched_profile_example.json"
+    # Create output directory if it doesn't exist
+    output_dir = Path("tests/outputs")
+    output_dir.mkdir(parents=True, exist_ok=True)
+    
+    # Generate output filename based on input
+    if input_file:
+        input_path = Path(input_file)
+        output_filename = f"enriched_{input_path.stem}.json"
+    else:
+        output_filename = "enriched_profile_example.json"
+    
+    output_path = output_dir / output_filename
     with open(output_path, "w", encoding="utf-8") as f:
         json.dump(enriched, f, indent=2, ensure_ascii=False)
 
@@ -109,4 +158,15 @@ def run_example():
 
 
 if __name__ == "__main__":
-    run_example()
+    parser = argparse.ArgumentParser(
+        description="Enrich a professional profile using the Profile Enrichment System",
+        epilog="Example: python src/profile_enrichment/example.py -i noelia"
+    )
+    parser.add_argument(
+        "-i", "--input",
+        type=str,
+        help="Name or path to JSON file (e.g., 'noelia' will load tests/inputs/noelia.json)"
+    )
+    
+    args = parser.parse_args()
+    run_example(input_file=args.input)
