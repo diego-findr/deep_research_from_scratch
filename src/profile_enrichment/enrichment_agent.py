@@ -96,7 +96,9 @@ def analyze_context(state: ProfileEnrichmentState) -> Dict[str, Any]:
     prompt = CONTEXT_ANALYSIS_PROMPT.format(profile_data=profile_data_str)
 
     # Use structured output with Pydantic model
-    model_with_structure = structured_model.with_structured_output(ContextAnalysis)
+    model_with_structure = structured_model.with_structured_output(
+        ContextAnalysis, method="function_calling"
+    )
     response = model_with_structure.invoke(prompt)
 
     # Convert Pydantic model to dict for storage
@@ -123,7 +125,9 @@ def infer_sector(state: ProfileEnrichmentState) -> Dict[str, Any]:
         context_analysis=context_analysis,
     )
 
-    model_with_structure = structured_model.with_structured_output(SectorInference)
+    model_with_structure = structured_model.with_structured_output(
+        SectorInference, method="function_calling"
+    )
     response = model_with_structure.invoke(prompt)
 
     sector_inference_dict = response.model_dump()
@@ -150,7 +154,9 @@ def disambiguate_terms(state: ProfileEnrichmentState) -> Dict[str, Any]:
         context_analysis=context_analysis,
     )
 
-    model_with_structure = reasoning_model.with_structured_output(DisambiguationResults)
+    model_with_structure = reasoning_model.with_structured_output(
+        DisambiguationResults, method="function_calling"
+    )
     response = model_with_structure.invoke(prompt)
 
     disambiguation_dict = response.model_dump()
@@ -179,7 +185,9 @@ def extract_skills(state: ProfileEnrichmentState) -> Dict[str, Any]:
         disambiguation_results=disambiguation_results,
     )
 
-    model_with_structure = reasoning_model.with_structured_output(SkillsExtraction)
+    model_with_structure = reasoning_model.with_structured_output(
+        SkillsExtraction, method="function_calling"
+    )
     response = model_with_structure.invoke(prompt)
 
     skills_dict = response.model_dump()
@@ -204,7 +212,9 @@ def analyze_competencies(state: ProfileEnrichmentState) -> Dict[str, Any]:
         skills_extraction=skills_extraction,
     )
 
-    model_with_structure = reasoning_model.with_structured_output(CompetenciesAnalysis)
+    model_with_structure = reasoning_model.with_structured_output(
+        CompetenciesAnalysis, method="function_calling"
+    )
     response = model_with_structure.invoke(prompt)
 
     competencies_dict = response.model_dump()
@@ -233,7 +243,9 @@ def normalize_terms(state: ProfileEnrichmentState) -> Dict[str, Any]:
         skills_extraction=skills_extraction,
     )
 
-    model_with_structure = structured_model.with_structured_output(NormalizationResults)
+    model_with_structure = structured_model.with_structured_output(
+        NormalizationResults, method="function_calling"
+    )
     response = model_with_structure.invoke(prompt)
 
     normalization_dict = response.model_dump()
@@ -262,7 +274,9 @@ def infer_seniority(state: ProfileEnrichmentState) -> Dict[str, Any]:
         competencies_analysis=competencies_analysis,
     )
 
-    model_with_structure = structured_model.with_structured_output(SeniorityInference)
+    model_with_structure = structured_model.with_structured_output(
+        SeniorityInference, method="function_calling"
+    )
     response = model_with_structure.invoke(prompt)
 
     seniority_dict = response.model_dump()
@@ -325,7 +339,10 @@ def assemble_enriched_profile(state: ProfileEnrichmentState) -> Dict[str, Any]:
             "structured_skills": {
                 "explicit": skills_extraction["explicit_skills"],
                 "implicit": skills_extraction["implicit_skills"],
-                "clusters": skills_extraction["skill_clusters"],
+                "clusters": {
+                    cluster["cluster_name"]: cluster["skills"]
+                    for cluster in skills_extraction.get("skill_clusters", [])
+                },
             },
             "structured_competencies": competencies_analysis["competencies"],
             "disambiguation_map": {
@@ -336,8 +353,14 @@ def assemble_enriched_profile(state: ProfileEnrichmentState) -> Dict[str, Any]:
                 }
                 for term in disambiguation_results["disambiguated_terms"]
             },
-            "synonym_map": normalization_results["normalized_synonyms"],
-            "canonical_terms": normalization_results["canonical_terms"],
+            "synonym_map": {
+                syn["term"]: syn["synonyms"]
+                for syn in normalization_results.get("normalized_synonyms", [])
+            },
+            "canonical_terms": {
+                canon["variation"]: canon["canonical"]
+                for canon in normalization_results.get("canonical_terms", [])
+            },
         },
         # Add explainability section
         "explainability": {

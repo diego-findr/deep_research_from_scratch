@@ -136,6 +136,13 @@ class Skill(BaseModel):
     )
 
 
+class SkillCluster(BaseModel):
+    """Schema for a skill cluster."""
+
+    cluster_name: str = Field(description="Name of the skill cluster")
+    skills: List[str] = Field(description="List of skills in this cluster")
+
+
 class SkillsExtraction(BaseModel):
     """Schema for comprehensive skills extraction."""
 
@@ -145,8 +152,9 @@ class SkillsExtraction(BaseModel):
     implicit_skills: List[Skill] = Field(
         description="Skills inferred from experience and activities",
     )
-    skill_clusters: Dict[str, List[str]] = Field(
+    skill_clusters: List[SkillCluster] = Field(
         description="Related skills grouped by domain/category",
+        default_factory=list,
     )
 
 
@@ -184,17 +192,41 @@ class CompetenciesAnalysis(BaseModel):
     )
 
 
+class SynonymMap(BaseModel):
+    """Schema for synonym mapping."""
+
+    term: str = Field(description="Primary term")
+    synonyms: List[str] = Field(description="List of synonym variations")
+
+
+class CanonicalMapping(BaseModel):
+    """Schema for canonical term mapping."""
+
+    variation: str = Field(description="Term variation")
+    canonical: str = Field(description="Canonical term")
+
+
+class TechnologyCategory(BaseModel):
+    """Schema for technology taxonomy category."""
+
+    category: str = Field(description="Category name")
+    technologies: List[str] = Field(description="Technologies in this category")
+
+
 class NormalizationResults(BaseModel):
     """Schema for term normalization and synonym mapping."""
 
-    normalized_synonyms: Dict[str, List[str]] = Field(
+    normalized_synonyms: List[SynonymMap] = Field(
         description="Synonym maps for key terms (e.g., 'React': ['React', 'React.js', 'ReactJS'])",
+        default_factory=list,
     )
-    canonical_terms: Dict[str, str] = Field(
+    canonical_terms: List[CanonicalMapping] = Field(
         description="Mapping from variations to canonical term",
+        default_factory=list,
     )
-    technology_taxonomy: Dict[str, List[str]] = Field(
+    technology_taxonomy: List[TechnologyCategory] = Field(
         description="Technology grouped by category",
+        default_factory=list,
     )
 
 

@@ -434,6 +434,7 @@ Perform comprehensive skills extraction:
    - Group related skills (e.g., "React Ecosystem": React, Redux, React Router)
    - Identify skill stacks (e.g., MERN stack, SCADA stack)
    - Map complementary skills
+   - Return as list of cluster objects with cluster_name and skills list
 </instructions>
 
 <implicit_skills_inference_guide>
@@ -497,7 +498,7 @@ EXPERT:
 Provide:
 - explicit_skills: List of Skill objects for stated skills
 - implicit_skills: List of Skill objects for inferred skills
-- skill_clusters: Dictionary grouping related skills
+- skill_clusters: List of cluster objects with cluster_name and skills
 
 Each Skill should have:
 - name: Skill name
@@ -715,45 +716,55 @@ Create normalization mappings:
 
 <normalization_examples>
 Example 1 - Web Developer:
-normalized_synonyms:
-  "React": ["React", "React.js", "ReactJS", "React JS"]
-  "Node.js": ["Node", "NodeJS", "Node.js", "Nodejs"]
-  "JavaScript": ["JavaScript", "JS", "ECMAScript", "ES6", "ES2015+"]
-  "TypeScript": ["TypeScript", "TS"]
+normalized_synonyms: [
+  {term: "React", synonyms: ["React", "React.js", "ReactJS", "React JS"]},
+  {term: "Node.js", synonyms: ["Node", "NodeJS", "Node.js", "Nodejs"]},
+  {term: "JavaScript", synonyms: ["JavaScript", "JS", "ECMAScript", "ES6"]},
+  {term: "TypeScript", synonyms: ["TypeScript", "TS"]}
+]
 
-canonical_terms:
-  "React.js": "React"
-  "ReactJS": "React"
-  "NodeJS": "Node.js"
-  "JS": "JavaScript"
+canonical_terms: [
+  {variation: "React.js", canonical: "React"},
+  {variation: "ReactJS", canonical: "React"},
+  {variation: "NodeJS", canonical: "Node.js"},
+  {variation: "JS", canonical: "JavaScript"}
+]
 
-technology_taxonomy:
-  "frontend": ["React", "HTML", "CSS", "JavaScript"]
-  "backend": ["Node.js", "Express"]
-  "databases": ["MongoDB", "PostgreSQL"]
+technology_taxonomy: [
+  {category: "frontend", technologies: ["React", "HTML", "CSS", "JavaScript"]},
+  {category: "backend", technologies: ["Node.js", "Express"]},
+  {category: "databases", technologies: ["MongoDB", "PostgreSQL"]}
+]
 
 Example 2 - Industrial Automation:
-normalized_synonyms:
-  "SCADA": ["SCADA", "Supervisory Control and Data Acquisition"]
-  "PLC": ["PLC", "Programmable Logic Controller"]
-  "Siemens S7": ["S7-300", "S7-1200", "Siemens S7", "Step 7"]
+normalized_synonyms: [
+  {term: "SCADA", synonyms: ["SCADA", "Supervisory Control and Data Acquisition"]},
+  {term: "PLC", synonyms: ["PLC", "Programmable Logic Controller"]},
+  {term: "Siemens S7", synonyms: ["S7-300", "S7-1200", "Siemens S7", "Step 7"]}
+]
 
-canonical_terms:
-  "Supervisory Control and Data Acquisition": "SCADA"
-  "Programmable Logic Controller": "PLC"
-  "S7-300": "Siemens S7"
+canonical_terms: [
+  {variation: "Supervisory Control and Data Acquisition", canonical: "SCADA"},
+  {variation: "Programmable Logic Controller", canonical: "PLC"},
+  {variation: "S7-300", canonical: "Siemens S7"}
+]
 
-technology_taxonomy:
-  "control_systems": ["SCADA", "DCS", "PLC"]
-  "hmi": ["HMI", "SCADA visualization"]
-  "protocols": ["OPC", "Modbus", "Profibus"]
+technology_taxonomy: [
+  {category: "control_systems", technologies: ["SCADA", "DCS", "PLC"]},
+  {category: "hmi", technologies: ["HMI", "SCADA visualization"]},
+  {category: "protocols", technologies: ["OPC", "Modbus", "Profibus"]}
+]
 </normalization_examples>
 
 <output_requirements>
 Provide:
-- normalized_synonyms: Dict[str, List[str]] - term to all variations
-- canonical_terms: Dict[str, str] - variation to canonical
-- technology_taxonomy: Dict[str, List[str]] - category to technologies
+- normalized_synonyms: List of SynonymMap objects (term and synonyms list)
+- canonical_terms: List of CanonicalMapping objects (variation to canonical)
+- technology_taxonomy: List of TechnologyCategory objects (category and technologies)
+
+Each SynonymMap: {term: "React", synonyms: ["React", "React.js", "ReactJS"]}
+Each CanonicalMapping: {variation: "ReactJS", canonical: "React"}
+Each TechnologyCategory: {category: "frontend", technologies: ["React", "Vue"]}
 </output_requirements>
 
 Be comprehensive and include common variations."""
