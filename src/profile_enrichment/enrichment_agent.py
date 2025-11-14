@@ -24,6 +24,7 @@ from profile_enrichment.state import (
     CompetenciesAnalysis,
     NormalizationResults,
     SeniorityInference,
+    IdealRolesInference,
 )
 from profile_enrichment.prompts import (
     CONTEXT_ANALYSIS_PROMPT,
@@ -33,6 +34,7 @@ from profile_enrichment.prompts import (
     COMPETENCIES_ANALYSIS_PROMPT,
     NORMALIZATION_PROMPT,
     SENIORITY_INFERENCE_PROMPT,
+    IDEAL_ROLES_INFERENCE_PROMPT,
 )
 
 
@@ -287,6 +289,52 @@ def infer_seniority(state: ProfileEnrichmentState) -> Dict[str, Any]:
     return {"seniority_inference": json.dumps(seniority_dict, ensure_ascii=False)}
 
 
+def infer_ideal_roles(state: ProfileEnrichmentState) -> Dict[str, Any]:
+    """
+    Infer ideal roles for the candidate based on their career trajectory.
+
+    Analyzes the candidate's experience with recency weighting (more weight to
+    recent roles) to determine the most suitable roles they should pursue.
+    Recent experience (last 2-5 years) is weighted more heavily.
+
+    Returns updated state with ideal_roles_inference.
+    """
+    profile_data_str = format_profile_data(state["raw_profile"])
+    
+    # Parse previous analysis results
+    sector_inference = json.loads(state["sector_inference"])
+    seniority_inference = json.loads(state["seniority_inference"])
+    skills_extraction = json.loads(state["skills_extraction"])
+    competencies_analysis = json.loads(state["competencies_analysis"])
+    
+    # Format skills and competencies for the prompt
+    all_skills = skills_extraction.get("explicit_skills", []) + skills_extraction.get("implicit_skills", [])
+    key_skills = "\n".join([f"- {skill['name']} ({skill['level']})" for skill in all_skills[:15]])
+    
+    key_competencies = "\n".join([
+        f"- {comp['competency']} ({comp['type']}, {comp['level']})" 
+        for comp in competencies_analysis.get("competencies", [])[:10]
+    ])
+
+    prompt = IDEAL_ROLES_INFERENCE_PROMPT.format(
+        profile_data=profile_data_str,
+        sector=sector_inference.get("primary_sector", "unknown"),
+        seniority_level=seniority_inference.get("seniority_level", "unknown"),
+        years_experience=seniority_inference.get("years_experience_estimate", 0),
+        key_skills=key_skills,
+        key_competencies=key_competencies,
+    )
+
+    model_with_structure = structured_model.with_structured_output(
+        IdealRolesInference, method="function_calling"
+    )
+    response = model_with_structure.invoke(prompt)
+
+    ideal_roles_dict = response.model_dump()
+
+    return {"ideal_roles_inference": json.dumps(ideal_roles_dict, ensure_ascii=False)}
+
+
 def assemble_enriched_profile(state: ProfileEnrichmentState) -> Dict[str, Any]:
     """
     Assemble the final enriched profile with all analysis results.
@@ -304,6 +352,7 @@ def assemble_enriched_profile(state: ProfileEnrichmentState) -> Dict[str, Any]:
     competencies_analysis = json.loads(state["competencies_analysis"])
     normalization_results = json.loads(state["normalization_results"])
     seniority_inference = json.loads(state["seniority_inference"])
+    ideal_roles_inference = json.loads(state["ideal_roles_inference"])
 
     # Build enriched profile structure
     enriched_profile = {
@@ -324,6 +373,7 @@ def assemble_enriched_profile(state: ProfileEnrichmentState) -> Dict[str, Any]:
                 "competencies_analysis": competencies_analysis,
                 "normalization": normalization_results,
                 "seniority_inference": seniority_inference,
+                "ideal_roles_inference": ideal_roles_inference,
             },
             # Flattened key insights for easy access
             "key_insights": {
@@ -337,6 +387,8 @@ def assemble_enriched_profile(state: ProfileEnrichmentState) -> Dict[str, Any]:
                 "disambiguated_terms_count": len(
                     disambiguation_results["disambiguated_terms"]
                 ),
+                "primary_ideal_role": ideal_roles_inference["primary_role"]["role_name"],
+                "primary_role_fit_score": ideal_roles_inference["primary_role"]["fit_score"],
             },
             # Quick-access structured data
             "structured_skills": {
@@ -364,6 +416,13 @@ def assemble_enriched_profile(state: ProfileEnrichmentState) -> Dict[str, Any]:
                 canon["variation"]: canon["canonical"]
                 for canon in normalization_results.get("canonical_terms", [])
             },
+            # Add ideal roles section
+            "ideal_roles": {
+                "primary_role": ideal_roles_inference["primary_role"],
+                "alternative_roles": ideal_roles_inference.get("alternative_roles", []),
+                "career_trajectory": ideal_roles_inference["career_trajectory"],
+                "recent_focus": ideal_roles_inference["recent_focus"],
+            },
         },
         # Add explainability section
         "explainability": {
@@ -372,6 +431,7 @@ def assemble_enriched_profile(state: ProfileEnrichmentState) -> Dict[str, Any]:
             "seniority_reasoning": seniority_inference["reasoning"],
             "seniority_evidence": seniority_inference["evidence"],
             "disambiguation_summary": disambiguation_results["summary"],
+            "ideal_roles_reasoning": ideal_roles_inference["reasoning"],
         },
     }
 
@@ -392,7 +452,8 @@ def build_enrichment_graph() -> StateGraph:
     5. analyze_competencies: Identify professional competencies
     6. normalize_terms: Create synonym maps
     7. infer_seniority: Determine seniority level
-    8. assemble_enriched_profile: Build final enriched output
+    8. infer_ideal_roles: Identify ideal roles based on career trajectory (with recency weighting)
+    9. assemble_enriched_profile: Build final enriched output
 
     Returns compiled StateGraph ready for execution.
     """
@@ -407,6 +468,7 @@ def build_enrichment_graph() -> StateGraph:
     graph_builder.add_node("analyze_competencies", analyze_competencies)
     graph_builder.add_node("normalize_terms", normalize_terms)
     graph_builder.add_node("infer_seniority", infer_seniority)
+    graph_builder.add_node("infer_ideal_roles", infer_ideal_roles)
     graph_builder.add_node("assemble_enriched_profile", assemble_enriched_profile)
 
     # Add edges to define the flow
@@ -417,7 +479,8 @@ def build_enrichment_graph() -> StateGraph:
     graph_builder.add_edge("extract_skills", "analyze_competencies")
     graph_builder.add_edge("analyze_competencies", "normalize_terms")
     graph_builder.add_edge("normalize_terms", "infer_seniority")
-    graph_builder.add_edge("infer_seniority", "assemble_enriched_profile")
+    graph_builder.add_edge("infer_seniority", "infer_ideal_roles")
+    graph_builder.add_edge("infer_ideal_roles", "assemble_enriched_profile")
     graph_builder.add_edge("assemble_enriched_profile", END)
 
     # Compile and return
@@ -479,6 +542,7 @@ def enrich_profile(
         "competencies_analysis": None,
         "normalization_results": None,
         "seniority_inference": None,
+        "ideal_roles_inference": None,
         "enriched_profile": None,
     }
 

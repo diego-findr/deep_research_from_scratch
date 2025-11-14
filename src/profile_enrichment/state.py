@@ -34,6 +34,7 @@ class ProfileEnrichmentState(TypedDict):
     competencies_analysis: Optional[str]
     normalization_results: Optional[str]
     seniority_inference: Optional[str]
+    ideal_roles_inference: Optional[str]
 
     # Final enriched output
     enriched_profile: Optional[Dict[str, Any]]
@@ -247,4 +248,50 @@ class SeniorityInference(BaseModel):
     )
     reasoning: str = Field(
         description="Explanation of seniority determination",
+    )
+
+
+class IdealRole(BaseModel):
+    """Schema for a single ideal role suggestion."""
+
+    role_name: str = Field(
+        description="Name of the ideal role (e.g., 'Technical Support Manager', 'Senior Network Engineer')",
+    )
+    fit_score: float = Field(
+        description="Fit score 0.0-1.0 indicating how well this role matches the candidate",
+    )
+    reasoning: str = Field(
+        description="Explanation of why this role is a good fit",
+    )
+    required_skills_match: List[str] = Field(
+        description="Key skills the candidate has that match this role",
+    )
+    growth_areas: List[str] = Field(
+        description="Areas where the candidate could grow into this role",
+        default_factory=list,
+    )
+
+
+class IdealRolesInference(BaseModel):
+    """Schema for ideal roles inference based on recent experience trajectory."""
+
+    primary_role: IdealRole = Field(
+        description="The most likely ideal role based on most recent experience",
+    )
+    alternative_roles: List[IdealRole] = Field(
+        description="Other potential roles that could be a good fit (up to 3)",
+        default_factory=list,
+    )
+    career_trajectory: str = Field(
+        description="Summary of career trajectory showing progression over time",
+    )
+    recent_focus: str = Field(
+        description="Primary focus in the most recent 2-3 years of experience",
+    )
+    recency_weight_applied: bool = Field(
+        description="Whether recency weighting was applied (more weight to recent roles)",
+        default=True,
+    )
+    reasoning: str = Field(
+        description="Overall explanation of role recommendations",
     )
