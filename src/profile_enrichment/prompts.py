@@ -717,42 +717,42 @@ Create normalization mappings:
 <normalization_examples>
 Example 1 - Web Developer:
 normalized_synonyms: [
-  {term: "React", synonyms: ["React", "React.js", "ReactJS", "React JS"]},
-  {term: "Node.js", synonyms: ["Node", "NodeJS", "Node.js", "Nodejs"]},
-  {term: "JavaScript", synonyms: ["JavaScript", "JS", "ECMAScript", "ES6"]},
-  {term: "TypeScript", synonyms: ["TypeScript", "TS"]}
+  {{term: "React", synonyms: ["React", "React.js", "ReactJS", "React JS"]}},
+  {{term: "Node.js", synonyms: ["Node", "NodeJS", "Node.js", "Nodejs"]}},
+  {{term: "JavaScript", synonyms: ["JavaScript", "JS", "ECMAScript", "ES6"]}},
+  {{term: "TypeScript", synonyms: ["TypeScript", "TS"]}}
 ]
 
 canonical_terms: [
-  {variation: "React.js", canonical: "React"},
-  {variation: "ReactJS", canonical: "React"},
-  {variation: "NodeJS", canonical: "Node.js"},
-  {variation: "JS", canonical: "JavaScript"}
+  {{variation: "React.js", canonical: "React"}},
+  {{variation: "ReactJS", canonical: "React"}},
+  {{variation: "NodeJS", canonical: "Node.js"}},
+  {{variation: "JS", canonical: "JavaScript"}}
 ]
 
 technology_taxonomy: [
-  {category: "frontend", technologies: ["React", "HTML", "CSS", "JavaScript"]},
-  {category: "backend", technologies: ["Node.js", "Express"]},
-  {category: "databases", technologies: ["MongoDB", "PostgreSQL"]}
+  {{category: "frontend", technologies: ["React", "HTML", "CSS", "JavaScript"]}},
+  {{category: "backend", technologies: ["Node.js", "Express"]}},
+  {{category: "databases", technologies: ["MongoDB", "PostgreSQL"]}}
 ]
 
 Example 2 - Industrial Automation:
 normalized_synonyms: [
-  {term: "SCADA", synonyms: ["SCADA", "Supervisory Control and Data Acquisition"]},
-  {term: "PLC", synonyms: ["PLC", "Programmable Logic Controller"]},
-  {term: "Siemens S7", synonyms: ["S7-300", "S7-1200", "Siemens S7", "Step 7"]}
+  {{term: "SCADA", synonyms: ["SCADA", "Supervisory Control and Data Acquisition"]}},
+  {{term: "PLC", synonyms: ["PLC", "Programmable Logic Controller"]}},
+  {{term: "Siemens S7", synonyms: ["S7-300", "S7-1200", "Siemens S7", "Step 7"]}}
 ]
 
 canonical_terms: [
-  {variation: "Supervisory Control and Data Acquisition", canonical: "SCADA"},
-  {variation: "Programmable Logic Controller", canonical: "PLC"},
-  {variation: "S7-300", canonical: "Siemens S7"}
+  {{variation: "Supervisory Control and Data Acquisition", canonical: "SCADA"}},
+  {{variation: "Programmable Logic Controller", canonical: "PLC"}},
+  {{variation: "S7-300", canonical: "Siemens S7"}}
 ]
 
 technology_taxonomy: [
-  {category: "control_systems", technologies: ["SCADA", "DCS", "PLC"]},
-  {category: "hmi", technologies: ["HMI", "SCADA visualization"]},
-  {category: "protocols", technologies: ["OPC", "Modbus", "Profibus"]}
+  {{category: "control_systems", technologies: ["SCADA", "DCS", "PLC"]}},
+  {{category: "hmi", technologies: ["HMI", "SCADA visualization"]}},
+  {{category: "protocols", technologies: ["OPC", "Modbus", "Profibus"]}}
 ]
 </normalization_examples>
 
@@ -762,9 +762,9 @@ Provide:
 - canonical_terms: List of CanonicalMapping objects (variation to canonical)
 - technology_taxonomy: List of TechnologyCategory objects (category and technologies)
 
-Each SynonymMap: {term: "React", synonyms: ["React", "React.js", "ReactJS"]}
-Each CanonicalMapping: {variation: "ReactJS", canonical: "React"}
-Each TechnologyCategory: {category: "frontend", technologies: ["React", "Vue"]}
+Each SynonymMap: {{term: "React", synonyms: ["React", "React.js", "ReactJS"]}}
+Each CanonicalMapping: {{variation: "ReactJS", canonical: "React"}}
+Each TechnologyCategory: {{category: "frontend", technologies: ["React", "Vue"]}}
 </output_requirements>
 
 Be comprehensive and include common variations."""

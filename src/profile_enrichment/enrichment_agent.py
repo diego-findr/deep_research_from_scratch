@@ -11,6 +11,10 @@ from pydantic import ValidationError
 from langgraph.graph import StateGraph, START, END
 from langchain.chat_models import init_chat_model
 
+# Load environment variables at module level
+from dotenv import load_dotenv
+load_dotenv()
+
 from profile_enrichment.state import (
     ProfileEnrichmentState,
     ContextAnalysis,
@@ -34,11 +38,10 @@ from profile_enrichment.prompts import (
 
 # ===== CONFIGURATION =====
 
-# Initialize models
-# Using Claude for complex reasoning tasks
-reasoning_model = init_chat_model(model="anthropic:claude-sonnet-4-20250514")
-# Using GPT-4 for structured outputs
+# Initialize models - Using only OpenAI models
+# GPT-4.1 for all operations (structured outputs and reasoning)
 structured_model = init_chat_model(model="openai:gpt-4.1")
+reasoning_model = init_chat_model(model="openai:gpt-4.1")
 
 
 # ===== UTILITY FUNCTIONS =====

@@ -6,6 +6,11 @@ to analyze and enrich professional profiles.
 
 import json
 from datetime import datetime
+
+# Load environment variables
+from dotenv import load_dotenv
+load_dotenv()
+
 from profile_enrichment.enrichment_agent import enrich_profile
 
 
