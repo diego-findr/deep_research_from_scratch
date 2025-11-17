@@ -75,7 +75,7 @@ src/job_enrichment/
 ├── example.py               # Ejemplo de uso
 └── README.md                # Esta documentación
 
-tests/
+tests/jobs/
 ├── inputs/
 │   └── acciona_job.json     # Ejemplo de oferta de Acciona
 └── outputs/
@@ -176,8 +176,11 @@ Los outputs de ambos sistemas son compatibles y utilizan esquemas similares para
 # Ejecutar con ejemplo de Acciona
 python src/job_enrichment/example.py -i acciona_job
 
-# Ver output
-cat tests/outputs/enriched_acciona_job.json | jq .semantic_enrichment.key_insights
+# Ver output (PowerShell)
+Get-Content tests/jobs/outputs/enriched_acciona_job.json | ConvertFrom-Json | Select-Object -ExpandProperty semantic_enrichment | Select-Object -ExpandProperty key_insights
+
+# Ver output (bash/Linux)
+cat tests/jobs/outputs/enriched_acciona_job.json | jq .semantic_enrichment.key_insights
 ```
 
 ## 📝 Notas

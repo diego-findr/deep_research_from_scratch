@@ -1,0 +1,514 @@
+{
+  "job_id": "33f69f97-ba05-413b-a8f3-75723a5ac605",
+  "timestamp": "2025-11-17T12:23:12.666562",
+  "metadata": {
+    "timestamp": "2025-11-17T12:23:12.666562",
+    "source": "database"
+  },
+  "raw_job_posting": {
+    "id": "33f69f97-ba05-413b-a8f3-75723a5ac605",
+    "job_title": "Veterinario/a de Madres (Sector Porcino)",
+    "company_name": "Grupo Costa",
+    "company_description": "Grupo Empresarial Costa es uno de los principales grupos agroalimentarios en España, en plena transformación digital. Apostamos por la tecnología y buscamos talento que quiera crecer con nosotros en proyectos reales de impacto.",
+    "remote": false,
+    "remote_amount": 0,
+    "description": "Buscamos un Veterinario/a de Madres especializado en el sector porcino para unirse a nuestro equipo en la provincia de Huesca. Este rol es ideal para graduados en veterinaria que deseen desarrollar su carrera en el ámbito de la cría porcina, con un enfoque en el cuidado y manejo de madres. No se requiere experiencia previa, pero se valorará el interés y la disposición para aprender y crecer en el sector.",
+    "min_salary_range": 26000,
+    "max_salary_range": 31000,
+    "responsibilities": [
+      "Supervisar la salud y bienestar de las madres porcinas.",
+      "Implementar programas de salud y vacunación.",
+      "Colaborar con el equipo para mejorar prácticas de cría.",
+      "Realizar diagnósticos y tratamientos veterinarios.",
+      "Mantener registros precisos de salud animal."
+    ],
+    "experience_required": 0,
+    "published_date": "2025-11-13",
+    "locations": [
+      "Barbastro, Aragon, Spain",
+      "Monzón, Aragon, Spain"
+    ],
+    "mandatory_skills": [],
+    "optional_skills": [],
+    "mandatory_languages": [],
+    "optional_languages": []
+  },
+  "semantic_enrichment": {
+    "version": "1.0",
+    "enrichment_timestamp": "2025-11-17T12:23:12.666562",
+    "analysis_components": {
+      "context_analysis": {
+        "key_indicators": [
+          "Company: Grupo Costa",
+          "Role: Veterinario/a de Madres (Sector Porcino)",
+          "Department: Veterinary/Animal Health, specifically swine management",
+          "Entry-level (no experience required)",
+          "Location: Barbastro and Monzón, Aragon, Spain",
+          "Key responsibilities: Supervising health and wellbeing of sow pigs, implementing health and vaccination programs, collaborating to improve breeding practices, performing diagnostics and treatments, record keeping"
+        ],
+        "domain_signals": [
+          "Agroalimentario (Agri-food) sector",
+          "Porcine/swine industry focus",
+          "Veterinary specialization",
+          "Animal breeding and health"
+        ],
+        "technology_mentions": [
+          "Digital transformation (company level, not specific to tools)"
+        ],
+        "responsibility_patterns": [
+          "Technical (animal healthcare, diagnostics, treatments)",
+          "Operational (implementing programs, record-keeping)",
+          "Collaborative (teamwork to improve breeding practices)",
+          "No explicit leadership or strategic management expectations (entry-level)"
+        ],
+        "company_context": "Grupo Costa is one of Spain's leading agri-food business groups, currently undergoing digital transformation. The company values technology adoption and offers real-impact projects. It seeks talent open to growth and learning in a technologically evolving, large-scale agricultural environment."
+      },
+      "sector_inference": {
+        "primary_sector": "agriculture_livestock",
+        "secondary_sectors": [
+          "veterinary_services",
+          "agri-food"
+        ],
+        "confidence": 0.98,
+        "evidence": [
+          "Role is 'Veterinario/a de Madres (Sector Porcino)' with direct responsibility for swine health and breeding",
+          "Company (Grupo Costa) is a leading agri-food business with a focus on livestock (porcine/swine sector)",
+          "Responsibilities center on animal health, breeding, and operational care of livestock (sow pigs)",
+          "Explicit mention of the porcine sector and animal management",
+          "Veterinary expertise required, focusing on food animal production livestock"
+        ],
+        "reasoning": "The core activity of the job—veterinary work focused on the health and breeding of swine (sow pigs)—is central to the agriculture/livestock sector. The company operates in the agri-food value chain and the job involves direct management of farm animals for food production, making agriculture/livestock the most appropriate primary sector. Veterinary services are a critical adjacent sector, along with the wider agri-food industry context."
+      },
+      "skills_extraction": {
+        "explicit_skills": [
+          {
+            "name": "Veterinaria",
+            "category": "domain_specific",
+            "importance": "required",
+            "source": "explicit",
+            "evidence": "Buscamos un Veterinario/a de Madres especializado en el sector porcino; este rol es ideal para graduados en veterinaria."
+          }
+        ],
+        "implicit_skills": [
+          {
+            "name": "Manejo y cuidado de madres porcinas",
+            "category": "domain_specific",
+            "importance": "required",
+            "source": "implicit",
+            "evidence": "Supervisar la salud y bienestar de las madres porcinas."
+          },
+          {
+            "name": "Supervisión de salud animal",
+            "category": "technical",
+            "importance": "required",
+            "source": "implicit",
+            "evidence": "Supervisar la salud y bienestar de las madres porcinas."
+          },
+          {
+            "name": "Implementación de programas de salud y vacunación",
+            "category": "technical",
+            "importance": "required",
+            "source": "implicit",
+            "evidence": "Implementar programas de salud y vacunación."
+          },
+          {
+            "name": "Diagnóstico veterinario",
+            "category": "technical",
+            "importance": "required",
+            "source": "implicit",
+            "evidence": "Realizar diagnósticos y tratamientos veterinarios."
+          },
+          {
+            "name": "Tratamiento veterinario",
+            "category": "technical",
+            "importance": "required",
+            "source": "implicit",
+            "evidence": "Realizar diagnósticos y tratamientos veterinarios."
+          },
+          {
+            "name": "Colaboración y trabajo en equipo",
+            "category": "soft",
+            "importance": "required",
+            "source": "implicit",
+            "evidence": "Colaborar con el equipo para mejorar prácticas de cría."
+          },
+          {
+            "name": "Mejora continua de prácticas de cría",
+            "category": "functional",
+            "importance": "preferred",
+            "source": "implicit",
+            "evidence": "Colaborar con el equipo para mejorar prácticas de cría."
+          },
+          {
+            "name": "Registro y documentación de datos",
+            "category": "functional",
+            "importance": "required",
+            "source": "implicit",
+            "evidence": "Mantener registros precisos de salud animal."
+          },
+          {
+            "name": "Interés y disposición para aprender",
+            "category": "soft",
+            "importance": "required",
+            "source": "implicit",
+            "evidence": "Se valorará el interés y la disposición para aprender y crecer en el sector."
+          },
+          {
+            "name": "Adaptabilidad al entorno tecnológico",
+            "category": "soft",
+            "importance": "nice_to_have",
+            "source": "implicit",
+            "evidence": "Grupo Costa es una empresa en plena transformación digital y apuesta por la tecnología."
+          },
+          {
+            "name": "Comunicación efectiva",
+            "category": "soft",
+            "importance": "preferred",
+            "source": "implicit",
+            "evidence": "Colaborar con el equipo para mejorar prácticas de cría."
+          }
+        ],
+        "skill_clusters": []
+      },
+      "seniority_inference": {
+        "required_seniority": "junior",
+        "confidence": 0.98,
+        "evidence": [
+          "Description states 'No se requiere experiencia previa' (No previous experience required).",
+          "The role is described as ideal for recent graduates in veterinary medicine.",
+          "No leadership or supervisory tasks are mentioned.",
+          "Responsibilities focus on learning, executing, and collaboration, rather than autonomy or strategy.",
+          "Salary range aligns with entry-level roles in the veterinary/agro sector."
+        ],
+        "years_experience_required": 0,
+        "reasoning": "The job explicitly states that no previous experience is required and encourages recent graduates to apply. Responsibilities are operational and supervised, with a strong focus on learning and executing defined tasks. There are no requirements for leadership, independent project management, or strategic responsibility. The position title lacks seniority indicators and the scope is limited to tactical and hands-on caregiving, consistent with a junior level."
+      },
+      "competencies_analysis": {
+        "required_competencies": [
+          {
+            "competency": "Veterinaria y conocimiento en salud animal porcina",
+            "type": "functional",
+            "importance": "required",
+            "evidence": "Buscamos un Veterinario/a de Madres especializado en el sector porcino; este rol es ideal para graduados en veterinaria."
+          },
+          {
+            "competency": "Manejo y cuidado de madres porcinas",
+            "type": "functional",
+            "importance": "required",
+            "evidence": "Supervisar la salud y bienestar de las madres porcinas."
+          },
+          {
+            "competency": "Implementación de programas de salud y vacunación",
+            "type": "functional",
+            "importance": "required",
+            "evidence": "Implementar programas de salud y vacunación."
+          },
+          {
+            "competency": "Diagnóstico y tratamiento veterinario",
+            "type": "functional",
+            "importance": "required",
+            "evidence": "Realizar diagnósticos y tratamientos veterinarios."
+          },
+          {
+            "competency": "Registro y documentación precisa de datos",
+            "type": "functional",
+            "importance": "required",
+            "evidence": "Mantener registros precisos de salud animal."
+          },
+          {
+            "competency": "Colaboración y trabajo en equipo",
+            "type": "soft",
+            "importance": "required",
+            "evidence": "Colaborar con el equipo para mejorar prácticas de cría."
+          },
+          {
+            "competency": "Interés y disposición para aprender y desarrollarse",
+            "type": "soft",
+            "importance": "required",
+            "evidence": "Se valorará el interés y la disposición para aprender y crecer en el sector."
+          },
+          {
+            "competency": "Mejora continua de prácticas de cría",
+            "type": "functional",
+            "importance": "preferred",
+            "evidence": "Colaborar con el equipo para mejorar prácticas de cría."
+          },
+          {
+            "competency": "Comunicación efectiva",
+            "type": "soft",
+            "importance": "preferred",
+            "evidence": "Colaborar con el equipo para mejorar prácticas de cría."
+          },
+          {
+            "competency": "Adaptabilidad al entorno tecnológico/digital",
+            "type": "soft",
+            "importance": "nice_to_have",
+            "evidence": "Grupo Costa es una empresa en plena transformación digital y apuesta por la tecnología."
+          }
+        ],
+        "leadership_level": "individual_contributor",
+        "autonomy_level": "supervised",
+        "collaboration_scope": "team"
+      },
+      "ideal_candidate_profile": {
+        "ideal_background": "Licenciatura o grado en Veterinaria, con especial interés en el sector porcino, especialmente en la gestión y cuidado de madres. Trayectoria académica sólida y alguna experiencia práctica (por ejemplo, prácticas o pasantías) en entornos de ganadería porcina es valorada pero no imprescindible. Marcada orientación hacia el aprendizaje continuo, el trabajo colaborativo, y la adaptación a procesos y tecnologías en evolución en el sector agroalimentario.",
+        "must_have_experience": [
+          "Título universitario en Veterinaria reconocido en España",
+          "Conocimientos básicos de manejo y salud animal, especialmente porcino (pueden proceder de estudios, prácticas o formación)",
+          "Interés genuino en la cría y cuidado de madres porcinas",
+          "Capacidad para trabajar en equipo y comunicarte claramente",
+          "Interés y disposición para aprender y adaptarse al entorno y protocolo de trabajo",
+          "Habilidad para documentar y registrar información relevante"
+        ],
+        "preferred_experience": [
+          "Prácticas universitarias en explotaciones porcinas, especialmente orientadas a madres",
+          "Experiencia previa (aunque sea breve) en manejo o supervisión de madres porcinas",
+          "Participación en proyectos de mejora continua o innovación en salud animal",
+          "Familiaridad con programas de salud y vacunación animal",
+          "Experiencia básica en el uso de herramientas digitales para registros sanitarios"
+        ],
+        "career_trajectory": "Graduado/a reciente en Veterinaria, idealmente con prácticas en granjas porcinas o proyectos de salud animal. Puede provenir de roles de apoyo o pasantías relacionadas con animales de granja, preferiblemente porcinos. Busca desarrollar su carrera en un entorno de producción animal profesionalizado en el sector agroalimentario.",
+        "key_differentiators": [
+          "Experiencia práctica significativa en granjas porcinas, especialmente en el manejo de madres",
+          "Iniciativa para proponer mejoras en los sistemas de cuidado y manejo animal",
+          "Capacidad de adaptación al cambio y a la incorporación de nuevas tecnologías",
+          "Actitud proactiva de aprendizaje y desarrollo profesional",
+          "Excelentes habilidades interpersonales y de comunicación con personal de campo y equipos multidisciplinares",
+          "Aporte demostrado a proyectos de digitalización o modernización en el entorno agroalimentario (aunque sean a nivel junior)"
+        ],
+        "potential_red_flags": [
+          "Falta del título de Veterinaria homologado en España",
+          "Desinterés o aversión por el entorno rural o la producción animal intensiva",
+          "Falta de disposición para trabajo de campo o tareas rutinarias",
+          "Dificultad para trabajar en equipo o comunicarse con el personal de granja",
+          "Actitud poco comprometida hacia el aprendizaje o el desarrollo en el sector porcino",
+          "Expectativas excesivas de teletrabajo (es puesto 100% presencial)"
+        ],
+        "reasoning": "El puesto está orientado a perfiles junior en Veterinaria, sin requerir experiencia laboral previa pero sí interés, conocimientos básicos y disposición para aprender en entorno porcino. Requiere personas abiertas, colaborativas y con ganas de desarrollar carrera en uno de los principales grupos agroalimentarios de España, en un entorno que apuesta por la digitalización y la mejora continua. Prácticas previas, interés en la innovación y la actitud proactiva diferenciarán a los mejores candidatos. La falta de interés en el sector, problemas de comunicación, o expectativas no realistas en cuanto a condiciones (presencialidad, poca rotación o trabajo rutinario) serían claros desajustes."
+      },
+      "normalization": {
+        "normalized_synonyms": [],
+        "canonical_terms": [],
+        "technology_taxonomy": []
+      }
+    },
+    "key_insights": {
+      "primary_sector": "agriculture_livestock",
+      "sector_confidence": 0.98,
+      "required_seniority": "junior",
+      "years_experience_required": 0,
+      "total_skills_identified": 12,
+      "required_competencies_count": 10,
+      "leadership_level": "individual_contributor"
+    },
+    "structured_skills": {
+      "explicit": [
+        {
+          "name": "Veterinaria",
+          "category": "domain_specific",
+          "importance": "required",
+          "source": "explicit",
+          "evidence": "Buscamos un Veterinario/a de Madres especializado en el sector porcino; este rol es ideal para graduados en veterinaria."
+        }
+      ],
+      "implicit": [
+        {
+          "name": "Manejo y cuidado de madres porcinas",
+          "category": "domain_specific",
+          "importance": "required",
+          "source": "implicit",
+          "evidence": "Supervisar la salud y bienestar de las madres porcinas."
+        },
+        {
+          "name": "Supervisión de salud animal",
+          "category": "technical",
+          "importance": "required",
+          "source": "implicit",
+          "evidence": "Supervisar la salud y bienestar de las madres porcinas."
+        },
+        {
+          "name": "Implementación de programas de salud y vacunación",
+          "category": "technical",
+          "importance": "required",
+          "source": "implicit",
+          "evidence": "Implementar programas de salud y vacunación."
+        },
+        {
+          "name": "Diagnóstico veterinario",
+          "category": "technical",
+          "importance": "required",
+          "source": "implicit",
+          "evidence": "Realizar diagnósticos y tratamientos veterinarios."
+        },
+        {
+          "name": "Tratamiento veterinario",
+          "category": "technical",
+          "importance": "required",
+          "source": "implicit",
+          "evidence": "Realizar diagnósticos y tratamientos veterinarios."
+        },
+        {
+          "name": "Colaboración y trabajo en equipo",
+          "category": "soft",
+          "importance": "required",
+          "source": "implicit",
+          "evidence": "Colaborar con el equipo para mejorar prácticas de cría."
+        },
+        {
+          "name": "Mejora continua de prácticas de cría",
+          "category": "functional",
+          "importance": "preferred",
+          "source": "implicit",
+          "evidence": "Colaborar con el equipo para mejorar prácticas de cría."
+        },
+        {
+          "name": "Registro y documentación de datos",
+          "category": "functional",
+          "importance": "required",
+          "source": "implicit",
+          "evidence": "Mantener registros precisos de salud animal."
+        },
+        {
+          "name": "Interés y disposición para aprender",
+          "category": "soft",
+          "importance": "required",
+          "source": "implicit",
+          "evidence": "Se valorará el interés y la disposición para aprender y crecer en el sector."
+        },
+        {
+          "name": "Adaptabilidad al entorno tecnológico",
+          "category": "soft",
+          "importance": "nice_to_have",
+          "source": "implicit",
+          "evidence": "Grupo Costa es una empresa en plena transformación digital y apuesta por la tecnología."
+        },
+        {
+          "name": "Comunicación efectiva",
+          "category": "soft",
+          "importance": "preferred",
+          "source": "implicit",
+          "evidence": "Colaborar con el equipo para mejorar prácticas de cría."
+        }
+      ],
+      "clusters": []
+    },
+    "structured_competencies": [
+      {
+        "competency": "Veterinaria y conocimiento en salud animal porcina",
+        "type": "functional",
+        "importance": "required",
+        "evidence": "Buscamos un Veterinario/a de Madres especializado en el sector porcino; este rol es ideal para graduados en veterinaria."
+      },
+      {
+        "competency": "Manejo y cuidado de madres porcinas",
+        "type": "functional",
+        "importance": "required",
+        "evidence": "Supervisar la salud y bienestar de las madres porcinas."
+      },
+      {
+        "competency": "Implementación de programas de salud y vacunación",
+        "type": "functional",
+        "importance": "required",
+        "evidence": "Implementar programas de salud y vacunación."
+      },
+      {
+        "competency": "Diagnóstico y tratamiento veterinario",
+        "type": "functional",
+        "importance": "required",
+        "evidence": "Realizar diagnósticos y tratamientos veterinarios."
+      },
+      {
+        "competency": "Registro y documentación precisa de datos",
+        "type": "functional",
+        "importance": "required",
+        "evidence": "Mantener registros precisos de salud animal."
+      },
+      {
+        "competency": "Colaboración y trabajo en equipo",
+        "type": "soft",
+        "importance": "required",
+        "evidence": "Colaborar con el equipo para mejorar prácticas de cría."
+      },
+      {
+        "competency": "Interés y disposición para aprender y desarrollarse",
+        "type": "soft",
+        "importance": "required",
+        "evidence": "Se valorará el interés y la disposición para aprender y crecer en el sector."
+      },
+      {
+        "competency": "Mejora continua de prácticas de cría",
+        "type": "functional",
+        "importance": "preferred",
+        "evidence": "Colaborar con el equipo para mejorar prácticas de cría."
+      },
+      {
+        "competency": "Comunicación efectiva",
+        "type": "soft",
+        "importance": "preferred",
+        "evidence": "Colaborar con el equipo para mejorar prácticas de cría."
+      },
+      {
+        "competency": "Adaptabilidad al entorno tecnológico/digital",
+        "type": "soft",
+        "importance": "nice_to_have",
+        "evidence": "Grupo Costa es una empresa en plena transformación digital y apuesta por la tecnología."
+      }
+    ],
+    "ideal_candidate": {
+      "background": "Licenciatura o grado en Veterinaria, con especial interés en el sector porcino, especialmente en la gestión y cuidado de madres. Trayectoria académica sólida y alguna experiencia práctica (por ejemplo, prácticas o pasantías) en entornos de ganadería porcina es valorada pero no imprescindible. Marcada orientación hacia el aprendizaje continuo, el trabajo colaborativo, y la adaptación a procesos y tecnologías en evolución en el sector agroalimentario.",
+      "must_have_experience": [
+        "Título universitario en Veterinaria reconocido en España",
+        "Conocimientos básicos de manejo y salud animal, especialmente porcino (pueden proceder de estudios, prácticas o formación)",
+        "Interés genuino en la cría y cuidado de madres porcinas",
+        "Capacidad para trabajar en equipo y comunicarte claramente",
+        "Interés y disposición para aprender y adaptarse al entorno y protocolo de trabajo",
+        "Habilidad para documentar y registrar información relevante"
+      ],
+      "preferred_experience": [
+        "Prácticas universitarias en explotaciones porcinas, especialmente orientadas a madres",
+        "Experiencia previa (aunque sea breve) en manejo o supervisión de madres porcinas",
+        "Participación en proyectos de mejora continua o innovación en salud animal",
+        "Familiaridad con programas de salud y vacunación animal",
+        "Experiencia básica en el uso de herramientas digitales para registros sanitarios"
+      ],
+      "career_trajectory": "Graduado/a reciente en Veterinaria, idealmente con prácticas en granjas porcinas o proyectos de salud animal. Puede provenir de roles de apoyo o pasantías relacionadas con animales de granja, preferiblemente porcinos. Busca desarrollar su carrera en un entorno de producción animal profesionalizado en el sector agroalimentario.",
+      "key_differentiators": [
+        "Experiencia práctica significativa en granjas porcinas, especialmente en el manejo de madres",
+        "Iniciativa para proponer mejoras en los sistemas de cuidado y manejo animal",
+        "Capacidad de adaptación al cambio y a la incorporación de nuevas tecnologías",
+        "Actitud proactiva de aprendizaje y desarrollo profesional",
+        "Excelentes habilidades interpersonales y de comunicación con personal de campo y equipos multidisciplinares",
+        "Aporte demostrado a proyectos de digitalización o modernización en el entorno agroalimentario (aunque sean a nivel junior)"
+      ],
+      "potential_red_flags": [
+        "Falta del título de Veterinaria homologado en España",
+        "Desinterés o aversión por el entorno rural o la producción animal intensiva",
+        "Falta de disposición para trabajo de campo o tareas rutinarias",
+        "Dificultad para trabajar en equipo o comunicarse con el personal de granja",
+        "Actitud poco comprometida hacia el aprendizaje o el desarrollo en el sector porcino",
+        "Expectativas excesivas de teletrabajo (es puesto 100% presencial)"
+      ]
+    },
+    "synonym_map": [],
+    "canonical_terms": []
+  },
+  "explainability": {
+    "sector_reasoning": "The core activity of the job—veterinary work focused on the health and breeding of swine (sow pigs)—is central to the agriculture/livestock sector. The company operates in the agri-food value chain and the job involves direct management of farm animals for food production, making agriculture/livestock the most appropriate primary sector. Veterinary services are a critical adjacent sector, along with the wider agri-food industry context.",
+    "sector_evidence": [
+      "Role is 'Veterinario/a de Madres (Sector Porcino)' with direct responsibility for swine health and breeding",
+      "Company (Grupo Costa) is a leading agri-food business with a focus on livestock (porcine/swine sector)",
+      "Responsibilities center on animal health, breeding, and operational care of livestock (sow pigs)",
+      "Explicit mention of the porcine sector and animal management",
+      "Veterinary expertise required, focusing on food animal production livestock"
+    ],
+    "seniority_reasoning": "The job explicitly states that no previous experience is required and encourages recent graduates to apply. Responsibilities are operational and supervised, with a strong focus on learning and executing defined tasks. There are no requirements for leadership, independent project management, or strategic responsibility. The position title lacks seniority indicators and the scope is limited to tactical and hands-on caregiving, consistent with a junior level.",
+    "seniority_evidence": [
+      "Description states 'No se requiere experiencia previa' (No previous experience required).",
+      "The role is described as ideal for recent graduates in veterinary medicine.",
+      "No leadership or supervisory tasks are mentioned.",
+      "Responsibilities focus on learning, executing, and collaboration, rather than autonomy or strategy.",
+      "Salary range aligns with entry-level roles in the veterinary/agro sector."
+    ],
+    "ideal_candidate_reasoning": "El puesto está orientado a perfiles junior en Veterinaria, sin requerir experiencia laboral previa pero sí interés, conocimientos básicos y disposición para aprender en entorno porcino. Requiere personas abiertas, colaborativas y con ganas de desarrollar carrera en uno de los principales grupos agroalimentarios de España, en un entorno que apuesta por la digitalización y la mejora continua. Prácticas previas, interés en la innovación y la actitud proactiva diferenciarán a los mejores candidatos. La falta de interés en el sector, problemas de comunicación, o expectativas no realistas en cuanto a condiciones (presencialidad, poca rotación o trabajo rutinario) serían claros desajustes."
+  }
+}

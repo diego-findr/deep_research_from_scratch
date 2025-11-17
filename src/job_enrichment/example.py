@@ -26,18 +26,18 @@ def load_job_from_file(file_path: str) -> dict:
     
     Args:
         file_path: Path to the JSON file containing the job posting data.
-                  Can be a full path or just a filename (will look in tests/inputs/)
+                  Can be a full path or just a filename (will look in tests/jobs/inputs/)
         
     Returns:
         dict: The job posting data
     """
     path = Path(file_path)
     
-    # If it's just a name (no directory), look in tests/inputs/
+    # If it's just a name (no directory), look in tests/jobs/inputs/
     if not path.parent.name and path.suffix != '.json':
-        path = Path('tests/inputs') / f"{file_path}.json"
+        path = Path('tests/jobs/inputs') / f"{file_path}.json"
     elif not path.parent.name:
-        path = Path('tests/inputs') / file_path
+        path = Path('tests/jobs/inputs') / file_path
     
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
@@ -161,7 +161,7 @@ def run_example(input_file: str = None):
 
     # Save enriched job posting
     # Create output directory if it doesn't exist
-    output_dir = Path("tests/outputs")
+    output_dir = Path("tests/jobs/outputs")
     output_dir.mkdir(parents=True, exist_ok=True)
     
     # Generate output filename based on input
@@ -188,7 +188,7 @@ if __name__ == "__main__":
     parser.add_argument(
         "-i", "--input",
         type=str,
-        help="Name or path to JSON file (e.g., 'acciona_job' will load tests/inputs/acciona_job.json)"
+        help="Name or path to JSON file (e.g., 'acciona_job' will load tests/jobs/inputs/acciona_job.json)"
     )
     
     args = parser.parse_args()

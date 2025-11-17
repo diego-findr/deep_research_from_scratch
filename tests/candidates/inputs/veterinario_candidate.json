@@ -1,0 +1,130 @@
+{
+  "id": "322b0acc-9f16-47fd-a35d-8722f1b7c788",
+  "first_name": "Alba",
+  "last_name": "Ortega",
+  "full_name": "Alba Ortega",
+  "heading": "Tecnico de calidad en MAZANA PIENSOS COMPUESTOS SL",
+  "description": null,
+  "linkedin_url": "https://www.linkedin.com/in/alba-ortega-5b0b00231/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+  "email": null,
+  "current_city": "Huesca",
+  "current_country": "Spain",
+  "experience_years": 10,
+  "verified": false,
+  "skills": [
+    {
+      "id": "bdc49b09-5003-49f5-a8a9-d17a9192099e",
+      "name": "Communication skills",
+      "level": "Beginner"
+    },
+    {
+      "id": "f98338db-290a-41dc-9c83-87cbc23a654a",
+      "name": "Atención al cliente",
+      "level": "Beginner"
+    },
+    {
+      "id": "aface8f0-7f80-4489-a9f4-19a51af7dee3",
+      "name": "Research competencies",
+      "level": "Beginner"
+    },
+    {
+      "id": "73668f3d-1364-406c-9efd-94c2e3e61b0f",
+      "name": "Oratoria",
+      "level": "Beginner"
+    },
+    {
+      "id": "4f341d74-f902-4fb8-ae13-01a685d6450d",
+      "name": "Diagnostic veterinary medicine",
+      "level": "Beginner"
+    },
+    {
+      "id": "fa59ac9d-cba1-489c-a0fe-ac7c3302f9da",
+      "name": "Gestión del tiempo",
+      "level": "Beginner"
+    },
+    {
+      "id": "44bb4a8e-8032-48b6-a037-9c72291e4728",
+      "name": "Collaboration in teams",
+      "level": "Beginner"
+    },
+    {
+      "id": "39b38b7a-438c-478c-9c21-2ab7ff66ab8b",
+      "name": "Animal Husbandry",
+      "level": "Beginner"
+    },
+    {
+      "id": "013c1765-5a69-4cde-9ac1-cb9d03ea8f82",
+      "name": "Resolución de problemas",
+      "level": "Beginner"
+    },
+    {
+      "id": "e0c6474c-7140-4cdb-886f-4d8d51da35a4",
+      "name": "Control de calidad",
+      "level": "Beginner"
+    },
+    {
+      "id": "9c703763-e1a5-4494-b20b-b7af56739188",
+      "name": "Animal Welfare",
+      "level": "Beginner"
+    },
+    {
+      "id": "df5b2c9f-3d74-4e74-bf72-48e881fb7d6d",
+      "name": "Gestión de proyectos",
+      "level": "Beginner"
+    },
+    {
+      "id": "3cd4c503-a0be-46d3-b891-9bef4917237a",
+      "name": "Regulatory compliance",
+      "level": "Beginner"
+    },
+    {
+      "id": "1af10d6d-2237-44ea-b65f-1f4bbe0b7561",
+      "name": "Análisis de datos",
+      "level": "Beginner"
+    },
+    {
+      "id": "129678bb-b6e6-4f02-9953-d1824df127fa",
+      "name": "Formación y desarrollo",
+      "level": "Beginner"
+    }
+  ],
+  "languages": [],
+  "experiences": [
+    {
+      "id": "7c720493-6eae-4531-8f92-79befbb70b1b",
+      "created_at": "2025-11-13T17:13:01.051446+00:00",
+      "candidate_id": "322b0acc-9f16-47fd-a35d-8722f1b7c788",
+      "role": "Veterinaria",
+      "description": null,
+      "start_date": "2023-01-01",
+      "end_date": null,
+      "location": null,
+      "contract": null,
+      "company": "MAZANA PIENSOS COMPUESTOS SL"
+    },
+    {
+      "id": "e57769ca-6e2a-4e71-9a58-e638c7c745dc",
+      "created_at": "2025-11-13T17:13:01.051446+00:00",
+      "candidate_id": "322b0acc-9f16-47fd-a35d-8722f1b7c788",
+      "role": "Veterinaria",
+      "description": null,
+      "start_date": "2017-08-01",
+      "end_date": "2022-12-31",
+      "location": null,
+      "contract": null,
+      "company": "Agropecuaria Obanos, S.A."
+    },
+    {
+      "id": "879f3f74-984c-4fc0-aac1-df737a56bfc4",
+      "created_at": "2025-11-13T17:13:01.051446+00:00",
+      "candidate_id": "322b0acc-9f16-47fd-a35d-8722f1b7c788",
+      "role": "Veterinario",
+      "description": null,
+      "start_date": "2016-03-01",
+      "end_date": "2017-07-31",
+      "location": "Huesca",
+      "contract": null,
+      "company": "Tests and Trials"
+    }
+  ]
+}
