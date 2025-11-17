@@ -1,61 +1,46 @@
-[project]
-name = "deep_research_from_scratch"
+[tool.poetry]
+name = "candidate-job-matching-system"
 version = "0.1.0"
-description = "Build a deep research agent from scratch"
-requires-python = ">=3.11,<3.14"
-dependencies = [
-"langgraph>=1.0.0",
-"langchain>=1.0.0",
-"langchain-openai>=1.0.0",
-"langchain-anthropic>=1.0.0",
-"langchain_community>=0.4",
-"langchain_tavily>=0.2.12",
-"langchain_mcp_adapters>=0.1.11",
-"pydantic>=2.0.0",
-"rich>=14.0.0",
-"jupyter>=1.0.0",
-"ipykernel>=6.20.0",
-"tavily-python>=0.5.0",
-"python-dotenv>=1.0.0",
-]
+description = "Multi-agent system for evaluating candidate-job fit using LangGraph"
+authors = ["findr <contact@findr.com>"]
+readme = "README.md"
+packages = [{include = "src"}]
 
-[project.optional-dependencies]
-dev = ["mypy>=1.11.1", "ruff>=0.6.1"]
+[tool.poetry.dependencies]
+python = "^3.11"
+langgraph = "^0.2.0"
+langchain = "^0.3.0"
+langchain-openai = "^0.2.0"
+langchain-anthropic = "^0.2.0"
+pydantic = "^2.0"
+pydantic-settings = "^2.0"
+python-dotenv = "^1.0"
+typing-extensions = "^4.0"
 
-[build-system]
-requires = ["setuptools>=73.0.0", "wheel"]
-build-backend = "setuptools.build_meta"
+[tool.poetry.dev-dependencies]
+pytest = "^7.0"
+pytest-asyncio = "^0.23.0"
+mypy = "^1.0"
+black = "^24.0"
+ruff = "^0.1"
+ipython = "^8.0"
+jupyter = "^1.0"
 
-[tool.setuptools]
-packages = ["deep_research_from_scratch", "profile_enrichment"]
+[tool.mypy]
+strict = true
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
 
-[tool.setuptools.package-dir]
-"deep_research_from_scratch" = "src/deep_research_from_scratch"
-"profile_enrichment" = "src/profile_enrichment"
-
-[tool.setuptools.package-data]
-"*" = ["py.typed"]
+[tool.black]
+line-length = 100
+target-version = ['py311']
 
 [tool.ruff]
-lint.select = [
-    "E",    # pycodestyle
-    "F",    # pyflakes
-    "I",    # isort
-    "D",    # pydocstyle
-    "D401", # First line should be in imperative mood
-    "T201",
-    "UP",
-]
-lint.ignore = [
-    "UP006",
-    "UP007",
-    "UP035",
-    "D417",
-    "E501",
-]
+line-length = 100
+target-version = "py311"
 
-[tool.ruff.lint.per-file-ignores]
-"tests/*" = ["D", "UP"]
-
-[tool.ruff.lint.pydocstyle]
-convention = "google"
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,204 +1,472 @@
-# 🧱 Deep Research From Scratch 
+# Candidate-Job Matching System with LangGraph Multi-Agent Architecture
 
-Deep research has broken out as one of the most popular agent applications. [OpenAI](https://openai.com/index/introducing-deep-research/), [Anthropic](https://www.anthropic.com/engineering/built-multi-agent-research-system), [Perplexity](https://www.perplexity.ai/hub/blog/introducing-perplexity-deep-research), and [Google](https://gemini.google/overview/deep-research/?hl=en) all have deep research products that produce comprehensive reports using [various sources](https://www.anthropic.com/news/research) of context. There are also many [open](https://huggingface.co/blog/open-deep-research) [source](https://github.com/google-gemini/gemini-fullstack-langgraph-quickstart) implementations. We built an [open deep researcher](https://github.com/langchain-ai/open_deep_research) that is simple and configurable, allowing users to bring their own models, search tools, and MCP servers. In this repo, we'll build a deep researcher from scratch! Here is a map of the major pieces that we will build:
+A production-ready AI system that evaluates candidate-job compatibility using a swarm of specialized agents built with LangGraph. The system provides explainable, multi-dimensional assessments of fit between candidates and job offers.
 
-![overview](https://github.com/user-attachments/assets/b71727bd-0094-40c4-af5e-87cdb02123b4)
+## 🎯 Overview
 
-## 🚀 Quickstart 
+This system implements a **Hybrid Collaborative-Supervisor** architecture where:
 
-### Prerequisites
+1. **Specialized agents** independently evaluate different dimensions (sector, skills, seniority, competencies, etc.)
+2. Agents **collaborate** by sharing findings and validating consistency
+3. An **orchestrator agent** synthesizes all evaluations into a final decision with full explainability
 
-- **Node.js and npx** (required for MCP server in notebook 3):
-```bash
-# Install Node.js (includes npx)
-# On macOS with Homebrew:
-brew install node
+### Key Features
 
-# On Ubuntu/Debian:
-curl -fsSL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
-sudo apt-get install -y nodejs
+- ✅ **Multi-dimensional evaluation**: 9 specialized agents covering all aspects of candidate-job fit
+- ✅ **Semantic matching**: Robust disambiguation and synonym resolution
+- ✅ **Explainable AI**: Every decision is traceable to evidence
+- ✅ **Dynamic weighting**: Scoring adapts based on job requirements
+- ✅ **Production-ready**: Type-safe, tested, documented, and configurable
+- ✅ **Sector-agnostic**: Works across industries (construction, software, healthcare, etc.)
 
-# Verify installation:
-node --version
-npx --version
+## 📊 System Architecture
+
+```
+START
+  ↓
+[Input Validation]
+  ↓
+[Parallel Analysis Phase] ─┬─ Sector Alignment Agent
+                           ├─ Skills Matching Agent
+                           ├─ Seniority Calibration Agent
+                           ├─ Competencies Evaluator Agent
+                           ├─ Domain Expert Agent (dynamic)
+                           ├─ Experience Relevance Agent
+                           ├─ Cultural & Soft Fit Agent
+                           └─ Salary Compensation Agent
+  ↓
+[Aggregation]
+  ↓
+[Red Flags Detector]
+  ↓
+[Orchestrator Synthesis]
+  ↓
+[Output Formatting]
+  ↓
+END
 ```
 
-- Ensure you're using Python 3.11 or later.
-- This version is required for optimal compatibility with LangGraph.
-```bash
-python3 --version
-```
-- [uv](https://docs.astral.sh/uv/) package manager
-```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
-# Update PATH to use the new uv version
-export PATH="/Users/$USER/.local/bin:$PATH"
-```
+### Specialized Agents
+
+1. **Sector Alignment Agent**: Validates sector compatibility between candidate and job
+2. **Skills Matching Agent**: Compares technical and functional skills
+3. **Seniority Calibration Agent**: Validates experience level alignment
+4. **Competencies Evaluator Agent**: Assesses functional and soft competencies
+5. **Domain Expert Agent**: Provides sector-specific evaluation (dynamically instantiated)
+6. **Experience Relevance Agent**: Evaluates career trajectory and experience depth
+7. **Cultural & Soft Fit Agent**: Assesses language, location, and cultural compatibility
+8. **Red Flags Detector Agent**: Aggregates and classifies warning signals
+9. **Salary Compensation Agent**: Evaluates salary expectations alignment (if available)
+10. **Orchestrator Agent**: Synthesizes all evaluations into final decision
+
+## 🚀 Quick Start
 
 ### Installation
 
-1. Clone the repository:
 ```bash
-git clone https://github.com/langchain-ai/deep_research_from_scratch
-cd deep_research_from_scratch
+# Clone the repository
+git clone <repository-url>
+cd candidate_job_matching_system
+
+# Install dependencies with Poetry
+poetry install
+
+# Or with pip
+pip install -r requirements.txt
+
+# Copy environment configuration
+cp env.example .env
+# Edit .env with your API keys
 ```
 
-2. Install the package and dependencies (this automatically creates and manages the virtual environment):
+### Configuration
+
+Edit `.env` file:
+
 ```bash
-uv sync
+# LLM Configuration
+LLM_PROVIDER=openai  # or anthropic
+OPENAI_API_KEY=your-key-here
+LLM_MODEL=gpt-4o
+LLM_TEMPERATURE=0.1
+
+# Scoring Weights (must sum to 1.0)
+WEIGHT_SECTOR=0.20
+WEIGHT_SKILLS=0.25
+WEIGHT_SENIORITY=0.15
+WEIGHT_COMPETENCIES=0.15
+WEIGHT_DOMAIN_EXPERT=0.10
+WEIGHT_EXPERIENCE=0.10
+WEIGHT_CULTURAL=0.05
+
+# Classification Thresholds
+PERFECT_FIT_THRESHOLD=85
+GOOD_FIT_THRESHOLD=70
+ACCEPTABLE_FIT_THRESHOLD=55
 ```
 
-3. Create a `.env` file in the project root with your API keys:
+### Basic Usage
+
+```python
+from src.main import EvaluationSystem
+import json
+
+# Initialize system
+system = EvaluationSystem()
+
+# Load candidate and job offer (enriched JSONs)
+with open("candidate.json") as f:
+    candidate = json.load(f)
+
+with open("job_offer.json") as f:
+    job_offer = json.load(f)
+
+# Run evaluation
+result = system.evaluate(candidate, job_offer)
+
+# Access results
+print(f"Score: {result['final_evaluation']['overall_score']}/100")
+print(f"Recommendation: {result['final_evaluation']['recommendation']}")
+print(f"Fit: {result['final_evaluation']['fit_classification']}")
+```
+
+### Command Line Usage
+
 ```bash
-# Create .env file
-touch .env
+# Run evaluation from command line
+python -m src.main tests/fixtures/sample_candidate.json tests/fixtures/sample_job_offer.json output/result.json
+
+# Output will be saved to output/result.json
 ```
 
-Add your API keys to the `.env` file:
-```env
-# Required for research agents with external search
-TAVILY_API_KEY=your_tavily_api_key_here
+## 📝 Input Format
 
-# Required for model usage
-OPENAI_API_KEY=your_openai_api_key_here
-ANTHROPIC_API_KEY=your_anthropic_api_key_here
+### Candidate Profile (Enriched)
 
-# Optional: For evaluation and tracing
-LANGSMITH_API_KEY=your_langsmith_api_key_here
-LANGSMITH_TRACING=true
-LANGSMITH_PROJECT=deep_research_from_scratch
+The system expects candidates to be **semantically enriched** with:
+
+```json
+{
+  "candidate_id": "uuid",
+  "perfil_raw": {
+    "name": "Candidate Name",
+    "skills": ["skill1", "skill2"],
+    "experiences": [...],
+    "languages": [...]
+  },
+  "semantic_enrichment": {
+    "sector_inference": {
+      "primary_sector": "construction",
+      "confidence": 0.95,
+      "secondary_sectors": ["infrastructure"]
+    },
+    "skills_extraction": {
+      "explicit_skills": [...],
+      "implicit_skills": [...]
+    },
+    "seniority_inference": {
+      "seniority_level": "lead",
+      "years_experience_estimate": 9
+    },
+    "competencies_analysis": {...},
+    "disambiguation": {...},
+    "normalization": {...}
+  },
+  "key_insights": {...},
+  "explainability": {...}
+}
 ```
 
-4. Run notebooks or code using uv:
+See `tests/fixtures/sample_candidate.json` for a complete example.
+
+### Job Offer (Enriched)
+
+Similarly, job offers must be enriched:
+
+```json
+{
+  "job_id": "uuid",
+  "raw_job_posting": {
+    "title": "Job Title",
+    "company": "Company Name",
+    "description": "...",
+    "min_salary_range": 60000,
+    "max_salary_range": 80000
+  },
+  "semantic_enrichment": {
+    "sector_inference": {...},
+    "skills_extraction": {
+      "explicit_skills": [
+        {"name": "Python", "importance": "required", "level": "advanced"}
+      ]
+    },
+    "seniority_inference": {
+      "required_seniority": "lead",
+      "years_experience_required": 10
+    },
+    "ideal_candidate_profile": {
+      "must_have_experience": [...],
+      "preferred_experience": [...],
+      "potential_red_flags": [...]
+    }
+  }
+}
+```
+
+See `tests/fixtures/sample_job_offer.json` for a complete example.
+
+## 📊 Output Format
+
+The system returns a comprehensive evaluation:
+
+```json
+{
+  "evaluation_id": "uuid",
+  "timestamp": "2025-11-17T17:33:00Z",
+  "candidate_id": "...",
+  "job_id": "...",
+  "final_evaluation": {
+    "overall_score": 82,
+    "fit_classification": "good_fit",
+    "recommendation": "recommend",
+    "confidence": 0.88
+  },
+  "agents_evaluations": [
+    {
+      "agent": "sector_alignment",
+      "score": 85,
+      "evidence": [...],
+      "reasoning": "...",
+      "red_flags": []
+    },
+    ...
+  ],
+  "orchestrator_synthesis": {
+    "final_score": 82,
+    "score_breakdown": {...},
+    "key_strengths": [...],
+    "key_weaknesses": [...],
+    "decision_rationale": "...",
+    "next_steps_recommendation": [...]
+  },
+  "explainability": {
+    "executive_summary": "...",
+    "decision_tree": [...],
+    "key_decision_factors": [...],
+    "human_readable_rationale": "..."
+  }
+}
+```
+
+## 🧪 Testing
+
 ```bash
-# Run Jupyter notebooks directly
-uv run jupyter notebook
+# Run all tests
+pytest
 
-# Or activate the virtual environment if preferred
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-jupyter notebook
+# Run with coverage
+pytest --cov=src --cov-report=html
+
+# Run specific test file
+pytest tests/test_agents.py
+
+# Run with verbose output
+pytest -v
 ```
 
-## Background 
+## 🏗️ Project Structure
 
-Research is an open‑ended task; the best strategy to answer a user request can’t be easily known in advance. Requests can require different research strategies and varying levels of search depth. Consider this request. 
+```
+candidate_job_matching_system/
+├── pyproject.toml              # Dependencies and project metadata
+├── README.md                   # This file
+├── env.example                 # Environment configuration template
+├── src/
+│   ├── __init__.py
+│   ├── main.py                # Entry point and EvaluationSystem class
+│   ├── config.py              # Configuration management
+│   ├── models/                # Pydantic schemas
+│   │   ├── candidate_schema.py
+│   │   ├── job_schema.py
+│   │   └── evaluation_schema.py
+│   ├── graph/                 # LangGraph implementation
+│   │   ├── state.py           # State schema
+│   │   ├── graph_builder.py   # Graph construction
+│   │   └── nodes/             # Graph nodes (agents)
+│   │       ├── input_validation.py
+│   │       ├── sector_agent.py
+│   │       ├── skills_agent.py
+│   │       ├── seniority_agent.py
+│   │       ├── competencies_agent.py
+│   │       ├── domain_expert_agent.py
+│   │       ├── experience_agent.py
+│   │       ├── cultural_agent.py
+│   │       ├── red_flags_agent.py
+│   │       ├── salary_agent.py
+│   │       ├── aggregation.py
+│   │       ├── orchestrator.py
+│   │       └── output_formatter.py
+│   ├── agents/                # Agent base classes
+│   │   ├── base_agent.py
+│   │   └── prompts/           # Prompt templates
+│   │       ├── sector_prompt.py
+│   │       ├── skills_prompt.py
+│   │       ├── seniority_prompt.py
+│   │       ├── competencies_prompt.py
+│   │       ├── domain_expert_prompt.py
+│   │       ├── experience_prompt.py
+│   │       ├── cultural_prompt.py
+│   │       ├── red_flags_prompt.py
+│   │       ├── salary_prompt.py
+│   │       └── orchestrator_prompt.py
+│   └── utils/                 # Utility functions
+│       ├── semantic_matching.py
+│       ├── disambiguation.py
+│       └── scoring.py
+├── tests/
+│   ├── test_utils.py          # Tests for utilities
+│   ├── test_agents.py         # Tests for agents
+│   ├── test_graph.py          # Tests for graph workflow
+│   └── fixtures/              # Sample data
+│       ├── sample_candidate.json
+│       └── sample_job_offer.json
+└── notebooks/                 # Jupyter notebooks for analysis
+```
 
-[Agents](https://langchain-ai.github.io/langgraph/tutorials/workflows/#agent) are well suited to research because they can flexibly apply different strategies, using intermediate results to guide their exploration. Open deep research uses an agent to conduct research as part of a three step process:
+## 🔧 Advanced Configuration
 
-1. **Scope** – clarify research scope
-2. **Research** – perform research
-3. **Write** – produce the final report
+### Custom Weights
 
-## 📝 Organization 
+Adjust scoring weights based on your use case:
 
-This repo contains 5 tutorial notebooks that build a deep research system from scratch:
+```python
+from src.config import config
 
-### 📚 Tutorial Notebooks
+# For technical roles, emphasize skills
+config.weight_skills = 0.35
+config.weight_sector = 0.15
 
-#### 1. User Clarification and Brief Generation (`notebooks/1_scoping.ipynb`)
-**Purpose**: Clarify research scope and transform user input into structured research briefs
+# For leadership roles, emphasize competencies
+config.weight_competencies = 0.25
+config.weight_experience = 0.15
+```
 
-**Key Concepts**:
-- **User Clarification**: Determines if additional context is needed from the user using structured output
-- **Brief Generation**: Transforms conversations into detailed research questions
-- **LangGraph Commands**: Using Command system for flow control and state updates
-- **Structured Output**: Pydantic schemas for reliable decision making
+### Custom LLM
 
-**Implementation Highlights**:
-- Two-step workflow: clarification → brief generation
-- Structured output models (`ClarifyWithUser`, `ResearchQuestion`) to prevent hallucination
-- Conditional routing based on clarification needs
-- Date-aware prompts for context-sensitive research
+Use a different LLM provider:
 
-**What You'll Learn**: State management, structured output patterns, conditional routing
+```python
+from langchain_anthropic import ChatAnthropic
+from src.graph.nodes.sector_agent import SectorAlignmentAgent
+
+# Use Claude instead of GPT
+llm = ChatAnthropic(model="claude-3-sonnet-20240229", temperature=0.1)
+agent = SectorAlignmentAgent(llm=llm)
+```
+
+## 📈 Scoring Logic
+
+### Final Score Calculation
+
+```
+final_score = Σ(agent_score * agent_weight) * red_flags_penalty
+```
+
+Where:
+- Each agent score is 0-100
+- Weights sum to 1.0
+- Red flags penalty is 0.0-1.0 (1.0 = no penalty)
+
+### Fit Classifications
+
+- **Perfect Fit** (≥85): Exceptional match, all key criteria met
+- **Good Fit** (70-84): Strong match, minor gaps acceptable
+- **Acceptable Fit** (55-69): Adequate match, notable gaps exist
+- **Poor Fit** (<55): Significant mismatches
+
+### Recommendations
+
+- **Strong Recommend**: Perfect fit, proceed to offer
+- **Recommend**: Good fit, proceed with interview
+- **Conditional Recommend**: Acceptable fit, validate gaps in interview
+- **Not Recommend**: Poor fit or critical red flags present
+
+## 🛠️ Development
+
+### Code Quality
+
+The codebase follows strict quality standards:
+
+- **Type hints**: Full mypy strict mode compliance
+- **Testing**: >80% code coverage
+- **Documentation**: Comprehensive docstrings (PEP 257)
+- **Linting**: Black + Ruff
+- **Architecture**: Clean separation of concerns
+
+### Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Make your changes with tests
+4. Run tests and linting (`pytest && black . && ruff check .`)
+5. Commit with clear messages
+6. Push and create a Pull Request
+
+## 📚 Additional Resources
+
+### Understanding the Architecture
+
+The system uses **LangGraph** for orchestrating multi-agent workflows:
+
+- **StateGraph**: Maintains shared state across agents
+- **Nodes**: Individual agent evaluations
+- **Edges**: Control flow between agents
+- **Conditional edges**: Dynamic routing based on state
+
+### Prompt Engineering
+
+All agents use **Chain-of-Thought (CoT)** prompting for:
+- Transparency in reasoning
+- Better accuracy
+- Explainability
+
+### Semantic Matching
+
+The system handles:
+- **Polysemy**: Same term, different meanings (e.g., "automation" in QA vs manufacturing)
+- **Synonyms**: Different terms, same meaning (e.g., "React" vs "ReactJS")
+- **Fuzzy matching**: Partial matches and similarity scoring
+
+## 🐛 Troubleshooting
+
+### Common Issues
+
+**"Weights don't sum to 1.0"**
+```bash
+# Check your .env file weights
+# They must sum exactly to 1.0
+```
+
+**"API rate limit exceeded"**
+```bash
+# Reduce temperature or use a different model
+LLM_TEMPERATURE=0.0
+```
+
+**"JSON parsing error"**
+```bash
+# LLM response wasn't valid JSON
+# System automatically falls back to neutral scores
+```
+
+## 📄 License
+
+This project is proprietary software owned by findr.
+
+## 🤝 Support
+
+For support, please contact: contact@findr.com
 
 ---
 
-#### 2. Research Agent with Custom Tools (`notebooks/2_research_agent.ipynb`)
-**Purpose**: Build an iterative research agent using external search tools
-
-**Key Concepts**:
-- **Agent Architecture**: LLM decision node + tool execution node pattern
-- **Sequential Tool Execution**: Reliable synchronous tool execution
-- **Search Integration**: Tavily search with content summarization
-- **Tool Execution**: ReAct-style agent loop with tool calling
-
-**Implementation Highlights**:
-- Synchronous tool execution for reliability and simplicity
-- Content summarization to compress search results
-- Iterative research loop with conditional routing
-- Rich prompt engineering for comprehensive research
-
-**What You'll Learn**: Agent patterns, tool integration, search optimization, research workflow design
-
----
-
-#### 3. Research Agent with MCP (`notebooks/3_research_agent_mcp.ipynb`)
-**Purpose**: Integrate Model Context Protocol (MCP) servers as research tools
-
-**Key Concepts**:
-- **Model Context Protocol**: Standardized protocol for AI tool access
-- **MCP Architecture**: Client-server communication via stdio/HTTP
-- **LangChain MCP Adapters**: Seamless integration of MCP servers as LangChain tools
-- **Local vs Remote MCP**: Understanding transport mechanisms
-
-**Implementation Highlights**:
-- `MultiServerMCPClient` for managing MCP servers
-- Configuration-driven server setup (filesystem example)
-- Rich formatting for tool output display
-- Async tool execution required by MCP protocol (no nested event loops needed)
-
-**What You'll Learn**: MCP integration, client-server architecture, protocol-based tool access
-
----
-
-#### 4. Research Supervisor (`notebooks/4_research_supervisor.ipynb`)
-**Purpose**: Multi-agent coordination for complex research tasks
-
-**Key Concepts**:
-- **Supervisor Pattern**: Coordination agent + worker agents
-- **Parallel Research**: Concurrent research agents for independent topics using parallel tool calls
-- **Research Delegation**: Structured tools for task assignment
-- **Context Isolation**: Separate context windows for different research topics
-
-**Implementation Highlights**:
-- Two-node supervisor pattern (`supervisor` + `supervisor_tools`)
-- Parallel research execution using `asyncio.gather()` for true concurrency
-- Structured tools (`ConductResearch`, `ResearchComplete`) for delegation
-- Enhanced prompts with parallel research instructions
-- Comprehensive documentation of research aggregation patterns
-
-**What You'll Learn**: Multi-agent patterns, parallel processing, research coordination, async orchestration
-
----
-
-#### 5. Full Multi-Agent Research System (`notebooks/5_full_agent.ipynb`)
-**Purpose**: Complete end-to-end research system integrating all components
-
-**Key Concepts**:
-- **Three-Phase Architecture**: Scope → Research → Write
-- **System Integration**: Combining scoping, multi-agent research, and report generation
-- **State Management**: Complex state flow across subgraphs
-- **End-to-End Workflow**: From user input to final research report
-
-**Implementation Highlights**:
-- Complete workflow integration with proper state transitions
-- Supervisor and researcher subgraphs with output schemas
-- Final report generation with research synthesis
-- Thread-based conversation management for clarification
-
-**What You'll Learn**: System architecture, subgraph composition, end-to-end workflows
-
----
-
-### 🎯 Key Learning Outcomes
-
-- **Structured Output**: Using Pydantic schemas for reliable AI decision making
-- **Async Orchestration**: Strategic use of async patterns for parallel coordination vs synchronous simplicity
-- **Agent Patterns**: ReAct loops, supervisor patterns, multi-agent coordination
-- **Search Integration**: External APIs, MCP servers, content processing
-- **Workflow Design**: LangGraph patterns for complex multi-step processes
-- **State Management**: Complex state flows across subgraphs and nodes
-- **Protocol Integration**: MCP servers and tool ecosystems
-
-Each notebook builds on the previous concepts, culminating in a production-ready deep research system that can handle complex, multi-faceted research queries with intelligent scoping and coordinated execution. 
+**Built with ❤️ using LangGraph, LangChain, and OpenAI/Anthropic LLMs**

@@ -1,0 +1,92 @@
+{
+  "candidate_id": "1e038af0-717e-49ed-a00e-775cb00c1488",
+  "perfil_raw": {
+    "name": "Natalia Garcia",
+    "skills": ["PRL", "Gestion de equipos", "Seguridad ocupacional"],
+    "experiences": [
+      {
+        "title": "Responsable de PRL",
+        "company": "AWS Data Center",
+        "duration": "5 anos",
+        "description": "Gestion de seguridad en construccion de data centers"
+      },
+      {
+        "title": "Tecnico de Prevencion",
+        "company": "Constructora ABC",
+        "duration": "4 anos",
+        "description": "Prevencion de riesgos laborales en proyectos de construccion"
+      }
+    ],
+    "languages": [
+      {"language": "Espanol", "proficiency": "native"},
+      {"language": "Ingles", "proficiency": "advanced"}
+    ],
+    "location": "Madrid, Espana"
+  },
+  "semantic_enrichment": {
+    "context_analysis": {
+      "key_indicators": ["PRL", "construccion", "seguridad ocupacional"],
+      "domain_signals": ["data centers", "proyectos industriales"]
+    },
+    "sector_inference": {
+      "primary_sector": "occupational_health_and_safety_in_construction",
+      "confidence": 0.95,
+      "secondary_sectors": ["construction", "infrastructure"],
+      "evidence": ["9 anos en PRL construccion", "Proyectos AWS"]
+    },
+    "disambiguation": {
+      "disambiguated_terms": [
+        {
+          "original_term": "seguridad",
+          "resolved_meaning": "occupational_safety",
+          "confidence": 0.9,
+          "alternatives_rejected": ["cybersecurity"],
+          "reasoning": "Contexto de construccion y PRL"
+        }
+      ]
+    },
+    "skills_extraction": {
+      "explicit_skills": [
+        {"name": "Prevencion de Riesgos Laborales (PRL)", "level": "expert", "category": "technical"},
+        {"name": "Gestion de equipos multidisciplinares", "level": "mid", "category": "managerial"},
+        {"name": "Seguridad ocupacional", "level": "advanced", "category": "technical"},
+        {"name": "Normativa ISO 45001", "level": "advanced", "category": "technical"},
+        {"name": "Evaluacion de riesgos", "level": "advanced", "category": "functional"}
+      ],
+      "implicit_skills": [
+        {"name": "Liderazgo de equipos", "level": "mid", "category": "soft"},
+        {"name": "Gestion de proyectos complejos", "level": "mid", "category": "functional"}
+      ]
+    },
+    "competencies_analysis": {
+      "competencies": [
+        {"name": "Team leadership", "type": "managerial", "level": "mid"},
+        {"name": "Risk assessment", "type": "functional", "level": "advanced"},
+        {"name": "Regulatory compliance", "type": "functional", "level": "advanced"},
+        {"name": "Communication with stakeholders", "type": "soft", "level": "mid"}
+      ]
+    },
+    "seniority_inference": {
+      "seniority_level": "lead",
+      "years_experience_estimate": 9,
+      "confidence": 0.92,
+      "evidence": ["9 anos experiencia", "Rol de responsable", "Gestion equipos"]
+    },
+    "normalization": {
+      "normalized_synonyms": [
+        {"canonical_term": "PRL", "synonyms": ["Prevencion de Riesgos Laborales", "Occupational Health and Safety", "OHS"]}
+      ]
+    }
+  },
+  "key_insights": {
+    "sector": "occupational_health_and_safety_in_construction",
+    "seniority": "lead",
+    "total_skills": 12,
+    "primary_expertise": "PRL y seguridad ocupacional en construccion"
+  },
+  "explainability": {
+    "sector_reasoning": "Candidato con 9 anos de experiencia especifica en PRL para sector construccion",
+    "seniority_reasoning": "Nivel lead inferido por anos de experiencia y roles de responsabilidad"
+  }
+}
+

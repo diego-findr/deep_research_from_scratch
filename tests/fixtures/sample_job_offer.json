@@ -1,0 +1,96 @@
+{
+  "job_id": "be2baa17-8bc6-4d5a-ab92-2dc40a2177e2",
+  "raw_job_posting": {
+    "title": "Gerente de Soporte Técnico - Infraestructura Vial",
+    "company": "Acciona Construcción",
+    "description": "Buscamos un profesional experimentado en PRL para liderar el soporte técnico en grandes proyectos de infraestructura vial (carreteras, puentes, túneles). Responsable de garantizar cumplimiento normativo y gestión de equipos técnicos.",
+    "responsibilities": [
+      "Liderar equipo de técnicos de PRL en proyectos de infraestructura",
+      "Garantizar cumplimiento normativo en obra",
+      "Coordinación con contratistas y subcontratistas",
+      "Desarrollo de planes de prevención específicos",
+      "Gestión de auditorías y certificaciones"
+    ],
+    "min_salary_range": 60000,
+    "max_salary_range": 80000,
+    "mandatory_languages": ["Español"],
+    "optional_languages": ["Inglés"],
+    "locations": ["Madrid", "España"],
+    "remote_amount": "presencial con ocasional remoto"
+  },
+  "semantic_enrichment": {
+    "context_analysis": {
+      "key_indicators": ["PRL", "infraestructura vial", "construcción", "normativa"],
+      "domain_signals": ["carreteras", "puentes", "grandes proyectos"]
+    },
+    "sector_inference": {
+      "primary_sector": "construction",
+      "confidence": 0.98,
+      "secondary_sectors": ["infrastructure", "civil_engineering"],
+      "evidence": ["Acciona Construcción", "infraestructura vial", "carreteras y puentes"]
+    },
+    "skills_extraction": {
+      "explicit_skills": [
+        {"name": "Prevención de Riesgos Laborales (PRL)", "importance": "required", "level": "expert"},
+        {"name": "Liderazgo de equipos multidisciplinares", "importance": "required", "level": "advanced"},
+        {"name": "Gestión de proyectos de infraestructura vial", "importance": "required", "level": "advanced"},
+        {"name": "Coordinación con contratistas", "importance": "required", "level": "advanced"},
+        {"name": "Normativa de construcción española", "importance": "required", "level": "advanced"},
+        {"name": "Experiencia en proyectos >50M€", "importance": "preferred", "level": "any"},
+        {"name": "Certificación en ISO 45001", "importance": "preferred", "level": "any"}
+      ],
+      "implicit_skills": [
+        {"name": "Gestión de stakeholders", "importance": "required"},
+        {"name": "Planificación estratégica", "importance": "required"}
+      ]
+    },
+    "seniority_inference": {
+      "required_seniority": "lead",
+      "years_experience_required": 10,
+      "confidence": 0.95
+    },
+    "competencies_analysis": {
+      "required_competencies": [
+        {"name": "Team leadership", "type": "managerial", "importance": "required", "level": "advanced"},
+        {"name": "Risk assessment and mitigation", "type": "functional", "importance": "required", "level": "expert"},
+        {"name": "Regulatory compliance", "type": "functional", "importance": "required", "level": "expert"},
+        {"name": "Strategic planning", "type": "functional", "importance": "required", "level": "advanced"},
+        {"name": "Communication with executives", "type": "soft", "importance": "required", "level": "advanced"}
+      ]
+    },
+    "ideal_candidate_profile": {
+      "must_have_experience": [
+        "10+ años en PRL sector construcción",
+        "Experiencia en infraestructura vial (carreteras, puentes, túneles)",
+        "Liderazgo de equipos técnicos >5 personas",
+        "Proyectos de gran escala"
+      ],
+      "preferred_experience": [
+        "Experiencia en fase de diseño (design & build)",
+        "Proyectos internacionales",
+        "Certificación PMP o similar"
+      ],
+      "expected_career_trajectory": "Técnico PRL → Responsable PRL → Gerente/Lead PRL",
+      "potential_red_flags": [
+        "Experiencia solo en edificación residencial (no infraestructura)",
+        "Falta de experiencia en proyectos >20M€",
+        "Sin experiencia liderando equipos"
+      ]
+    },
+    "normalization": {
+      "normalized_synonyms": [
+        {"canonical_term": "PRL", "synonyms": ["Prevención de Riesgos Laborales", "OHS", "Occupational Health and Safety"]}
+      ]
+    }
+  },
+  "key_insights": {
+    "sector": "construction_infrastructure",
+    "required_seniority": "lead",
+    "critical_competencies": ["PRL expert", "Team leadership", "Infrastructure experience"],
+    "deal_breakers": ["No infrastructure experience", "Insufficient seniority"]
+  },
+  "explainability": {
+    "requirements_reasoning": "Rol lead para gestión integral de PRL en grandes proyectos viales, requiere experiencia específica en infraestructura y liderazgo avanzado"
+  }
+}
+
