@@ -339,7 +339,7 @@ def assemble_enriched_profile(state: ProfileEnrichmentState) -> Dict[str, Any]:
     """
     Assemble the final enriched profile with all analysis results.
 
-    Combines all analysis outputs into a comprehensive enriched profile
+    Combines all analysis outputs into a clean, non-redundant enriched profile
     that maintains the original structure while adding semantic enrichments.
 
     Returns updated state with enriched_profile.
@@ -354,7 +354,7 @@ def assemble_enriched_profile(state: ProfileEnrichmentState) -> Dict[str, Any]:
     seniority_inference = json.loads(state["seniority_inference"])
     ideal_roles_inference = json.loads(state["ideal_roles_inference"])
 
-    # Build enriched profile structure
+    # Build enriched profile structure (simplified and non-redundant)
     enriched_profile = {
         # Preserve original fields
         "candidato_id": state["candidate_id"],
@@ -365,17 +365,8 @@ def assemble_enriched_profile(state: ProfileEnrichmentState) -> Dict[str, Any]:
         "semantic_enrichment": {
             "version": "1.0",
             "enrichment_timestamp": state["metadata"].get("timestamp"),
-            "analysis_components": {
-                "context_analysis": context_analysis,
-                "sector_inference": sector_inference,
-                "disambiguation": disambiguation_results,
-                "skills_extraction": skills_extraction,
-                "competencies_analysis": competencies_analysis,
-                "normalization": normalization_results,
-                "seniority_inference": seniority_inference,
-                "ideal_roles_inference": ideal_roles_inference,
-            },
-            # Flattened key insights for easy access
+            
+            # High-level summary
             "key_insights": {
                 "primary_sector": sector_inference["primary_sector"],
                 "sector_confidence": sector_inference["confidence"],
@@ -390,8 +381,32 @@ def assemble_enriched_profile(state: ProfileEnrichmentState) -> Dict[str, Any]:
                 "primary_ideal_role": ideal_roles_inference["primary_role"]["role_name"],
                 "primary_role_fit_score": ideal_roles_inference["primary_role"]["fit_score"],
             },
-            # Quick-access structured data
-            "structured_skills": {
+            
+            # Context information
+            "context": {
+                "key_indicators": context_analysis["key_indicators"],
+                "domain_signals": context_analysis["domain_signals"],
+                "technology_mentions": context_analysis["technology_mentions"],
+            },
+            
+            # Sector (simplified)
+            "sector": {
+                "primary": sector_inference["primary_sector"],
+                "secondary": sector_inference.get("secondary_sectors", []),
+                "confidence": sector_inference["confidence"],
+                "reasoning": sector_inference["reasoning"],
+            },
+            
+            # Seniority (simplified)
+            "seniority": {
+                "level": seniority_inference["seniority_level"],
+                "years_experience": seniority_inference["years_experience_estimate"],
+                "confidence": seniority_inference["confidence"],
+                "reasoning": seniority_inference["reasoning"],
+            },
+            
+            # Skills (clean structure)
+            "skills": {
                 "explicit": skills_extraction["explicit_skills"],
                 "implicit": skills_extraction["implicit_skills"],
                 "clusters": {
@@ -399,8 +414,12 @@ def assemble_enriched_profile(state: ProfileEnrichmentState) -> Dict[str, Any]:
                     for cluster in skills_extraction.get("skill_clusters", [])
                 },
             },
-            "structured_competencies": competencies_analysis["competencies"],
-            "disambiguation_map": {
+            
+            # Competencies (clean list)
+            "competencies": competencies_analysis["competencies"],
+            
+            # Disambiguation (simplified map)
+            "disambiguation": {
                 term["original_term"]: {
                     "meaning": term["interpreted_meaning"],
                     "domain": term["domain"],
@@ -408,7 +427,9 @@ def assemble_enriched_profile(state: ProfileEnrichmentState) -> Dict[str, Any]:
                 }
                 for term in disambiguation_results["disambiguated_terms"]
             },
-            "synonym_map": {
+            
+            # Normalization (synonyms and canonical terms)
+            "synonyms": {
                 syn["term"]: syn["synonyms"]
                 for syn in normalization_results.get("normalized_synonyms", [])
             },
@@ -416,22 +437,15 @@ def assemble_enriched_profile(state: ProfileEnrichmentState) -> Dict[str, Any]:
                 canon["variation"]: canon["canonical"]
                 for canon in normalization_results.get("canonical_terms", [])
             },
-            # Add ideal roles section
+            
+            # Ideal roles
             "ideal_roles": {
-                "primary_role": ideal_roles_inference["primary_role"],
-                "alternative_roles": ideal_roles_inference.get("alternative_roles", []),
+                "primary": ideal_roles_inference["primary_role"],
+                "alternatives": ideal_roles_inference.get("alternative_roles", []),
                 "career_trajectory": ideal_roles_inference["career_trajectory"],
                 "recent_focus": ideal_roles_inference["recent_focus"],
+                "reasoning": ideal_roles_inference["reasoning"],
             },
-        },
-        # Add explainability section
-        "explainability": {
-            "sector_reasoning": sector_inference["reasoning"],
-            "sector_evidence": sector_inference["evidence"],
-            "seniority_reasoning": seniority_inference["reasoning"],
-            "seniority_evidence": seniority_inference["evidence"],
-            "disambiguation_summary": disambiguation_results["summary"],
-            "ideal_roles_reasoning": ideal_roles_inference["reasoning"],
         },
     }
 

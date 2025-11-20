@@ -132,19 +132,19 @@ def run_example(input_file: str = None):
     ideal_roles = enriched["semantic_enrichment"]["ideal_roles"]
     print("\n\n🎯 IDEAL ROLES ANALYSIS")
     print("=" * 50)
-    print(f"\n🏆 Primary Role: {ideal_roles['primary_role']['role_name']}")
-    print(f"   Fit Score: {ideal_roles['primary_role']['fit_score']:.2f}")
-    print(f"   Reasoning: {ideal_roles['primary_role']['reasoning']}")
+    print(f"\n🏆 Primary Role: {ideal_roles['primary']['role_name']}")
+    print(f"   Fit Score: {ideal_roles['primary']['fit_score']:.2f}")
+    print(f"   Reasoning: {ideal_roles['primary']['reasoning']}")
     print(f"\n📈 Career Trajectory: {ideal_roles['career_trajectory']}")
     print(f"🎓 Recent Focus: {ideal_roles['recent_focus']}")
     
-    if ideal_roles.get('alternative_roles'):
+    if ideal_roles.get('alternatives'):
         print("\n🔄 Alternative Roles:")
-        for i, role in enumerate(ideal_roles['alternative_roles'][:3], 1):
+        for i, role in enumerate(ideal_roles['alternatives'][:3], 1):
             print(f"   {i}. {role['role_name']} (fit: {role['fit_score']:.2f})")
     
     # Display disambiguation results
-    disambiguation_map = enriched["semantic_enrichment"]["disambiguation_map"]
+    disambiguation_map = enriched["semantic_enrichment"]["disambiguation"]
     print("\n\n🔍 DISAMBIGUATION (Sample)")
     print("=" * 50)
     for term, details in list(disambiguation_map.items())[:3]:

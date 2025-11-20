@@ -274,6 +274,9 @@ def assemble_enriched_job(state: JobEnrichmentState) -> Dict[str, Any]:
     """
     Assemble the final enriched job posting with all analysis results.
     
+    Combines all analysis outputs into a clean, non-redundant enriched job posting
+    that maintains the original structure while adding semantic enrichments.
+    
     Returns updated state with enriched_job_posting.
     """
     # Parse all analysis results
@@ -285,7 +288,7 @@ def assemble_enriched_job(state: JobEnrichmentState) -> Dict[str, Any]:
     ideal_candidate_profile = json.loads(state["ideal_candidate_profile"])
     normalization_results = json.loads(state["normalization_results"])
 
-    # Build enriched job posting structure
+    # Build enriched job posting structure (simplified and non-redundant)
     enriched_job = {
         # Preserve original fields
         "job_id": state["job_id"],
@@ -296,16 +299,8 @@ def assemble_enriched_job(state: JobEnrichmentState) -> Dict[str, Any]:
         "semantic_enrichment": {
             "version": "1.0",
             "enrichment_timestamp": state["metadata"].get("timestamp"),
-            "analysis_components": {
-                "context_analysis": context_analysis,
-                "sector_inference": sector_inference,
-                "skills_extraction": skills_extraction,
-                "seniority_inference": seniority_inference,
-                "competencies_analysis": competencies_analysis,
-                "ideal_candidate_profile": ideal_candidate_profile,
-                "normalization": normalization_results,
-            },
-            # Flattened key insights for easy access
+            
+            # High-level summary
             "key_insights": {
                 "primary_sector": sector_inference["primary_sector"],
                 "sector_confidence": sector_inference["confidence"],
@@ -316,13 +311,41 @@ def assemble_enriched_job(state: JobEnrichmentState) -> Dict[str, Any]:
                 "required_competencies_count": len(competencies_analysis["required_competencies"]),
                 "leadership_level": competencies_analysis["leadership_level"],
             },
-            # Quick-access structured data
-            "structured_skills": {
+            
+            # Context information
+            "context": {
+                "key_indicators": context_analysis["key_indicators"],
+                "domain_signals": context_analysis["domain_signals"],
+                "technology_mentions": context_analysis["technology_mentions"],
+            },
+            
+            # Sector (simplified)
+            "sector": {
+                "primary": sector_inference["primary_sector"],
+                "secondary": sector_inference.get("secondary_sectors", []),
+                "confidence": sector_inference["confidence"],
+                "reasoning": sector_inference["reasoning"],
+            },
+            
+            # Seniority (simplified)
+            "seniority": {
+                "required_level": seniority_inference["required_seniority"],
+                "years_experience_required": seniority_inference["years_experience_required"],
+                "confidence": seniority_inference["confidence"],
+                "reasoning": seniority_inference["reasoning"],
+            },
+            
+            # Skills (clean structure)
+            "skills": {
                 "explicit": skills_extraction["explicit_skills"],
                 "implicit": skills_extraction["implicit_skills"],
                 "clusters": skills_extraction.get("skill_clusters", []),
             },
-            "structured_competencies": competencies_analysis["required_competencies"],
+            
+            # Competencies (clean list)
+            "competencies": competencies_analysis["required_competencies"],
+            
+            # Ideal candidate profile
             "ideal_candidate": {
                 "background": ideal_candidate_profile["ideal_background"],
                 "must_have_experience": ideal_candidate_profile["must_have_experience"],
@@ -330,17 +353,20 @@ def assemble_enriched_job(state: JobEnrichmentState) -> Dict[str, Any]:
                 "career_trajectory": ideal_candidate_profile["career_trajectory"],
                 "key_differentiators": ideal_candidate_profile["key_differentiators"],
                 "potential_red_flags": ideal_candidate_profile["potential_red_flags"],
+                "reasoning": ideal_candidate_profile["reasoning"],
             },
-            "synonym_map": normalization_results.get("normalized_synonyms", []),
-            "canonical_terms": normalization_results.get("canonical_terms", []),
-        },
-        # Add explainability section
-        "explainability": {
-            "sector_reasoning": sector_inference["reasoning"],
-            "sector_evidence": sector_inference["evidence"],
-            "seniority_reasoning": seniority_inference["reasoning"],
-            "seniority_evidence": seniority_inference["evidence"],
-            "ideal_candidate_reasoning": ideal_candidate_profile["reasoning"],
+            
+            # Normalization (synonyms and canonical terms)
+            "synonyms": {
+                syn["term"]: syn["synonyms"]
+                for syn in normalization_results.get("normalized_synonyms", [])
+                if isinstance(syn, dict) and "term" in syn and "synonyms" in syn
+            },
+            "canonical_terms": {
+                canon["variation"]: canon["canonical"]
+                for canon in normalization_results.get("canonical_terms", [])
+                if isinstance(canon, dict) and "variation" in canon and "canonical" in canon
+            },
         },
     }
 
