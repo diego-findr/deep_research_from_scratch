@@ -60,6 +60,9 @@ class ContextAnalysis(BaseModel):
     language_context: str = Field(
         description="Overall linguistic and professional context",
     )
+    environment_fit: List[str] = Field(
+        description="Type of companies worked at (e.g., 'Startup', 'Corporate', 'Consultancy', 'MSP')",
+    )
 
 
 class SectorInference(BaseModel):
@@ -248,6 +251,12 @@ class SeniorityInference(BaseModel):
     )
     reasoning: str = Field(
         description="Explanation of seniority determination",
+    )
+    trajectory_trend: str = Field(
+        description="Career progression trend: 'Ascending', 'Flat', or 'Volatile'",
+    )
+    technical_depth_score: int = Field(
+        description="Technical depth score from 1-10 based on task complexity",
     )
 
 

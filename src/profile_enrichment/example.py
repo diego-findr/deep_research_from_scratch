@@ -115,43 +115,53 @@ def run_example(input_file: str = None):
     print("✅ Enrichment completed\n")
 
     # Display key insights
-    key_insights = enriched["semantic_enrichment"]["key_insights"]
+    # Display key insights
     print("📊 KEY INSIGHTS")
     print("=" * 50)
-    print(f"Primary Sector: {key_insights['primary_sector']}")
-    print(f"Sector Confidence: {key_insights['sector_confidence']:.2f}")
-    print(f"Seniority Level: {key_insights['seniority_level']}")
-    print(f"Years Experience: {key_insights['years_experience']}")
-    print(f"Total Skills: {key_insights['total_skills_identified']}")
-    print(f"Competencies: {key_insights['competencies_count']}")
-    print(f"Disambiguated Terms: {key_insights['disambiguated_terms_count']}")
-    print(f"\n🎯 Primary Ideal Role: {key_insights['primary_ideal_role']}")
-    print(f"   Fit Score: {key_insights['primary_role_fit_score']:.2f}")
+    
+    # Access new structure fields
+    filters = enriched.get("inferred_filters", {})
+    metrics = enriched.get("pre_computed_metrics", {})
+    stability = enriched.get("stability_analysis", {})
+    decision = enriched.get("agent_decision_support", {})
+    
+    print(f"Primary Sector: {filters.get('primary_sector', 'Unknown')}")
+    print(f"Total Experience: {metrics.get('total_experience_years', 0)} years")
+    print(f"Management Exp: {metrics.get('management_experience_years', 0)} years")
+    print(f"Is Manager: {metrics.get('is_manager', False)}")
+    print(f"Trajectory: {stability.get('trajectory_trend', 'Unknown')}")
+    print(f"Job Hopping Risk: {stability.get('job_hopping_risk', 'Unknown')}")
+    
+    print(f"\n🎯 Primary Ideal Role: {decision.get('ideal_role_match', ['Unknown'])[0]}")
+    print(f"   Seniority Level: {decision.get('seniority_level', 'Unknown')}")
 
     # Display ideal roles
-    ideal_roles = enriched["semantic_enrichment"]["ideal_roles"]
     print("\n\n🎯 IDEAL ROLES ANALYSIS")
     print("=" * 50)
-    print(f"\n🏆 Primary Role: {ideal_roles['primary']['role_name']}")
-    print(f"   Fit Score: {ideal_roles['primary']['fit_score']:.2f}")
-    print(f"   Reasoning: {ideal_roles['primary']['reasoning']}")
-    print(f"\n📈 Career Trajectory: {ideal_roles['career_trajectory']}")
-    print(f"🎓 Recent Focus: {ideal_roles['recent_focus']}")
+    ideal_roles = decision.get("ideal_role_match", [])
+    if ideal_roles:
+        print(f"\n🏆 Primary Role: {ideal_roles[0]}")
+        if len(ideal_roles) > 1:
+            print("\n🔄 Alternative Roles:")
+            for i, role in enumerate(ideal_roles[1:], 1):
+                print(f"   {i}. {role}")
     
-    if ideal_roles.get('alternatives'):
-        print("\n🔄 Alternative Roles:")
-        for i, role in enumerate(ideal_roles['alternatives'][:3], 1):
-            print(f"   {i}. {role['role_name']} (fit: {role['fit_score']:.2f})")
-    
-    # Display disambiguation results
-    disambiguation_map = enriched["semantic_enrichment"]["disambiguation"]
-    print("\n\n🔍 DISAMBIGUATION (Sample)")
+    # Display competency profile sample
+    competencies = enriched.get("competency_profile", {})
+    print("\n\n💪 COMPETENCY PROFILE (Sample)")
     print("=" * 50)
-    for term, details in list(disambiguation_map.items())[:3]:
-        print(f"\n📌 Term: '{term}'")
-        print(f"   Meaning: {details['meaning']}")
-        print(f"   Domain: {details['domain']}")
-        print(f"   Confidence: {details['confidence']:.2f}")
+    
+    hard_skills = competencies.get("technical_hard_skills", [])
+    if hard_skills:
+        print("\n🔧 Technical Hard Skills (Top 3):")
+        for skill in hard_skills[:3]:
+            print(f"   - {skill['name']} ({skill['level']})")
+            
+    soft_skills = competencies.get("soft_skills_and_leadership", [])
+    if soft_skills:
+        print("\n🧠 Soft Skills (Top 3):")
+        for skill in soft_skills[:3]:
+            print(f"   - {skill['name']}")
 
     # Save enriched profile
     # Create output directory if it doesn't exist

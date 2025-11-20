@@ -5,6 +5,7 @@ disambiguation, skills extraction, and profile enrichment using LangGraph.
 """
 
 import json
+from datetime import datetime
 from typing import Any, Dict
 from pydantic import ValidationError
 
@@ -353,100 +354,237 @@ def assemble_enriched_profile(state: ProfileEnrichmentState) -> Dict[str, Any]:
     normalization_results = json.loads(state["normalization_results"])
     seniority_inference = json.loads(state["seniority_inference"])
     ideal_roles_inference = json.loads(state["ideal_roles_inference"])
+    raw_profile = state["raw_profile"]
 
-    # Build enriched profile structure (simplified and non-redundant)
+    # Helper to calculate years between dates
+    def calculate_years(start_date_str: str, end_date_str: str = None) -> float:
+        try:
+            # Assume format YYYY-MM or YYYY
+            start = datetime.strptime(start_date_str[:7], "%Y-%m") if len(start_date_str) >= 7 else datetime.strptime(start_date_str, "%Y")
+            if end_date_str and end_date_str.lower() != "present":
+                end = datetime.strptime(end_date_str[:7], "%Y-%m") if len(end_date_str) >= 7 else datetime.strptime(end_date_str, "%Y")
+            else:
+                end = datetime(2025, 11, 20) # Fixed "today" as per rules
+            
+            diff = end - start
+            return round(diff.days / 365.25, 1)
+        except (ValueError, TypeError):
+            return 0.0
+
+    # 1. Metadata
+    metadata = {
+        "processed_at": datetime.now().isoformat(),
+        "profile_version": "2.0-optimized",
+        "source": state["metadata"].get("source", "unknown")
+    }
+
+    # 2. Candidate Snapshot
+    location = raw_profile.get("location", "Unknown, Unknown")
+    # Simple heuristic for timezone group
+    timezone_group = "EMEA" # Default
+    if "USA" in location or "Canada" in location or "Brazil" in location or "Argentina" in location or "Mexico" in location:
+        timezone_group = "AMER"
+    elif "India" in location or "China" in location or "Japan" in location or "Australia" in location:
+        timezone_group = "APAC"
+    
+    candidate_snapshot = {
+        "full_name": raw_profile.get("full_name"),
+        "headline": raw_profile.get("heading"),
+        "location": location,
+        "timezone_group": timezone_group,
+        "linkedin_url": raw_profile.get("linkedin_url"),
+        "email": raw_profile.get("email")
+    }
+
+    # 3. Pre-computed Metrics
+    experiences = raw_profile.get("experiences", [])
+    total_experience_years = 0.0
+    management_experience_years = 0.0
+    is_manager = False
+    
+    if experiences:
+        # Sort by date if possible, but usually they are reverse chronological
+        # We need start date of first role.
+        # Let's iterate and sum up durations or find min start date.
+        # Assuming reverse chronological order
+        
+        # Calculate total experience from earliest start date
+        earliest_start = None
+        for exp in experiences:
+            start_date = exp.get("start_date")
+            if start_date:
+                try:
+                    dt = datetime.strptime(start_date[:7], "%Y-%m") if len(start_date) >= 7 else datetime.strptime(start_date, "%Y")
+                    if earliest_start is None or dt < earliest_start:
+                        earliest_start = dt
+                except:
+                    pass
+        
+        if earliest_start:
+            total_experience_years = round((datetime(2025, 11, 20) - earliest_start).days / 365.25, 1)
+        else:
+            total_experience_years = float(raw_profile.get("experience_years", 0))
+
+        # Management experience
+        mgmt_keywords = ["Manager", "Lead", "Head", "Director", "Coordinator", "Gerente", "Jefe", "Líder"]
+        for exp in experiences:
+            role = exp.get("role", "")
+            if any(kw in role for kw in mgmt_keywords):
+                start = exp.get("start_date")
+                end = exp.get("end_date", "Present")
+                duration = calculate_years(start, end) if start else 0
+                management_experience_years += duration
+
+        # Is Manager (current or previous role)
+        if experiences:
+            latest_role = experiences[0].get("role", "")
+            is_manager = any(kw in latest_role for kw in mgmt_keywords)
+            if not is_manager and len(experiences) > 1:
+                 prev_role = experiences[1].get("role", "")
+                 is_manager = any(kw in prev_role for kw in mgmt_keywords)
+
+    pre_computed_metrics = {
+        "total_experience_years": total_experience_years,
+        "management_experience_years": round(management_experience_years, 1),
+        "is_manager": is_manager,
+        "technical_depth_score": seniority_inference.get("technical_depth_score", 5) # Default to 5 if missing
+    }
+
+    # 4. Inferred Filters
+    # Work authorization heuristic
+    work_auth = "Unknown"
+    if "Spain" in location or "España" in location:
+        work_auth = "EU_Authorized"
+    elif "USA" in location:
+        work_auth = "US_Authorized"
+    
+    # Languages
+    languages = []
+    # Native language heuristic
+    if "Spain" in location or "Argentina" in location or "Colombia" in location or "Mexico" in location:
+        languages.append({"language": "Spanish", "level": "Native"})
+    else:
+         languages.append({"language": "English", "level": "Native"}) # Fallback
+    
+    # Inferred English
+    if "English" not in [l["language"] for l in languages]:
+        # If worked at multinational or tech, assume some English
+        languages.append({"language": "English", "level": "Professional Working"})
+
+    inferred_filters = {
+        "work_authorization": work_auth,
+        "languages": languages,
+        "environment_fit": context_analysis.get("environment_fit", []),
+        "primary_sector": sector_inference.get("primary_sector")
+    }
+
+    # 5. Stability Analysis
+    current_tenure = 0.0
+    if experiences:
+        current = experiences[0]
+        end_date = current.get("end_date")
+        if not end_date or (isinstance(end_date, str) and end_date.lower() in ["present", "actualidad", ""]):
+             current_tenure = calculate_years(current.get("start_date", ""), "Present")
+    
+    # Job hopping risk
+    avg_tenure = 0
+    if len(experiences) > 0:
+        total_tenure_sum = 0
+        count = 0
+        for exp in experiences:
+            s = exp.get("start_date")
+            e = exp.get("end_date", "Present")
+            if s:
+                total_tenure_sum += calculate_years(s, e)
+                count += 1
+        if count > 0:
+            avg_tenure = total_tenure_sum / count
+    
+    job_hopping_risk = "High" if avg_tenure < 1.5 and len(experiences) > 2 else "Low"
+
+    stability_analysis = {
+        "trajectory_trend": seniority_inference.get("trajectory_trend", "Flat"),
+        "job_hopping_risk": job_hopping_risk,
+        "current_tenure_years": current_tenure
+    }
+
+    # 6. Competency Profile
+    technical_hard_skills = []
+    for skill in skills_extraction.get("explicit_skills", []) + skills_extraction.get("implicit_skills", []):
+        if skill["category"] == "technical":
+            technical_hard_skills.append({
+                "name": skill["name"],
+                "level": skill["level"],
+                "context": skill.get("evidence", "")[:50] + "...", # Truncate context
+                "validated": skill["source"] == "explicit"
+            })
+    
+    functional_skills = []
+    for skill in skills_extraction.get("explicit_skills", []) + skills_extraction.get("implicit_skills", []):
+        if skill["category"] == "functional":
+             functional_skills.append(skill["name"])
+    
+    soft_skills_and_leadership = []
+    for comp in competencies_analysis.get("competencies", []):
+        if comp["type"] in ["soft", "managerial"]:
+            soft_skills_and_leadership.append({
+                "name": comp["competency"],
+                "evidence": comp["evidence"]
+            })
+
+    competency_profile = {
+        "technical_hard_skills": technical_hard_skills,
+        "functional_skills": functional_skills,
+        "soft_skills_and_leadership": soft_skills_and_leadership
+    }
+
+    # 7. Work History Timeline
+    work_history_timeline = []
+    for exp in experiences:
+        start = exp.get("start_date")
+        end = exp.get("end_date", "Present")
+        duration = calculate_years(start, end) if start else 0
+        
+        work_history_timeline.append({
+            "role": exp.get("role"),
+            "company": exp.get("company"),
+            "start_date": start,
+            "end_date": end,
+            "duration_years": duration,
+            "description_digest": exp.get("description", "")[:200] + "..." if exp.get("description") else "No description"
+        })
+
+    # 8. Missing Data Warnings
+    missing_data = []
+    if not raw_profile.get("education"):
+        missing_data.append("Education not specified")
+    if not raw_profile.get("certifications"):
+        missing_data.append("No certifications listed")
+    if not raw_profile.get("languages"): # Explicit languages
+        missing_data.append("Languages not explicitly listed")
+
+    missing_data_warnings = {
+        "critical_missing_fields": missing_data
+    }
+
+    # 9. Agent Decision Support
+    agent_decision_support = {
+        "ideal_role_match": [ideal_roles_inference["primary_role"]["role_name"]] + [r["role_name"] for r in ideal_roles_inference.get("alternative_roles", [])[:2]],
+        "overqualification_risk": "High" if seniority_inference.get("seniority_level") in ["expert", "principal"] else "Low",
+        "seniority_level": seniority_inference.get("seniority_level")
+    }
+
+    # Build final enriched profile
     enriched_profile = {
-        # Preserve original fields
-        "candidato_id": state["candidate_id"],
-        "timestamp": state["metadata"].get("timestamp"),
-        "metadata": state["metadata"],
-        "perfil_raw": state["raw_profile"],
-        # Add semantic enrichment section
-        "semantic_enrichment": {
-            "version": "1.0",
-            "enrichment_timestamp": state["metadata"].get("timestamp"),
-            
-            # High-level summary
-            "key_insights": {
-                "primary_sector": sector_inference["primary_sector"],
-                "sector_confidence": sector_inference["confidence"],
-                "seniority_level": seniority_inference["seniority_level"],
-                "years_experience": seniority_inference["years_experience_estimate"],
-                "total_skills_identified": len(skills_extraction["explicit_skills"])
-                + len(skills_extraction["implicit_skills"]),
-                "competencies_count": len(competencies_analysis["competencies"]),
-                "disambiguated_terms_count": len(
-                    disambiguation_results["disambiguated_terms"]
-                ),
-                "primary_ideal_role": ideal_roles_inference["primary_role"]["role_name"],
-                "primary_role_fit_score": ideal_roles_inference["primary_role"]["fit_score"],
-            },
-            
-            # Context information
-            "context": {
-                "key_indicators": context_analysis["key_indicators"],
-                "domain_signals": context_analysis["domain_signals"],
-                "technology_mentions": context_analysis["technology_mentions"],
-            },
-            
-            # Sector (simplified)
-            "sector": {
-                "primary": sector_inference["primary_sector"],
-                "secondary": sector_inference.get("secondary_sectors", []),
-                "confidence": sector_inference["confidence"],
-                "reasoning": sector_inference["reasoning"],
-            },
-            
-            # Seniority (simplified)
-            "seniority": {
-                "level": seniority_inference["seniority_level"],
-                "years_experience": seniority_inference["years_experience_estimate"],
-                "confidence": seniority_inference["confidence"],
-                "reasoning": seniority_inference["reasoning"],
-            },
-            
-            # Skills (clean structure)
-            "skills": {
-                "explicit": skills_extraction["explicit_skills"],
-                "implicit": skills_extraction["implicit_skills"],
-                "clusters": {
-                    cluster["cluster_name"]: cluster["skills"]
-                    for cluster in skills_extraction.get("skill_clusters", [])
-                },
-            },
-            
-            # Competencies (clean list)
-            "competencies": competencies_analysis["competencies"],
-            
-            # Disambiguation (simplified map)
-            "disambiguation": {
-                term["original_term"]: {
-                    "meaning": term["interpreted_meaning"],
-                    "domain": term["domain"],
-                    "confidence": term["confidence"],
-                }
-                for term in disambiguation_results["disambiguated_terms"]
-            },
-            
-            # Normalization (synonyms and canonical terms)
-            "synonyms": {
-                syn["term"]: syn["synonyms"]
-                for syn in normalization_results.get("normalized_synonyms", [])
-            },
-            "canonical_terms": {
-                canon["variation"]: canon["canonical"]
-                for canon in normalization_results.get("canonical_terms", [])
-            },
-            
-            # Ideal roles
-            "ideal_roles": {
-                "primary": ideal_roles_inference["primary_role"],
-                "alternatives": ideal_roles_inference.get("alternative_roles", []),
-                "career_trajectory": ideal_roles_inference["career_trajectory"],
-                "recent_focus": ideal_roles_inference["recent_focus"],
-                "reasoning": ideal_roles_inference["reasoning"],
-            },
-        },
+        "metadata": metadata,
+        "candidate_snapshot": candidate_snapshot,
+        "pre_computed_metrics": pre_computed_metrics,
+        "inferred_filters": inferred_filters,
+        "stability_analysis": stability_analysis,
+        "competency_profile": competency_profile,
+        "work_history_timeline": work_history_timeline,
+        "missing_data_warnings": missing_data_warnings,
+        "agent_decision_support": agent_decision_support
     }
 
     return {"enriched_profile": enriched_profile}

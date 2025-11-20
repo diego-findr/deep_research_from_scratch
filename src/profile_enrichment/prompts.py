@@ -37,6 +37,7 @@ Return a structured analysis containing:
 - technology_mentions: All technologies, tools, frameworks mentioned
 - activity_patterns: Patterns in what the person does (e.g., "system design", "team leadership")
 - language_context: Overall professional linguistic context
+- environment_fit: List of company types (Startup, Corporate, Consultancy, MSP) based on work history
 </output_requirements>
 
 <examples>
@@ -798,6 +799,15 @@ Assess seniority across multiple dimensions:
    - Stated years of experience
    - Number and duration of roles
    - Career progression
+
+2. **Trajectory Analysis**:
+   - Analyze the progression of titles and responsibilities.
+   - Determine if the trend is "Ascending", "Flat" (lateral moves), or "Volatile" (frequent changes/gaps).
+
+3. **Technical Depth**:
+   - Evaluate the complexity of tasks and technologies.
+   - Assign a score from 1 (Low complexity, e.g., basic support) to 10 (High complexity, e.g., kernel development, architecture).
+
 
 2. **Role Complexity**:
    - Job titles and responsibilities
