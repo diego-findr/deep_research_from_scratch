@@ -1,7 +1,7 @@
-"""Example usage of the Job Enrichment System.
+"""Example usage of the Job Enrichment System (Optimized v2.0).
 
 This module demonstrates how to use the job enrichment system
-to analyze and enrich job postings.
+to analyze and enrich job postings with the new optimized format.
 """
 
 import json
@@ -102,62 +102,52 @@ def run_example(input_file: str = None):
 
     print("\n✅ Enrichment completed\n")
 
-    # Display key insights
-    key_insights = enriched["semantic_enrichment"]["key_insights"]
+    # Display key insights from Identity
+    identity = enriched["identity"]
     print("📊 KEY INSIGHTS")
     print("=" * 70)
-    print(f"Primary Sector: {key_insights['primary_sector']}")
-    print(f"Sector Confidence: {key_insights['sector_confidence']:.2f}")
-    print(f"Required Seniority: {key_insights['required_seniority']}")
-    print(f"Years Experience Required: {key_insights['years_experience_required']}")
-    print(f"Total Skills Identified: {key_insights['total_skills_identified']}")
-    print(f"Required Competencies: {key_insights['required_competencies_count']}")
-    print(f"Leadership Level: {key_insights['leadership_level']}")
+    print(f"Title: {identity['title']}")
+    print(f"Company: {identity['company']}")
+    print(f"Primary Sector: {identity['sector']}")
+    print(f"Required Seniority: {identity['seniority_required']}")
+    print(f"Years Experience: {identity['years_experience_required']}")
 
-    # Display ideal candidate profile
-    ideal_candidate = enriched["semantic_enrichment"]["ideal_candidate"]
-    print("\n\n🎯 IDEAL CANDIDATE PROFILE")
+    # Display REQUIREMENTS (Optimized)
+    requirements = enriched["requirements"]
+    
+    print("\n\n⚡ TOP CRITICAL SKILLS (Curated)")
     print("=" * 70)
-    print(f"\n📋 Background: {ideal_candidate['background']}")
-    
-    print(f"\n✅ Must-Have Experience:")
-    for exp in ideal_candidate['must_have_experience']:
-        print(f"   • {exp}")
-    
-    print(f"\n⭐ Preferred Experience:")
-    for exp in ideal_candidate['preferred_experience'][:5]:
-        print(f"   • {exp}")
-    
-    print(f"\n📈 Career Trajectory: {ideal_candidate['career_trajectory']}")
-    
-    print(f"\n🏆 Key Differentiators:")
-    for diff in ideal_candidate['key_differentiators']:
-        print(f"   • {diff}")
+    for skill in requirements.get("top_skills", []):
+        score_bar = "█" * int(skill['criticality_score'] * 10)
+        print(f"   {score_bar} {skill['name']} ({skill['criticality_score']})")
+        print(f"      Reasoning: {skill['reasoning']}")
 
-    # Display skills breakdown
-    structured_skills = enriched["semantic_enrichment"]["structured_skills"]
-    explicit_count = len(structured_skills["explicit"])
-    implicit_count = len(structured_skills["implicit"])
-    
-    print(f"\n\n🛠️  SKILLS ANALYSIS")
+    print("\n\n🚫 NON-NEGOTIABLES (Deal Breakers)")
     print("=" * 70)
-    print(f"Explicit Skills: {explicit_count}")
-    print(f"Implicit Skills: {implicit_count}")
-    
-    print("\n📌 Top Required Skills:")
-    all_skills = structured_skills["explicit"] + structured_skills["implicit"]
-    required_skills = [s for s in all_skills if s.get("importance") == "required"]
-    for skill in required_skills[:8]:
-        print(f"   • {skill['name']} ({skill['category']}, {skill['source']})")
+    if requirements.get("non_negotiables"):
+        for nn in requirements["non_negotiables"]:
+            print(f"   ❌ {nn['requirement']} ({nn['type']})")
+            print(f"      Verify via: {nn['verification_method']}")
+    else:
+        print("   No explicit non-negotiables identified.")
 
-    # Display competencies
-    competencies = enriched["semantic_enrichment"]["structured_competencies"]
-    required_comps = [c for c in competencies if c.get("importance") == "required"]
-    
-    print(f"\n\n💼 KEY COMPETENCIES")
+    print("\n\n🚩 RED FLAGS")
     print("=" * 70)
-    for comp in required_comps[:6]:
-        print(f"   • {comp['competency']} ({comp['type']})")
+    if requirements.get("red_flags"):
+        for flag in requirements["red_flags"]:
+            severity_icon = "🔴" if flag['severity'] == 'high' else "🟠"
+            print(f"   {severity_icon} {flag['flag']} ({flag['severity']})")
+    else:
+        print("   No specific red flags identified.")
+
+    print("\n\n💀 KILLER QUESTIONS")
+    print("=" * 70)
+    if requirements.get("killer_questions"):
+        for kq in requirements["killer_questions"]:
+            print(f"   ❓ {kq['question']}")
+            print(f"      Expected: {kq['expected_answer']}")
+    else:
+        print("   No killer questions generated.")
 
     # Save enriched job posting
     # Create output directory if it doesn't exist
@@ -193,4 +183,3 @@ if __name__ == "__main__":
     
     args = parser.parse_args()
     run_example(input_file=args.input)
-

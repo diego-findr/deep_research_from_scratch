@@ -445,3 +445,152 @@ Return structured JSON with:
 
 Focus on terms that appear in the job posting."""
 
+
+# ===== JOB SKILLS CURATION PROMPT (WITH NON-NEGOTIABLES & RED FLAGS) =====
+
+JOB_SKILLS_CURATION_PROMPT = """You are an expert talent acquisition specialist and job requirements analyst.
+
+<task>
+From the full analysis of this job posting, curate the ESSENTIAL requirements that truly matter for success.
+Your goal is to create a highly actionable requirements package including:
+1. Top 5-10 CRITICAL skills (not 20+ noise)
+2. Non-negotiable requirements (deal breakers)
+3. Red flags to watch for in candidates
+4. Killer questions to ask candidates
+</task>
+
+<job_posting>
+{job_data}
+</job_posting>
+
+<analysis_context>
+Sector: {sector}
+Required Seniority: {seniority}
+Years Experience: {years_experience}
+
+All Extracted Skills:
+{all_skills}
+
+All Competencies:
+{all_competencies}
+</analysis_context>
+
+<instructions>
+1. **Top Skills (5-10 only)**:
+   - Select the MOST CRITICAL skills for success
+   - Avoid generic fluff ("teamwork", "communication" unless truly differentiating)
+   - Prioritize domain-specific and high-value technical skills
+   - Each skill gets a criticality_score (0-1) and reasoning
+
+2. **Non-Negotiables (Deal Breakers)**:
+   - Absolute requirements that disqualify if missing
+   - Examples:
+     * Credential: "Licenciatura en Veterinaria" (required by law)
+     * Experience: "Minimum 5 years in field X"
+     * Legal: "Work permit for Spain"
+     * Location: "Must be based in Madrid or willing to relocate"
+   - Specify verification_method for each
+
+3. **Red Flags**:
+   - Warning signs in candidate profiles
+   - Severity: high (disqualify), medium (probe deeper), low (note but not critical)
+   - Examples:
+     * High: "Candidate has never worked in this sector"
+     * Medium: "Frequent job hopping (5 jobs in 3 years)"
+     * Low: "No experience with specific tool but has similar"
+
+4. **Killer Questions**:
+   - Questions that auto-disqualify if answer is wrong
+   - Examples:
+     * "Do you have a valid work permit for Spain?" (expected: yes)
+     * "Are you willing to work on-site 100%?" (expected: yes for on-site role)
+     * "Do you have a degree in Veterinary Medicine?" (expected: yes if required)
+</instructions>
+
+<examples>
+Example 1 - Junior Veterinarian (Swine Sector):
+
+Top Skills (8):
+1. Veterinary Medicine (domain_specific, required, score: 1.0) - "Core professional competency"
+2. Swine Health Management (domain_specific, required, score: 0.95) - "Sector-specific expertise"
+3. Vaccination Program Implementation (domain_specific, required, score: 0.9) - "Key operational responsibility"
+4. Animal Health Diagnostics (domain_specific, required, score: 0.9) - "Critical for role success"
+5. Regulatory Compliance (domain_specific, required, score: 0.85) - "Legal requirement in agri-food"
+6. Record Keeping & Documentation (transversal, required, score: 0.75) - "Operational necessity"
+7. Team Collaboration (transversal, required, score: 0.7) - "Explicitly mentioned in responsibilities"
+8. Learning Agility (transversal, required, score: 0.7) - "Entry-level role, growth expected"
+(NO generic "communication" or "teamwork" unless truly differentiating)
+
+Non-Negotiables (3):
+1. "Licenciatura/Grado en Veterinaria homologado en España" (credential, diploma check) - "Legal requirement to practice"
+2. "Availability to work on-site in Huesca province" (location, interview confirmation) - "100% on-site role"
+3. "Authorization to work in Spain" (legal, work permit verification) - "Labor law requirement"
+
+Red Flags (3):
+1. "No veterinary degree or non-homologated foreign degree" (high) - "Cannot legally practice"
+2. "Aversion to rural/farm environments" (high) - "Role is 100% rural farm setting"
+3. "Expectation of remote work" (medium) - "Role is explicitly on-site"
+
+Killer Questions (3):
+1. "¿Tienes un título de Veterinaria homologado en España?" (expected: "sí") - "Legal requirement"
+2. "¿Estás dispuesto a trabajar 100% presencial en granjas porcinas?" (expected: "sí") - "Role nature"
+3. "¿Tienes permiso de trabajo en España?" (expected: "sí") - "Employment legality"
+
+Example 2 - Senior Software Engineer (Backend):
+
+Top Skills (10):
+1. Python (domain_specific, required, 1.0)
+2. PostgreSQL/Database Design (domain_specific, required, 0.95)
+3. RESTful API Design (domain_specific, required, 0.9)
+4. AWS/Cloud Infrastructure (domain_specific, required, 0.85)
+5. System Architecture (domain_specific, required, 0.85)
+6. Docker/Kubernetes (domain_specific, preferred, 0.75)
+7. CI/CD Pipelines (domain_specific, preferred, 0.7)
+8. Code Review & Mentoring (transversal, required, 0.7)
+9. Problem Solving at Scale (transversal, required, 0.75)
+10. Security Best Practices (domain_specific, required, 0.8)
+
+Non-Negotiables (2):
+1. "5+ years backend development experience" (experience, resume verification)
+2. "English proficiency (B2+)" (language, interview assessment)
+
+Red Flags (2):
+1. "No production system experience" (high)
+2. "Only frontend experience, no backend" (high)
+
+Killer Questions (2):
+1. "Do you have at least 5 years of backend development experience?" (expected: yes)
+2. "Can you work in English-speaking environments?" (expected: yes)
+</examples>
+
+<critical_rules>
+1. **Quality > Quantity**: 8-10 critical skills beats 20+ noise
+2. **No Fluff**: Exclude generic soft skills unless truly differentiating
+3. **Context-Specific**: Requirements FOR THIS SPECIFIC ROLE, not generic
+4. **Actionable**: Every item should be verifiable/testable
+5. **Realistic**: Don't ask for unicorns (e.g., "10 years experience in 3-year-old technology")
+6. **Legal/Cultural Awareness**: Consider legal requirements (work permits, credentials)
+</critical_rules>
+
+<output_requirements>
+Return structured JSON with:
+- top_skills: List of CuratedJobSkill objects (8-10 only)
+- non_negotiables: List of NonNegotiable objects (3-5)
+- red_flags: List of Red Flag objects (3-5)
+- killer_questions: List of KillerQuestion objects (2-4)
+- reasoning: Overall explanation of curation strategy
+
+Each CuratedJobSkill:
+- name, type, importance, criticality_score, reasoning
+
+Each NonNegotiable:
+- requirement, type, verification_method, reasoning
+
+Each RedFlag:
+- flag, severity, reasoning
+
+Each KillerQuestion:
+- question, expected_answer, reasoning
+</output_requirements>
+"""
+

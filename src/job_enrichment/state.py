@@ -31,6 +31,7 @@ class JobEnrichmentState(TypedDict):
     competencies_analysis: Optional[str]
     ideal_candidate_profile: Optional[str]
     normalization_results: Optional[str]
+    skills_curation: Optional[str]
 
     # Final enriched output
     enriched_job_posting: Optional[Dict[str, Any]]
@@ -41,21 +42,8 @@ class JobEnrichmentState(TypedDict):
 class JobContextAnalysis(BaseModel):
     """Schema for initial context analysis from job posting."""
 
-    key_indicators: List[str] = Field(
-        description="Key indicators extracted from job posting (company, role level, responsibilities)",
-    )
-    domain_signals: List[str] = Field(
-        description="Signals indicating the professional domain and industry",
-    )
-    technology_mentions: List[str] = Field(
-        description="All technology and tool mentions found in job posting",
-    )
-    responsibility_patterns: List[str] = Field(
-        description="Patterns in responsibilities (leadership, technical, strategic)",
-    )
-    company_context: str = Field(
-        description="Context about the company and its industry",
-    )
+    key_indicators: List[str] = Field(description="Key job posting indicators")
+    reasoning: str = Field(description="Overall reasoning")
 
 
 class JobSectorInference(BaseModel):
@@ -102,7 +90,7 @@ class JobSkillsExtraction(BaseModel):
     explicit_skills: List[JobSkill] = Field(
         description="Skills explicitly mentioned in the job posting",
     )
-    implicit_skills: List[JobSkill] = Field(
+    implicit_skills: List[JobSkill]  = Field(
         description="Skills inferred from responsibilities and context",
     )
     skill_clusters: List[Dict[str, Any]] = Field(
@@ -207,3 +195,49 @@ class JobNormalizationResults(BaseModel):
         default_factory=list,
     )
 
+
+# ===== OPTIMIZED SCHEMAS (v2.0) =====
+
+class CuratedJobSkill(BaseModel):
+    """Schema for a curated job skill requirement."""
+
+    name: str = Field(description="Skill name")
+    type: str = Field(description="'domain_specific' or 'transversal'")
+    importance: str = Field(description="'required', 'preferred', or 'nice_to_have'")
+    criticality_score: float = Field(description="How critical for success (0-1)")
+    reasoning: str = Field(description="Why this skill is critical for this role")
+
+
+class NonNegotiable(BaseModel):
+    """Schema for absolute requirements (deal breakers)."""
+
+    requirement: str = Field(description="The non-negotiable requirement")
+    type: str = Field(description="'credential', 'experience', 'legal', 'location', 'other'")
+    verification_method: str = Field(description="How to verify this (e.g., 'diploma check', 'years in role', 'work permit')")
+    reasoning: str = Field(description="Why this is non-negotiable")
+
+
+class RedFlag(BaseModel):
+    """Schema for red flags in candidate profiles."""
+
+    flag: str = Field(description="The red flag indicator")
+    severity: str = Field(description="'high', 'medium', 'low'")
+    reasoning: str = Field(description="Why this is a red flag for this role")
+
+
+class KillerQuestion(BaseModel):
+    """Schema for killer questions (auto-disqualify if answer is no)."""
+
+    question: str = Field(description="The question to ask")
+    expected_answer: str = Field(description="Expected answer (usually 'yes' or a specific value)")
+    reasoning: str = Field(description="Why this question is critical")
+
+
+class JobSkillsCuration(BaseModel):
+    """Schema for LLM-curated job skill requirements."""
+
+    top_skills: List[CuratedJobSkill] = Field(description="Top 8-10 most critical skills")
+    non_negotiables: List[NonNegotiable] = Field(description="Absolute requirements (deal breakers)")
+    red_flags: List[RedFlag] = Field(description="Warning signs in candidate profiles")
+    killer_questions: List[KillerQuestion] = Field(description="Auto-disqualifying questions")
+    reasoning: str = Field(description="Overall reasoning for requirements selection")

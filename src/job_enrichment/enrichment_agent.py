@@ -25,6 +25,7 @@ try:
         JobCompetenciesAnalysis,
         IdealCandidateProfile,
         JobNormalizationResults,
+        JobSkillsCuration,
     )
     from job_enrichment.prompts import (
         JOB_CONTEXT_ANALYSIS_PROMPT,
@@ -34,6 +35,7 @@ try:
         JOB_COMPETENCIES_ANALYSIS_PROMPT,
         JOB_IDEAL_CANDIDATE_PROMPT,
         JOB_NORMALIZATION_PROMPT,
+        JOB_SKILLS_CURATION_PROMPT,
     )
 except ImportError:
     from .state import (
@@ -45,6 +47,7 @@ except ImportError:
         JobCompetenciesAnalysis,
         IdealCandidateProfile,
         JobNormalizationResults,
+        JobSkillsCuration,
     )
     from .prompts import (
         JOB_CONTEXT_ANALYSIS_PROMPT,
@@ -54,6 +57,7 @@ except ImportError:
         JOB_COMPETENCIES_ANALYSIS_PROMPT,
         JOB_IDEAL_CANDIDATE_PROMPT,
         JOB_NORMALIZATION_PROMPT,
+        JOB_SKILLS_CURATION_PROMPT,
     )
 
 
@@ -270,107 +274,117 @@ def normalize_job_terms(state: JobEnrichmentState) -> Dict[str, Any]:
     return {"normalization_results": json.dumps(normalization_dict, ensure_ascii=False)}
 
 
+def curate_job_skills(state: JobEnrichmentState) -> Dict[str, Any]:
+    """
+    Curate job requirements using LLM: top skills, non-negotiables, red flags, killer questions.
+    
+    Returns updated state with skills_curation.
+    """
+    job_data_str = format_job_data(state["raw_job_posting"])
+    
+    # Parse previous analysis
+    sector_inference = json.loads(state["sector_inference"])
+    seniority_inference = json.loads(state["seniority_inference"])
+    skills_extraction = json.loads(state["skills_extraction"])
+    competencies_analysis = json.loads(state["competencies_analysis"])
+    
+    # Prepare all skills
+    all_skills = []
+    for skill in skills_extraction.get("explicit_skills", []):
+        all_skills.append({
+            "name": skill["name"],
+            "category": skill["category"],
+            "importance": skill["importance"],
+            "source": "explicit"
+        })
+    
+    for skill in skills_extraction.get("implicit_skills", []):
+        all_skills.append({
+            "name": skill["name"],
+            "category": skill["category"],
+            "importance": skill["importance"],
+            "source": "implicit"
+        })
+    
+    prompt = JOB_SKILLS_CURATION_PROMPT.format(
+        job_data=job_data_str,
+        sector=sector_inference.get("primary_sector", "unknown"),
+        seniority=seniority_inference.get("required_seniority", "unknown"),
+        years_experience=seniority_inference.get("years_experience_required", 0),
+        all_skills=json.dumps(all_skills, indent=2, ensure_ascii=False),
+        all_competencies=json.dumps(competencies_analysis.get(" required_competencies", []), indent=2, ensure_ascii=False)
+    )
+
+    model_with_structure = structured_model.with_structured_output(
+        JobSkillsCuration, method="function_calling"
+    )
+    response = model_with_structure.invoke(prompt)
+
+    curation_dict = response.model_dump()
+    
+    print(f"✓ Requirements curated: {len(curation_dict.get('top_skills', []))} skills, {len(curation_dict.get('non_negotiables', []))} deal-breakers")
+
+    return {"skills_curation": json.dumps(curation_dict, ensure_ascii=False)}
+
+
 def assemble_enriched_job(state: JobEnrichmentState) -> Dict[str, Any]:
     """
-    Assemble the final enriched job posting with all analysis results.
+    Assemble the final enriched job posting (v2.0 - OPTIMIZED).
     
-    Combines all analysis outputs into a clean, non-redundant enriched job posting
-    that maintains the original structure while adding semantic enrichments.
+    Focus on VALUE-ADDED intelligence, not data duplication.
     
     Returns updated state with enriched_job_posting.
     """
     # Parse all analysis results
-    context_analysis = json.loads(state["context_analysis"])
     sector_inference = json.loads(state["sector_inference"])
-    skills_extraction = json.loads(state["skills_extraction"])
     seniority_inference = json.loads(state["seniority_inference"])
     competencies_analysis = json.loads(state["competencies_analysis"])
-    ideal_candidate_profile = json.loads(state["ideal_candidate_profile"])
-    normalization_results = json.loads(state["normalization_results"])
+    skills_curation = json.loads(state["skills_curation"])
 
-    # Build enriched job posting structure (simplified and non-redundant)
+    # Build optimized enriched job posting structure
     enriched_job = {
-        # Preserve original fields
         "job_id": state["job_id"],
+        "enrichment_version": "2.0-optimized",
         "timestamp": state["metadata"].get("timestamp"),
-        "metadata": state["metadata"],
-        "raw_job_posting": state["raw_job_posting"],
-        # Add semantic enrichment section
-        "semantic_enrichment": {
-            "version": "1.0",
-            "enrichment_timestamp": state["metadata"].get("timestamp"),
-            
-            # High-level summary
-            "key_insights": {
-                "primary_sector": sector_inference["primary_sector"],
-                "sector_confidence": sector_inference["confidence"],
-                "required_seniority": seniority_inference["required_seniority"],
-                "years_experience_required": seniority_inference["years_experience_required"],
-                "total_skills_identified": len(skills_extraction["explicit_skills"])
-                + len(skills_extraction["implicit_skills"]),
-                "required_competencies_count": len(competencies_analysis["required_competencies"]),
-                "leadership_level": competencies_analysis["leadership_level"],
+        
+        # 1. Job Identity
+        "identity": {
+            "title": state["raw_job_posting"].get("job_title"),
+            "company": state["raw_job_posting"].get("company_name"),
+            "sector": sector_inference["primary_sector"],
+            "seniority_required": seniority_inference["required_seniority"],
+            "years_experience_required": seniority_inference["years_experience_required"],
+        },
+        
+        # 2. Requirements (LLM-CURATED)
+        "requirements": {
+            "top_skills": skills_curation.get("top_skills", []),  # 8-10 critical skills
+            "top_competencies": competencies_analysis["required_competencies"][:8],  # Top 8
+            "non_negotiables": skills_curation.get("non_negotiables", []),  # Deal breakers
+            "red_flags": skills_curation.get("red_flags", []),  # Warning signs
+            "killer_questions": skills_curation.get("killer_questions", []),  # Auto-disqualify questions
+        },
+        
+        # 3. Compensation & Working Conditions
+        "compensation": {
+            "salary_range": {
+                "min": state["raw_job_posting"].get("min_salary_range"),
+                "max": state["raw_job_posting"].get("max_salary_range"),
             },
-            
-            # Context information
-            "context": {
-                "key_indicators": context_analysis["key_indicators"],
-                "domain_signals": context_analysis["domain_signals"],
-                "technology_mentions": context_analysis["technology_mentions"],
-            },
-            
-            # Sector (simplified)
-            "sector": {
-                "primary": sector_inference["primary_sector"],
-                "secondary": sector_inference.get("secondary_sectors", []),
-                "confidence": sector_inference["confidence"],
-                "reasoning": sector_inference["reasoning"],
-            },
-            
-            # Seniority (simplified)
-            "seniority": {
-                "required_level": seniority_inference["required_seniority"],
-                "years_experience_required": seniority_inference["years_experience_required"],
-                "confidence": seniority_inference["confidence"],
-                "reasoning": seniority_inference["reasoning"],
-            },
-            
-            # Skills (clean structure)
-            "skills": {
-                "explicit": skills_extraction["explicit_skills"],
-                "implicit": skills_extraction["implicit_skills"],
-                "clusters": skills_extraction.get("skill_clusters", []),
-            },
-            
-            # Competencies (clean list)
-            "competencies": competencies_analysis["required_competencies"],
-            
-            # Ideal candidate profile
-            "ideal_candidate": {
-                "background": ideal_candidate_profile["ideal_background"],
-                "must_have_experience": ideal_candidate_profile["must_have_experience"],
-                "preferred_experience": ideal_candidate_profile["preferred_experience"],
-                "career_trajectory": ideal_candidate_profile["career_trajectory"],
-                "key_differentiators": ideal_candidate_profile["key_differentiators"],
-                "potential_red_flags": ideal_candidate_profile["potential_red_flags"],
-                "reasoning": ideal_candidate_profile["reasoning"],
-            },
-            
-            # Normalization (synonyms and canonical terms)
-            "synonyms": {
-                syn["term"]: syn["synonyms"]
-                for syn in normalization_results.get("normalized_synonyms", [])
-                if isinstance(syn, dict) and "term" in syn and "synonyms" in syn
-            },
-            "canonical_terms": {
-                canon["variation"]: canon["canonical"]
-                for canon in normalization_results.get("canonical_terms", [])
-                if isinstance(canon, dict) and "variation" in canon and "canonical" in canon
-            },
+            "remote_policy": "remote" if state["raw_job_posting"].get("remote") else "on-site",
+            "locations": state["raw_job_posting"].get("locations", []),
+        },
+        
+        # 4. Sector Intelligence
+        "sector_intelligence": {
+            "primary_sector": sector_inference["primary_sector"],
+            "secondary_sectors": sector_inference.get("secondary_sectors", []),
+            "confidence": sector_inference["confidence"],
+            "reasoning": sector_inference["reasoning"],
         },
     }
 
-    print("✓ Enriched job posting assembled")
+    print("✓ Enriched job posting assembled (v2.0-optimized)")
 
     return {"enriched_job_posting": enriched_job}
 
@@ -402,6 +416,7 @@ def build_job_enrichment_graph() -> StateGraph:
     graph_builder.add_node("extract_job_skills", extract_job_skills)
     graph_builder.add_node("infer_job_seniority", infer_job_seniority)
     graph_builder.add_node("analyze_job_competencies", analyze_job_competencies)
+    graph_builder.add_node("curate_job_skills", curate_job_skills)
     graph_builder.add_node("define_ideal_candidate", define_ideal_candidate)
     graph_builder.add_node("normalize_job_terms", normalize_job_terms)
     graph_builder.add_node("assemble_enriched_job", assemble_enriched_job)
@@ -412,7 +427,8 @@ def build_job_enrichment_graph() -> StateGraph:
     graph_builder.add_edge("infer_job_sector", "extract_job_skills")
     graph_builder.add_edge("extract_job_skills", "infer_job_seniority")
     graph_builder.add_edge("infer_job_seniority", "analyze_job_competencies")
-    graph_builder.add_edge("analyze_job_competencies", "define_ideal_candidate")
+    graph_builder.add_edge("analyze_job_competencies", "curate_job_skills")
+    graph_builder.add_edge("curate_job_skills", "define_ideal_candidate")
     graph_builder.add_edge("define_ideal_candidate", "normalize_job_terms")
     graph_builder.add_edge("normalize_job_terms", "assemble_enriched_job")
     graph_builder.add_edge("assemble_enriched_job", END)
@@ -476,6 +492,7 @@ def enrich_job_posting(
         "competencies_analysis": None,
         "ideal_candidate_profile": None,
         "normalization_results": None,
+        "skills_curation": None,
         "enriched_job_posting": None,
     }
 

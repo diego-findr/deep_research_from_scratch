@@ -1,541 +1,207 @@
 {
   "job_id": "be2baa17-8bc6-4d5a-ab92-2dc40a2177e2",
-  "timestamp": "2025-11-14T20:38:01.290004",
-  "metadata": {
-    "timestamp": "2025-11-14T20:38:01.290004",
-    "source": "database"
+  "enrichment_version": "2.0-optimized",
+  "timestamp": "2025-11-24T18:51:54.044195",
+  "identity": {
+    "title": "Gerente de Soporte Técnico (Construcción)",
+    "company": "Acciona",
+    "sector": "construction",
+    "seniority_required": "lead",
+    "years_experience_required": 10
   },
-  "raw_job_posting": {
-    "id": "be2baa17-8bc6-4d5a-ab92-2dc40a2177e2",
-    "job_title": "Gerente de Soporte Técnico (Construcción)",
-    "company_name": "Acciona",
-    "company_description": "Acciona es una empresa global española enfocada en la infraestructura sostenible y la energía renovable. Fundada en 1997, se dedica a desarrollar proyectos que buscan reducir el impacto ambiental mediante el uso de tecnologías limpias e innovadoras, promoviendo un enfoque de desarrollo sostenible a nivel global",
-    "remote": false,
-    "remote_amount": 0,
-    "description": "El Gerente de Soporte Técnico en el sector de construcción es responsable de liderar y proporcionar soporte técnico en proyectos de infraestructura vial, como carreteras y puentes. Este rol requiere experiencia en la ejecución de obras y la capacidad de desarrollar planes de ejecución efectivos para proyectos nacionales e internacionales, comenzando en Madrid y luego en ubicaciones según los proyectos.",
-    "min_salary_range": 60000,
-    "max_salary_range": 80000,
-    "responsibilities": [
-      "Proporcionar soporte técnico para el desarrollo de ofertas constructivas basadas en experiencia previa.",
-      "Liderar alternativas de proyecto con el equipo de diseño desde el punto de vista constructivo.",
-      "Desarrollar planes de ejecución, estrategias de subcontratación y programas de trabajo.",
-      "Incorporarse al equipo de ejecución según se requiera en proyectos nacionales e internacionales.",
-      "Colaborar en la definición del Plan de Ejecución de la Obra como parte del equipo de oferta."
-    ],
-    "experience_required": 10,
-    "published_date": "2025-10-01",
-    "locations": [
-      "Madrid, Community of Madrid, Spain"
-    ],
-    "mandatory_skills": [],
-    "optional_skills": [],
-    "mandatory_languages": [],
-    "optional_languages": []
-  },
-  "semantic_enrichment": {
-    "version": "1.0",
-    "enrichment_timestamp": "2025-11-14T20:38:01.290004",
-    "analysis_components": {
-      "context_analysis": {
-        "key_indicators": [
-          "Company: Acciona",
-          "Role: Gerente de Soporte Técnico (Technical Support Manager)",
-          "Level: Senior/Managerial (requires 10 years experience)",
-          "Department: Technical Support, Construction",
-          "Key Responsibilities: Provide technical support, lead project alternatives from constructive perspective, develop execution and subcontracting plans, join project execution teams nationally and internationally, collaborate on project execution planning"
-        ],
-        "domain_signals": [
-          "Infrastructure",
-          "Sustainable Construction",
-          "Renewable Energy",
-          "Project Execution",
-          "Civil Works",
-          "Vial Infrastructure (roads, bridges)",
-          "International Projects"
-        ],
-        "technology_mentions": [],
-        "responsibility_patterns": [
-          "Leadership of multidisciplinary teams",
-          "Strategic planning and execution",
-          "Technical oversight and guidance",
-          "Collaboration with design and execution teams",
-          "Development of execution strategies and plans",
-          "Involvement in bidding and project offer processes"
-        ],
-        "company_context": "Acciona is a large, global Spanish company specializing in sustainable infrastructure and renewable energy projects. The company emphasizes environmental impact reduction, innovation, and sustainable development, and it operates internationally in major infrastructure sectors."
-      },
-      "sector_inference": {
-        "primary_sector": "construction",
-        "secondary_sectors": [
-          "infrastructure",
-          "renewable_energy"
-        ],
-        "confidence": 0.98,
-        "evidence": [
-          "Job title specifies '(Construcción)' and 'Gerente de Soporte Técnico' (Technical Support Manager - Construction)",
-          "Company description: Acciona is a global company focused on sustainable infrastructure and renewable energy",
-          "Job description and responsibilities revolve around technical support, project execution, and planning for infrastructure works like roads and bridges",
-          "Repeated reference to 'proyectos de infraestructura vial' (road infrastructure projects) and civil works",
-          "Key responsibilities: develop execution plans, lead constructive alternatives, collaborate with design and execution teams on construction projects"
-        ],
-        "reasoning": "The job's primary focus is on delivering technical support and leadership within infrastructure and civil construction projects, especially roads and bridges. The company (Acciona) is strongly associated with construction and infrastructure, with a secondary focus on renewable energy. Most responsibilities and requirements are directly tied to construction activities. Renewable energy is a notable secondary sector due to Acciona's business lines, but the job content is almost entirely construction-related."
-      },
-      "skills_extraction": {
-        "explicit_skills": [
-          {
-            "name": "Ejecución de obras",
-            "category": "domain_specific",
-            "importance": "required",
-            "source": "explicit",
-            "evidence": "El rol requiere experiencia en la ejecución de obras."
-          },
-          {
-            "name": "Soporte técnico en proyectos de infraestructura vial",
-            "category": "technical",
-            "importance": "required",
-            "source": "explicit",
-            "evidence": "Responsable de liderar y proporcionar soporte técnico en proyectos de infraestructura vial, como carreteras y puentes."
-          }
-        ],
-        "implicit_skills": [
-          {
-            "name": "Liderazgo de equipos multidisciplinares",
-            "category": "soft",
-            "importance": "required",
-            "source": "implicit",
-            "evidence": "Responsabilidad de liderar alternativas de proyecto con el equipo de diseño."
-          },
-          {
-            "name": "Planificación estratégica de proyectos",
-            "category": "functional",
-            "importance": "required",
-            "source": "implicit",
-            "evidence": "Desarrollar planes de ejecución, estrategias de subcontratación y programas de trabajo."
-          },
-          {
-            "name": "Gestión de subcontratación",
-            "category": "functional",
-            "importance": "required",
-            "source": "implicit",
-            "evidence": "Desarrollar [...] estrategias de subcontratación."
-          },
-          {
-            "name": "Gestión de proyectos internacionales",
-            "category": "domain_specific",
-            "importance": "preferred",
-            "source": "implicit",
-            "evidence": "Incorporarse al equipo de ejecución [...] en proyectos nacionales e internacionales."
-          },
-          {
-            "name": "Colaboración interdisciplinaria",
-            "category": "soft",
-            "importance": "required",
-            "source": "implicit",
-            "evidence": "Colaborar en la definición del Plan de Ejecución de la Obra como parte del equipo de oferta."
-          },
-          {
-            "name": "Conocimiento en infraestructura vial (carreteras y puentes)",
-            "category": "domain_specific",
-            "importance": "required",
-            "source": "implicit",
-            "evidence": "Proyectos de infraestructura vial, como carreteras y puentes."
-          },
-          {
-            "name": "Gestión de ofertas técnicas y licitaciones",
-            "category": "functional",
-            "importance": "required",
-            "source": "implicit",
-            "evidence": "Proporcionar soporte técnico para el desarrollo de ofertas constructivas [...] colaborar en la definición del Plan de Ejecución [...] como parte del equipo de oferta."
-          },
-          {
-            "name": "Capacidad de adaptación a diferentes ubicaciones y contextos",
-            "category": "soft",
-            "importance": "preferred",
-            "source": "implicit",
-            "evidence": "Ubicaciones según los proyectos, proyectos nacionales e internacionales."
-          },
-          {
-            "name": "Comunicación efectiva",
-            "category": "soft",
-            "importance": "required",
-            "source": "implicit",
-            "evidence": "Liderar equipos, colaborar con equipos de diseño y ejecución, definición de planes conjuntos."
-          },
-          {
-            "name": "Orientación a resultados",
-            "category": "soft",
-            "importance": "required",
-            "source": "implicit",
-            "evidence": "Desarrollar y ejecutar planes efectivos, soporte a ofertas basadas en experiencia previa."
-          }
-        ],
-        "skill_clusters": []
-      },
-      "seniority_inference": {
-        "required_seniority": "lead",
-        "confidence": 0.95,
-        "evidence": [
-          "Role title is 'Gerente' (Manager), suggesting leadership responsibility (Lead to Executive indicator).",
-          "10 years of experience required matches Lead level (8-12 years).",
-          "Responsibilities include leading teams, developing execution plans, strategic planning, and international project management—scope matches Lead level.",
-          "Evidence of strategic and technical breadth: developing project alternatives, supporting offers, and defining execution plans implies both technical depth and strategic focus.",
-          "Direct management and leadership responsibilities as well as collaboration across functional teams (leadership required)."
-        ],
-        "years_experience_required": 10,
-        "reasoning": "The role title 'Gerente de Soporte Técnico' and 10 years of required experience strongly indicate a Lead-level position, per both Spanish and international leveling standards. The scope involves leading technical support for complex construction projects, collaborating with multiple teams, and having influence on strategic direction in project bids. The explicit requirement for leadership (leading and collaborating with design teams, strategic planning), combined with the technical demands (infrastructure, offers, subcontracting), confirms the need for Lead-level seniority. There is no evidence of P&L or executive authority, so 'Executive' is not appropriate. The experience required and the strategic/technical expectations exceed Senior level but align directly with Lead."
-      },
-      "competencies_analysis": {
-        "required_competencies": [
-          {
-            "competency": "Liderazgo de equipos multidisciplinares",
-            "type": "managerial",
-            "importance": "required",
-            "evidence": "Responsabilidad de liderar alternativas de proyecto con el equipo de diseño."
-          },
-          {
-            "competency": "Planificación estratégica de proyectos",
-            "type": "functional",
-            "importance": "required",
-            "evidence": "Desarrollar planes de ejecución, estrategias de subcontratación y programas de trabajo."
-          },
-          {
-            "competency": "Gestión de subcontratación",
-            "type": "functional",
-            "importance": "required",
-            "evidence": "Desarrollar [...] estrategias de subcontratación."
-          },
-          {
-            "competency": "Gestión de ofertas técnicas y licitaciones",
-            "type": "functional",
-            "importance": "required",
-            "evidence": "Proporcionar soporte técnico para el desarrollo de ofertas constructivas [...] colaborar en la definición del Plan de Ejecución [...] como parte del equipo de oferta."
-          },
-          {
-            "competency": "Ejecución de obras",
-            "type": "functional",
-            "importance": "required",
-            "evidence": "El rol requiere experiencia en la ejecución de obras."
-          },
-          {
-            "competency": "Soporte técnico en proyectos de infraestructura vial",
-            "type": "functional",
-            "importance": "required",
-            "evidence": "Responsable de liderar y proporcionar soporte técnico en proyectos de infraestructura vial, como carreteras y puentes."
-          },
-          {
-            "competency": "Conocimiento en infraestructura vial (carreteras y puentes)",
-            "type": "functional",
-            "importance": "required",
-            "evidence": "Proyectos de infraestructura vial, como carreteras y puentes."
-          },
-          {
-            "competency": "Colaboración interdisciplinaria",
-            "type": "soft",
-            "importance": "required",
-            "evidence": "Colaborar en la definición del Plan de Ejecución de la Obra como parte del equipo de oferta."
-          },
-          {
-            "competency": "Comunicación efectiva",
-            "type": "soft",
-            "importance": "required",
-            "evidence": "Liderar equipos, colaborar con equipos de diseño y ejecución, definición de planes conjuntos."
-          },
-          {
-            "competency": "Orientación a resultados",
-            "type": "soft",
-            "importance": "required",
-            "evidence": "Desarrollar y ejecutar planes efectivos, soporte a ofertas basadas en experiencia previa."
-          },
-          {
-            "competency": "Gestión de proyectos internacionales",
-            "type": "functional",
-            "importance": "preferred",
-            "evidence": "Incorporarse al equipo de ejecución [...] en proyectos nacionales e internacionales."
-          },
-          {
-            "competency": "Capacidad de adaptación a diferentes ubicaciones y contextos",
-            "type": "soft",
-            "importance": "preferred",
-            "evidence": "Ubicaciones según los proyectos, proyectos nacionales e internacionales."
-          }
-        ],
-        "leadership_level": "manager",
-        "autonomy_level": "autonomous",
-        "collaboration_scope": "cross_functional"
-      },
-      "ideal_candidate_profile": {
-        "ideal_background": "Ingeniero civil o similar con al menos 10 años de experiencia progresiva en ejecución y soporte técnico de grandes proyectos de infraestructura vial (carreteras, puentes) a nivel nacional e internacional. Haber liderado equipos multidisciplinares y participado tanto en fase de obra como de licitaciones/ofertas técnicas. Combinación de experiencia en campo y oficina, con alta orientación a resultados y habilidad para colaborar con distintas áreas.",
-        "must_have_experience": [
-          "Mínimo 10 años en ejecución de obras de infraestructura vial (carreteras, puentes)",
-          "Soporte técnico en proyectos de construcción",
-          "Elaboración de planes de ejecución y estrategias constructivas",
-          "Liderazgo de equipos multidisciplinares",
-          "Gestión de ofertas técnicas y participación en licitaciones",
-          "Gestión de subcontratistas y cronogramas de obra",
-          "Colaboración interdisciplinaria y comunicación efectiva"
-        ],
-        "preferred_experience": [
-          "Experiencia en proyectos internacionales",
-          "Movilidad y adaptación a diferentes ubicaciones y culturas",
-          "Exposición a proyectos de diseño y ejecución (design & build)",
-          "Gestión de grandes proyectos (>50M€)",
-          "Innovación en soluciones constructivas"
-        ],
-        "career_trajectory": "Lo habitual es haber iniciado la carrera como ingeniero de obra o jefe de producción en proyectos viales, luego pasar a roles de mayor responsabilidad como jefe de obra o responsable técnico, participando en licitaciones y gestión de equipos, hasta finalmente liderar la parte de soporte técnico y estratégica para múltiples proyectos en una empresa referente del sector.",
-        "key_differentiators": [
-          "Experiencia relevante en fases tanto de diseño como de ejecución de proyectos viales",
-          "Capacidad comprobada para resolver desafíos técnicos complejos e innovar en soluciones constructivas",
-          "Liderazgo demostrado en contextos multiculturales e internacionales",
-          "Participación en proyectos viales de alta complejidad o referencia",
-          "Visión estratégica aportando mejoras a procesos y ejecución",
-          "Trayectoria ascendente con impacto tangible en resultados de proyectos"
-        ],
-        "potential_red_flags": [
-          "Experiencia limitada a edificación (no infraestructura vial)",
-          "Falta de experiencia liderando equipos multidisciplinares",
-          "No haber participado en fase de ofertas técnicas/licencias",
-          "Trayectoria solo académica o de oficina, sin experiencia real de campo",
-          "Dificultad para adaptarse a cambios de ubicación o entornos internacionales",
-          "Foco en tareas rutinarias sin haber evolucionado a roles estratégicos o de liderazgo"
-        ],
-        "reasoning": "El rol requiere un equilibrio entre experiencia directa en ejecución de obra y visión estratégica en soporte técnico y gestión de ofertas. La complejidad de proyectos viales demanda habilidades de liderazgo, innovación y capacidad de adaptación a diferentes entornos, muy alineado con el enfoque sostenible e internacional de Acciona. Los diferenciadores clave reflejan la necesidad de combinar recorrido técnico, gestión de equipos y aporte de valor estratégico para el éxito de los proyectos."
-      },
-      "normalization": {
-        "normalized_synonyms": [],
-        "canonical_terms": [],
-        "technology_taxonomy": []
-      }
-    },
-    "key_insights": {
-      "primary_sector": "construction",
-      "sector_confidence": 0.98,
-      "required_seniority": "lead",
-      "years_experience_required": 10,
-      "total_skills_identified": 12,
-      "required_competencies_count": 12,
-      "leadership_level": "manager"
-    },
-    "structured_skills": {
-      "explicit": [
-        {
-          "name": "Ejecución de obras",
-          "category": "domain_specific",
-          "importance": "required",
-          "source": "explicit",
-          "evidence": "El rol requiere experiencia en la ejecución de obras."
-        },
-        {
-          "name": "Soporte técnico en proyectos de infraestructura vial",
-          "category": "technical",
-          "importance": "required",
-          "source": "explicit",
-          "evidence": "Responsable de liderar y proporcionar soporte técnico en proyectos de infraestructura vial, como carreteras y puentes."
-        }
-      ],
-      "implicit": [
-        {
-          "name": "Liderazgo de equipos multidisciplinares",
-          "category": "soft",
-          "importance": "required",
-          "source": "implicit",
-          "evidence": "Responsabilidad de liderar alternativas de proyecto con el equipo de diseño."
-        },
-        {
-          "name": "Planificación estratégica de proyectos",
-          "category": "functional",
-          "importance": "required",
-          "source": "implicit",
-          "evidence": "Desarrollar planes de ejecución, estrategias de subcontratación y programas de trabajo."
-        },
-        {
-          "name": "Gestión de subcontratación",
-          "category": "functional",
-          "importance": "required",
-          "source": "implicit",
-          "evidence": "Desarrollar [...] estrategias de subcontratación."
-        },
-        {
-          "name": "Gestión de proyectos internacionales",
-          "category": "domain_specific",
-          "importance": "preferred",
-          "source": "implicit",
-          "evidence": "Incorporarse al equipo de ejecución [...] en proyectos nacionales e internacionales."
-        },
-        {
-          "name": "Colaboración interdisciplinaria",
-          "category": "soft",
-          "importance": "required",
-          "source": "implicit",
-          "evidence": "Colaborar en la definición del Plan de Ejecución de la Obra como parte del equipo de oferta."
-        },
-        {
-          "name": "Conocimiento en infraestructura vial (carreteras y puentes)",
-          "category": "domain_specific",
-          "importance": "required",
-          "source": "implicit",
-          "evidence": "Proyectos de infraestructura vial, como carreteras y puentes."
-        },
-        {
-          "name": "Gestión de ofertas técnicas y licitaciones",
-          "category": "functional",
-          "importance": "required",
-          "source": "implicit",
-          "evidence": "Proporcionar soporte técnico para el desarrollo de ofertas constructivas [...] colaborar en la definición del Plan de Ejecución [...] como parte del equipo de oferta."
-        },
-        {
-          "name": "Capacidad de adaptación a diferentes ubicaciones y contextos",
-          "category": "soft",
-          "importance": "preferred",
-          "source": "implicit",
-          "evidence": "Ubicaciones según los proyectos, proyectos nacionales e internacionales."
-        },
-        {
-          "name": "Comunicación efectiva",
-          "category": "soft",
-          "importance": "required",
-          "source": "implicit",
-          "evidence": "Liderar equipos, colaborar con equipos de diseño y ejecución, definición de planes conjuntos."
-        },
-        {
-          "name": "Orientación a resultados",
-          "category": "soft",
-          "importance": "required",
-          "source": "implicit",
-          "evidence": "Desarrollar y ejecutar planes efectivos, soporte a ofertas basadas en experiencia previa."
-        }
-      ],
-      "clusters": []
-    },
-    "structured_competencies": [
+  "requirements": {
+    "top_skills": [
       {
-        "competency": "Liderazgo de equipos multidisciplinares",
+        "name": "Soporte técnico en proyectos de infraestructura vial (carreteras y puentes)",
+        "type": "domain_specific",
+        "importance": "required",
+        "criticality_score": 1.0,
+        "reasoning": "The core of this role is providing high-level technical support on road and bridge infrastructure projects; deep knowledge and experience in this area is non-negotiable."
+      },
+      {
+        "name": "Ejecución de obras",
+        "type": "domain_specific",
+        "importance": "required",
+        "criticality_score": 0.95,
+        "reasoning": "Direct, hands-on experience with construction execution is essential to lead project support and ensure buildability."
+      },
+      {
+        "name": "Gestión de proyectos de construcción",
+        "type": "domain_specific",
+        "importance": "required",
+        "criticality_score": 0.93,
+        "reasoning": "Strong project management skills specific to construction are critical for planning, coordination, budgeting, and risk management."
+      },
+      {
+        "name": "Liderazgo de equipos",
+        "type": "transversal",
+        "importance": "required",
+        "criticality_score": 0.9,
+        "reasoning": "As a manager, leading multidisciplinary technical and onsite teams to deliver works is key to success and project delivery."
+      },
+      {
+        "name": "Planificación estratégica y desarrollo de planes de ejecución",
+        "type": "domain_specific",
+        "importance": "required",
+        "criticality_score": 0.9,
+        "reasoning": "The ability to design and execute detailed, feasible, and effective construction methodologies for large projects is a core differentiator."
+      },
+      {
+        "name": "Gestión de subcontratistas/estrategias de subcontratación",
+        "type": "domain_specific",
+        "importance": "required",
+        "criticality_score": 0.85,
+        "reasoning": "Managing subcontracting and external partners is critical for cost, timeline, and quality management in large infrastructure projects."
+      },
+      {
+        "name": "Gestión de ofertas y licitaciones",
+        "type": "domain_specific",
+        "importance": "required",
+        "criticality_score": 0.82,
+        "reasoning": "Experience in technical and commercial aspects of bids and tenders is crucial as a core initial responsibility of the role."
+      },
+      {
+        "name": "Experiencia internacional en proyectos",
+        "type": "domain_specific",
+        "importance": "preferred",
+        "criticality_score": 0.75,
+        "reasoning": "The position may require support and travel in and outside Spain; experience in international project environments is a significant asset."
+      },
+      {
+        "name": "Colaboración y trabajo en equipo",
+        "type": "transversal",
+        "importance": "required",
+        "criticality_score": 0.75,
+        "reasoning": "While not unique, collaboration is necessary due to the cross-functional nature and multi-stakeholder involvement in infrastructure projects."
+      }
+    ],
+    "top_competencies": [
+      {
+        "competency": "Liderazgo de equipos",
         "type": "managerial",
         "importance": "required",
-        "evidence": "Responsabilidad de liderar alternativas de proyecto con el equipo de diseño."
+        "evidence": "Responsable de liderar y proporcionar soporte técnico, liderar alternativas de proyecto"
       },
       {
-        "competency": "Planificación estratégica de proyectos",
+        "competency": "Planificación estratégica y desarrollo de planes de ejecución",
         "type": "functional",
         "importance": "required",
-        "evidence": "Desarrollar planes de ejecución, estrategias de subcontratación y programas de trabajo."
+        "evidence": "Desarrollar planes de ejecución, estrategias de subcontratación y programas de trabajo"
       },
       {
-        "competency": "Gestión de subcontratación",
+        "competency": "Gestión de proyectos de construcción",
         "type": "functional",
         "importance": "required",
-        "evidence": "Desarrollar [...] estrategias de subcontratación."
+        "evidence": "Rol de gerencia y experiencia requerida para liderar soporte técnico en proyectos de construcción"
       },
       {
-        "competency": "Gestión de ofertas técnicas y licitaciones",
-        "type": "functional",
-        "importance": "required",
-        "evidence": "Proporcionar soporte técnico para el desarrollo de ofertas constructivas [...] colaborar en la definición del Plan de Ejecución [...] como parte del equipo de oferta."
-      },
-      {
-        "competency": "Ejecución de obras",
-        "type": "functional",
-        "importance": "required",
-        "evidence": "El rol requiere experiencia en la ejecución de obras."
-      },
-      {
-        "competency": "Soporte técnico en proyectos de infraestructura vial",
-        "type": "functional",
-        "importance": "required",
-        "evidence": "Responsable de liderar y proporcionar soporte técnico en proyectos de infraestructura vial, como carreteras y puentes."
-      },
-      {
-        "competency": "Conocimiento en infraestructura vial (carreteras y puentes)",
-        "type": "functional",
-        "importance": "required",
-        "evidence": "Proyectos de infraestructura vial, como carreteras y puentes."
-      },
-      {
-        "competency": "Colaboración interdisciplinaria",
+        "competency": "Colaboración y trabajo en equipo",
         "type": "soft",
         "importance": "required",
-        "evidence": "Colaborar en la definición del Plan de Ejecución de la Obra como parte del equipo de oferta."
+        "evidence": "Colaborar en la definición del Plan de Ejecución como parte del equipo"
       },
       {
         "competency": "Comunicación efectiva",
         "type": "soft",
         "importance": "required",
-        "evidence": "Liderar equipos, colaborar con equipos de diseño y ejecución, definición de planes conjuntos."
+        "evidence": "Necesario para liderar, colaborar con equipos de diseño y ejecución, y coordinar proyectos complejos"
       },
       {
-        "competency": "Orientación a resultados",
-        "type": "soft",
-        "importance": "required",
-        "evidence": "Desarrollar y ejecutar planes efectivos, soporte a ofertas basadas en experiencia previa."
-      },
-      {
-        "competency": "Gestión de proyectos internacionales",
+        "competency": "Gestión de subcontratistas/estrategias de subcontratación",
         "type": "functional",
-        "importance": "preferred",
-        "evidence": "Incorporarse al equipo de ejecución [...] en proyectos nacionales e internacionales."
+        "importance": "required",
+        "evidence": "Desarrollar estrategias de subcontratación"
       },
       {
-        "competency": "Capacidad de adaptación a diferentes ubicaciones y contextos",
-        "type": "soft",
-        "importance": "preferred",
-        "evidence": "Ubicaciones según los proyectos, proyectos nacionales e internacionales."
+        "competency": "Gestión de ofertas y licitaciones",
+        "type": "functional",
+        "importance": "required",
+        "evidence": "Colaborar en el desarrollo de ofertas constructivas y definición del Plan de Ejecución"
+      },
+      {
+        "competency": "Ejecución de obras",
+        "type": "functional",
+        "importance": "required",
+        "evidence": "El rol requiere experiencia en la ejecución de obras"
       }
     ],
-    "ideal_candidate": {
-      "background": "Ingeniero civil o similar con al menos 10 años de experiencia progresiva en ejecución y soporte técnico de grandes proyectos de infraestructura vial (carreteras, puentes) a nivel nacional e internacional. Haber liderado equipos multidisciplinares y participado tanto en fase de obra como de licitaciones/ofertas técnicas. Combinación de experiencia en campo y oficina, con alta orientación a resultados y habilidad para colaborar con distintas áreas.",
-      "must_have_experience": [
-        "Mínimo 10 años en ejecución de obras de infraestructura vial (carreteras, puentes)",
-        "Soporte técnico en proyectos de construcción",
-        "Elaboración de planes de ejecución y estrategias constructivas",
-        "Liderazgo de equipos multidisciplinares",
-        "Gestión de ofertas técnicas y participación en licitaciones",
-        "Gestión de subcontratistas y cronogramas de obra",
-        "Colaboración interdisciplinaria y comunicación efectiva"
-      ],
-      "preferred_experience": [
-        "Experiencia en proyectos internacionales",
-        "Movilidad y adaptación a diferentes ubicaciones y culturas",
-        "Exposición a proyectos de diseño y ejecución (design & build)",
-        "Gestión de grandes proyectos (>50M€)",
-        "Innovación en soluciones constructivas"
-      ],
-      "career_trajectory": "Lo habitual es haber iniciado la carrera como ingeniero de obra o jefe de producción en proyectos viales, luego pasar a roles de mayor responsabilidad como jefe de obra o responsable técnico, participando en licitaciones y gestión de equipos, hasta finalmente liderar la parte de soporte técnico y estratégica para múltiples proyectos en una empresa referente del sector.",
-      "key_differentiators": [
-        "Experiencia relevante en fases tanto de diseño como de ejecución de proyectos viales",
-        "Capacidad comprobada para resolver desafíos técnicos complejos e innovar en soluciones constructivas",
-        "Liderazgo demostrado en contextos multiculturales e internacionales",
-        "Participación en proyectos viales de alta complejidad o referencia",
-        "Visión estratégica aportando mejoras a procesos y ejecución",
-        "Trayectoria ascendente con impacto tangible en resultados de proyectos"
-      ],
-      "potential_red_flags": [
-        "Experiencia limitada a edificación (no infraestructura vial)",
-        "Falta de experiencia liderando equipos multidisciplinares",
-        "No haber participado en fase de ofertas técnicas/licencias",
-        "Trayectoria solo académica o de oficina, sin experiencia real de campo",
-        "Dificultad para adaptarse a cambios de ubicación o entornos internacionales",
-        "Foco en tareas rutinarias sin haber evolucionado a roles estratégicos o de liderazgo"
-      ]
-    },
-    "synonym_map": [],
-    "canonical_terms": []
+    "non_negotiables": [
+      {
+        "requirement": "10+ años de experiencia en construcción de infraestructuras viales (carreteras, puentes)",
+        "type": "experience",
+        "verification_method": "CV/references check",
+        "reasoning": "Seniority and proven expertise are essential for this managerial and specialist role."
+      },
+      {
+        "requirement": "Disponibilidad para trabajar presencialmente en Madrid y viajar según proyecto",
+        "type": "location",
+        "verification_method": "Interview confirmation",
+        "reasoning": "On-site presence in Madrid and flexibility to relocate or travel are essential due to initial and ongoing project requirements."
+      },
+      {
+        "requirement": "Permiso de trabajo válido para España",
+        "type": "legal",
+        "verification_method": "Work permit verification",
+        "reasoning": "Legal right to work in Spain is mandatory for employment."
+      }
+    ],
+    "red_flags": [
+      {
+        "flag": "Carrera profesional sin experiencia específica en proyectos viales (carreteras/puentes)",
+        "severity": "high",
+        "reasoning": "Role requires sector-specific expertise; lack of this is disqualifying."
+      },
+      {
+        "flag": "Falta de experiencia liderando equipos técnicos en obras de gran envergadura",
+        "severity": "high",
+        "reasoning": "Team and field leadership are fundamental; absence signals lack of essential management capability."
+      },
+      {
+        "flag": "Esperanza o preferencia por teletrabajo/remoto predominante",
+        "severity": "medium",
+        "reasoning": "The position is primarily on-site; reluctance for fieldwork is a warning sign."
+      },
+      {
+        "flag": "Saltos laborales frecuentes y sin progresión clara en construcción",
+        "severity": "medium",
+        "reasoning": "Unstable work history may indicate risk in engaging on complex, long-term projects."
+      }
+    ],
+    "killer_questions": [
+      {
+        "question": "¿Tiene al menos 10 años de experiencia en ejecución y gestión de obras de infraestructura vial (carreteras y puentes)?",
+        "expected_answer": "sí",
+        "reasoning": "Verifies the minimum sector, experience, and seniority threshold for the role."
+      },
+      {
+        "question": "¿Cuenta con permiso de trabajo válido para España?",
+        "expected_answer": "sí",
+        "reasoning": "Legal eligibility for employment is fundamental."
+      },
+      {
+        "question": "¿Está dispuesto/a a trabajar presencialmente en Madrid y viajar o desplazarse según los proyectos?",
+        "expected_answer": "sí",
+        "reasoning": "Role demands on-site starting in Madrid and travel flexibility for project execution."
+      }
+    ]
   },
-  "explainability": {
-    "sector_reasoning": "The job's primary focus is on delivering technical support and leadership within infrastructure and civil construction projects, especially roads and bridges. The company (Acciona) is strongly associated with construction and infrastructure, with a secondary focus on renewable energy. Most responsibilities and requirements are directly tied to construction activities. Renewable energy is a notable secondary sector due to Acciona's business lines, but the job content is almost entirely construction-related.",
-    "sector_evidence": [
-      "Job title specifies '(Construcción)' and 'Gerente de Soporte Técnico' (Technical Support Manager - Construction)",
-      "Company description: Acciona is a global company focused on sustainable infrastructure and renewable energy",
-      "Job description and responsibilities revolve around technical support, project execution, and planning for infrastructure works like roads and bridges",
-      "Repeated reference to 'proyectos de infraestructura vial' (road infrastructure projects) and civil works",
-      "Key responsibilities: develop execution plans, lead constructive alternatives, collaborate with design and execution teams on construction projects"
+  "compensation": {
+    "salary_range": {
+      "min": 60000,
+      "max": 80000
+    },
+    "remote_policy": "on-site",
+    "locations": [
+      "Madrid, Community of Madrid, Spain"
+    ]
+  },
+  "sector_intelligence": {
+    "primary_sector": "construction",
+    "secondary_sectors": [
+      "renewable_energy",
+      "infrastructure"
     ],
-    "seniority_reasoning": "The role title 'Gerente de Soporte Técnico' and 10 years of required experience strongly indicate a Lead-level position, per both Spanish and international leveling standards. The scope involves leading technical support for complex construction projects, collaborating with multiple teams, and having influence on strategic direction in project bids. The explicit requirement for leadership (leading and collaborating with design teams, strategic planning), combined with the technical demands (infrastructure, offers, subcontracting), confirms the need for Lead-level seniority. There is no evidence of P&L or executive authority, so 'Executive' is not appropriate. The experience required and the strategic/technical expectations exceed Senior level but align directly with Lead.",
-    "seniority_evidence": [
-      "Role title is 'Gerente' (Manager), suggesting leadership responsibility (Lead to Executive indicator).",
-      "10 years of experience required matches Lead level (8-12 years).",
-      "Responsibilities include leading teams, developing execution plans, strategic planning, and international project management—scope matches Lead level.",
-      "Evidence of strategic and technical breadth: developing project alternatives, supporting offers, and defining execution plans implies both technical depth and strategic focus.",
-      "Direct management and leadership responsibilities as well as collaboration across functional teams (leadership required)."
-    ],
-    "ideal_candidate_reasoning": "El rol requiere un equilibrio entre experiencia directa en ejecución de obra y visión estratégica en soporte técnico y gestión de ofertas. La complejidad de proyectos viales demanda habilidades de liderazgo, innovación y capacidad de adaptación a diferentes entornos, muy alineado con el enfoque sostenible e internacional de Acciona. Los diferenciadores clave reflejan la necesidad de combinar recorrido técnico, gestión de equipos y aporte de valor estratégico para el éxito de los proyectos."
+    "confidence": 0.97,
+    "reasoning": "The role is positioned within Acciona's core construction and infrastructure division, focused on civil engineering projects (roads, bridges). While Acciona also operates in renewable energy, the job's description, context, and title emphasize hands-on technical and managerial work in construction. Secondary sector classification to renewable energy is warranted, as Acciona often integrates sustainability and clean-energy solutions into its infrastructure projects, but all primary functions and explicit responsibilities center on construction and civil engineering delivery."
   }
 }
