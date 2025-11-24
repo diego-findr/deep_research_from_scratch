@@ -435,6 +435,13 @@ Perform comprehensive skills extraction:
    - Identify skill stacks (e.g., MERN stack, SCADA stack)
    - Map complementary skills
    - Return as list of cluster objects with cluster_name and skills list
+
+7. **Filtering & Relevance (CRITICAL)**:
+   - **IGNORE** "Beginner" or "Novice" skills listed in the profile if they are NOT supported by actual experience or are irrelevant to the primary sector.
+   - **OMIT** generic skills (e.g., "Microsoft Word", "Internet") unless they are central to the role.
+   - **CORRECT** the level: If a skill is listed as "Beginner" but the experience suggests "Advanced", use the estimated real level.
+   - **FOCUS** on skills that define the candidate's professional identity and value proposition.
+   - The goal is a **curated, high-signal list**, not a complete dump of every keyword.
 </instructions>
 
 <implicit_skills_inference_guide>
@@ -496,8 +503,8 @@ EXPERT:
 
 <output_requirements>
 Provide:
-- explicit_skills: List of Skill objects for stated skills
-- implicit_skills: List of Skill objects for inferred skills
+- explicit_skills: List of Skill objects for stated skills (FILTERED for relevance)
+- implicit_skills: List of Skill objects for inferred skills (High confidence only)
 - skill_clusters: List of cluster objects with cluster_name and skills
 
 Each Skill should have:
@@ -516,6 +523,7 @@ Each Skill should have:
 4. Don't infer soft skills without clear evidence
 5. For implicit technical skills, ensure the role/activity requires them
 6. Cluster related skills to show coherent skill sets
+7. **AGGRESSIVELY FILTER** noise: Do not include low-value skills just because they are in the profile.
 </critical_rules>
 
 Be thorough but evidence-based. Quality over quantity."""
@@ -770,13 +778,14 @@ Each TechnologyCategory: {{category: "frontend", technologies: ["React", "Vue"]}
 Be comprehensive and include common variations."""
 
 
+
 # ===== SENIORITY INFERENCE PROMPT =====
 
 SENIORITY_INFERENCE_PROMPT = """You are an expert career analyst and talent assessor.
 
 <task>
-Infer the candidate's professional seniority level based on all available information
-including experience years, roles, activities, skills, and competencies.
+Infer the candidate's professional seniority level based on RELEVANT experience to their CURRENT sector/role.
+You must filter out years of experience that are unrelated to their current professional focus.
 </task>
 
 <profile_data>
@@ -792,51 +801,50 @@ including experience years, roles, activities, skills, and competencies.
 </competencies_analysis>
 
 <instructions>
-Assess seniority across multiple dimensions:
+Assess seniority across multiple dimensions, BUT ONLY FOR RELEVANT EXPERIENCE:
 
-1. **Experience Duration**:
-   - Stated years of experience
-   - Number and duration of roles
-   - Career progression
+1. **Relevance Filtering (CRITICAL)**:
+   - Identify the candidate's CURRENT primary sector and role focus.
+   - **EXCLUDE** years of experience in completely unrelated fields (e.g., if currently a Software Engineer, exclude 5 years as a Construction Worker).
+   - **INCLUDE** years in adjacent or transferable fields (e.g., if currently a Data Scientist, include years as a Data Analyst).
+   - **CALCULATE** "Relevant Years of Experience" based on this filtering.
 
-2. **Role Complexity**:
-   - Job titles and responsibilities
-   - Scope of work (individual vs team vs organization)
-   - Decision-making authority
+2. **Experience Duration**:
+   - Use the calculated "Relevant Years of Experience".
+   - Number and duration of RELEVANT roles.
+   - Career progression within the relevant domain.
 
-3. **Technical Depth**:
-   - Skill proficiency levels
-   - Breadth vs depth of expertise
-   - Specialization vs generalization
+3. **Role Complexity**:
+   - Job titles and responsibilities in relevant roles.
+   - Scope of work (individual vs team vs organization).
+   - Decision-making authority.
 
-4. **Leadership and Impact**:
-   - Team leadership experience
-   - Project scope and complexity
-   - Organizational impact
+4. **Technical Depth**:
+   - Skill proficiency levels in relevant technologies.
+   - Breadth vs depth of expertise in the current domain.
 
-5. **Autonomy and Initiative**:
-   - Independent work
-   - Strategic thinking
-   - Innovation and improvement initiatives
+5. **Leadership and Impact**:
+   - Team leadership experience in relevant context.
+   - Project scope and complexity.
 
 </instructions>
 
 <seniority_levels>
-JUNIOR (0-2 years):
-- Limited experience
+JUNIOR (0-2 years relevant experience):
+- Limited relevant experience
 - Executing defined tasks
 - Learning and developing skills
 - Individual contributor
 - Requires supervision
 
-MID (2-5 years):
+MID (2-5 years relevant experience):
 - Solid experience in core skills
 - Independent execution
 - Some complexity in projects
 - Occasional mentoring of juniors
 - Moderate autonomy
 
-SENIOR (5-8 years):
+SENIOR (5-8 years relevant experience):
 - Deep expertise in domain
 - Leading projects/initiatives
 - Mentoring others
@@ -844,14 +852,14 @@ SENIOR (5-8 years):
 - High autonomy
 - Cross-functional influence
 
-LEAD (8-12 years):
+LEAD (8-12 years relevant experience):
 - Leading teams or large initiatives
 - Setting technical direction
 - Significant organizational impact
 - Systematic mentorship
 - Strategic planning
 
-PRINCIPAL/EXPERT (12+ years):
+PRINCIPAL/EXPERT (12+ years relevant experience):
 - Domain expert
 - Organizational leadership
 - Industry influence
@@ -859,84 +867,56 @@ PRINCIPAL/EXPERT (12+ years):
 - Strategic vision
 </seniority_levels>
 
-<seniority_indicators>
-STRONG JUNIOR INDICATORS:
-- "learning", "assisted", "supported"
-- Short duration roles (< 1 year)
-- Entry-level titles
-- Limited skill breadth
-
-STRONG MID INDICATORS:
-- "developed", "implemented", "contributed"
-- 2-4 years in roles
-- Standard individual contributor work
-- Solid technical skills
-
-STRONG SENIOR INDICATORS:
-- "led", "designed", "architected", "optimized"
-- 5+ years experience
-- Team leadership
-- Advanced technical skills
-- Strategic impact
-
-STRONG LEAD INDICATORS:
-- "directed", "managed team", "established"
-- 8+ years experience
-- Multiple teams or large projects
-- Expert-level skills
-- Organizational influence
-
-STRONG PRINCIPAL/EXPERT INDICATORS:
-- "pioneered", "transformed", "executive"
-- 12+ years experience
-- Strategic leadership
-- Industry recognition
-- Thought leadership
-</seniority_indicators>
-
 <examples>
-Example 1 - Senior Industrial Automation:
-- 6 years experience stated
-- "Diseño y mantenimiento" - design responsibility
-- Advanced SCADA/PLC skills
-- Cross-functional collaboration
-- Independent execution
-→ SENIOR level, confidence 0.85
+Example 1 - Career Pivot (Relevance Filtering):
+Profile:
+- Current: Frontend Developer (3 years)
+- Previous: Waiter (4 years)
+- Previous: Retail Manager (2 years)
+Analysis:
+- Total work history: 9 years
+- Current focus: Software Development
+- Relevant experience: 3 years (Frontend Developer)
+- Irrelevant experience: 6 years (Waiter, Retail)
+→ MID level (based on 3 years relevant), NOT Senior/Lead.
 
-Example 2 - Mid-level Full-stack:
-- 3 years experience
-- "Developed e-commerce platform"
-- Intermediate full-stack skills
-- Team contribution (not leading)
-- Some technical depth
-→ MID level, confidence 0.8
+Example 2 - Consistent Career:
+Profile:
+- Current: Senior Industrial Automation Engineer (2 years)
+- Previous: SCADA Engineer (2 years)
+- Previous: Junior Automation Tech (2 years)
+Analysis:
+- Current focus: Industrial Automation
+- Relevant experience: 6 years (All roles are relevant)
+→ SENIOR level (based on 6 years relevant).
 
-Example 3 - Lead level:
-- 10 years experience
-- "Led team of 5 developers"
-- Expert technical skills
-- Strategic project ownership
-- Mentorship evidence
-→ LEAD level, confidence 0.9
+Example 3 - Partial Relevance:
+Profile:
+- Current: Data Scientist (2 years)
+- Previous: Data Analyst (3 years)
+- Previous: High School Math Teacher (4 years)
+Analysis:
+- Current focus: Data Science
+- Relevant experience: 5 years (Data Scientist + Data Analyst are highly related)
+- Less relevant: Math Teacher (transferable soft skills, but not core technical experience)
+→ MID/SENIOR level (based on 5 years relevant).
 </examples>
 
 <output_requirements>
 Provide:
 - seniority_level: junior/mid/senior/lead/principal/expert
 - confidence: Float 0.0-1.0
-- evidence: List of specific evidence from profile
-- years_experience_estimate: Estimated years of relevant experience
-- reasoning: Clear explanation of assessment
+- evidence: List of specific evidence from profile (focusing on relevant roles)
+- years_experience_estimate: Estimated years of RELEVANT experience (integer)
+- reasoning: Clear explanation of assessment, explicitly stating which roles were counted as relevant and which were excluded.
 </output_requirements>
 
 <critical_rules>
-1. Prioritize stated experience years if available
-2. Role titles and responsibilities are strong signals
-3. Leadership experience bumps seniority up
-4. Technical depth and breadth matter
-5. Consider regional and industry norms (titles vary)
-6. When ambiguous, be conservative (don't over-estimate)
-7. Confidence score reflects certainty
+1. **ALWAYS** identify the current professional focus first.
+2. **AGGRESSIVELY FILTER** out unrelated past lives (e.g., hospitality, construction, retail) if they don't match the current white-collar/tech focus.
+3. **DO NOT** simply sum up all years of work history.
+4. **EXPLAIN** your relevance filtering logic in the reasoning.
+5. If the candidate has ONLY irrelevant experience (e.g., just graduated and only worked as a waiter), they are JUNIOR (0 years relevant).
 </critical_rules>
 
 Be thorough and evidence-based."""
@@ -1094,3 +1074,96 @@ Each IdealRole must include:
 </critical_rules>
 
 Analyze thoroughly and provide actionable role recommendations."""
+
+
+# ===== LANGUAGE INFERENCE PROMPT =====
+
+LANGUAGE_INFERENCE_PROMPT = """You are an expert linguist and talent analyst capable of inferring language proficiency from professional profiles.
+
+<task>
+Analyze the candidate's profile to identify all languages spoken and their proficiency levels.
+You must look for both EXPLICIT mentions and IMPLICIT signals.
+</task>
+
+<profile_data>
+{profile_data}
+</profile_data>
+
+<context_data>
+Sector: {sector}
+Location: {location}
+Companies: {companies}
+Education: {education}
+</context_data>
+
+<instructions>
+1. **Explicit Languages**:
+   - Look for a "languages" section in the profile.
+   - Extract stated proficiency levels (e.g., "Native", "B2", "Professional working proficiency").
+
+2. **Implicit Inference (CRITICAL)**:
+   - **Location History**: Living/working in a country implies knowledge of its language.
+     - Example: Worked in London for 3 years -> Infer English (Professional/Fluent).
+     - Example: Worked in Berlin -> Infer German (Basic/Intermediate) unless English was the working language.
+   - **International Companies**: Working at major multinationals often implies English proficiency.
+     - Example: "Senior Manager at Google" -> Infer English (Professional).
+   - **Education**: Degrees from universities in specific countries.
+     - Example: "Master's at Stanford" -> Infer English (Advanced/Fluent).
+   - **Profile Language**: If the profile itself is written in a specific language, they have at least that level of writing proficiency.
+     - Example: Profile written in English -> Infer English (Intermediate+).
+   - **Role Requirements**: Some roles *require* English (e.g., "International Sales Manager", "Pilot").
+
+3. **Proficiency Levels**:
+   - **Native**: Born/raised in the country or explicitly stated.
+   - **Fluent**: Long-term residence, advanced degrees, or explicitly stated.
+   - **Professional**: Worked in that language environment, business context.
+   - **Intermediate**: Some exposure, profile written in language, basic working knowledge.
+   - **Basic**: Short exposure, travel, or inferred from weak signals.
+
+4. **Confidence Scoring**:
+   - 1.0: Explicitly stated in profile.
+   - 0.8-0.9: Strong inference (e.g., lived in country 5+ years, degree from country).
+   - 0.6-0.7: Moderate inference (e.g., international company, profile language).
+   - < 0.5: Weak inference (guesswork).
+</instructions>
+
+<examples>
+Example 1:
+Profile: Written in Spanish. Lives in Madrid. Worked at "TechGlobal US" (remote) for 4 years.
+Inference:
+- Spanish: Native (Location + Profile language)
+- English: Professional (Worked for US company for 4 years)
+
+Example 2:
+Profile: Written in English. Name: "Hans Müller". Education: TU Munich. Current role: Engineer at BMW Munich.
+Inference:
+- German: Native (Name + Education + Location)
+- English: Professional (Profile written in English + Technical degree)
+
+Example 3:
+Profile: "Customer Support" at a local Spanish company. No international experience.
+Inference:
+- Spanish: Native (Context)
+- English: Basic/None (No signals found)
+</examples>
+
+<output_requirements>
+Provide:
+- languages: List of Language objects
+- reasoning: Explanation of how you inferred each language
+
+Each Language object:
+- language: Name
+- proficiency: Level
+- source: 'explicit' or 'inferred'
+- evidence: Why you believe this (e.g., "Profile written in English", "Worked in UK")
+- confidence: Score
+</output_requirements>
+
+<critical_rules>
+1. Don't assume English is Native just because the profile is in English (it's often Professional/Intermediate).
+2. Always infer the local language of their current/past locations.
+3. Be specific about the source of evidence.
+4. If no explicit languages are found, you MUST try to infer based on context.
+</critical_rules>
+"""

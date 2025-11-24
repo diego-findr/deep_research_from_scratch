@@ -153,6 +153,17 @@ def run_example(input_file: str = None):
         print(f"   Domain: {details['domain']}")
         print(f"   Confidence: {details['confidence']:.2f}")
 
+    # Display inferred languages
+    languages = enriched["semantic_enrichment"]["languages"]
+    print("\n\n🗣️ INFERRED LANGUAGES")
+    print("=" * 50)
+    for lang in languages:
+        print(f"\n📌 Language: {lang['language']}")
+        print(f"   Proficiency: {lang['proficiency']}")
+        print(f"   Source: {lang['source']}")
+        print(f"   Evidence: {lang['evidence']}")
+        print(f"   Confidence: {lang['confidence']:.2f}")
+
     # Save enriched profile
     # Create output directory if it doesn't exist
     output_dir = Path("tests/candidates/outputs")

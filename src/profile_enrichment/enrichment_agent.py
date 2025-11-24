@@ -25,6 +25,7 @@ from profile_enrichment.state import (
     NormalizationResults,
     SeniorityInference,
     IdealRolesInference,
+    LanguageInference,
 )
 from profile_enrichment.prompts import (
     CONTEXT_ANALYSIS_PROMPT,
@@ -35,6 +36,7 @@ from profile_enrichment.prompts import (
     NORMALIZATION_PROMPT,
     SENIORITY_INFERENCE_PROMPT,
     IDEAL_ROLES_INFERENCE_PROMPT,
+    LANGUAGE_INFERENCE_PROMPT,
 )
 
 
@@ -335,6 +337,50 @@ def infer_ideal_roles(state: ProfileEnrichmentState) -> Dict[str, Any]:
     return {"ideal_roles_inference": json.dumps(ideal_roles_dict, ensure_ascii=False)}
 
 
+def infer_languages(state: ProfileEnrichmentState) -> Dict[str, Any]:
+    """
+    Infer the candidate's language proficiency.
+
+    Analyzes explicit mentions and implicit signals (location, education, companies)
+    to determine languages spoken and proficiency levels.
+
+    Returns updated state with language_inference.
+    """
+    profile_data_str = format_profile_data(state["raw_profile"])
+    
+    # Extract context for the prompt
+    raw_profile = state["raw_profile"]
+    sector_inference = json.loads(state["sector_inference"])
+    
+    # Extract location, companies, education for context
+    location = f"{raw_profile.get('current_city', '')}, {raw_profile.get('current_country', '')}"
+    
+    companies = []
+    if "experiences" in raw_profile:
+        companies = [exp.get("company", "") for exp in raw_profile["experiences"] if exp.get("company")]
+    
+    education = []
+    if "education" in raw_profile:
+        education = [edu.get("school", "") for edu in raw_profile["education"]]
+    
+    prompt = LANGUAGE_INFERENCE_PROMPT.format(
+        profile_data=profile_data_str,
+        sector=sector_inference.get("primary_sector", "unknown"),
+        location=location,
+        companies=", ".join(companies),
+        education=", ".join(education),
+    )
+
+    model_with_structure = structured_model.with_structured_output(
+        LanguageInference, method="function_calling"
+    )
+    response = model_with_structure.invoke(prompt)
+
+    language_dict = response.model_dump()
+
+    return {"language_inference": json.dumps(language_dict, ensure_ascii=False)}
+
+
 def assemble_enriched_profile(state: ProfileEnrichmentState) -> Dict[str, Any]:
     """
     Assemble the final enriched profile with all analysis results.
@@ -353,6 +399,7 @@ def assemble_enriched_profile(state: ProfileEnrichmentState) -> Dict[str, Any]:
     normalization_results = json.loads(state["normalization_results"])
     seniority_inference = json.loads(state["seniority_inference"])
     ideal_roles_inference = json.loads(state["ideal_roles_inference"])
+    language_inference = json.loads(state["language_inference"])
 
     # Build enriched profile structure (simplified and non-redundant)
     enriched_profile = {
@@ -382,12 +429,8 @@ def assemble_enriched_profile(state: ProfileEnrichmentState) -> Dict[str, Any]:
                 "primary_role_fit_score": ideal_roles_inference["primary_role"]["fit_score"],
             },
             
-            # Context information
-            "context": {
-                "key_indicators": context_analysis["key_indicators"],
-                "domain_signals": context_analysis["domain_signals"],
-                "technology_mentions": context_analysis["technology_mentions"],
-            },
+            # Context information - REMOVED as it is intermediate data
+            # "context": { ... },
             
             # Sector (simplified)
             "sector": {
@@ -428,11 +471,7 @@ def assemble_enriched_profile(state: ProfileEnrichmentState) -> Dict[str, Any]:
                 for term in disambiguation_results["disambiguated_terms"]
             },
             
-            # Normalization (synonyms and canonical terms)
-            "synonyms": {
-                syn["term"]: syn["synonyms"]
-                for syn in normalization_results.get("normalized_synonyms", [])
-            },
+            # Normalization (canonical terms only)
             "canonical_terms": {
                 canon["variation"]: canon["canonical"]
                 for canon in normalization_results.get("canonical_terms", [])
@@ -446,6 +485,9 @@ def assemble_enriched_profile(state: ProfileEnrichmentState) -> Dict[str, Any]:
                 "recent_focus": ideal_roles_inference["recent_focus"],
                 "reasoning": ideal_roles_inference["reasoning"],
             },
+            
+            # Languages
+            "languages": language_inference["languages"],
         },
     }
 
@@ -483,6 +525,7 @@ def build_enrichment_graph() -> StateGraph:
     graph_builder.add_node("normalize_terms", normalize_terms)
     graph_builder.add_node("infer_seniority", infer_seniority)
     graph_builder.add_node("infer_ideal_roles", infer_ideal_roles)
+    graph_builder.add_node("infer_languages", infer_languages)
     graph_builder.add_node("assemble_enriched_profile", assemble_enriched_profile)
 
     # Add edges to define the flow
@@ -494,7 +537,8 @@ def build_enrichment_graph() -> StateGraph:
     graph_builder.add_edge("analyze_competencies", "normalize_terms")
     graph_builder.add_edge("normalize_terms", "infer_seniority")
     graph_builder.add_edge("infer_seniority", "infer_ideal_roles")
-    graph_builder.add_edge("infer_ideal_roles", "assemble_enriched_profile")
+    graph_builder.add_edge("infer_ideal_roles", "infer_languages")
+    graph_builder.add_edge("infer_languages", "assemble_enriched_profile")
     graph_builder.add_edge("assemble_enriched_profile", END)
 
     # Compile and return
@@ -557,6 +601,7 @@ def enrich_profile(
         "normalization_results": None,
         "seniority_inference": None,
         "ideal_roles_inference": None,
+        "language_inference": None,
         "enriched_profile": None,
     }
 

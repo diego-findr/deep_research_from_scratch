@@ -34,7 +34,9 @@ class ProfileEnrichmentState(TypedDict):
     competencies_analysis: Optional[str]
     normalization_results: Optional[str]
     seniority_inference: Optional[str]
+    seniority_inference: Optional[str]
     ideal_roles_inference: Optional[str]
+    language_inference: Optional[str]
 
     # Final enriched output
     enriched_profile: Optional[Dict[str, Any]]
@@ -294,4 +296,33 @@ class IdealRolesInference(BaseModel):
     )
     reasoning: str = Field(
         description="Overall explanation of role recommendations",
+    )
+
+
+class Language(BaseModel):
+    """Schema for a single language."""
+
+    language: str = Field(description="Language name (e.g., 'English', 'Spanish')")
+    proficiency: str = Field(
+        description="Proficiency level: 'Native', 'Fluent', 'Professional', 'Intermediate', 'Basic'",
+    )
+    source: str = Field(
+        description="Source: 'explicit' (stated in profile) or 'inferred' (deduced from context)",
+    )
+    evidence: str = Field(
+        description="Evidence supporting this language proficiency (e.g., 'Worked in UK for 5 years', 'Explicitly listed')",
+    )
+    confidence: float = Field(
+        description="Confidence score 0.0-1.0 for this inference",
+    )
+
+
+class LanguageInference(BaseModel):
+    """Schema for language proficiency inference."""
+
+    languages: List[Language] = Field(
+        description="List of languages and proficiency levels",
+    )
+    reasoning: str = Field(
+        description="Explanation of how languages were inferred",
     )

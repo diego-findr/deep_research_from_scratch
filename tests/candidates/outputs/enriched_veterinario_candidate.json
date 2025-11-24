@@ -1,8 +1,8 @@
 {
   "candidato_id": "322b0acc-9f16-47fd-a35d-8722f1b7c788",
-  "timestamp": "2025-11-17T12:49:02.568119",
+  "timestamp": "2025-11-24T11:55:51.183570",
   "metadata": {
-    "timestamp": "2025-11-17T12:49:02.568119",
+    "timestamp": "2025-11-24T11:55:51.183570",
     "source": "database",
     "sector_objetivo": "industrial|utilities"
   },
@@ -138,1596 +138,454 @@
   },
   "semantic_enrichment": {
     "version": "1.0",
-    "enrichment_timestamp": "2025-11-17T12:49:02.568119",
-    "analysis_components": {
-      "context_analysis": {
-        "key_indicators": [
-          "MAZANA PIENSOS COMPUESTOS SL",
-          "Agropecuaria Obanos, S.A.",
-          "Tests and Trials",
-          "Veterinaria (Veterinarian)/Veterinario (Veterinarian)",
-          "Tecnico de calidad (Quality Technician)",
-          "Animal Husbandry",
-          "Diagnostic veterinary medicine",
-          "Animal Welfare",
-          "Control de calidad (Quality control)"
-        ],
-        "domain_signals": [
-          "animal nutrition",
-          "animal feed production",
-          "veterinary medicine",
-          "quality control in agri-food sector",
-          "animal welfare regulation",
-          "agricultural/livestock industry"
-        ],
-        "technology_mentions": [
-          "Análisis de datos (Data analysis)",
-          "Regulatory compliance tools (implied)",
-          "Control de calidad (Quality control tools, implied)"
-        ],
-        "activity_patterns": [
-          "veterinary diagnostics and care for livestock",
-          "animal husbandry and welfare monitoring",
-          "quality assurance in animal feed production",
-          "project management (Gestión de proyectos)",
-          "regulatory compliance for animal products",
-          "team collaboration",
-          "customer/client interaction (Atención al cliente)",
-          "problem resolution"
-        ],
-        "language_context": "Linguistic context is rooted in veterinary medicine, animal feed/agri-food production, and quality assurance. Jargon includes terms related to animal welfare, regulatory compliance, veterinary diagnosis, and quality control in an agro-industrial setting. Role titles and skillset are Spanish-language professional terms in the agricultural, livestock, and animal nutrition/feed manufacturing sectors. Technology mentions are limited, mainly to data analysis and possibly implied usage of regulatory and quality tools."
-      },
-      "sector_inference": {
-        "primary_sector": "agri_food_quality_assurance",
-        "secondary_sectors": [
-          "veterinary_medicine",
-          "animal_feed_production",
-          "agricultural_management"
-        ],
-        "confidence": 0.95,
-        "evidence": [
-          "Current role: 'Tecnico de calidad en MAZANA PIENSOS COMPUESTOS SL' (Quality Technician in a compound animal feed company)",
-          "Recent roles: 'Veterinaria' at 'MAZANA PIENSOS COMPUESTOS SL' and 'Agropecuaria Obanos, S.A.' (veterinary roles in agricultural/animal feed businesses)",
-          "Skills: 'Animal Husbandry', 'Diagnostic veterinary medicine', 'Animal Welfare', 'Control de calidad' (quality control), 'Regulatory compliance', 'Análisis de datos'",
-          "Domain signals: 'animal nutrition', 'animal feed production', 'veterinary medicine', 'quality control in agri-food sector'"
-        ],
-        "reasoning": "The candidate's career history is centered in companies directly related to animal feed production and agricultural business (MAZANA PIENSOS COMPUESTOS SL, Agropecuaria Obanos, S.A.). Role titles bridge veterinary practice and quality control—specifically in industrial animal feed production. Skills reinforce this, combining veterinary medicine, animal husbandry, quality assurance, regulatory compliance, and data analysis, all within an agri-food context. This points towards agri-food quality assurance as the primary sector, with high confidence due to clear, specific overlap between job titles, company industries, and required expertise."
-      },
-      "disambiguation": {
-        "disambiguated_terms": [
-          {
-            "original_term": "Control de calidad",
-            "interpreted_meaning": "Quality control of animal feed products (including testing ingredient quality, process standards, and regulatory compliance in feed manufacturing)",
-            "domain": "agri_food_quality_assurance",
-            "confidence": 0.99,
-            "evidence": "\"Control de calidad\" appears both as a skill and in the job title \"Tecnico de calidad en MAZANA PIENSOS COMPUESTOS SL\"; the company specializes in compound animal feed. Skills and companies relate to animal nutrition/feed.",
-            "alternative_meanings_rejected": [
-              "General quality control (e.g., in manufacturing, services, or software)—ruled out as all companies are in animal feed/agriculture; \"version control\" (software)—not supported by any tech terminology; \"industrial process control\"—not separate from quality focus"
-            ]
-          },
-          {
-            "original_term": "Diagnóstico veterinario (Diagnostic veterinary medicine)",
-            "interpreted_meaning": "Diagnostic procedures and medical assessment for livestock/production animals in the agricultural/feed industry",
-            "domain": "veterinary_medicine_agriculture",
-            "confidence": 0.98,
-            "evidence": "Listed as skill \"Diagnostic veterinary medicine\"; co-occurs with 'Animal Husbandry', 'Animal Welfare', and is underpinned by veterinary roles at agricultural/animal feed companies.",
-            "alternative_meanings_rejected": [
-              "Diagnostic work with pets/companion animals (profile is feed/livestock/agribusiness domain); laboratory diagnostics in non-veterinary settings"
-            ]
-          },
-          {
-            "original_term": "Análisis de datos (Data analysis)",
-            "interpreted_meaning": "Data analysis applied to quality control, regulatory compliance, and possibly livestock/production statistics within feed/agricultural production",
-            "domain": "agri_food_quality_assurance",
-            "confidence": 0.95,
-            "evidence": "Skill listed is 'Análisis de datos'; context is agri-food/veterinary work, where data analysis could refer to lab/ingredient data, production statistics, or regulatory forms. No indication of general software/data science analysis.",
-            "alternative_meanings_rejected": [
-              "General data science/business analytics (no tech or business analysis focus indicated); software testing data analysis (not a software QA profile)"
-            ]
-          },
-          {
-            "original_term": "Animal Husbandry",
-            "interpreted_meaning": "Management and care for livestock animals, specifically within the context of animal agriculture and feed production",
-            "domain": "agricultural_management",
-            "confidence": 0.99,
-            "evidence": "Skill 'Animal Husbandry' listed; all experience in farm/feed/veterinary roles; companies are animal feed and agricultural businesses.",
-            "alternative_meanings_rejected": [
-              "Pet/companion animal care (profile is livestock/industry focused); laboratory animal care (no research/lab context)"
-            ]
-          },
-          {
-            "original_term": "Atención al cliente (Customer service)",
-            "interpreted_meaning": "Customer service in the context of agricultural clients, such as farmers or feed distributors, addressing queries or issues around animal feed/veterinary products",
-            "domain": "agricultural_service",
-            "confidence": 0.93,
-            "evidence": "Skill \"Atención al cliente\"; no indication of retail or call center context; fits with agri-food/veterinary B2B customer interactions (companies serve farmers/business clients)",
-            "alternative_meanings_rejected": [
-              "General customer service (e.g., retail, hospitality—ruled out by company types and industry); technical support (not tech/software sector)"
-            ]
-          },
-          {
-            "original_term": "Regulatory compliance",
-            "interpreted_meaning": "Ensuring animal feed products and practices adhere to agricultural, veterinary, and food safety regulations (such as traceability, animal product quality, EU/Spanish feed laws)",
-            "domain": "agri_food_quality_assurance",
-            "confidence": 0.98,
-            "evidence": "Skill 'Regulatory compliance'; work at companies in animal feed/agriculture sector; context of quality assurance and veterinary oversight.",
-            "alternative_meanings_rejected": [
-              "General corporate/legal compliance (no legal/finance roles); software regulatory frameworks (not a tech/software/medical device profile)"
-            ]
-          },
-          {
-            "original_term": "Gestión de proyectos (Project management)",
-            "interpreted_meaning": "Management of projects related to quality assurance, regulatory adaptation, or farm/feed production process optimization within the agri-food sector",
-            "domain": "agri_food_project_management",
-            "confidence": 0.92,
-            "evidence": "Skill 'Gestión de proyectos'; fits with improvement or regulatory projects common in agri-food/veterinary/feed companies; profile has no IT or engineering project focus.",
-            "alternative_meanings_rejected": [
-              "IT/software project management (no evidence of software development or IT projects); construction/engineering project management (companies are not engineering/construction focused)"
-            ]
-          }
-        ],
-        "summary": "All relevant polysemantic terms are embedded in an agri-food, quality assurance, and veterinary context. The profile is anchored in animal feed production companies and roles bridging quality, veterinary medicine, and data-driven process improvement. Software, IT, general business, or consumer meanings for ambiguous terms are strongly ruled out by sector and company specifics. Disambiguations were performed using: current and past company industry, skill co-occurrence with veterinary/agricultural/quality topics, and absence of classical 'tech' or general business language. Confidence is high for all key terms."
-      },
-      "skills_extraction": {
-        "explicit_skills": [
-          {
-            "name": "Communication skills",
-            "category": "soft",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Listed in 'skills' section as 'Communication skills' (Beginner)",
-            "confidence": 1.0
-          },
-          {
-            "name": "Atención al cliente",
-            "category": "soft",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Listed in 'skills' section as 'Atención al cliente' (Beginner)",
-            "confidence": 1.0
-          },
-          {
-            "name": "Research competencies",
-            "category": "functional",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Listed in 'skills' section as 'Research competencies' (Beginner)",
-            "confidence": 1.0
-          },
-          {
-            "name": "Oratoria",
-            "category": "soft",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Listed in 'skills' section as 'Oratoria' (Beginner)",
-            "confidence": 1.0
-          },
-          {
-            "name": "Diagnostic veterinary medicine",
-            "category": "domain_specific",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Listed in 'skills' section as 'Diagnostic veterinary medicine' (Beginner)",
-            "confidence": 1.0
-          },
-          {
-            "name": "Gestión del tiempo",
-            "category": "soft",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Listed in 'skills' section as 'Gestión del tiempo' (Beginner)",
-            "confidence": 1.0
-          },
-          {
-            "name": "Collaboration in teams",
-            "category": "soft",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Listed in 'skills' section as 'Collaboration in teams' (Beginner)",
-            "confidence": 1.0
-          },
-          {
-            "name": "Animal Husbandry",
-            "category": "domain_specific",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Listed in 'skills' section as 'Animal Husbandry' (Beginner)",
-            "confidence": 1.0
-          },
-          {
-            "name": "Resolución de problemas",
-            "category": "soft",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Listed in 'skills' section as 'Resolución de problemas' (Beginner)",
-            "confidence": 1.0
-          },
-          {
-            "name": "Control de calidad",
-            "category": "domain_specific",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Listed in 'skills' section as 'Control de calidad' (Beginner)",
-            "confidence": 1.0
-          },
-          {
-            "name": "Animal Welfare",
-            "category": "domain_specific",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Listed in 'skills' section as 'Animal Welfare' (Beginner)",
-            "confidence": 1.0
-          },
-          {
-            "name": "Gestión de proyectos",
-            "category": "functional",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Listed in 'skills' section as 'Gestión de proyectos' (Beginner)",
-            "confidence": 1.0
-          },
-          {
-            "name": "Regulatory compliance",
-            "category": "functional",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Listed in 'skills' section as 'Regulatory compliance' (Beginner)",
-            "confidence": 1.0
-          },
-          {
-            "name": "Análisis de datos",
-            "category": "technical",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Listed in 'skills' section as 'Análisis de datos' (Beginner)",
-            "confidence": 1.0
-          },
-          {
-            "name": "Formación y desarrollo",
-            "category": "functional",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Listed in 'skills' section as 'Formación y desarrollo' (Beginner)",
-            "confidence": 1.0
-          }
-        ],
-        "implicit_skills": [
-          {
-            "name": "Veterinary Clinical Practice (Livestock)",
-            "category": "domain_specific",
-            "level": "advanced",
-            "source": "implicit",
-            "evidence": "Held veterinary roles (\"Veterinaria\"/\"Veterinario\") at three agribusiness/animal feed companies over 8+ years. Work in these contexts involves hands-on diagnosis, treatment, and management of livestock health.",
-            "confidence": 0.95
-          },
-          {
-            "name": "Quality Assurance in Animal Feed Production",
-            "category": "domain_specific",
-            "level": "advanced",
-            "source": "implicit",
-            "evidence": "Current position: 'Tecnico de calidad en MAZANA PIENSOS COMPUESTOS SL' and explicit skill 'Control de calidad'. 10 years in agri-food companies. Extensive experience in this domain is implied by job title, context, and sector analysis.",
-            "confidence": 0.96
-          },
-          {
-            "name": "Regulatory Documentation (Animal Feed/Agriculture)",
-            "category": "functional",
-            "level": "intermediate",
-            "source": "implicit",
-            "evidence": "Explicit skill: 'Regulatory compliance'; sector disambiguation confirms focus on agricultural/veterinary/food safety regulations.",
-            "confidence": 0.92
-          },
-          {
-            "name": "Animal Nutrition Science (Production animals)",
-            "category": "domain_specific",
-            "level": "intermediate",
-            "source": "implicit",
-            "evidence": "Roles in animal feed companies and 'Animal Husbandry,' 'Animal Welfare' skills. Sector inference and focus strongly supports practical knowledge of nutrition for livestock.",
-            "confidence": 0.9
-          },
-          {
-            "name": "Customer/Client Relations (Farmers, Agribusiness)",
-            "category": "functional",
-            "level": "intermediate",
-            "source": "implicit",
-            "evidence": "Skill 'Atención al cliente'; roles in B2B agricultural/veterinary settings require engaging with farming clients to address technical and product-related needs.",
-            "confidence": 0.89
-          },
-          {
-            "name": "Laboratory Procedures (Sample Collection, Testing for Quality Control)",
-            "category": "technical",
-            "level": "intermediate",
-            "source": "implicit",
-            "evidence": "Work as quality technician in feed production and veterinary roles in agri-food companies require sample handling, testing, and reporting for quality and regulatory compliance.",
-            "confidence": 0.9
-          },
-          {
-            "name": "Problem Solving in Agricultural Settings",
-            "category": "soft",
-            "level": "intermediate",
-            "source": "implicit",
-            "evidence": "Explicit skill 'Resolución de problemas'; roles imply on-the-ground problem-solving for livestock health, feed quality, and compliance challenges across 10-year career.",
-            "confidence": 0.88
-          },
-          {
-            "name": "Collaboration with Multi-Disciplinary Teams (Veterinary, Production, QA)",
-            "category": "soft",
-            "level": "intermediate",
-            "source": "implicit",
-            "evidence": "Explicit skill 'Collaboration in teams'; roles spanning quality, veterinary medicine, and production indicate work within interdisciplinary teams.",
-            "confidence": 0.88
-          },
-          {
-            "name": "Project Participation (Quality/Process Improvement Agri-food)",
-            "category": "functional",
-            "level": "intermediate",
-            "source": "implicit",
-            "evidence": "Explicit skill: 'Gestión de proyectos'; likely involvement in internal projects related to quality or regulatory improvement, process optimization, or new product introduction in animal feed context.",
-            "confidence": 0.85
-          }
-        ],
-        "skill_clusters": [
-          {
-            "cluster_name": "Veterinary & Animal Production Knowledge",
-            "skills": [
-              "Veterinary Clinical Practice (Livestock)",
-              "Animal Husbandry",
-              "Animal Welfare",
-              "Animal Nutrition Science (Production animals)",
-              "Diagnostic veterinary medicine"
-            ]
-          },
-          {
-            "cluster_name": "Agri-Food Quality & Regulatory Stack",
-            "skills": [
-              "Quality Assurance in Animal Feed Production",
-              "Control de calidad",
-              "Regulatory compliance",
-              "Regulatory Documentation (Animal Feed/Agriculture)",
-              "Análisis de datos"
-            ]
-          },
-          {
-            "cluster_name": "Functional Professional Skills",
-            "skills": [
-              "Project Participation (Quality/Process Improvement Agri-food)",
-              "Gestión de proyectos",
-              "Research competencies",
-              "Laboratory Procedures (Sample Collection, Testing for Quality Control)"
-            ]
-          },
-          {
-            "cluster_name": "Interpersonal & Teamwork",
-            "skills": [
-              "Communication skills",
-              "Collaboration in teams",
-              "Problem Solving in Agricultural Settings",
-              "Resolución de problemas",
-              "Gestión del tiempo",
-              "Customer/Client Relations (Farmers, Agribusiness)",
-              "Atención al cliente"
-            ]
-          }
-        ]
-      },
-      "competencies_analysis": {
-        "competencies": [
-          {
-            "competency": "communication_skills",
-            "type": "soft",
-            "level": "junior",
-            "source": "skills section",
-            "evidence": "Listed in 'skills' as 'Communication skills' (Beginner)"
-          },
-          {
-            "competency": "client_service",
-            "type": "soft",
-            "level": "junior",
-            "source": "skills section",
-            "evidence": "Listed in 'skills' as 'Atención al cliente' (Beginner)"
-          },
-          {
-            "competency": "public_speaking",
-            "type": "soft",
-            "level": "junior",
-            "source": "skills section",
-            "evidence": "Listed in 'skills' as 'Oratoria' (Beginner)"
-          },
-          {
-            "competency": "time_management",
-            "type": "soft",
-            "level": "junior",
-            "source": "skills section",
-            "evidence": "Listed in 'skills' as 'Gestión del tiempo' (Beginner)"
-          },
-          {
-            "competency": "problem_solving",
-            "type": "soft",
-            "level": "mid",
-            "source": "skills section + experience",
-            "evidence": "Listed in 'skills' as 'Resolución de problemas' and 10 years in roles requiring troubleshooting in veterinary/agri-food context"
-          },
-          {
-            "competency": "collaboration",
-            "type": "soft",
-            "level": "mid",
-            "source": "skills section + experience",
-            "evidence": "Listed in 'skills' as 'Collaboration in teams' and implied by roles that require working within agri-food/veterinary teams"
-          },
-          {
-            "competency": "project_participation",
-            "type": "functional",
-            "level": "mid",
-            "source": "skills section + experience",
-            "evidence": "Listed in 'skills' as 'Gestión de proyectos' (Beginner), plus ongoing involvement in quality/process improvement per experience"
-          },
-          {
-            "competency": "quality_assurance",
-            "type": "functional",
-            "level": "mid",
-            "source": "role + experience",
-            "evidence": "Current job title 'Tecnico de calidad en MAZANA PIENSOS COMPUESTOS SL' and 'Control de calidad' skill"
-          },
-          {
-            "competency": "regulatory_compliance",
-            "type": "functional",
-            "level": "mid",
-            "source": "skills section + experience",
-            "evidence": "Listed as 'Regulatory compliance' (Beginner); 10 years in veterinary/agricultural sector imply daily compliance focus"
-          },
-          {
-            "competency": "veterinary_clinical_practice",
-            "type": "functional",
-            "level": "senior",
-            "source": "experience",
-            "evidence": "Roles as 'Veterinaria' and 'Veterinario' at veterinary/agri-food companies over 8+ years"
-          },
-          {
-            "competency": "animal_nutrition",
-            "type": "functional",
-            "level": "mid",
-            "source": "experience + skills",
-            "evidence": "Work at animal feed companies and skills in 'Animal Husbandry', 'Animal Welfare'"
-          },
-          {
-            "competency": "laboratory_procedures_quality_control",
-            "type": "functional",
-            "level": "mid",
-            "source": "experience",
-            "evidence": "Quality technician and veterinary roles in agri-food sector require lab/testing competency"
-          },
-          {
-            "competency": "data_analysis",
-            "type": "functional",
-            "level": "junior",
-            "source": "skills section",
-            "evidence": "Listed as 'Análisis de datos' (Beginner) in skills"
-          },
-          {
-            "competency": "research_competency",
-            "type": "functional",
-            "level": "junior",
-            "source": "skills section",
-            "evidence": "Listed in 'skills' as 'Research competencies' (Beginner)"
-          },
-          {
-            "competency": "training_and_development",
-            "type": "functional",
-            "level": "junior",
-            "source": "skills section",
-            "evidence": "Listed in 'skills' as 'Formación y desarrollo' (Beginner)"
-          }
-        ],
-        "leadership_indicators": [],
-        "collaboration_indicators": [
-          "Listed in 'skills' as 'Collaboration in teams' (Beginner) and by implication of long-term participation in veterinary/artificial feed companies where cross-disciplinary teamwork is common"
-        ]
-      },
-      "normalization": {
-        "normalized_synonyms": [
-          {
-            "term": "Quality Control",
-            "synonyms": [
-              "Quality Control",
-              "Control de calidad",
-              "Quality Assurance",
-              "QA",
-              "Quality Assurance in Animal Feed Production"
-            ]
-          },
-          {
-            "term": "Veterinary Clinical Practice (Livestock)",
-            "synonyms": [
-              "Veterinary Clinical Practice (Livestock)",
-              "Veterinaria",
-              "Veterinario",
-              "Veterinary Practice",
-              "Veterinary Medicine",
-              "Consultas veterinarias",
-              "Veterinary Clinical Services (Production Animals)"
-            ]
-          },
-          {
-            "term": "Diagnostic Veterinary Medicine",
-            "synonyms": [
-              "Diagnostic Veterinary Medicine",
-              "Diagnóstico veterinario",
-              "Diagnostic procedures",
-              "Vet Diagnostics",
-              "Animal Health Diagnostics"
-            ]
-          },
-          {
-            "term": "Animal Husbandry",
-            "synonyms": [
-              "Animal Husbandry",
-              "Ganadería",
-              "Animal Care",
-              "Livestock Management",
-              "Farm Animal Management"
-            ]
-          },
-          {
-            "term": "Animal Welfare",
-            "synonyms": [
-              "Animal Welfare",
-              "Bienestar animal",
-              "Welfare of Animals",
-              "Livestock Welfare"
-            ]
-          },
-          {
-            "term": "Animal Nutrition Science",
-            "synonyms": [
-              "Animal Nutrition Science",
-              "Animal Nutrition",
-              "Nutrición animal",
-              "Animal Feed Science"
-            ]
-          },
-          {
-            "term": "Regulatory Compliance",
-            "synonyms": [
-              "Regulatory Compliance",
-              "Regulatory Documentation",
-              "Cumplimiento normativo",
-              "Food/Feed Regulatory Compliance"
-            ]
-          },
-          {
-            "term": "Project Management",
-            "synonyms": [
-              "Project Management",
-              "Gestión de proyectos",
-              "Project Participation",
-              "Project Coordination"
-            ]
-          },
-          {
-            "term": "Data Analysis",
-            "synonyms": [
-              "Data Analysis",
-              "Análisis de datos",
-              "Statistical Analysis",
-              "Data Processing"
-            ]
-          },
-          {
-            "term": "Laboratory Procedures",
-            "synonyms": [
-              "Laboratory Procedures",
-              "Lab Work",
-              "Sample Collection",
-              "Testing for Quality Control",
-              "Lab QC"
-            ]
-          },
-          {
-            "term": "Research Competencies",
-            "synonyms": [
-              "Research Competencies",
-              "Investigación",
-              "Research Skills"
-            ]
-          },
-          {
-            "term": "Customer Service",
-            "synonyms": [
-              "Customer Service",
-              "Atención al cliente",
-              "Client Relations",
-              "Customer/Client Relations"
-            ]
-          },
-          {
-            "term": "Communication Skills",
-            "synonyms": [
-              "Communication Skills",
-              "Comunicación",
-              "Habilidades de comunicación",
-              "Oratoria",
-              "Public Speaking"
-            ]
-          },
-          {
-            "term": "Collaboration in Teams",
-            "synonyms": [
-              "Collaboration in Teams",
-              "Trabajo en equipo",
-              "Teamwork",
-              "Collaboration with Multi-Disciplinary Teams"
-            ]
-          },
-          {
-            "term": "Problem Solving",
-            "synonyms": [
-              "Problem Solving",
-              "Resolución de problemas",
-              "Problem Solving in Agricultural Settings"
-            ]
-          },
-          {
-            "term": "Time Management",
-            "synonyms": [
-              "Time Management",
-              "Gestión del tiempo"
-            ]
-          },
-          {
-            "term": "Training and Development",
-            "synonyms": [
-              "Training and Development",
-              "Formación y desarrollo"
-            ]
-          }
-        ],
-        "canonical_terms": [
-          {
-            "variation": "Control de calidad",
-            "canonical": "Quality Control"
-          },
-          {
-            "variation": "QA",
-            "canonical": "Quality Control"
-          },
-          {
-            "variation": "Quality Assurance in Animal Feed Production",
-            "canonical": "Quality Control"
-          },
-          {
-            "variation": "Veterinaria",
-            "canonical": "Veterinary Clinical Practice (Livestock)"
-          },
-          {
-            "variation": "Veterinario",
-            "canonical": "Veterinary Clinical Practice (Livestock)"
-          },
-          {
-            "variation": "Consultas veterinarias",
-            "canonical": "Veterinary Clinical Practice (Livestock)"
-          },
-          {
-            "variation": "Veterinary Clinical Services (Production Animals)",
-            "canonical": "Veterinary Clinical Practice (Livestock)"
-          },
-          {
-            "variation": "Diagnóstico veterinario",
-            "canonical": "Diagnostic Veterinary Medicine"
-          },
-          {
-            "variation": "Vet Diagnostics",
-            "canonical": "Diagnostic Veterinary Medicine"
-          },
-          {
-            "variation": "Animal Health Diagnostics",
-            "canonical": "Diagnostic Veterinary Medicine"
-          },
-          {
-            "variation": "Ganadería",
-            "canonical": "Animal Husbandry"
-          },
-          {
-            "variation": "Livestock Management",
-            "canonical": "Animal Husbandry"
-          },
-          {
-            "variation": "Farm Animal Management",
-            "canonical": "Animal Husbandry"
-          },
-          {
-            "variation": "Bienestar animal",
-            "canonical": "Animal Welfare"
-          },
-          {
-            "variation": "Welfare of Animals",
-            "canonical": "Animal Welfare"
-          },
-          {
-            "variation": "Livestock Welfare",
-            "canonical": "Animal Welfare"
-          },
-          {
-            "variation": "Animal Nutrition",
-            "canonical": "Animal Nutrition Science"
-          },
-          {
-            "variation": "Nutrición animal",
-            "canonical": "Animal Nutrition Science"
-          },
-          {
-            "variation": "Animal Feed Science",
-            "canonical": "Animal Nutrition Science"
-          },
-          {
-            "variation": "Regulatory Documentation",
-            "canonical": "Regulatory Compliance"
-          },
-          {
-            "variation": "Cumplimiento normativo",
-            "canonical": "Regulatory Compliance"
-          },
-          {
-            "variation": "Food/Feed Regulatory Compliance",
-            "canonical": "Regulatory Compliance"
-          },
-          {
-            "variation": "Gestión de proyectos",
-            "canonical": "Project Management"
-          },
-          {
-            "variation": "Project Participation",
-            "canonical": "Project Management"
-          },
-          {
-            "variation": "Project Coordination",
-            "canonical": "Project Management"
-          },
-          {
-            "variation": "Análisis de datos",
-            "canonical": "Data Analysis"
-          },
-          {
-            "variation": "Statistical Analysis",
-            "canonical": "Data Analysis"
-          },
-          {
-            "variation": "Data Processing",
-            "canonical": "Data Analysis"
-          },
-          {
-            "variation": "Lab Work",
-            "canonical": "Laboratory Procedures"
-          },
-          {
-            "variation": "Sample Collection",
-            "canonical": "Laboratory Procedures"
-          },
-          {
-            "variation": "Testing for Quality Control",
-            "canonical": "Laboratory Procedures"
-          },
-          {
-            "variation": "Lab QC",
-            "canonical": "Laboratory Procedures"
-          },
-          {
-            "variation": "Investigación",
-            "canonical": "Research Competencies"
-          },
-          {
-            "variation": "Research Skills",
-            "canonical": "Research Competencies"
-          },
-          {
-            "variation": "Atención al cliente",
-            "canonical": "Customer Service"
-          },
-          {
-            "variation": "Client Relations",
-            "canonical": "Customer Service"
-          },
-          {
-            "variation": "Customer/Client Relations",
-            "canonical": "Customer Service"
-          },
-          {
-            "variation": "Comunicación",
-            "canonical": "Communication Skills"
-          },
-          {
-            "variation": "Habilidades de comunicación",
-            "canonical": "Communication Skills"
-          },
-          {
-            "variation": "Oratoria",
-            "canonical": "Communication Skills"
-          },
-          {
-            "variation": "Public Speaking",
-            "canonical": "Communication Skills"
-          },
-          {
-            "variation": "Trabajo en equipo",
-            "canonical": "Collaboration in Teams"
-          },
-          {
-            "variation": "Teamwork",
-            "canonical": "Collaboration in Teams"
-          },
-          {
-            "variation": "Collaboration with Multi-Disciplinary Teams",
-            "canonical": "Collaboration in Teams"
-          },
-          {
-            "variation": "Resolución de problemas",
-            "canonical": "Problem Solving"
-          },
-          {
-            "variation": "Problem Solving in Agricultural Settings",
-            "canonical": "Problem Solving"
-          },
-          {
-            "variation": "Gestión del tiempo",
-            "canonical": "Time Management"
-          },
-          {
-            "variation": "Formación y desarrollo",
-            "canonical": "Training and Development"
-          }
-        ],
-        "technology_taxonomy": [
-          {
-            "category": "domain_specific_veterinary",
-            "technologies": [
-              "Veterinary Clinical Practice (Livestock)",
-              "Diagnostic Veterinary Medicine",
-              "Animal Husbandry",
-              "Animal Welfare",
-              "Animal Nutrition Science"
-            ]
-          },
-          {
-            "category": "quality_and_regulatory",
-            "technologies": [
-              "Quality Control",
-              "Laboratory Procedures",
-              "Regulatory Compliance",
-              "Data Analysis"
-            ]
-          },
-          {
-            "category": "functional_professional",
-            "technologies": [
-              "Project Management",
-              "Research Competencies",
-              "Training and Development"
-            ]
-          },
-          {
-            "category": "soft_skills",
-            "technologies": [
-              "Communication Skills",
-              "Collaboration in Teams",
-              "Customer Service",
-              "Problem Solving",
-              "Time Management"
-            ]
-          }
-        ]
-      },
-      "seniority_inference": {
-        "seniority_level": "lead",
-        "confidence": 0.85,
-        "evidence": [
-          "10 years of professional experience is explicitly stated.",
-          "Career shows continuous roles as 'Veterinaria' and 'Tecnico de calidad' in the agri-food/veterinary industry, without significant gaps.",
-          "Held core practitioner and quality assurance roles at three companies — each for significant multiyear spans, demonstrating stable employment and career progression.",
-          "Currently holds a 'Tecnico de calidad' (Quality Technician) role at MAZANA PIENSOS COMPUESTOS SL, a position typically demanding oversight, expertise, and high accountability.",
-          "Technical/functional competency analysis shows 'senior' level in 'veterinary clinical practice', and 'mid' in quality assurance, project participation, and regulatory compliance.",
-          "No explicit leadership titles (e.g., manager, lead), but 10 years of depth in niche field, cross-company tenure, and current position indicate high autonomy, domain authority, and likely informal leadership within technical teams."
-        ],
-        "years_experience_estimate": 10,
-        "reasoning": "Alba Ortega demonstrates 10 years of steady career development as a veterinary professional with increasing specialization toward quality assurance in agricultural and animal feed sectors. Her current quality assurance role, combined with substantial practical veterinary experience, aligns with lead-level industry norms in Spain for professionals with 8–12 years of diversified yet focused practice. While there’s no explicit record of formal people management, the breadth of skills, senior-level technical competencies, role autonomy, and likely cross-functional influence (typical for 'Tecnico de calidad' in the sector) support a lead-level assessment. No evidence supports principal/expert or formal directorship, so lead is the highest supportable level here."
-      },
-      "ideal_roles_inference": {
-        "primary_role": {
-          "role_name": "Lead Quality Assurance Veterinarian",
-          "fit_score": 0.92,
-          "reasoning": "Alba Ortega's recent and current roles have focused on veterinary responsibilities within agri-food businesses, particularly in the area of compound feed production. Her current position at MAZANA PIENSOS COMPUESTOS SL likely involves significant elements of quality assurance, animal welfare, regulatory compliance, and diagnostic veterinary medicine. Sector enrichment confirms a lead/senior level and quality assurance focus, making 'Lead Quality Assurance Veterinarian' the most accurate and market-relevant fit. Her experience aligns strongly with the responsibilities expected of a senior QA veterinarian in the agri-food sector.",
-          "required_skills_match": [
-            "Control de calidad",
-            "Diagnostic veterinary medicine",
-            "Animal Welfare",
-            "Regulatory compliance",
-            "Análisis de datos",
-            "Gestión de proyectos",
-            "Collaboration in teams"
-          ],
-          "growth_areas": [
-            "Further specialization in advanced quality management methodologies",
-            "Progressing from 'beginner' to 'advanced' in regulatory and QA frameworks"
-          ]
-        },
-        "alternative_roles": [
-          {
-            "role_name": "Regulatory Compliance Lead - Agri-Food",
-            "fit_score": 0.82,
-            "reasoning": "Alba's exposure to regulatory compliance, quality control, and veterinary clinical practice in agri-food settings positions her well for a specialized regulatory compliance leadership role. This would leverage her sector knowledge and expand her impact on regulatory frameworks and standards for animal welfare and food safety.",
-            "required_skills_match": [
-              "Regulatory compliance",
-              "Animal Husbandry",
-              "Control de calidad",
-              "Problem resolution"
-            ],
-            "growth_areas": [
-              "Deepening regulatory affairs expertise",
-              "Stakeholder management across agencies"
-            ]
-          },
-          {
-            "role_name": "Senior Animal Welfare Officer",
-            "fit_score": 0.77,
-            "reasoning": "Her veterinary background, combined with focus on animal welfare and quality assurance, aligns well with the requirements for a senior animal welfare oversight role in regulated production environments. She would provide oversight, training, and ensure welfare standards across livestock units.",
-            "required_skills_match": [
-              "Animal Welfare",
-              "Diagnostic veterinary medicine",
-              "Gestión de proyectos",
-              "Communication skills"
-            ],
-            "growth_areas": [
-              "Advanced expertise in animal behavior and welfare legislation",
-              "Staff training and auditing methods"
-            ]
-          },
-          {
-            "role_name": "Veterinary Team Leader - Feed Production",
-            "fit_score": 0.75,
-            "reasoning": "Her experience at MAZANA PIENSOS COMPUESTOS SL and prior roles demonstrate both veterinary and organizational skills in animal nutrition and diagnostics. This makes her well suited for leading veterinary teams within compound feed or animal production companies.",
-            "required_skills_match": [
-              "Veterinary clinical practice",
-              "Animal Husbandry",
-              "Collaboration in teams",
-              "Quality assurance"
-            ],
-            "growth_areas": [
-              "Team leadership development",
-              "Strategic planning in feed safety"
-            ]
-          }
-        ],
-        "career_trajectory": "Alba Ortega has maintained a focused trajectory in veterinary roles within the agri-food sector for over a decade. She progressed from hands-on veterinary clinical work (2016-2017) to sustained roles as a veterinarian within large agricultural organizations (2017-present), developing expertise in animal production, quality assurance, and compliance. Her current position at MAZANA PIENSOS COMPUESTOS SL implies increased responsibility in quality-focused and regulatory environments.",
-        "recent_focus": "In the past 2-3 years, Alba has managed veterinary responsibilities within compound feed production, emphasizing quality assurance, regulatory compliance, and animal welfare in an industrial agri-food setting.",
-        "recency_weight_applied": true,
-        "reasoning": "The recommendations reflect Alba Ortega's consistent progression within veterinary roles tied to food production and quality, with clear seniority and specialization in quality assurance and compliance. Recent responsibilities and sector position indicate readiness for a lead QA veterinary or compliance leadership role. Adjacent fields such as animal welfare oversight or veterinary team management are within close reach and leverage her tenured experience. Developing advanced regulatory/QA and leadership skills would further enhance her readiness for top-tier sector positions."
-      }
-    },
+    "enrichment_timestamp": "2025-11-24T11:55:51.183570",
     "key_insights": {
       "primary_sector": "agri_food_quality_assurance",
       "sector_confidence": 0.95,
-      "seniority_level": "lead",
+      "seniority_level": "senior",
       "years_experience": 10,
-      "total_skills_identified": 24,
-      "competencies_count": 15,
-      "disambiguated_terms_count": 7,
-      "primary_ideal_role": "Lead Quality Assurance Veterinarian",
+      "total_skills_identified": 11,
+      "competencies_count": 13,
+      "disambiguated_terms_count": 10,
+      "primary_ideal_role": "Senior Quality Assurance Specialist – Agri-Food & Animal Feed",
       "primary_role_fit_score": 0.92
     },
-    "structured_skills": {
+    "sector": {
+      "primary": "agri_food_quality_assurance",
+      "secondary": [
+        "veterinary_medicine",
+        "animal_health",
+        "agricultural_production"
+      ],
+      "confidence": 0.95,
+      "reasoning": "The candidate's current and prior roles center around quality assurance and veterinary functions within animal feed and agricultural businesses, as indicated by both company nature and job titles ('Veterinaria', 'Tecnico de calidad'). Skills are domain-specific (quality control, animal welfare, diagnostic veterinary medicine) and align with regulatory and quality processes in the agri-food/livestock sector. The context and activity patterns point more specifically to agri-food quality assurance within the broader agricultural/animal production sphere, supported by regulatory and diagnostic functions."
+    },
+    "seniority": {
+      "level": "senior",
+      "years_experience": 10,
+      "confidence": 0.87,
+      "reasoning": "Alba Ortega demonstrates 10 years of steady, sector-specific experience as a veterinarian and quality technician, chiefly in the agri-food/animal feed/livestock industries. She possesses advanced, senior-level competencies in quality assurance, regulatory compliance, animal welfare, husbandry, and diagnostic medicine, indicating deep technical proficiency. While her experience aligns solidly with a SENIOR profile, there is no evidence of formal people management or leadership of large strategic initiatives—a requirement for LEAD or higher. Therefore, senior is best fit, with high confidence based on duration, role complexity, and technical depth."
+    },
+    "skills": {
       "explicit": [
         {
-          "name": "Communication skills",
-          "category": "soft",
-          "level": "novice",
-          "source": "explicit",
-          "evidence": "Listed in 'skills' section as 'Communication skills' (Beginner)",
-          "confidence": 1.0
-        },
-        {
-          "name": "Atención al cliente",
-          "category": "soft",
-          "level": "novice",
-          "source": "explicit",
-          "evidence": "Listed in 'skills' section as 'Atención al cliente' (Beginner)",
-          "confidence": 1.0
-        },
-        {
-          "name": "Research competencies",
-          "category": "functional",
-          "level": "novice",
-          "source": "explicit",
-          "evidence": "Listed in 'skills' section as 'Research competencies' (Beginner)",
-          "confidence": 1.0
-        },
-        {
-          "name": "Oratoria",
-          "category": "soft",
-          "level": "novice",
-          "source": "explicit",
-          "evidence": "Listed in 'skills' section as 'Oratoria' (Beginner)",
-          "confidence": 1.0
-        },
-        {
-          "name": "Diagnostic veterinary medicine",
+          "name": "Control de calidad (Quality Control in Agri-Food/Animal Feed)",
           "category": "domain_specific",
-          "level": "novice",
+          "level": "advanced",
           "source": "explicit",
-          "evidence": "Listed in 'skills' section as 'Diagnostic veterinary medicine' (Beginner)",
+          "evidence": "Skill: 'Control de calidad'; Role: 'Tecnico de calidad en MAZANA PIENSOS COMPUESTOS SL'; Disambiguation affirms relevance to agri-food production.",
           "confidence": 1.0
         },
         {
-          "name": "Gestión del tiempo",
-          "category": "soft",
-          "level": "novice",
-          "source": "explicit",
-          "evidence": "Listed in 'skills' section as 'Gestión del tiempo' (Beginner)",
-          "confidence": 1.0
-        },
-        {
-          "name": "Collaboration in teams",
-          "category": "soft",
-          "level": "novice",
-          "source": "explicit",
-          "evidence": "Listed in 'skills' section as 'Collaboration in teams' (Beginner)",
-          "confidence": 1.0
-        },
-        {
-          "name": "Animal Husbandry",
+          "name": "Regulatory compliance (Agri-Food, Animal Feed, Veterinary)",
           "category": "domain_specific",
-          "level": "novice",
+          "level": "advanced",
           "source": "explicit",
-          "evidence": "Listed in 'skills' section as 'Animal Husbandry' (Beginner)",
+          "evidence": "Skill: 'Regulatory compliance'; Current/past roles in quality veterinary/agri-food orgs. Disambiguation clarifies domain.",
           "confidence": 1.0
         },
         {
-          "name": "Resolución de problemas",
-          "category": "soft",
-          "level": "novice",
-          "source": "explicit",
-          "evidence": "Listed in 'skills' section as 'Resolución de problemas' (Beginner)",
-          "confidence": 1.0
-        },
-        {
-          "name": "Control de calidad",
+          "name": "Animal Welfare (in Agricultural Production Settings)",
           "category": "domain_specific",
-          "level": "novice",
+          "level": "advanced",
           "source": "explicit",
-          "evidence": "Listed in 'skills' section as 'Control de calidad' (Beginner)",
+          "evidence": "Skill: 'Animal Welfare'; Roles and sector show centrality of livestock ethics/standards in responsibilities.",
           "confidence": 1.0
         },
         {
-          "name": "Animal Welfare",
+          "name": "Animal Husbandry (Livestock Management)",
           "category": "domain_specific",
-          "level": "novice",
+          "level": "advanced",
           "source": "explicit",
-          "evidence": "Listed in 'skills' section as 'Animal Welfare' (Beginner)",
+          "evidence": "Skill: 'Animal Husbandry'; Multiple years as veterinarian in livestock/animal feed sector.",
           "confidence": 1.0
         },
         {
-          "name": "Gestión de proyectos",
-          "category": "functional",
-          "level": "novice",
+          "name": "Diagnostic veterinary medicine (Livestock/Feed Sector)",
+          "category": "domain_specific",
+          "level": "advanced",
           "source": "explicit",
-          "evidence": "Listed in 'skills' section as 'Gestión de proyectos' (Beginner)",
-          "confidence": 1.0
-        },
-        {
-          "name": "Regulatory compliance",
-          "category": "functional",
-          "level": "novice",
-          "source": "explicit",
-          "evidence": "Listed in 'skills' section as 'Regulatory compliance' (Beginner)",
-          "confidence": 1.0
-        },
-        {
-          "name": "Análisis de datos",
-          "category": "technical",
-          "level": "novice",
-          "source": "explicit",
-          "evidence": "Listed in 'skills' section as 'Análisis de datos' (Beginner)",
-          "confidence": 1.0
-        },
-        {
-          "name": "Formación y desarrollo",
-          "category": "functional",
-          "level": "novice",
-          "source": "explicit",
-          "evidence": "Listed in 'skills' section as 'Formación y desarrollo' (Beginner)",
+          "evidence": "Skill: 'Diagnostic veterinary medicine'; Years as veterinarian at multiple relevant companies; sector-specific disambiguation.",
           "confidence": 1.0
         }
       ],
       "implicit": [
         {
-          "name": "Veterinary Clinical Practice (Livestock)",
+          "name": "Veterinary clinical protocols (livestock/feed sectors)",
           "category": "domain_specific",
           "level": "advanced",
           "source": "implicit",
-          "evidence": "Held veterinary roles (\"Veterinaria\"/\"Veterinario\") at three agribusiness/animal feed companies over 8+ years. Work in these contexts involves hands-on diagnosis, treatment, and management of livestock health.",
+          "evidence": "Roles: 'Veterinaria' (MAZANA PIENSOS COMPUESTOS SL, Agropecuaria Obanos, S.A.), 'Veterinario' (Tests and Trials). Each company operates in animal production or feed context.",
           "confidence": 0.95
         },
         {
-          "name": "Quality Assurance in Animal Feed Production",
+          "name": "Feed safety assessment & hazard analysis (HACCP, GMP, related standards)",
+          "category": "technical",
+          "level": "advanced",
+          "source": "implicit",
+          "evidence": "Role: 'Tecnico de calidad' in animal feed production (MAZANA PIENSOS COMPUESTOS SL); quality control/regulatory compliance implies responsibility for food/feed safety protocols.",
+          "confidence": 0.95
+        },
+        {
+          "name": "Livestock production systems knowledge",
           "category": "domain_specific",
           "level": "advanced",
           "source": "implicit",
-          "evidence": "Current position: 'Tecnico de calidad en MAZANA PIENSOS COMPUESTOS SL' and explicit skill 'Control de calidad'. 10 years in agri-food companies. Extensive experience in this domain is implied by job title, context, and sector analysis.",
-          "confidence": 0.96
+          "evidence": "Multiple years as veterinarian in companies deeply integrated in agricultural/livestock production.",
+          "confidence": 0.95
         },
         {
-          "name": "Regulatory Documentation (Animal Feed/Agriculture)",
+          "name": "Veterinary client consulting (B2B/Farmers)",
           "category": "functional",
-          "level": "intermediate",
+          "level": "advanced",
           "source": "implicit",
-          "evidence": "Explicit skill: 'Regulatory compliance'; sector disambiguation confirms focus on agricultural/veterinary/food safety regulations.",
+          "evidence": "Skill: 'Atención al cliente'; Context: profile roles are all in B2B/farmer sector, not consumer retail. Implies advisory/support for agricultural clients.",
           "confidence": 0.92
         },
         {
-          "name": "Animal Nutrition Science (Production animals)",
-          "category": "domain_specific",
-          "level": "intermediate",
-          "source": "implicit",
-          "evidence": "Roles in animal feed companies and 'Animal Husbandry,' 'Animal Welfare' skills. Sector inference and focus strongly supports practical knowledge of nutrition for livestock.",
-          "confidence": 0.9
-        },
-        {
-          "name": "Customer/Client Relations (Farmers, Agribusiness)",
+          "name": "Project management (Agricultural/Veterinary context)",
           "category": "functional",
           "level": "intermediate",
           "source": "implicit",
-          "evidence": "Skill 'Atención al cliente'; roles in B2B agricultural/veterinary settings require engaging with farming clients to address technical and product-related needs.",
-          "confidence": 0.89
+          "evidence": "Skill: 'Gestión de proyectos' listed; actual experience context suggests coordination of farm/animal health/quality initiatives, but no leadership of large teams or complex programs evidenced.",
+          "confidence": 0.85
         },
         {
-          "name": "Laboratory Procedures (Sample Collection, Testing for Quality Control)",
+          "name": "Data analysis (Agri-food/veterinary metrics)",
           "category": "technical",
           "level": "intermediate",
           "source": "implicit",
-          "evidence": "Work as quality technician in feed production and veterinary roles in agri-food companies require sample handling, testing, and reporting for quality and regulatory compliance.",
-          "confidence": 0.9
-        },
-        {
-          "name": "Problem Solving in Agricultural Settings",
-          "category": "soft",
-          "level": "intermediate",
-          "source": "implicit",
-          "evidence": "Explicit skill 'Resolución de problemas'; roles imply on-the-ground problem-solving for livestock health, feed quality, and compliance challenges across 10-year career.",
-          "confidence": 0.88
-        },
-        {
-          "name": "Collaboration with Multi-Disciplinary Teams (Veterinary, Production, QA)",
-          "category": "soft",
-          "level": "intermediate",
-          "source": "implicit",
-          "evidence": "Explicit skill 'Collaboration in teams'; roles spanning quality, veterinary medicine, and production indicate work within interdisciplinary teams.",
-          "confidence": 0.88
-        },
-        {
-          "name": "Project Participation (Quality/Process Improvement Agri-food)",
-          "category": "functional",
-          "level": "intermediate",
-          "source": "implicit",
-          "evidence": "Explicit skill: 'Gestión de proyectos'; likely involvement in internal projects related to quality or regulatory improvement, process optimization, or new product introduction in animal feed context.",
+          "evidence": "Skill: 'Análisis de datos' listed; context: quality/veterinary/production metrics. No evidence for advanced analytics or dedicated tools.",
           "confidence": 0.85
         }
       ],
       "clusters": {
-        "Veterinary & Animal Production Knowledge": [
-          "Veterinary Clinical Practice (Livestock)",
-          "Animal Husbandry",
-          "Animal Welfare",
-          "Animal Nutrition Science (Production animals)",
-          "Diagnostic veterinary medicine"
+        "Agri-food Quality Assurance & Regulatory Compliance": [
+          "Control de calidad (Quality Control in Agri-Food/Animal Feed)",
+          "Regulatory compliance (Agri-Food, Animal Feed, Veterinary)",
+          "Feed safety assessment & hazard analysis (HACCP, GMP, related standards)"
         ],
-        "Agri-Food Quality & Regulatory Stack": [
-          "Quality Assurance in Animal Feed Production",
-          "Control de calidad",
-          "Regulatory compliance",
-          "Regulatory Documentation (Animal Feed/Agriculture)",
-          "Análisis de datos"
+        "Veterinary Practice & Livestock Management": [
+          "Diagnostic veterinary medicine (Livestock/Feed Sector)",
+          "Veterinary clinical protocols (livestock/feed sectors)",
+          "Animal Welfare (in Agricultural Production Settings)",
+          "Animal Husbandry (Livestock Management)",
+          "Livestock production systems knowledge"
         ],
-        "Functional Professional Skills": [
-          "Project Participation (Quality/Process Improvement Agri-food)",
-          "Gestión de proyectos",
-          "Research competencies",
-          "Laboratory Procedures (Sample Collection, Testing for Quality Control)"
-        ],
-        "Interpersonal & Teamwork": [
-          "Communication skills",
-          "Collaboration in teams",
-          "Problem Solving in Agricultural Settings",
-          "Resolución de problemas",
-          "Gestión del tiempo",
-          "Customer/Client Relations (Farmers, Agribusiness)",
-          "Atención al cliente"
+        "Functional and Technical Support in Agricultural Production": [
+          "Veterinary client consulting (B2B/Farmers)",
+          "Project management (Agricultural/Veterinary context)",
+          "Data analysis (Agri-food/veterinary metrics)"
         ]
       }
     },
-    "structured_competencies": [
+    "competencies": [
       {
-        "competency": "communication_skills",
-        "type": "soft",
-        "level": "junior",
-        "source": "skills section",
-        "evidence": "Listed in 'skills' as 'Communication skills' (Beginner)"
+        "competency": "quality_assurance",
+        "type": "functional",
+        "level": "senior",
+        "source": "experience",
+        "evidence": "Roles: 'Tecnico de calidad en MAZANA PIENSOS COMPUESTOS SL'; Skill: 'Control de calidad'; Years in agri-food/animal feed quality roles."
       },
       {
-        "competency": "client_service",
-        "type": "soft",
-        "level": "junior",
-        "source": "skills section",
-        "evidence": "Listed in 'skills' as 'Atención al cliente' (Beginner)"
+        "competency": "regulatory_compliance",
+        "type": "functional",
+        "level": "senior",
+        "source": "experience",
+        "evidence": "Roles in veterinary/agri-food companies; Skill: 'Regulatory compliance'; Quality responsibilities in regulated sectors."
       },
       {
-        "competency": "public_speaking",
-        "type": "soft",
-        "level": "junior",
-        "source": "skills section",
-        "evidence": "Listed in 'skills' as 'Oratoria' (Beginner)"
+        "competency": "animal_welfare_ethics",
+        "type": "functional",
+        "level": "senior",
+        "source": "experience",
+        "evidence": "Skill: 'Animal Welfare'; Multi-year veterinary responsibilities in livestock production settings."
       },
       {
-        "competency": "time_management",
-        "type": "soft",
-        "level": "junior",
-        "source": "skills section",
-        "evidence": "Listed in 'skills' as 'Gestión del tiempo' (Beginner)"
+        "competency": "diagnostic_veterinary_medicine",
+        "type": "functional",
+        "level": "senior",
+        "source": "experience",
+        "evidence": "Roles: 'Veterinaria' (multiple companies); Skill: 'Diagnostic veterinary medicine'; Extensive sector experience."
+      },
+      {
+        "competency": "animal_husbandry",
+        "type": "functional",
+        "level": "senior",
+        "source": "experience",
+        "evidence": "Skill: 'Animal Husbandry'; Years in livestock/veterinary practice."
+      },
+      {
+        "competency": "project_management",
+        "type": "functional",
+        "level": "mid",
+        "source": "skills_listed/experience",
+        "evidence": "Skill: 'Gestión de proyectos' listed; Evidence of coordinating veterinary/agricultural activities, but no leadership/large initiatives mentioned."
+      },
+      {
+        "competency": "data_analysis",
+        "type": "functional",
+        "level": "mid",
+        "source": "skills_listed/experience",
+        "evidence": "Skill: 'Análisis de datos'; Context: data related to quality/veterinary/production; no advanced analytics described."
       },
       {
         "competency": "problem_solving",
         "type": "soft",
         "level": "mid",
-        "source": "skills section + experience",
-        "evidence": "Listed in 'skills' as 'Resolución de problemas' and 10 years in roles requiring troubleshooting in veterinary/agri-food context"
+        "source": "skills_listed/experience",
+        "evidence": "Skill: 'Resolución de problemas'; Implied by problem-oriented roles in quality/veterinary fields."
       },
       {
-        "competency": "collaboration",
+        "competency": "teamwork_collaboration",
         "type": "soft",
         "level": "mid",
-        "source": "skills section + experience",
-        "evidence": "Listed in 'skills' as 'Collaboration in teams' and implied by roles that require working within agri-food/veterinary teams"
+        "source": "skills_listed/experience",
+        "evidence": "Skill: 'Collaboration in teams' listed; Roles in organizations with cross-functional needs (production, veterinary, quality)."
       },
       {
-        "competency": "project_participation",
+        "competency": "communication_skills",
+        "type": "soft",
+        "level": "mid",
+        "source": "skills_listed/experience",
+        "evidence": "Skill: 'Communication skills'; Roles imply B2B or stakeholder communication (farmers, quality reporting)."
+      },
+      {
+        "competency": "client_consulting",
         "type": "functional",
         "level": "mid",
-        "source": "skills section + experience",
-        "evidence": "Listed in 'skills' as 'Gestión de proyectos' (Beginner), plus ongoing involvement in quality/process improvement per experience"
+        "source": "skills_listed/experience",
+        "evidence": "Skill: 'Atención al cliente'; Veterinary roles for agricultural clients implies ongoing advisory and support communication."
       },
       {
-        "competency": "quality_assurance",
-        "type": "functional",
-        "level": "mid",
-        "source": "role + experience",
-        "evidence": "Current job title 'Tecnico de calidad en MAZANA PIENSOS COMPUESTOS SL' and 'Control de calidad' skill"
-      },
-      {
-        "competency": "regulatory_compliance",
-        "type": "functional",
-        "level": "mid",
-        "source": "skills section + experience",
-        "evidence": "Listed as 'Regulatory compliance' (Beginner); 10 years in veterinary/agricultural sector imply daily compliance focus"
-      },
-      {
-        "competency": "veterinary_clinical_practice",
-        "type": "functional",
-        "level": "senior",
-        "source": "experience",
-        "evidence": "Roles as 'Veterinaria' and 'Veterinario' at veterinary/agri-food companies over 8+ years"
-      },
-      {
-        "competency": "animal_nutrition",
-        "type": "functional",
-        "level": "mid",
-        "source": "experience + skills",
-        "evidence": "Work at animal feed companies and skills in 'Animal Husbandry', 'Animal Welfare'"
-      },
-      {
-        "competency": "laboratory_procedures_quality_control",
-        "type": "functional",
+        "competency": "adaptability",
+        "type": "soft",
         "level": "mid",
         "source": "experience",
-        "evidence": "Quality technician and veterinary roles in agri-food sector require lab/testing competency"
+        "evidence": "Multiple companies over career (MAZANA, Agropecuaria Obanos, Tests and Trials); Sector adaptations."
       },
       {
-        "competency": "data_analysis",
-        "type": "functional",
-        "level": "junior",
-        "source": "skills section",
-        "evidence": "Listed as 'Análisis de datos' (Beginner) in skills"
-      },
-      {
-        "competency": "research_competency",
-        "type": "functional",
-        "level": "junior",
-        "source": "skills section",
-        "evidence": "Listed in 'skills' as 'Research competencies' (Beginner)"
-      },
-      {
-        "competency": "training_and_development",
-        "type": "functional",
-        "level": "junior",
-        "source": "skills section",
-        "evidence": "Listed in 'skills' as 'Formación y desarrollo' (Beginner)"
+        "competency": "time_management",
+        "type": "soft",
+        "level": "mid",
+        "source": "skills_listed/experience",
+        "evidence": "Skill: 'Gestión del tiempo'; Necessary for roles managing veterinary and quality functions."
       }
     ],
-    "disambiguation_map": {
+    "disambiguation": {
       "Control de calidad": {
-        "meaning": "Quality control of animal feed products (including testing ingredient quality, process standards, and regulatory compliance in feed manufacturing)",
+        "meaning": "Quality control procedures and standards applied to animal feed production and livestock/agricultural processes to ensure product safety, compliance, and consistency",
         "domain": "agri_food_quality_assurance",
-        "confidence": 0.99
-      },
-      "Diagnóstico veterinario (Diagnostic veterinary medicine)": {
-        "meaning": "Diagnostic procedures and medical assessment for livestock/production animals in the agricultural/feed industry",
-        "domain": "veterinary_medicine_agriculture",
         "confidence": 0.98
       },
-      "Análisis de datos (Data analysis)": {
-        "meaning": "Data analysis applied to quality control, regulatory compliance, and possibly livestock/production statistics within feed/agricultural production",
+      "Diagnostic veterinary medicine": {
+        "meaning": "Veterinary diagnostic procedures and analysis used in animal health management within livestock or agricultural settings",
+        "domain": "veterinary_medicine",
+        "confidence": 0.97
+      },
+      "Animal Husbandry": {
+        "meaning": "Management and care of domesticated animals in agricultural/livestock production (feeding, breeding, shelter, health monitoring)",
+        "domain": "agricultural_production",
+        "confidence": 0.99
+      },
+      "Animal Welfare": {
+        "meaning": "Ensuring proper treatment, wellbeing, and ethical standards for animals in agricultural/livestock or feed production environments",
+        "domain": "animal_health",
+        "confidence": 0.98
+      },
+      "Regulatory compliance": {
+        "meaning": "Adherence to regulations and legal standards governing animal feed production, livestock welfare, and veterinary practices in the agri-food sector",
+        "domain": "agri_food_quality_assurance",
+        "confidence": 0.98
+      },
+      "Gestión de proyectos": {
+        "meaning": "Project management for agricultural or veterinary contexts, likely coordinating quality, regulatory, and animal health initiatives",
+        "domain": "agricultural_production",
+        "confidence": 0.95
+      },
+      "Análisis de datos": {
+        "meaning": "Data analysis applied to agricultural, veterinary or quality control processes (e.g., evaluating animal health statistics, production efficiency, feed quality metrics)",
         "domain": "agri_food_quality_assurance",
         "confidence": 0.95
       },
-      "Animal Husbandry": {
-        "meaning": "Management and care for livestock animals, specifically within the context of animal agriculture and feed production",
-        "domain": "agricultural_management",
-        "confidence": 0.99
-      },
-      "Atención al cliente (Customer service)": {
-        "meaning": "Customer service in the context of agricultural clients, such as farmers or feed distributors, addressing queries or issues around animal feed/veterinary products",
-        "domain": "agricultural_service",
+      "Tests and Trials (Company)": {
+        "meaning": "Company providing veterinary/animal health diagnostics, testing, and trials for agricultural/livestock sector",
+        "domain": "veterinary_medicine",
         "confidence": 0.93
       },
-      "Regulatory compliance": {
-        "meaning": "Ensuring animal feed products and practices adhere to agricultural, veterinary, and food safety regulations (such as traceability, animal product quality, EU/Spanish feed laws)",
+      "Calidad (Quality) in 'Tecnico de calidad'": {
+        "meaning": "Quality assurance/control pertaining to animal feed production, ensuring product meets health, safety, and legal standards",
         "domain": "agri_food_quality_assurance",
-        "confidence": 0.98
+        "confidence": 0.99
       },
-      "Gestión de proyectos (Project management)": {
-        "meaning": "Management of projects related to quality assurance, regulatory adaptation, or farm/feed production process optimization within the agri-food sector",
-        "domain": "agri_food_project_management",
+      "Atención al cliente": {
+        "meaning": "Customer service as it pertains to agricultural clients, farmers, or purchasing managers in feed/livestock sectors (e.g., handling product queries, support, and after-sales for agricultural professionals)",
+        "domain": "agri_food_quality_assurance",
         "confidence": 0.92
       }
     },
-    "synonym_map": {
-      "Quality Control": [
-        "Quality Control",
-        "Control de calidad",
-        "Quality Assurance",
-        "QA",
-        "Quality Assurance in Animal Feed Production"
-      ],
-      "Veterinary Clinical Practice (Livestock)": [
-        "Veterinary Clinical Practice (Livestock)",
-        "Veterinaria",
-        "Veterinario",
-        "Veterinary Practice",
-        "Veterinary Medicine",
-        "Consultas veterinarias",
-        "Veterinary Clinical Services (Production Animals)"
-      ],
-      "Diagnostic Veterinary Medicine": [
-        "Diagnostic Veterinary Medicine",
-        "Diagnóstico veterinario",
-        "Diagnostic procedures",
-        "Vet Diagnostics",
-        "Animal Health Diagnostics"
-      ],
-      "Animal Husbandry": [
-        "Animal Husbandry",
-        "Ganadería",
-        "Animal Care",
-        "Livestock Management",
-        "Farm Animal Management"
-      ],
-      "Animal Welfare": [
-        "Animal Welfare",
-        "Bienestar animal",
-        "Welfare of Animals",
-        "Livestock Welfare"
-      ],
-      "Animal Nutrition Science": [
-        "Animal Nutrition Science",
-        "Animal Nutrition",
-        "Nutrición animal",
-        "Animal Feed Science"
-      ],
-      "Regulatory Compliance": [
-        "Regulatory Compliance",
-        "Regulatory Documentation",
-        "Cumplimiento normativo",
-        "Food/Feed Regulatory Compliance"
-      ],
-      "Project Management": [
-        "Project Management",
-        "Gestión de proyectos",
-        "Project Participation",
-        "Project Coordination"
-      ],
-      "Data Analysis": [
-        "Data Analysis",
-        "Análisis de datos",
-        "Statistical Analysis",
-        "Data Processing"
-      ],
-      "Laboratory Procedures": [
-        "Laboratory Procedures",
-        "Lab Work",
-        "Sample Collection",
-        "Testing for Quality Control",
-        "Lab QC"
-      ],
-      "Research Competencies": [
-        "Research Competencies",
-        "Investigación",
-        "Research Skills"
-      ],
-      "Customer Service": [
-        "Customer Service",
-        "Atención al cliente",
-        "Client Relations",
-        "Customer/Client Relations"
-      ],
-      "Communication Skills": [
-        "Communication Skills",
-        "Comunicación",
-        "Habilidades de comunicación",
-        "Oratoria",
-        "Public Speaking"
-      ],
-      "Collaboration in Teams": [
-        "Collaboration in Teams",
-        "Trabajo en equipo",
-        "Teamwork",
-        "Collaboration with Multi-Disciplinary Teams"
-      ],
-      "Problem Solving": [
-        "Problem Solving",
-        "Resolución de problemas",
-        "Problem Solving in Agricultural Settings"
-      ],
-      "Time Management": [
-        "Time Management",
-        "Gestión del tiempo"
-      ],
-      "Training and Development": [
-        "Training and Development",
-        "Formación y desarrollo"
-      ]
-    },
     "canonical_terms": {
-      "Control de calidad": "Quality Control",
-      "QA": "Quality Control",
-      "Quality Assurance in Animal Feed Production": "Quality Control",
-      "Veterinaria": "Veterinary Clinical Practice (Livestock)",
-      "Veterinario": "Veterinary Clinical Practice (Livestock)",
-      "Consultas veterinarias": "Veterinary Clinical Practice (Livestock)",
-      "Veterinary Clinical Services (Production Animals)": "Veterinary Clinical Practice (Livestock)",
-      "Diagnóstico veterinario": "Diagnostic Veterinary Medicine",
-      "Vet Diagnostics": "Diagnostic Veterinary Medicine",
-      "Animal Health Diagnostics": "Diagnostic Veterinary Medicine",
-      "Ganadería": "Animal Husbandry",
-      "Livestock Management": "Animal Husbandry",
-      "Farm Animal Management": "Animal Husbandry",
-      "Bienestar animal": "Animal Welfare",
-      "Welfare of Animals": "Animal Welfare",
-      "Livestock Welfare": "Animal Welfare",
-      "Animal Nutrition": "Animal Nutrition Science",
-      "Nutrición animal": "Animal Nutrition Science",
-      "Animal Feed Science": "Animal Nutrition Science",
-      "Regulatory Documentation": "Regulatory Compliance",
-      "Cumplimiento normativo": "Regulatory Compliance",
-      "Food/Feed Regulatory Compliance": "Regulatory Compliance",
-      "Gestión de proyectos": "Project Management",
-      "Project Participation": "Project Management",
-      "Project Coordination": "Project Management",
-      "Análisis de datos": "Data Analysis",
-      "Statistical Analysis": "Data Analysis",
-      "Data Processing": "Data Analysis",
-      "Lab Work": "Laboratory Procedures",
-      "Sample Collection": "Laboratory Procedures",
-      "Testing for Quality Control": "Laboratory Procedures",
-      "Lab QC": "Laboratory Procedures",
-      "Investigación": "Research Competencies",
-      "Research Skills": "Research Competencies",
-      "Atención al cliente": "Customer Service",
-      "Client Relations": "Customer Service",
-      "Customer/Client Relations": "Customer Service",
-      "Comunicación": "Communication Skills",
-      "Habilidades de comunicación": "Communication Skills",
-      "Oratoria": "Communication Skills",
-      "Public Speaking": "Communication Skills",
-      "Trabajo en equipo": "Collaboration in Teams",
-      "Teamwork": "Collaboration in Teams",
-      "Collaboration with Multi-Disciplinary Teams": "Collaboration in Teams",
-      "Resolución de problemas": "Problem Solving",
-      "Problem Solving in Agricultural Settings": "Problem Solving",
-      "Gestión del tiempo": "Time Management",
-      "Formación y desarrollo": "Training and Development"
+      "Quality control": "Control de calidad (Quality Control in Agri-Food/Animal Feed)",
+      "Quality assurance": "Control de calidad (Quality Control in Agri-Food/Animal Feed)",
+      "QA (Agri-food)": "Control de calidad (Quality Control in Agri-Food/Animal Feed)",
+      "Quality Assurance (Animal Feed)": "Control de calidad (Quality Control in Agri-Food/Animal Feed)",
+      "QC (Animal Feed)": "Control de calidad (Quality Control in Agri-Food/Animal Feed)",
+      "Agri-food quality control": "Control de calidad (Quality Control in Agri-Food/Animal Feed)",
+      "Feed quality control": "Control de calidad (Quality Control in Agri-Food/Animal Feed)",
+      "Regulatory compliance": "Regulatory compliance (Agri-Food, Animal Feed, Veterinary)",
+      "Compliance (Regulatory)": "Regulatory compliance (Agri-Food, Animal Feed, Veterinary)",
+      "Regulatory compliance (Agri-food)": "Regulatory compliance (Agri-Food, Animal Feed, Veterinary)",
+      "Cumplimiento normativo": "Regulatory compliance (Agri-Food, Animal Feed, Veterinary)",
+      "Cumplimiento de la normativa": "Regulatory compliance (Agri-Food, Animal Feed, Veterinary)",
+      "Food/feed regulatory compliance": "Regulatory compliance (Agri-Food, Animal Feed, Veterinary)",
+      "Veterinary regulatory compliance": "Regulatory compliance (Agri-Food, Animal Feed, Veterinary)",
+      "Animal Welfare": "Animal Welfare (in Agricultural Production Settings)",
+      "Animal well-being": "Animal Welfare (in Agricultural Production Settings)",
+      "Bienestar animal": "Animal Welfare (in Agricultural Production Settings)",
+      "Livestock welfare": "Animal Welfare (in Agricultural Production Settings)",
+      "Farm animal welfare": "Animal Welfare (in Agricultural Production Settings)",
+      "Animal welfare (production)": "Animal Welfare (in Agricultural Production Settings)",
+      "Animal welfare (agriculture)": "Animal Welfare (in Agricultural Production Settings)",
+      "Animal Husbandry": "Animal Husbandry (Livestock Management)",
+      "Livestock management": "Animal Husbandry (Livestock Management)",
+      "Ganadería": "Animal Husbandry (Livestock Management)",
+      "Cría de animales": "Animal Husbandry (Livestock Management)",
+      "Animal production": "Animal Husbandry (Livestock Management)",
+      "Farm animal management": "Animal Husbandry (Livestock Management)",
+      "Diagnostic veterinary medicine": "Diagnostic veterinary medicine (Livestock/Feed Sector)",
+      "Veterinary diagnostics": "Diagnostic veterinary medicine (Livestock/Feed Sector)",
+      "Diagnóstico veterinario": "Diagnostic veterinary medicine (Livestock/Feed Sector)",
+      "Veterinary medicine (diagnostics)": "Diagnostic veterinary medicine (Livestock/Feed Sector)",
+      "Laboratory veterinary diagnosis": "Diagnostic veterinary medicine (Livestock/Feed Sector)",
+      "Animal health diagnostics": "Diagnostic veterinary medicine (Livestock/Feed Sector)",
+      "Veterinary clinical protocols": "Veterinary clinical protocols (livestock/feed sectors)",
+      "Protocols (veterinary)": "Veterinary clinical protocols (livestock/feed sectors)",
+      "Veterinary SOPs": "Veterinary clinical protocols (livestock/feed sectors)",
+      "Standard veterinary procedures": "Veterinary clinical protocols (livestock/feed sectors)",
+      "Clinical SOPs (livestock)": "Veterinary clinical protocols (livestock/feed sectors)",
+      "Feed safety assessment": "Feed safety assessment & hazard analysis (HACCP, GMP, related standards)",
+      "Feed hazard analysis": "Feed safety assessment & hazard analysis (HACCP, GMP, related standards)",
+      "HACCP (Animal Feed)": "Feed safety assessment & hazard analysis (HACCP, GMP, related standards)",
+      "GMP (Feed)": "Feed safety assessment & hazard analysis (HACCP, GMP, related standards)",
+      "Feed GMP": "Feed safety assessment & hazard analysis (HACCP, GMP, related standards)",
+      "Hazard analysis (feed safety)": "Feed safety assessment & hazard analysis (HACCP, GMP, related standards)",
+      "Feed safety protocols": "Feed safety assessment & hazard analysis (HACCP, GMP, related standards)",
+      "Livestock production systems": "Livestock production systems knowledge",
+      "Knowledge of livestock systems": "Livestock production systems knowledge",
+      "Agricultural production systems": "Livestock production systems knowledge",
+      "Animal production knowledge": "Livestock production systems knowledge",
+      "Veterinary client consulting": "Veterinary client consulting (B2B/Farmers)",
+      "Consultoría veterinaria B2B": "Veterinary client consulting (B2B/Farmers)",
+      "Farmer advisory (veterinary)": "Veterinary client consulting (B2B/Farmers)",
+      "Veterinary advice for farmers": "Veterinary client consulting (B2B/Farmers)",
+      "Farm client consulting": "Veterinary client consulting (B2B/Farmers)",
+      "Project management (Agriculture)": "Project management (Agricultural/Veterinary context)",
+      "Gestión de proyectos": "Project management (Agricultural/Veterinary context)",
+      "Gestión de proyectos agrícolas": "Project management (Agricultural/Veterinary context)",
+      "Project coordination (veterinary)": "Project management (Agricultural/Veterinary context)",
+      "Data analysis (agri-food)": "Data analysis (Agri-food/veterinary metrics)",
+      "Analysis of agricultural data": "Data analysis (Agri-food/veterinary metrics)",
+      "Data analytics (veterinary)": "Data analysis (Agri-food/veterinary metrics)",
+      "Data interpretation (feed/vet)": "Data analysis (Agri-food/veterinary metrics)",
+      "Análisis de datos (veterinaria/producción)": "Data analysis (Agri-food/veterinary metrics)",
+      "Atención al cliente": "Atención al cliente (Agricultural Client Service)",
+      "Client service (agri-food)": "Atención al cliente (Agricultural Client Service)",
+      "Customer support (livestock)": "Atención al cliente (Agricultural Client Service)",
+      "Farmer support services": "Atención al cliente (Agricultural Client Service)",
+      "Soporte a clientes agrícolas": "Atención al cliente (Agricultural Client Service)"
     },
     "ideal_roles": {
-      "primary_role": {
-        "role_name": "Lead Quality Assurance Veterinarian",
+      "primary": {
+        "role_name": "Senior Quality Assurance Specialist – Agri-Food & Animal Feed",
         "fit_score": 0.92,
-        "reasoning": "Alba Ortega's recent and current roles have focused on veterinary responsibilities within agri-food businesses, particularly in the area of compound feed production. Her current position at MAZANA PIENSOS COMPUESTOS SL likely involves significant elements of quality assurance, animal welfare, regulatory compliance, and diagnostic veterinary medicine. Sector enrichment confirms a lead/senior level and quality assurance focus, making 'Lead Quality Assurance Veterinarian' the most accurate and market-relevant fit. Her experience aligns strongly with the responsibilities expected of a senior QA veterinarian in the agri-food sector.",
+        "reasoning": "Alba Ortega's recent and current positions have centered on quality assurance and veterinary roles within agri-food and animal feed companies, reflecting a clear focus on ensuring feed safety, regulatory compliance, animal welfare, and veterinary diagnostic oversight. Her progression from veterinary diagnostic work to a senior technical quality position, together with advanced expertise in quality control, regulatory compliance, animal husbandry, and professional veterinary consulting, position her solidly at the senior specialist level for quality assurance within her sector.",
         "required_skills_match": [
           "Control de calidad",
-          "Diagnostic veterinary medicine",
-          "Animal Welfare",
           "Regulatory compliance",
-          "Análisis de datos",
-          "Gestión de proyectos",
-          "Collaboration in teams"
+          "Animal Welfare",
+          "Animal Husbandry",
+          "Diagnostic veterinary medicine",
+          "Feed safety assessment & hazard analysis",
+          "Veterinary client consulting",
+          "Project management",
+          "Data analysis"
         ],
         "growth_areas": [
-          "Further specialization in advanced quality management methodologies",
-          "Progressing from 'beginner' to 'advanced' in regulatory and QA frameworks"
+          "Leadership/team management for further upward moves",
+          "Advanced project/program management exposure"
         ]
       },
-      "alternative_roles": [
+      "alternatives": [
         {
-          "role_name": "Regulatory Compliance Lead - Agri-Food",
-          "fit_score": 0.82,
-          "reasoning": "Alba's exposure to regulatory compliance, quality control, and veterinary clinical practice in agri-food settings positions her well for a specialized regulatory compliance leadership role. This would leverage her sector knowledge and expand her impact on regulatory frameworks and standards for animal welfare and food safety.",
+          "role_name": "Regulatory Affairs Manager – Animal Nutrition & Feed",
+          "fit_score": 0.83,
+          "reasoning": "With robust regulatory compliance skills in the agri-food and animal feed sector, plus veterinary and animal science experience, Alba could readily move into a regulatory-focused managerial role. This would leverage her expertise and provide a path to leadership, though would require developing formal regulatory submissions and greater stakeholder management experience.",
           "required_skills_match": [
             "Regulatory compliance",
-            "Animal Husbandry",
-            "Control de calidad",
-            "Problem resolution"
+            "Animal Welfare",
+            "Veterinary consulting",
+            "Quality assurance",
+            "Project management"
           ],
           "growth_areas": [
-            "Deepening regulatory affairs expertise",
-            "Stakeholder management across agencies"
+            "Stakeholder management",
+            "Formal regulatory submission processes",
+            "Leadership skills"
           ]
         },
         {
-          "role_name": "Senior Animal Welfare Officer",
+          "role_name": "Technical Services Manager – Livestock and Animal Feed",
+          "fit_score": 0.8,
+          "reasoning": "Alba's background in advisory veterinary services, diagnostic medicine, and support to livestock producers positions her well for a client-facing technical management role. This would draw on her scientific expertise and enhance customer engagement, but may require further development in commercial strategy and cross-functional team leadership.",
+          "required_skills_match": [
+            "Veterinary client consulting",
+            "Animal Husbandry",
+            "Diagnostic veterinary medicine",
+            "Communication skills",
+            "Collaboration in teams"
+          ],
+          "growth_areas": [
+            "Commercial acumen",
+            "Team management",
+            "Strategic planning"
+          ]
+        },
+        {
+          "role_name": "Animal Welfare & Compliance Lead – Livestock Sector",
           "fit_score": 0.77,
-          "reasoning": "Her veterinary background, combined with focus on animal welfare and quality assurance, aligns well with the requirements for a senior animal welfare oversight role in regulated production environments. She would provide oversight, training, and ensure welfare standards across livestock units.",
+          "reasoning": "Given strong animal welfare, veterinary, and compliance credentials, Alba could also move into a specialist compliance leadership position ensuring animal welfare standards across livestock operations. This would leverage her ethical and regulatory knowledge but may require greater familiarity with policy formulation and inter-organizational advocacy.",
           "required_skills_match": [
             "Animal Welfare",
+            "Regulatory compliance",
             "Diagnostic veterinary medicine",
-            "Gestión de proyectos",
-            "Communication skills"
+            "Problem solving",
+            "Data analysis"
           ],
           "growth_areas": [
-            "Advanced expertise in animal behavior and welfare legislation",
-            "Staff training and auditing methods"
-          ]
-        },
-        {
-          "role_name": "Veterinary Team Leader - Feed Production",
-          "fit_score": 0.75,
-          "reasoning": "Her experience at MAZANA PIENSOS COMPUESTOS SL and prior roles demonstrate both veterinary and organizational skills in animal nutrition and diagnostics. This makes her well suited for leading veterinary teams within compound feed or animal production companies.",
-          "required_skills_match": [
-            "Veterinary clinical practice",
-            "Animal Husbandry",
-            "Collaboration in teams",
-            "Quality assurance"
-          ],
-          "growth_areas": [
-            "Team leadership development",
-            "Strategic planning in feed safety"
+            "Policy development",
+            "Advocacy/negotiation skills"
           ]
         }
       ],
-      "career_trajectory": "Alba Ortega has maintained a focused trajectory in veterinary roles within the agri-food sector for over a decade. She progressed from hands-on veterinary clinical work (2016-2017) to sustained roles as a veterinarian within large agricultural organizations (2017-present), developing expertise in animal production, quality assurance, and compliance. Her current position at MAZANA PIENSOS COMPUESTOS SL implies increased responsibility in quality-focused and regulatory environments.",
-      "recent_focus": "In the past 2-3 years, Alba has managed veterinary responsibilities within compound feed production, emphasizing quality assurance, regulatory compliance, and animal welfare in an industrial agri-food setting."
-    }
-  },
-  "explainability": {
-    "sector_reasoning": "The candidate's career history is centered in companies directly related to animal feed production and agricultural business (MAZANA PIENSOS COMPUESTOS SL, Agropecuaria Obanos, S.A.). Role titles bridge veterinary practice and quality control—specifically in industrial animal feed production. Skills reinforce this, combining veterinary medicine, animal husbandry, quality assurance, regulatory compliance, and data analysis, all within an agri-food context. This points towards agri-food quality assurance as the primary sector, with high confidence due to clear, specific overlap between job titles, company industries, and required expertise.",
-    "sector_evidence": [
-      "Current role: 'Tecnico de calidad en MAZANA PIENSOS COMPUESTOS SL' (Quality Technician in a compound animal feed company)",
-      "Recent roles: 'Veterinaria' at 'MAZANA PIENSOS COMPUESTOS SL' and 'Agropecuaria Obanos, S.A.' (veterinary roles in agricultural/animal feed businesses)",
-      "Skills: 'Animal Husbandry', 'Diagnostic veterinary medicine', 'Animal Welfare', 'Control de calidad' (quality control), 'Regulatory compliance', 'Análisis de datos'",
-      "Domain signals: 'animal nutrition', 'animal feed production', 'veterinary medicine', 'quality control in agri-food sector'"
-    ],
-    "seniority_reasoning": "Alba Ortega demonstrates 10 years of steady career development as a veterinary professional with increasing specialization toward quality assurance in agricultural and animal feed sectors. Her current quality assurance role, combined with substantial practical veterinary experience, aligns with lead-level industry norms in Spain for professionals with 8–12 years of diversified yet focused practice. While there’s no explicit record of formal people management, the breadth of skills, senior-level technical competencies, role autonomy, and likely cross-functional influence (typical for 'Tecnico de calidad' in the sector) support a lead-level assessment. No evidence supports principal/expert or formal directorship, so lead is the highest supportable level here.",
-    "seniority_evidence": [
-      "10 years of professional experience is explicitly stated.",
-      "Career shows continuous roles as 'Veterinaria' and 'Tecnico de calidad' in the agri-food/veterinary industry, without significant gaps.",
-      "Held core practitioner and quality assurance roles at three companies — each for significant multiyear spans, demonstrating stable employment and career progression.",
-      "Currently holds a 'Tecnico de calidad' (Quality Technician) role at MAZANA PIENSOS COMPUESTOS SL, a position typically demanding oversight, expertise, and high accountability.",
-      "Technical/functional competency analysis shows 'senior' level in 'veterinary clinical practice', and 'mid' in quality assurance, project participation, and regulatory compliance.",
-      "No explicit leadership titles (e.g., manager, lead), but 10 years of depth in niche field, cross-company tenure, and current position indicate high autonomy, domain authority, and likely informal leadership within technical teams."
-    ],
-    "disambiguation_summary": "All relevant polysemantic terms are embedded in an agri-food, quality assurance, and veterinary context. The profile is anchored in animal feed production companies and roles bridging quality, veterinary medicine, and data-driven process improvement. Software, IT, general business, or consumer meanings for ambiguous terms are strongly ruled out by sector and company specifics. Disambiguations were performed using: current and past company industry, skill co-occurrence with veterinary/agricultural/quality topics, and absence of classical 'tech' or general business language. Confidence is high for all key terms.",
-    "ideal_roles_reasoning": "The recommendations reflect Alba Ortega's consistent progression within veterinary roles tied to food production and quality, with clear seniority and specialization in quality assurance and compliance. Recent responsibilities and sector position indicate readiness for a lead QA veterinary or compliance leadership role. Adjacent fields such as animal welfare oversight or veterinary team management are within close reach and leverage her tenured experience. Developing advanced regulatory/QA and leadership skills would further enhance her readiness for top-tier sector positions."
+      "career_trajectory": "Alba Ortega has spent a decade in the veterinary and agri-food sector, starting with hands-on veterinary and diagnostic roles and steadily moving into more senior, technical, and quality assurance-focused positions. Her most recent experience (2023–present) at MAZANA PIENSOS COMPUESTOS SL is as a technical quality specialist with advanced veterinary responsibilities. Prior roles also centered on veterinary functions at Agropecuaria Obanos, S.A. and Tests and Trials, indicating a consistent path from clinical and diagnostic animal health toward specialized quality, regulatory, and compliance functions in the sector.",
+      "recent_focus": "The last 2-3 years for Alba have focused on quality assurance in animal feed/agri-food, regulatory compliance, advanced veterinary diagnostics, and ensuring both product and animal welfare standards. She has been accountable for the technical and regulatory oversight vital to feed safety and production excellence.",
+      "reasoning": "The ideal role recommendations are based on Alba's strong and recent experience in technical quality and veterinary roles for leading feed and agri-food companies, as well as her advanced competencies in regulatory compliance, animal welfare, and diagnostic medicine. The recency of her quality assurance and regulatory focus (2023–present) is decisive in weighting her fit highly for senior specialist and potential managerial roles in quality, technical services, or regulatory affairs. The suggested fit scores reflect a robust technical match, aligned with her seniority and recent function, and highlight natural adjacent and growth pathways that exploit her sectoral expertise and open doors to management or leadership roles."
+    },
+    "languages": [
+      {
+        "language": "Spanish",
+        "proficiency": "Native",
+        "source": "inferred",
+        "evidence": "Profile is written in Spanish; candidate lives and works in Huesca, Spain at local Spanish companies in the agri-food sector. All company names, role titles, and skill descriptions are in Spanish, indicating daily and professional use of Spanish.",
+        "confidence": 0.9
+      },
+      {
+        "language": "English",
+        "proficiency": "Basic",
+        "source": "inferred",
+        "evidence": "No direct international experience or education is indicated. The agri-food sector in provincial Spain is typically Spanish-language dominated, with low automatic requirement for English. Some English-language skill names ('Communication skills', 'Research competencies', etc.) suggest basic exposure to English terminology, likely from technical literature or occasional professional context, but not regular usage.",
+        "confidence": 0.5
+      }
+    ]
   }
 }

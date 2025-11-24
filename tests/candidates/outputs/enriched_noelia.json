@@ -1,8 +1,8 @@
 {
   "candidato_id": "19013e2e-c1d7-437b-870e-b7cb1cabf1eb",
-  "timestamp": "2025-11-14T20:16:53.930906",
+  "timestamp": "2025-11-24T12:08:16.540277",
   "metadata": {
-    "timestamp": "2025-11-14T20:16:53.930906",
+    "timestamp": "2025-11-24T12:08:16.540277",
     "source": "database",
     "sector_objetivo": "industrial|utilities"
   },
@@ -143,2109 +143,456 @@
   },
   "semantic_enrichment": {
     "version": "1.0",
-    "enrichment_timestamp": "2025-11-14T20:16:53.930906",
-    "analysis_components": {
-      "context_analysis": {
-        "key_indicators": [
-          "Makenai Solutions, Innovation & Creative Ideas (Current employer)",
-          "Indra (Previous employer)",
-          "Managed Services - Technical Support Manager (Current role)",
-          "Tecnico Provisiones de red y puestas en servicio (Current role)",
-          "Provisiones de red y puestas en servicio (Previous role at Indra)",
-          "Coordinación de grupo, formación, configuración de servicios de red, soporte técnico, trato directo con clientes, técnicos y jefes de proyecto"
-        ],
-        "domain_signals": [
-          "Carrier Ethernet",
-          "MPLS-IP",
-          "Cisco",
-          "Huawei",
-          "FTTH",
-          "ISP/Tránsito",
-          "network provisioning",
-          "technical support",
-          "network configuration",
-          "service commissioning",
-          "process improvement"
-        ],
-        "technology_mentions": [
-          "Carrier Ethernet (Raisecom, RAD, Cisco)",
-          "MPLS-IP (Cisco, Huawei)",
-          "FTTH",
-          "ISP/Tránsito (Internet Service Provider)"
-        ],
-        "activity_patterns": [
-          "Team coordination and onboarding",
-          "Network services configuration (Carrier Ethernet, MPLS, FTTH, ISP)",
-          "Technical support and troubleshooting",
-          "Direct client and project stakeholder interaction",
-          "Assignment and integration of network equipment",
-          "Process improvement",
-          "Documentation",
-          "Training and development"
-        ],
-        "language_context": "Telecommunications/IT network operations and support; emphasis on managed services, provisioning, network commissioning, support/ticketing workflows, customer-facing technical communication, use of both Spanish and English terminology."
-      },
-      "sector_inference": {
-        "primary_sector": "telecommunications_network_operations",
-        "secondary_sectors": [
-          "it_network_support",
-          "managed_it_services",
-          "enterprise_it_infrastructure"
-        ],
-        "confidence": 0.95,
-        "evidence": [
-          "Current role: \"Managed Services - Technical Support Manager\" at Makenai Solutions, Innovation & Creative Ideas",
-          "Past role: \"Provisiones de red y puestas en servicio\" at Indra with activities such as 'Carrier Ethernet', 'MPLS-IP', 'FTTH', 'ISP/Tránsito', 'configuración de red'",
-          "Technical activities: Network provisioning, commissioning, technical support, client and project stakeholder interaction, documentation, process improvement",
-          "Technologies: Carrier Ethernet (Raisecom, RAD, Cisco), MPLS-IP (Cisco, Huawei), FTTH, ISP/Tránsito"
-        ],
-        "reasoning": "The combination of job titles (Technical Support Manager, Network Provisioning Technician), company types (Makenai Solutions, Indra - both operating in advanced IT/telecommunications domains), and specific technologies and activities (Ethernet, MPLS, FTTH configuration, ISP services, network commissioning) makes it clear that the candidate operates primarily within telecommunications network operations. The focus on managed services, hands-on network configuration, provider coordination, and technical support all point toward this sector over general IT support or software development. Technical specificity (e.g., mentioning provider-grade technologies and protocols) further rules out purely enterprise IT or general technical support as a primary domain."
-      },
-      "disambiguation": {
-        "disambiguated_terms": [
-          {
-            "original_term": "Carrier Ethernet",
-            "interpreted_meaning": "A standardized, high-capacity Ethernet-based network service and technology used by telecommunications carriers to deliver Metro Ethernet, WAN, and business-class Ethernet connectivity to customers.",
-            "domain": "telecommunications_network_operations",
-            "confidence": 1.0,
-            "evidence": "Profile context: 'Configuración Servicios de capacidad Carrier Ethernet (Raisecom, RAD, Cisco).' Carrier Ethernet is listed with network equipment vendors (Raisecom, RAD, Cisco) alongside other networking terms (MPLS-IP, FTTH), and role is focused on network provisioning. Sector is telecommunications network operations.",
-            "alternative_meanings_rejected": [
-              "Generic (office) Ethernet: Ruled out because context is telecom-level network provisioning with operator-grade hardware.",
-              "Carrier as person/organization: Ruled out since 'Carrier' refers in this sector to carrier-grade telecom services, not a job role."
-            ]
-          },
-          {
-            "original_term": "MPLS-IP",
-            "interpreted_meaning": "Multi-Protocol Label Switching over Internet Protocol, a method for efficiently routing network packets leveraging labels over IP-based networks, used for wide-area and carrier-class data connectivity within telecom and enterprise backbone infrastructures.",
-            "domain": "telecommunications_network_operations",
-            "confidence": 1.0,
-            "evidence": "'Configuración Servicios MPLS-IP (Cisco, Huawei).' MPLS-IP is listed with major telecom and network equipment vendors and in the context of service provisioning for clients, fitting telecom operations and network support.",
-            "alternative_meanings_rejected": [
-              "General IP routing: MPLS-IP here is not generic IP routing, but refers to specific MPLS implementations over IP infrastructure in telecom.",
-              "Other MPLS domains (industrial): Not indicated; profile context is telecom only."
-            ]
-          },
-          {
-            "original_term": "FTTH",
-            "interpreted_meaning": "Fiber to the Home; a telecommunications technology in which optical fiber extends from a central point directly to individual buildings, homes, or businesses, providing high-speed broadband access.",
-            "domain": "telecommunications_network_operations",
-            "confidence": 1.0,
-            "evidence": "Profile: 'Configuración servicios FTTH (ultimas millas con proveedores Offnet).' FTTH is referenced in relation to 'providers' (Offnet) and last-mile provisioning, characteristic of telecom/broadband deployment.",
-            "alternative_meanings_rejected": [
-              "Other meanings (acronym for unrelated fields): Not relevant in context; profile is telecommunication-focused.",
-              "Generic fiber/optical work (non-telecom): Ruled out by co-occurring telecom terms and provider coordination."
-            ]
-          },
-          {
-            "original_term": "ISP/Tránsito",
-            "interpreted_meaning": "Internet Service Provider (ISP) and transit, referring to ISP services and IP transit, which is the network service enabling traffic to cross or 'transit' a provider's network, critical in telecom routing and global internet connectivity.",
-            "domain": "telecommunications_network_operations",
-            "confidence": 1.0,
-            "evidence": "'Configuración servicios ISP/Tránsito.' Placed alongside other telecom provisioning activities; matches standard telecom sector terminology.",
-            "alternative_meanings_rejected": [
-              "ISP as independent sales professional: Unlikely, full context is technical telecom network provisioning.",
-              "Tránsito as logistics/transit (physical): Clearly not physical movement; used as telecom routing/junction service."
-            ]
-          },
-          {
-            "original_term": "Red",
-            "interpreted_meaning": "A telecommunications data network for transmitting voice, data, and video, including both physical (fiber, copper) and logical (IP, MPLS) layers.",
-            "domain": "telecommunications_network_operations",
-            "confidence": 1.0,
-            "evidence": "Roles: 'Provisiones de red', 'Configuración de red', 'integración de equipos en red.' Used with specific telecom technologies, meaning a data/communications network, not a general 'network' or social network.",
-            "alternative_meanings_rejected": [
-              "Computer network (purely IT): This is clearly telecom/ISP scale network operation, not just office LAN/WAN.",
-              "Red as color: Linguistically impossible in this technical context.",
-              "Social network: Not relevant, no such indicators."
-            ]
-          },
-          {
-            "original_term": "Servicios",
-            "interpreted_meaning": "Provisioned telecommunications network services (i.e., broadband, Carrier Ethernet, MPLS, FTTH, ISP connectivity) offered to clients by a telecom operator/service provider.",
-            "domain": "telecommunications_network_operations",
-            "confidence": 0.95,
-            "evidence": "Used in multiple contexts: 'Configuración Servicios de capacidad Carrier Ethernet... MPLS-IP... FTTH... ISP/Tránsito', 'información técnica y apoyo en la puesta en marcha del servicio'. All refer to technical implementation and support of telecom services, not generic services.",
-            "alternative_meanings_rejected": [
-              "Generic service (customer service, hospitality): All uses are technical, not generic.",
-              "IT services: Too general; this is specifically telecom network provisioning and support.",
-              "Professional services (consulting, legal): No such context; only technical/telecom."
-            ]
-          },
-          {
-            "original_term": "Provisiones",
-            "interpreted_meaning": "Provisioning—the technical process of configuring and activating telecommunications network connections, circuits, or services for new or existing customers.",
-            "domain": "telecommunications_network_operations",
-            "confidence": 1.0,
-            "evidence": "Role: 'Provisiones de red y puestas en servicio.' Descriptions detail configuration, assignment of addresses, and onboarding new equipment/services, matching technical provisioning in telecom.",
-            "alternative_meanings_rejected": [
-              "Inventory supply/provision: This is not about material goods or inventory, but network/equipment provisioning.",
-              "Generic 'providing' (non-technical): Usage is technical, sector-specific."
-            ]
-          },
-          {
-            "original_term": "Puestas en servicio",
-            "interpreted_meaning": "Commissioning or activating network services or devices so they are operational for end users, including validation and integration steps within telecom environments.",
-            "domain": "telecommunications_network_operations",
-            "confidence": 1.0,
-            "evidence": "Profile: 'puestas en servicio' is paired with provisioning of network and configuration of telecom services.",
-            "alternative_meanings_rejected": [
-              "General 'putting into service' (all industries): Here, all usages are about technical commissioning of telecom network services, not general industrial or facility commissioning."
-            ]
-          },
-          {
-            "original_term": "Configuración",
-            "interpreted_meaning": "The technical setup and parameterization of networking devices or services (routers, switches, customer premises equipment, etc.) to enable or modify telecom network services (Carrier Ethernet, MPLS, FTTH).",
-            "domain": "telecommunications_network_operations",
-            "confidence": 1.0,
-            "evidence": "Repeated throughout: 'Configuración Servicios de capacidad Carrier Ethernet', 'Configuración de red', 'Configuración servicios ISP/Tránsito', etc. All indicating technical configuration tasks.",
-            "alternative_meanings_rejected": [
-              "Generic configuration (non-technical): All uses are in highly technical telecom contexts.",
-              "Application settings (non-network): Profile does not reference software; always about network equipment/services."
-            ]
-          },
-          {
-            "original_term": "Capacidad",
-            "interpreted_meaning": "Network capacity; the maximum data bandwidth or throughput that a telecommunications service or connection (e.g., Carrier Ethernet) can provide.",
-            "domain": "telecommunications_network_operations",
-            "confidence": 0.95,
-            "evidence": "'Servicios de capacidad Carrier Ethernet.' In network/telecom context, 'capacidad' almost always refers to bandwidth or throughput.",
-            "alternative_meanings_rejected": [
-              "Human/team capability: Not about personal or team skill; directly related to service metrics.",
-              "General 'capacity' for meetings/resources: Not relevant; here it's a technical parameter."
-            ]
-          },
-          {
-            "original_term": "Offnet",
-            "interpreted_meaning": "A telecommunications term referring to access or services that are delivered via third-party providers outside the primary carrier's own physical network infrastructure ('off-net'), often for last-mile connections to locations the carrier does not directly serve.",
-            "domain": "telecommunications_network_operations",
-            "confidence": 1.0,
-            "evidence": "'FTTH (ultimas millas con proveedores Offnet)' - explicitly a last-mile telecom provisioning scenario.",
-            "alternative_meanings_rejected": [
-              "Off-the-network (cybersecurity): Not about security/isolation, but about provider relationship in telecom.",
-              "Generic 'off network' in social terms: Not relevant."
-            ]
-          },
-          {
-            "original_term": "Trato directo",
-            "interpreted_meaning": "Direct communication and interaction, especially with clients and technical/project stakeholders, central to client-facing technical support or project delivery in telecom.",
-            "domain": "telecommunications_network_operations",
-            "confidence": 0.95,
-            "evidence": "'Trato directo con: Clientes ... Técnicos ... Jefes de Proyecto ...' All describe necessary direct technical collaboration in a network services environment.",
-            "alternative_meanings_rejected": [
-              "Physical handling/care/medical treatment: No non-communication meaning is supported; this is about professional interaction in technical service context."
-            ]
-          },
-          {
-            "original_term": "Clientes",
-            "interpreted_meaning": "Business or enterprise customers who are end-users or buyers of telecommunications services (e.g., broadband, Carrier Ethernet, network connectivity).",
-            "domain": "telecommunications_network_operations",
-            "confidence": 1.0,
-            "evidence": "Repeated: 'Trato directo con: Clientes (facilitar información técnica y apoyo en la puesta en marcha del servicio)'—must be telecom service customers, not generic or retail clients.",
-            "alternative_meanings_rejected": [
-              "Retail customers/buyers: Clearly not consumer, but business telecom services.",
-              "Patients (medical): No healthcare context."
-            ]
-          },
-          {
-            "original_term": "Técnicos",
-            "interpreted_meaning": "Technical staff, such as network engineers, field technicians, or IT/telecom specialists involved in support, configuration, or deployment of telecom network services.",
-            "domain": "telecommunications_network_operations",
-            "confidence": 1.0,
-            "evidence": "'Trato directo con: Técnicos (apoyo en configuraciones e instalaciones)'—direct reference to technical support in network deployment/configuration.",
-            "alternative_meanings_rejected": [
-              "Tech (technology as a sector): Here it refers to people, not the sector as a whole.",
-              "Technician as general repair worker: Context is clearly telecom/IT specialists."
-            ]
-          },
-          {
-            "original_term": "Jefes de Proyecto",
-            "interpreted_meaning": "Project Managers overseeing delivery of network/telecom installations, service launches, or infrastructure change projects.",
-            "domain": "telecommunications_network_operations",
-            "confidence": 1.0,
-            "evidence": "'Trato directo con: Jefes de Proyecto (apoyo técnico para nuevos servicios, así como análisis de cambios ...)' Connection is explicitly project-related within telecom services.",
-            "alternative_meanings_rejected": [
-              "Product manager (non-project management): Explicit project, not product context.",
-              "Manager as people supervisor only: This specifies project-driven responsibilities."
-            ]
-          },
-          {
-            "original_term": "Planificación/Desarrollo",
-            "interpreted_meaning": "Departments or roles within a telecom company responsible for planning and developing new network services or infrastructure.",
-            "domain": "telecommunications_network_operations",
-            "confidence": 0.98,
-            "evidence": "'Participación en conjunto para definición de nuevos servicios.' Paired directly with telecom service launches.",
-            "alternative_meanings_rejected": [
-              "Generic business development: Too broad; context is narrowly focused on network development within telecom operations."
-            ]
-          },
-          {
-            "original_term": "Integración de equipos",
-            "interpreted_meaning": "Technical process of onboarding and configuring network devices (such as switches, routers, or CPE) into the telecom operational network.",
-            "domain": "telecommunications_network_operations",
-            "confidence": 1.0,
-            "evidence": "'integración de equipos en red.' Accompanied by provisioning, configuration, and service terms, always as network integration, not generic team combination.",
-            "alternative_meanings_rejected": [
-              "Team integration (HR context): Not about personnel, but technical device network integration."
-            ]
-          },
-          {
-            "original_term": "Configuración de red",
-            "interpreted_meaning": "Configuration and parameterization of network infrastructure devices (routers, switches, etc.) in order to ensure desired telecom network function and connectivity.",
-            "domain": "telecommunications_network_operations",
-            "confidence": 1.0,
-            "evidence": "Skill listed with other technical telecom configuration competencies; matches provisioning activity in telecom operations.",
-            "alternative_meanings_rejected": [
-              "Software configuration: This is about telecom network infrastructure, not application software."
-            ]
-          },
-          {
-            "original_term": "Documentación técnica",
-            "interpreted_meaning": "Preparation and management of technical documentation related to telecom network configuration, service activation, troubleshooting procedures, or infrastructure specifications.",
-            "domain": "telecommunications_network_operations",
-            "confidence": 1.0,
-            "evidence": "Skill in context of provisioning, deployment, and technical support roles in telecom.",
-            "alternative_meanings_rejected": [
-              "Academic documentation: No academic/research setting indicated."
-            ]
-          }
-        ],
-        "summary": "All potentially ambiguous terms in Noelia Antelo’s profile have been disambiguated in the context of telecommunications network operations. The recurring pattern is that all major terms align with provisioning, configuration, delivery, and support of advanced telecom network services (Carrier Ethernet, MPLS, FTTH, ISP/Transit, equipment integration), always with reference to technical activities and client-facing delivery within telecom/IT infrastructure contexts. No terms identified as having software development, industrial automation, or generic business meaning that would override this sectoral context. Highest confidence is attributed thanks to roles, technologies, and detailed task listings. Alternative meanings from IT, hospitality, logistics, retail, or HR domains are ruled out for each term as not supported by context or co-occurring terms. There are no conflicting domain usages or unresolved ambiguities in the analyzed profile."
-      },
-      "skills_extraction": {
-        "explicit_skills": [
-          {
-            "name": "Liderazgo de equipo",
-            "category": "soft",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Skill listed explicitly with declared level: Beginner.",
-            "confidence": 1.0
-          },
-          {
-            "name": "Servicio al cliente",
-            "category": "soft",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Skill listed explicitly with declared level: Beginner.",
-            "confidence": 1.0
-          },
-          {
-            "name": "Resolución de problemas",
-            "category": "soft",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Skill listed explicitly with declared level: Beginner.",
-            "confidence": 1.0
-          },
-          {
-            "name": "Gestión del tiempo",
-            "category": "soft",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Skill listed explicitly with declared level: Beginner.",
-            "confidence": 1.0
-          },
-          {
-            "name": "Gestión de proyectos",
-            "category": "functional",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Skill listed explicitly with declared level: Beginner.",
-            "confidence": 1.0
-          },
-          {
-            "name": "Technical troubleshooting skills",
-            "category": "technical",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Skill listed explicitly with declared level: Beginner.",
-            "confidence": 1.0
-          },
-          {
-            "name": "Capacitación y desarrollo",
-            "category": "functional",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Skill listed explicitly with declared level: Beginner.",
-            "confidence": 1.0
-          },
-          {
-            "name": "Collaboration",
-            "category": "soft",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Skill listed explicitly with declared level: Beginner.",
-            "confidence": 1.0
-          },
-          {
-            "name": "Habilidades analíticas",
-            "category": "soft",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Skill listed explicitly with declared level: Beginner.",
-            "confidence": 1.0
-          },
-          {
-            "name": "Adaptability",
-            "category": "soft",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Skill listed explicitly with declared level: Beginner.",
-            "confidence": 1.0
-          },
-          {
-            "name": "Configuración de red",
-            "category": "technical",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Skill listed explicitly with declared level: Beginner.",
-            "confidence": 1.0
-          },
-          {
-            "name": "habilidades de comunicación",
-            "category": "soft",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Skill listed explicitly with declared level: Beginner.",
-            "confidence": 1.0
-          },
-          {
-            "name": "Client relationship management",
-            "category": "functional",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Skill listed explicitly with declared level: Beginner.",
-            "confidence": 1.0
-          },
-          {
-            "name": "Mejora de procesos",
-            "category": "functional",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Skill listed explicitly with declared level: Beginner.",
-            "confidence": 1.0
-          },
-          {
-            "name": "Documentación técnica",
-            "category": "functional",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Skill listed explicitly with declared level: Beginner.",
-            "confidence": 1.0
-          },
-          {
-            "name": "Attention to detail",
-            "category": "soft",
-            "level": "novice",
-            "source": "explicit",
-            "evidence": "Skill listed explicitly with declared level: Beginner.",
-            "confidence": 1.0
-          }
-        ],
-        "implicit_skills": [
-          {
-            "name": "Network provisioning (Carrier Ethernet, MPLS-IP, FTTH, ISP/Transit)",
-            "category": "technical",
-            "level": "advanced",
-            "source": "implicit",
-            "evidence": "Role at Indra: 'Configuración Servicios de capacidad Carrier Ethernet (Raisecom, RAD, Cisco)', 'Configuración Servicios MPLS-IP (Cisco, Huawei)', 'Configuración servicios FTTH (ultimas millas con proveedores Offnet)','Configuración servicios ISP/Tránsito'. Repeated, multi-year experience in configuring industry-grade telecom services.",
-            "confidence": 0.95
-          },
-          {
-            "name": "Network device configuration (Cisco, Huawei, RAD, Raisecom)",
-            "category": "technical",
-            "level": "advanced",
-            "source": "implicit",
-            "evidence": "Direct reference to configuring vendor-specific equipment for Ethernet, MPLS-IP, and FTTH services. Requires hands-on advanced configuration know-how on referenced vendor platforms.",
-            "confidence": 0.95
-          },
-          {
-            "name": "Telecommunications service commissioning (puestas en servicio)",
-            "category": "domain_specific",
-            "level": "advanced",
-            "source": "implicit",
-            "evidence": "Explicitly responsible for 'puestas en servicio' (commissioning network services) in two roles, including 'Coordinación del grupo' and technical support for new deployments.",
-            "confidence": 0.9
-          },
-          {
-            "name": "Client technical support (telecom services)",
-            "category": "domain_specific",
-            "level": "advanced",
-            "source": "implicit",
-            "evidence": "Current title: 'Managed Services - Technical Support Manager'; prior experience assisting clients in technical service launches and troubleshooting ('facilitar información técnica y apoyo en la puesta en marcha del servicio').",
-            "confidence": 0.95
-          },
-          {
-            "name": "Vendor and provider coordination (Offnet, multi-provider environments)",
-            "category": "functional",
-            "level": "intermediate",
-            "source": "implicit",
-            "evidence": "Reference to 'FTTH (ultimas millas con proveedores Offnet)' and direct dealings with client and provider technical teams for network provisioning. Requires coordination and negotiation skills in technical contexts.",
-            "confidence": 0.8
-          },
-          {
-            "name": "Team coordination and onboarding/training",
-            "category": "functional",
-            "level": "intermediate",
-            "source": "implicit",
-            "evidence": "'Coordinación del grupo y formación de nuevas incorporaciones.' Managed onboarding/training of new technical staff, suggesting experience with team processes and mentoring.",
-            "confidence": 0.8
-          },
-          {
-            "name": "Project technical support (project managers, service rollout)",
-            "category": "functional",
-            "level": "intermediate",
-            "source": "implicit",
-            "evidence": "Direct support to 'Jefes de Proyecto (apoyo técnico para nuevos servicios...)', and participation in project planning and service definition.",
-            "confidence": 0.8
-          },
-          {
-            "name": "Network integration (device onboarding, address assignment)",
-            "category": "technical",
-            "level": "advanced",
-            "source": "implicit",
-            "evidence": "'Asignación direccionamiento y configuraciones necesarias para integración de equipos en red.' Indicates high-level involvement in IP address allocation, device integration in telecom network infrastructure.",
-            "confidence": 0.85
-          },
-          {
-            "name": "Technical documentation and process improvement (telecom context)",
-            "category": "functional",
-            "level": "intermediate",
-            "source": "implicit",
-            "evidence": "'Documentación técnica', 'Mejora de procesos'—explicit in skills; reinforced by activities linked to defining/optimizing new/existing telecom services processes.",
-            "confidence": 0.8
-          },
-          {
-            "name": "Cross-functional collaboration (clients, technical staff, project managers, planning/development depts)",
-            "category": "soft",
-            "level": "intermediate",
-            "source": "implicit",
-            "evidence": "'Trato directo con: Clientes... Técnicos... Jefes de Proyecto... Planificación/Desarrollo'. Indicates broad stakeholder management and collaborative execution on technical projects.",
-            "confidence": 0.8
-          },
-          {
-            "name": "Telecommunications domain expertise (Carrier Ethernet, MPLS, FTTH, ISP services)",
-            "category": "domain_specific",
-            "level": "advanced",
-            "source": "implicit",
-            "evidence": "16 years in telecom network operations spanning advanced service provisioning with technologies: Carrier Ethernet, MPLS (Cisco, Huawei), FTTH, ISP/Transit. Demonstrated in both job titles and work descriptions.",
-            "confidence": 0.95
-          }
-        ],
-        "skill_clusters": [
-          {
-            "cluster_name": "Telecom Network Provisioning & Management",
-            "skills": [
-              "Network provisioning (Carrier Ethernet, MPLS-IP, FTTH, ISP/Transit)",
-              "Network device configuration (Cisco, Huawei, RAD, Raisecom)",
-              "Telecommunications service commissioning (puestas en servicio)",
-              "Network integration (device onboarding, address assignment)",
-              "Telecommunications domain expertise (Carrier Ethernet, MPLS, FTTH, ISP services)"
-            ]
-          },
-          {
-            "cluster_name": "Client & Stakeholder Management (Telecom)",
-            "skills": [
-              "Client relationship management",
-              "Client technical support (telecom services)",
-              "Cross-functional collaboration (clients, technical staff, project managers, planning/development depts)"
-            ]
-          },
-          {
-            "cluster_name": "Functional & Operational Excellence (Telecom)",
-            "skills": [
-              "Gestión de proyectos",
-              "Project technical support (project managers, service rollout)",
-              "Team coordination and onboarding/training",
-              "Technical documentation and process improvement (telecom context)",
-              "Vendor and provider coordination (Offnet, multi-provider environments)"
-            ]
-          },
-          {
-            "cluster_name": "Core Soft Skills",
-            "skills": [
-              "Liderazgo de equipo",
-              "Servicio al cliente",
-              "Resolución de problemas",
-              "Gestión del tiempo",
-              "Collaboration",
-              "Habilidades analíticas",
-              "Adaptability",
-              "habilidades de comunicación",
-              "Attention to detail"
-            ]
-          }
-        ]
-      },
-      "competencies_analysis": {
-        "competencies": [
-          {
-            "competency": "team_leadership",
-            "type": "soft",
-            "level": "mid",
-            "source": "experience",
-            "evidence": "Coordinación del grupo y formación de nuevas incorporaciones."
-          },
-          {
-            "competency": "mentorship_training",
-            "type": "soft",
-            "level": "mid",
-            "source": "experience",
-            "evidence": "formación de nuevas incorporaciones."
-          },
-          {
-            "competency": "client_communication",
-            "type": "soft",
-            "level": "mid",
-            "source": "experience",
-            "evidence": "Trato directo con: Clientes (facilitar información técnica y apoyo en la puesta en marcha del servicio)."
-          },
-          {
-            "competency": "cross_functional_collaboration",
-            "type": "soft",
-            "level": "mid",
-            "source": "experience",
-            "evidence": "Trato directo con: Clientes... Técnicos... Jefes de Proyecto... Planificación/Desarrollo (participación en conjunto para definición de nuevos servicios)."
-          },
-          {
-            "competency": "problem_solving",
-            "type": "soft",
-            "level": "mid",
-            "source": "experience",
-            "evidence": "Technical troubleshooting skills; resolución de problemas; apoyo técnico para nuevos servicios, así como análisis de cambios necesarios sobre servicios ya existentes."
-          },
-          {
-            "competency": "adaptability",
-            "type": "soft",
-            "level": "mid",
-            "source": "experience",
-            "evidence": "16 years experience across multiple telecom environments and moving between roles with evolving technical requirements."
-          },
-          {
-            "competency": "project_management",
-            "type": "functional",
-            "level": "mid",
-            "source": "role/skills",
-            "evidence": "Gestión de proyectos (skill), Coordinación del grupo, apoyo a jefes de proyecto y participación en la definición y planificación de nuevos servicios."
-          },
-          {
-            "competency": "process_improvement",
-            "type": "functional",
-            "level": "mid",
-            "source": "role/skills",
-            "evidence": "Mejora de procesos; participación en conjunto para definición de nuevos servicios."
-          },
-          {
-            "competency": "technical_documentation",
-            "type": "functional",
-            "level": "mid",
-            "source": "role/skills",
-            "evidence": "Documentación técnica (skill), assigned to telecom service provisioning processes."
-          },
-          {
-            "competency": "service_commissioning",
-            "type": "functional",
-            "level": "senior",
-            "source": "experience",
-            "evidence": "Responsabilidad en puestas en servicio (commissioning network services) in two roles."
-          },
-          {
-            "competency": "stakeholder_management",
-            "type": "managerial",
-            "level": "mid",
-            "source": "experience",
-            "evidence": "Trato directo con clientes, técnicos, jefes de proyecto y planificación/desarrollo para definición y lanzamiento de servicios."
-          },
-          {
-            "competency": "team_onboarding",
-            "type": "managerial",
-            "level": "mid",
-            "source": "experience",
-            "evidence": "Formación de nuevas incorporaciones."
-          },
-          {
-            "competency": "vendor_coordination",
-            "type": "functional",
-            "level": "mid",
-            "source": "experience",
-            "evidence": "Configuración servicios FTTH (ultimas millas con proveedores Offnet)—direct dealings with provider technical teams."
-          }
-        ],
-        "leadership_indicators": [
-          "Coordinación del grupo y formación de nuevas incorporaciones.",
-          "Responsabilidad en puestas en servicio (commissioning network services) in two roles.",
-          "Apoyo en configuraciones e instalaciones para técnicos más nuevos."
-        ],
-        "collaboration_indicators": [
-          "Trato directo con clientes, técnicos, jefes de proyecto y departamentos de planificación/desarrollo.",
-          "Participación en conjunto para definición de nuevos servicios.",
-          "Coordinación con proveedores en servicios FTTH."
-        ]
-      },
-      "normalization": {
-        "normalized_synonyms": [
-          {
-            "term": "Carrier Ethernet",
-            "synonyms": [
-              "Carrier Ethernet",
-              "Carrier-grade Ethernet"
-            ]
-          },
-          {
-            "term": "MPLS-IP",
-            "synonyms": [
-              "MPLS-IP",
-              "MPLS over IP",
-              "MPLS/IP",
-              "MPLS"
-            ]
-          },
-          {
-            "term": "FTTH",
-            "synonyms": [
-              "FTTH",
-              "Fiber to the Home"
-            ]
-          },
-          {
-            "term": "ISP/Tránsito",
-            "synonyms": [
-              "ISP/Tránsito",
-              "ISP y Tránsito",
-              "ISP & Transit",
-              "IP Transit"
-            ]
-          },
-          {
-            "term": "Red",
-            "synonyms": [
-              "Red",
-              "Red de telecomunicaciones",
-              "Red de datos",
-              "Telecom network",
-              "Telecommunications network"
-            ]
-          },
-          {
-            "term": "Servicios",
-            "synonyms": [
-              "Servicios",
-              "Servicios de red",
-              "Servicios de telecomunicaciones",
-              "Servicios de conectividad"
-            ]
-          },
-          {
-            "term": "Provisiones",
-            "synonyms": [
-              "Provisiones",
-              "Network provisioning",
-              "Provisioning"
-            ]
-          },
-          {
-            "term": "Puestas en servicio",
-            "synonyms": [
-              "Puestas en servicio",
-              "Service commissioning",
-              "Commissioning",
-              "Activación de servicios"
-            ]
-          },
-          {
-            "term": "Configuración",
-            "synonyms": [
-              "Configuración",
-              "Network configuration",
-              "Configuración de red"
-            ]
-          },
-          {
-            "term": "Capacidad",
-            "synonyms": [
-              "Capacidad",
-              "Network capacity",
-              "Throughput"
-            ]
-          },
-          {
-            "term": "Offnet",
-            "synonyms": [
-              "Offnet",
-              "Off-net",
-              "Proveedor externo"
-            ]
-          },
-          {
-            "term": "Trato directo",
-            "synonyms": [
-              "Trato directo",
-              "Cliente directo",
-              "Direct interaction"
-            ]
-          },
-          {
-            "term": "Clientes",
-            "synonyms": [
-              "Clientes",
-              "Customers",
-              "Business clients",
-              "End-users"
-            ]
-          },
-          {
-            "term": "Técnicos",
-            "synonyms": [
-              "Técnicos",
-              "Technical staff",
-              "Technicians",
-              "Network engineers"
-            ]
-          },
-          {
-            "term": "Jefes de Proyecto",
-            "synonyms": [
-              "Jefes de Proyecto",
-              "Project managers",
-              "PMs"
-            ]
-          },
-          {
-            "term": "Planificación/Desarrollo",
-            "synonyms": [
-              "Planificación/Desarrollo",
-              "Planning and development department",
-              "Planning/Development"
-            ]
-          },
-          {
-            "term": "Integración de equipos",
-            "synonyms": [
-              "Integración de equipos",
-              "Device integration",
-              "Onboarding devices"
-            ]
-          },
-          {
-            "term": "Configuración de red",
-            "synonyms": [
-              "Configuración de red",
-              "Network configuration",
-              "Network setup"
-            ]
-          },
-          {
-            "term": "Documentación técnica",
-            "synonyms": [
-              "Documentación técnica",
-              "Technical documentation"
-            ]
-          },
-          {
-            "term": "Cisco",
-            "synonyms": [
-              "Cisco",
-              "Cisco Systems"
-            ]
-          },
-          {
-            "term": "Huawei",
-            "synonyms": [
-              "Huawei"
-            ]
-          },
-          {
-            "term": "RAD",
-            "synonyms": [
-              "RAD",
-              "RAD Data Communications"
-            ]
-          },
-          {
-            "term": "Raisecom",
-            "synonyms": [
-              "Raisecom"
-            ]
-          },
-          {
-            "term": "Liderazgo de equipo",
-            "synonyms": [
-              "Liderazgo de equipo",
-              "Team leadership",
-              "Leadership"
-            ]
-          },
-          {
-            "term": "Servicio al cliente",
-            "synonyms": [
-              "Servicio al cliente",
-              "Customer service"
-            ]
-          },
-          {
-            "term": "Resolución de problemas",
-            "synonyms": [
-              "Resolución de problemas",
-              "Problem solving"
-            ]
-          },
-          {
-            "term": "Gestión del tiempo",
-            "synonyms": [
-              "Gestión del tiempo",
-              "Time management"
-            ]
-          },
-          {
-            "term": "Gestión de proyectos",
-            "synonyms": [
-              "Gestión de proyectos",
-              "Project management"
-            ]
-          },
-          {
-            "term": "Technical troubleshooting skills",
-            "synonyms": [
-              "Technical troubleshooting skills",
-              "Resolución de problemas técnicos"
-            ]
-          },
-          {
-            "term": "Capacitación y desarrollo",
-            "synonyms": [
-              "Capacitación y desarrollo",
-              "Training and development"
-            ]
-          },
-          {
-            "term": "Collaboration",
-            "synonyms": [
-              "Collaboration",
-              "Colaboración"
-            ]
-          },
-          {
-            "term": "Habilidades analíticas",
-            "synonyms": [
-              "Habilidades analíticas",
-              "Analytical skills"
-            ]
-          },
-          {
-            "term": "Adaptability",
-            "synonyms": [
-              "Adaptability",
-              "Adaptabilidad"
-            ]
-          },
-          {
-            "term": "habilidades de comunicación",
-            "synonyms": [
-              "habilidades de comunicación",
-              "Communication skills"
-            ]
-          },
-          {
-            "term": "Client relationship management",
-            "synonyms": [
-              "Client relationship management",
-              "Gestión de relaciones con clientes"
-            ]
-          },
-          {
-            "term": "Mejora de procesos",
-            "synonyms": [
-              "Mejora de procesos",
-              "Process improvement"
-            ]
-          },
-          {
-            "term": "Attention to detail",
-            "synonyms": [
-              "Attention to detail",
-              "Atención al detalle"
-            ]
-          }
-        ],
-        "canonical_terms": [
-          {
-            "variation": "Carrier-grade Ethernet",
-            "canonical": "Carrier Ethernet"
-          },
-          {
-            "variation": "MPLS over IP",
-            "canonical": "MPLS-IP"
-          },
-          {
-            "variation": "MPLS/IP",
-            "canonical": "MPLS-IP"
-          },
-          {
-            "variation": "MPLS",
-            "canonical": "MPLS-IP"
-          },
-          {
-            "variation": "Fiber to the Home",
-            "canonical": "FTTH"
-          },
-          {
-            "variation": "ISP y Tránsito",
-            "canonical": "ISP/Tránsito"
-          },
-          {
-            "variation": "ISP & Transit",
-            "canonical": "ISP/Tránsito"
-          },
-          {
-            "variation": "IP Transit",
-            "canonical": "ISP/Tránsito"
-          },
-          {
-            "variation": "Red de telecomunicaciones",
-            "canonical": "Red"
-          },
-          {
-            "variation": "Red de datos",
-            "canonical": "Red"
-          },
-          {
-            "variation": "Telecom network",
-            "canonical": "Red"
-          },
-          {
-            "variation": "Telecommunications network",
-            "canonical": "Red"
-          },
-          {
-            "variation": "Servicios de red",
-            "canonical": "Servicios"
-          },
-          {
-            "variation": "Servicios de telecomunicaciones",
-            "canonical": "Servicios"
-          },
-          {
-            "variation": "Servicios de conectividad",
-            "canonical": "Servicios"
-          },
-          {
-            "variation": "Network provisioning",
-            "canonical": "Provisiones"
-          },
-          {
-            "variation": "Provisioning",
-            "canonical": "Provisiones"
-          },
-          {
-            "variation": "Service commissioning",
-            "canonical": "Puestas en servicio"
-          },
-          {
-            "variation": "Commissioning",
-            "canonical": "Puestas en servicio"
-          },
-          {
-            "variation": "Activación de servicios",
-            "canonical": "Puestas en servicio"
-          },
-          {
-            "variation": "Network configuration",
-            "canonical": "Configuración"
-          },
-          {
-            "variation": "Configuración de red",
-            "canonical": "Configuración"
-          },
-          {
-            "variation": "Network capacity",
-            "canonical": "Capacidad"
-          },
-          {
-            "variation": "Throughput",
-            "canonical": "Capacidad"
-          },
-          {
-            "variation": "Off-net",
-            "canonical": "Offnet"
-          },
-          {
-            "variation": "Proveedor externo",
-            "canonical": "Offnet"
-          },
-          {
-            "variation": "Cliente directo",
-            "canonical": "Trato directo"
-          },
-          {
-            "variation": "Direct interaction",
-            "canonical": "Trato directo"
-          },
-          {
-            "variation": "Customers",
-            "canonical": "Clientes"
-          },
-          {
-            "variation": "Business clients",
-            "canonical": "Clientes"
-          },
-          {
-            "variation": "End-users",
-            "canonical": "Clientes"
-          },
-          {
-            "variation": "Technical staff",
-            "canonical": "Técnicos"
-          },
-          {
-            "variation": "Technicians",
-            "canonical": "Técnicos"
-          },
-          {
-            "variation": "Network engineers",
-            "canonical": "Técnicos"
-          },
-          {
-            "variation": "Project managers",
-            "canonical": "Jefes de Proyecto"
-          },
-          {
-            "variation": "PMs",
-            "canonical": "Jefes de Proyecto"
-          },
-          {
-            "variation": "Planning and development department",
-            "canonical": "Planificación/Desarrollo"
-          },
-          {
-            "variation": "Planning/Development",
-            "canonical": "Planificación/Desarrollo"
-          },
-          {
-            "variation": "Device integration",
-            "canonical": "Integración de equipos"
-          },
-          {
-            "variation": "Onboarding devices",
-            "canonical": "Integración de equipos"
-          },
-          {
-            "variation": "Network setup",
-            "canonical": "Configuración de red"
-          },
-          {
-            "variation": "Technical documentation",
-            "canonical": "Documentación técnica"
-          },
-          {
-            "variation": "Cisco Systems",
-            "canonical": "Cisco"
-          },
-          {
-            "variation": "RAD Data Communications",
-            "canonical": "RAD"
-          },
-          {
-            "variation": "Team leadership",
-            "canonical": "Liderazgo de equipo"
-          },
-          {
-            "variation": "Leadership",
-            "canonical": "Liderazgo de equipo"
-          },
-          {
-            "variation": "Customer service",
-            "canonical": "Servicio al cliente"
-          },
-          {
-            "variation": "Problem solving",
-            "canonical": "Resolución de problemas"
-          },
-          {
-            "variation": "Time management",
-            "canonical": "Gestión del tiempo"
-          },
-          {
-            "variation": "Project management",
-            "canonical": "Gestión de proyectos"
-          },
-          {
-            "variation": "Resolución de problemas técnicos",
-            "canonical": "Technical troubleshooting skills"
-          },
-          {
-            "variation": "Training and development",
-            "canonical": "Capacitación y desarrollo"
-          },
-          {
-            "variation": "Colaboración",
-            "canonical": "Collaboration"
-          },
-          {
-            "variation": "Analytical skills",
-            "canonical": "Habilidades analíticas"
-          },
-          {
-            "variation": "Adaptabilidad",
-            "canonical": "Adaptability"
-          },
-          {
-            "variation": "Communication skills",
-            "canonical": "habilidades de comunicación"
-          },
-          {
-            "variation": "Gestión de relaciones con clientes",
-            "canonical": "Client relationship management"
-          },
-          {
-            "variation": "Process improvement",
-            "canonical": "Mejora de procesos"
-          },
-          {
-            "variation": "Atención al detalle",
-            "canonical": "Attention to detail"
-          }
-        ],
-        "technology_taxonomy": [
-          {
-            "category": "telecommunications_network_technologies",
-            "technologies": [
-              "Carrier Ethernet",
-              "MPLS-IP",
-              "FTTH",
-              "ISP/Tránsito"
-            ]
-          },
-          {
-            "category": "network_infrastructure_vendors",
-            "technologies": [
-              "Cisco",
-              "Huawei",
-              "RAD",
-              "Raisecom"
-            ]
-          },
-          {
-            "category": "network_operations_functions",
-            "technologies": [
-              "Provisiones",
-              "Puestas en servicio",
-              "Configuración de red",
-              "Integración de equipos",
-              "Documentación técnica",
-              "Capacidad"
-            ]
-          },
-          {
-            "category": "client_and_stakeholder_management",
-            "technologies": [
-              "Client relationship management",
-              "Servicio al cliente",
-              "Trato directo",
-              "Clientes",
-              "Jefes de Proyecto",
-              "Planificación/Desarrollo",
-              "Vendor and provider coordination"
-            ]
-          },
-          {
-            "category": "team_and_project_management",
-            "technologies": [
-              "Liderazgo de equipo",
-              "Gestión de proyectos",
-              "Gestión del tiempo",
-              "Team coordination and onboarding/training",
-              "Project technical support"
-            ]
-          },
-          {
-            "category": "process_improvement_and_documentation",
-            "technologies": [
-              "Mejora de procesos",
-              "Documentación técnica"
-            ]
-          },
-          {
-            "category": "core_soft_skills",
-            "technologies": [
-              "Collaboration",
-              "Habilidades analíticas",
-              "Adaptability",
-              "habilidades de comunicación",
-              "Attention to detail",
-              "Resolución de problemas"
-            ]
-          }
-        ]
-      },
-      "seniority_inference": {
-        "seniority_level": "lead",
-        "confidence": 0.9,
-        "evidence": [
-          "16 years stated experience in telecommunications roles, surpassing the 12-year threshold for principal/expert but with limited evidence of industry-wide influence.",
-          "Current title: 'Managed Services - Technical Support Manager' and previous leadership responsibilities ('Coordinación del grupo y formación de nuevas incorporaciones') indicate both technical and team leadership.",
-          "Prolonged responsibility for advanced technical work: provisioning and configuring complex telecom services (Carrier Ethernet, MPLS-IP, FTTH, ISP/Transit) with multi-vendor platforms, sustained over multiple positions and companies (Indra, Makenai Solutions).",
-          "Evidence of direct decision-making, client and stakeholder management: 'Trato directo con: Clientes... Técnicos... Jefes de Proyecto... Planificación/Desarrollo'.",
-          "Project and process contribution: active involvement in service definition, technical documentation, and process improvement.",
-          "Mentorship and onboarding activities: explicit responsibility for onboarding/training new team members."
-        ],
-        "years_experience_estimate": 16,
-        "reasoning": "Noelia Antelo holds 16 years of experience in the telecommunications industry, consistently taking on increasingly complex technical and leadership roles. Her current and recent positions include managerial/leadership scope ('Technical Support Manager', group coordination, team onboarding), signaling autonomous responsibility over teams and projects. She demonstrates advanced technical expertise in configuring and launching sophisticated network services across a variety of platforms and vendors, as well as effective stakeholder engagement and cross-functional collaboration. While her explicit skills are self-rated as 'Beginner', this is contradicted by her advanced applied skills and the complexity of her technical and leadership responsibilities. There is insufficient direct evidence of industry-wide strategic vision or thought leadership (as expected for principal/expert), but she amply fulfills and exceeds the expectations for 'Lead'—meeting criteria in experience, domain expertise, team management, and organizational impact. Confidence is high due to the clear alignment between career trajectory, technical/leadership demands, and stated years of service."
-      },
-      "ideal_roles_inference": {
-        "primary_role": {
-          "role_name": "Technical Support Manager - Managed Services",
-          "fit_score": 0.92,
-          "reasoning": "Noelia has been working as a Managed Services - Technical Support Manager for the past several years, indicating a clear shift into management and technical support leadership. This recent, sustained experience—combined with her trajectory from technical execution to coordination and now management—makes this role the highest fit. Her skills in team leadership, technical troubleshooting, client communication, and cross-functional collaboration align well with this role's demands. The seniority and sector are also a strong match.",
-          "required_skills_match": [
-            "Liderazgo de equipo",
-            "Gestión de proyectos",
-            "Servicio al cliente",
-            "Technical troubleshooting skills",
-            "Collaboration",
-            "Client relationship management"
-          ],
-          "growth_areas": [
-            "Deepen advanced technical troubleshooting (beyond 'beginner')",
-            "Strengthen project and team management from 'novice' to advanced",
-            "Enhance analytical/reporting capabilities"
-          ]
-        },
-        "alternative_roles": [
-          {
-            "role_name": "IT Service Delivery Manager",
-            "fit_score": 0.84,
-            "reasoning": "Given Noelia's experience managing service delivery in a telecom context, she would be well suited for an IT Service Delivery Manager position. This leverages her process improvement, client management, and leadership skills, while increasing her focus on end-to-end service performance and stakeholder relationship management.",
-            "required_skills_match": [
-              "Gestión de proyectos",
-              "Client relationship management",
-              "Mejora de procesos",
-              "Gestión del tiempo",
-              "Documentación técnica"
-            ],
-            "growth_areas": [
-              "Gain deeper expertise in ITIL/service governance frameworks",
-              "Broaden experience with service-level agreements and vendor management"
-            ]
-          },
-          {
-            "role_name": "Managed Services Operations Lead",
-            "fit_score": 0.8,
-            "reasoning": "Her dual recent focus on both technical service provisioning and management make her a good candidate for Managed Services Operations Lead—a role responsible for overseeing both operations and delivery in a managed services environment. Her strengths in technical documentation, collaboration, and cross-functional leadership fit this role well.",
-            "required_skills_match": [
-              "Technical troubleshooting skills",
-              "Configuración de red",
-              "Collaboration",
-              "Gestión de proyectos",
-              "Capacitación y desarrollo"
-            ],
-            "growth_areas": [
-              "Advance operational process automation skills",
-              "Further develop leadership of larger/multidisciplinary teams"
-            ]
-          },
-          {
-            "role_name": "Customer Success Manager - Technical",
-            "fit_score": 0.75,
-            "reasoning": "Noelia's client-facing experience and technical background position her well for a Customer Success Manager - Technical role, particularly in technology or telecom organizations. This would emphasize her ability to drive customer satisfaction and technical onboarding while leveraging her process and documentation abilities.",
-            "required_skills_match": [
-              "Servicio al cliente",
-              "Client relationship management",
-              "Mejora de procesos",
-              "Documentación técnica",
-              "Technical troubleshooting skills"
-            ],
-            "growth_areas": [
-              "Enhance customer-facing communication and advocacy skills",
-              "Build experience in commercial/account expansion responsibilities"
-            ]
-          }
-        ],
-        "career_trajectory": "Noelia began her career in technical provisioning roles, advanced to provisioning coordination with increased customer interaction and group coordination, and over the past 2+ years, has transitioned to a technical management position in managed services. This shows clear upward progression from hands-on technical roles to technical management and service delivery leadership.",
-        "recent_focus": "Her main focus over the last 2-3 years has been on technical support management and managed services delivery—including leading a technical support group, handling customer requirements, coordinating service implementations, and ensuring successful provisioning within the telecommunications/managed services sector.",
-        "recency_weight_applied": true,
-        "reasoning": "The candidate's trajectory demonstrates a steady progression from technical execution to technical leadership. The most recent roles, which are weighted more heavily, focus squarely on technical team management and service delivery in telecommunications and managed services contexts. Accordingly, senior management roles in technical support and service delivery are the strongest fits—leveraging both her industry expertise and recently developed leadership competencies. Alternative roles suggested are realistic pivots that build on her recent experience, competencies, and evident career direction."
-      }
-    },
+    "enrichment_timestamp": "2025-11-24T12:08:16.540277",
     "key_insights": {
-      "primary_sector": "telecommunications_network_operations",
+      "primary_sector": "telecommunications_network_engineering",
       "sector_confidence": 0.95,
       "seniority_level": "lead",
       "years_experience": 16,
-      "total_skills_identified": 27,
-      "competencies_count": 13,
-      "disambiguated_terms_count": 19,
+      "total_skills_identified": 12,
+      "competencies_count": 11,
+      "disambiguated_terms_count": 13,
       "primary_ideal_role": "Technical Support Manager - Managed Services",
       "primary_role_fit_score": 0.92
     },
-    "structured_skills": {
+    "sector": {
+      "primary": "telecommunications_network_engineering",
+      "secondary": [
+        "managed_it_services",
+        "network_operations",
+        "technical_support_management"
+      ],
+      "confidence": 0.95,
+      "reasoning": "The candidate's roles, technologies, and activities are focused on configuring and managing telecom network services (Carrier Ethernet, MPLS-IP, FTTH, ISP services) within managed services, supporting clients, and technical operations. The companies and project contexts both fit telecommunications network engineering. While there are adjacent IT service management elements, the strongest, specific signals identify telecommunications network engineering as the core domain, with high confidence and precise match to sector taxonomy."
+    },
+    "seniority": {
+      "level": "lead",
+      "years_experience": 16,
+      "confidence": 0.93,
+      "reasoning": "Noelia Antelo's profile strongly aligns with LEAD-level seniority. She has 16 years of experience, with her most recent roles involving both technical leadership (manager/director of technical support teams, coordination of group activities, onboarding and mentoring new staff) and advanced technical depth across telecommunications provisioning and support. The complexity of her domains (multi-vendor network configuration, Carrier Ethernet, MPLS-IP, FTTH) and her responsibilities (client-facing support, process improvement, and new service integration) demonstrate high autonomy, strategic contribution, and organizational impact—key lead indicators. Although there is no direct evidence of organization-wide executive influence (as would be expected at the principal/expert level), her repeated team leadership, significant technical depth, and extensive experience move her well beyond senior, solidly establishing her at the lead level."
+    },
+    "skills": {
       "explicit": [
-        {
-          "name": "Liderazgo de equipo",
-          "category": "soft",
-          "level": "novice",
-          "source": "explicit",
-          "evidence": "Skill listed explicitly with declared level: Beginner.",
-          "confidence": 1.0
-        },
-        {
-          "name": "Servicio al cliente",
-          "category": "soft",
-          "level": "novice",
-          "source": "explicit",
-          "evidence": "Skill listed explicitly with declared level: Beginner.",
-          "confidence": 1.0
-        },
-        {
-          "name": "Resolución de problemas",
-          "category": "soft",
-          "level": "novice",
-          "source": "explicit",
-          "evidence": "Skill listed explicitly with declared level: Beginner.",
-          "confidence": 1.0
-        },
-        {
-          "name": "Gestión del tiempo",
-          "category": "soft",
-          "level": "novice",
-          "source": "explicit",
-          "evidence": "Skill listed explicitly with declared level: Beginner.",
-          "confidence": 1.0
-        },
-        {
-          "name": "Gestión de proyectos",
-          "category": "functional",
-          "level": "novice",
-          "source": "explicit",
-          "evidence": "Skill listed explicitly with declared level: Beginner.",
-          "confidence": 1.0
-        },
-        {
-          "name": "Technical troubleshooting skills",
-          "category": "technical",
-          "level": "novice",
-          "source": "explicit",
-          "evidence": "Skill listed explicitly with declared level: Beginner.",
-          "confidence": 1.0
-        },
-        {
-          "name": "Capacitación y desarrollo",
-          "category": "functional",
-          "level": "novice",
-          "source": "explicit",
-          "evidence": "Skill listed explicitly with declared level: Beginner.",
-          "confidence": 1.0
-        },
-        {
-          "name": "Collaboration",
-          "category": "soft",
-          "level": "novice",
-          "source": "explicit",
-          "evidence": "Skill listed explicitly with declared level: Beginner.",
-          "confidence": 1.0
-        },
-        {
-          "name": "Habilidades analíticas",
-          "category": "soft",
-          "level": "novice",
-          "source": "explicit",
-          "evidence": "Skill listed explicitly with declared level: Beginner.",
-          "confidence": 1.0
-        },
-        {
-          "name": "Adaptability",
-          "category": "soft",
-          "level": "novice",
-          "source": "explicit",
-          "evidence": "Skill listed explicitly with declared level: Beginner.",
-          "confidence": 1.0
-        },
         {
           "name": "Configuración de red",
           "category": "technical",
-          "level": "novice",
+          "level": "advanced",
           "source": "explicit",
-          "evidence": "Skill listed explicitly with declared level: Beginner.",
-          "confidence": 1.0
-        },
-        {
-          "name": "habilidades de comunicación",
-          "category": "soft",
-          "level": "novice",
-          "source": "explicit",
-          "evidence": "Skill listed explicitly with declared level: Beginner.",
-          "confidence": 1.0
-        },
-        {
-          "name": "Client relationship management",
-          "category": "functional",
-          "level": "novice",
-          "source": "explicit",
-          "evidence": "Skill listed explicitly with declared level: Beginner.",
-          "confidence": 1.0
-        },
-        {
-          "name": "Mejora de procesos",
-          "category": "functional",
-          "level": "novice",
-          "source": "explicit",
-          "evidence": "Skill listed explicitly with declared level: Beginner.",
+          "evidence": "Skill listed; supported by experience: 'Configuración Servicios de capacidad Carrier Ethernet (Raisecom, RAD, Cisco)', 'Configuración Servicios MPLS-IP (Cisco, Huawei)', 'Configuración servicios FTTH...'",
           "confidence": 1.0
         },
         {
           "name": "Documentación técnica",
           "category": "functional",
-          "level": "novice",
+          "level": "intermediate",
           "source": "explicit",
-          "evidence": "Skill listed explicitly with declared level: Beginner.",
-          "confidence": 1.0
-        },
-        {
-          "name": "Attention to detail",
-          "category": "soft",
-          "level": "novice",
-          "source": "explicit",
-          "evidence": "Skill listed explicitly with declared level: Beginner.",
-          "confidence": 1.0
+          "evidence": "Skill listed; consistent with role in provisioning/configuration and service handover for telecom/ISP services.",
+          "confidence": 0.9
         }
       ],
       "implicit": [
         {
-          "name": "Network provisioning (Carrier Ethernet, MPLS-IP, FTTH, ISP/Transit)",
-          "category": "technical",
-          "level": "advanced",
-          "source": "implicit",
-          "evidence": "Role at Indra: 'Configuración Servicios de capacidad Carrier Ethernet (Raisecom, RAD, Cisco)', 'Configuración Servicios MPLS-IP (Cisco, Huawei)', 'Configuración servicios FTTH (ultimas millas con proveedores Offnet)','Configuración servicios ISP/Tránsito'. Repeated, multi-year experience in configuring industry-grade telecom services.",
-          "confidence": 0.95
-        },
-        {
-          "name": "Network device configuration (Cisco, Huawei, RAD, Raisecom)",
-          "category": "technical",
-          "level": "advanced",
-          "source": "implicit",
-          "evidence": "Direct reference to configuring vendor-specific equipment for Ethernet, MPLS-IP, and FTTH services. Requires hands-on advanced configuration know-how on referenced vendor platforms.",
-          "confidence": 0.95
-        },
-        {
-          "name": "Telecommunications service commissioning (puestas en servicio)",
+          "name": "Telecommunications network provisioning",
           "category": "domain_specific",
           "level": "advanced",
           "source": "implicit",
-          "evidence": "Explicitly responsible for 'puestas en servicio' (commissioning network services) in two roles, including 'Coordinación del grupo' and technical support for new deployments.",
-          "confidence": 0.9
+          "evidence": "Role: 'Tecnico Provisiones de red y puestas en servicio', 'Provisiones de red y puestas en servicio'. Activities: Configuration and provisioning of Carrier Ethernet, MPLS-IP, FTTH, ISP/Tránsito services for business clients.",
+          "confidence": 1.0
         },
         {
-          "name": "Client technical support (telecom services)",
-          "category": "domain_specific",
-          "level": "advanced",
-          "source": "implicit",
-          "evidence": "Current title: 'Managed Services - Technical Support Manager'; prior experience assisting clients in technical service launches and troubleshooting ('facilitar información técnica y apoyo en la puesta en marcha del servicio').",
-          "confidence": 0.95
-        },
-        {
-          "name": "Vendor and provider coordination (Offnet, multi-provider environments)",
-          "category": "functional",
-          "level": "intermediate",
-          "source": "implicit",
-          "evidence": "Reference to 'FTTH (ultimas millas con proveedores Offnet)' and direct dealings with client and provider technical teams for network provisioning. Requires coordination and negotiation skills in technical contexts.",
-          "confidence": 0.8
-        },
-        {
-          "name": "Team coordination and onboarding/training",
-          "category": "functional",
-          "level": "intermediate",
-          "source": "implicit",
-          "evidence": "'Coordinación del grupo y formación de nuevas incorporaciones.' Managed onboarding/training of new technical staff, suggesting experience with team processes and mentoring.",
-          "confidence": 0.8
-        },
-        {
-          "name": "Project technical support (project managers, service rollout)",
-          "category": "functional",
-          "level": "intermediate",
-          "source": "implicit",
-          "evidence": "Direct support to 'Jefes de Proyecto (apoyo técnico para nuevos servicios...)', and participation in project planning and service definition.",
-          "confidence": 0.8
-        },
-        {
-          "name": "Network integration (device onboarding, address assignment)",
+          "name": "Carrier Ethernet configuration (Raisecom, RAD, Cisco)",
           "category": "technical",
           "level": "advanced",
           "source": "implicit",
-          "evidence": "'Asignación direccionamiento y configuraciones necesarias para integración de equipos en red.' Indicates high-level involvement in IP address allocation, device integration in telecom network infrastructure.",
-          "confidence": 0.85
+          "evidence": "\"Configuración Servicios de capacidad Carrier Ethernet (Raisecom, RAD, Cisco)\" as a primary activity in role.",
+          "confidence": 1.0
         },
         {
-          "name": "Technical documentation and process improvement (telecom context)",
-          "category": "functional",
-          "level": "intermediate",
+          "name": "MPLS-IP configuration (Cisco, Huawei)",
+          "category": "technical",
+          "level": "advanced",
           "source": "implicit",
-          "evidence": "'Documentación técnica', 'Mejora de procesos'—explicit in skills; reinforced by activities linked to defining/optimizing new/existing telecom services processes.",
-          "confidence": 0.8
+          "evidence": "'Configuración Servicios MPLS-IP (Cisco, Huawei)' as primary technical task.",
+          "confidence": 1.0
         },
         {
-          "name": "Cross-functional collaboration (clients, technical staff, project managers, planning/development depts)",
+          "name": "FTTH service provisioning (last mile, Offnet)",
+          "category": "technical",
+          "level": "advanced",
+          "source": "implicit",
+          "evidence": "'Configuración servicios FTTH (ultimas millas con proveedores Offnet)' as explicit responsibility; context: provisioning last-mile fiber service via external providers.",
+          "confidence": 0.95
+        },
+        {
+          "name": "Internet Service Provisioning / BGP & transit services",
+          "category": "technical",
+          "level": "advanced",
+          "source": "implicit",
+          "evidence": "'Configuración servicios ISP/Tránsito', integrating and configuring internet service and transit for clients; supported by sector context and project details.",
+          "confidence": 0.95
+        },
+        {
+          "name": "IP addressing & network integration",
+          "category": "technical",
+          "level": "advanced",
+          "source": "implicit",
+          "evidence": "'Asignación direccionamiento y configuraciones necesarias para integración de equipos en red' – activity in directly integrating new devices/services on telecom networks.",
+          "confidence": 1.0
+        },
+        {
+          "name": "Client-facing technical support (telecom/ISP)",
+          "category": "domain_specific",
+          "level": "advanced",
+          "source": "implicit",
+          "evidence": "Roles in 'Technical Support Manager', 'Provisiones de red y puestas en servicio' with direct client handoff and support ('Trato directo con clientes...facilitar información técnica...apoyo en la puesta en marcha del servicio').",
+          "confidence": 1.0
+        },
+        {
+          "name": "Team coordination & training (technical teams)",
           "category": "soft",
-          "level": "intermediate",
-          "source": "implicit",
-          "evidence": "'Trato directo con: Clientes... Técnicos... Jefes de Proyecto... Planificación/Desarrollo'. Indicates broad stakeholder management and collaborative execution on technical projects.",
-          "confidence": 0.8
-        },
-        {
-          "name": "Telecommunications domain expertise (Carrier Ethernet, MPLS, FTTH, ISP services)",
-          "category": "domain_specific",
           "level": "advanced",
           "source": "implicit",
-          "evidence": "16 years in telecom network operations spanning advanced service provisioning with technologies: Carrier Ethernet, MPLS (Cisco, Huawei), FTTH, ISP/Transit. Demonstrated in both job titles and work descriptions.",
+          "evidence": "'Coordinación del grupo y formación de nuevas incorporaciones' in telecom provisioning context; repeated senior roles. Equivalent to technical team leadership.",
           "confidence": 0.95
+        },
+        {
+          "name": "Technical troubleshooting (telecom/ISP networks)",
+          "category": "technical",
+          "level": "advanced",
+          "source": "implicit",
+          "evidence": "Listed skill; role as Technical Support Manager; responsibility for supporting technicians, resolving service/configuration issues during customer onboarding and service uptime.",
+          "confidence": 1.0
+        },
+        {
+          "name": "Process improvement (telecommunications operations)",
+          "category": "functional",
+          "level": "intermediate",
+          "source": "implicit",
+          "evidence": "'Apoyo técnico para nuevos servicios, así como análisis de cambios necesarios sobre servicios ya existentes.' Involvement in process/technical improvement for ongoing services.",
+          "confidence": 0.9
         }
       ],
       "clusters": {
-        "Telecom Network Provisioning & Management": [
-          "Network provisioning (Carrier Ethernet, MPLS-IP, FTTH, ISP/Transit)",
-          "Network device configuration (Cisco, Huawei, RAD, Raisecom)",
-          "Telecommunications service commissioning (puestas en servicio)",
-          "Network integration (device onboarding, address assignment)",
-          "Telecommunications domain expertise (Carrier Ethernet, MPLS, FTTH, ISP services)"
+        "Telecommunications Service Provisioning & Configuration": [
+          "Telecommunications network provisioning",
+          "Carrier Ethernet configuration (Raisecom, RAD, Cisco)",
+          "MPLS-IP configuration (Cisco, Huawei)",
+          "FTTH service provisioning (last mile, Offnet)",
+          "Internet Service Provisioning / BGP & transit services",
+          "IP addressing & network integration"
         ],
-        "Client & Stakeholder Management (Telecom)": [
-          "Client relationship management",
-          "Client technical support (telecom services)",
-          "Cross-functional collaboration (clients, technical staff, project managers, planning/development depts)"
+        "Telecommunications Technical Operations & Support": [
+          "Client-facing technical support (telecom/ISP)",
+          "Technical troubleshooting (telecom/ISP networks)",
+          "Process improvement (telecommunications operations)"
         ],
-        "Functional & Operational Excellence (Telecom)": [
-          "Gestión de proyectos",
-          "Project technical support (project managers, service rollout)",
-          "Team coordination and onboarding/training",
-          "Technical documentation and process improvement (telecom context)",
-          "Vendor and provider coordination (Offnet, multi-provider environments)"
+        "Technical Team Leadership & Enablement": [
+          "Team coordination & training (technical teams)"
         ],
-        "Core Soft Skills": [
-          "Liderazgo de equipo",
-          "Servicio al cliente",
-          "Resolución de problemas",
-          "Gestión del tiempo",
-          "Collaboration",
-          "Habilidades analíticas",
-          "Adaptability",
-          "habilidades de comunicación",
-          "Attention to detail"
+        "Technical Documentation & Communication": [
+          "Documentación técnica"
         ]
       }
     },
-    "structured_competencies": [
+    "competencies": [
       {
         "competency": "team_leadership",
         "type": "soft",
-        "level": "mid",
+        "level": "senior",
         "source": "experience",
         "evidence": "Coordinación del grupo y formación de nuevas incorporaciones."
       },
       {
-        "competency": "mentorship_training",
+        "competency": "technical_mentorship",
         "type": "soft",
         "level": "mid",
         "source": "experience",
-        "evidence": "formación de nuevas incorporaciones."
-      },
-      {
-        "competency": "client_communication",
-        "type": "soft",
-        "level": "mid",
-        "source": "experience",
-        "evidence": "Trato directo con: Clientes (facilitar información técnica y apoyo en la puesta en marcha del servicio)."
+        "evidence": "formación de nuevas incorporaciones"
       },
       {
         "competency": "cross_functional_collaboration",
         "type": "soft",
-        "level": "mid",
+        "level": "senior",
         "source": "experience",
-        "evidence": "Trato directo con: Clientes... Técnicos... Jefes de Proyecto... Planificación/Desarrollo (participación en conjunto para definición de nuevos servicios)."
+        "evidence": "Trato directo con... Clientes (facilitar información técnica y apoyo en la puesta en marcha del servicio)... Técnicos... Jefes de Proyecto... Planificación/Desarrollo (participación en conjunto para definición de nuevos servicios)."
       },
       {
-        "competency": "problem_solving",
+        "competency": "client_communication",
         "type": "soft",
+        "level": "senior",
+        "source": "experience",
+        "evidence": "Trato directo con: Clientes (facilitar información técnica y apoyo en la puesta en marcha del servicio)."
+      },
+      {
+        "competency": "technical_troubleshooting",
+        "type": "functional",
+        "level": "senior",
+        "source": "experience",
+        "evidence": "apoyo en configuraciones e instalaciones... resolver incidencias durante altas o soporte continuo"
+      },
+      {
+        "competency": "process_improvement",
+        "type": "functional",
         "level": "mid",
         "source": "experience",
-        "evidence": "Technical troubleshooting skills; resolución de problemas; apoyo técnico para nuevos servicios, así como análisis de cambios necesarios sobre servicios ya existentes."
+        "evidence": "análisis de cambios necesarios sobre servicios ya existentes"
+      },
+      {
+        "competency": "project_support",
+        "type": "functional",
+        "level": "mid",
+        "source": "experience",
+        "evidence": "apoyo técnico para nuevos servicios"
       },
       {
         "competency": "adaptability",
         "type": "soft",
         "level": "mid",
         "source": "experience",
-        "evidence": "16 years experience across multiple telecom environments and moving between roles with evolving technical requirements."
+        "evidence": "Variedad de servicios y tecnologías abordados: Carrier Ethernet, MPLS-IP, FTTH, ISP/Tránsito"
       },
       {
-        "competency": "project_management",
+        "competency": "documentation",
         "type": "functional",
         "level": "mid",
-        "source": "role/skills",
-        "evidence": "Gestión de proyectos (skill), Coordinación del grupo, apoyo a jefes de proyecto y participación en la definición y planificación de nuevos servicios."
-      },
-      {
-        "competency": "process_improvement",
-        "type": "functional",
-        "level": "mid",
-        "source": "role/skills",
-        "evidence": "Mejora de procesos; participación en conjunto para definición de nuevos servicios."
-      },
-      {
-        "competency": "technical_documentation",
-        "type": "functional",
-        "level": "mid",
-        "source": "role/skills",
-        "evidence": "Documentación técnica (skill), assigned to telecom service provisioning processes."
-      },
-      {
-        "competency": "service_commissioning",
-        "type": "functional",
-        "level": "senior",
         "source": "experience",
-        "evidence": "Responsabilidad en puestas en servicio (commissioning network services) in two roles."
+        "evidence": "Documentación técnica (skill listed y actividades de integración/configuración de equipos en red)"
+      },
+      {
+        "competency": "analytical_thinking",
+        "type": "soft",
+        "level": "mid",
+        "source": "experience",
+        "evidence": "análisis de cambios necesarios sobre servicios ya existentes"
       },
       {
         "competency": "stakeholder_management",
         "type": "managerial",
         "level": "mid",
         "source": "experience",
-        "evidence": "Trato directo con clientes, técnicos, jefes de proyecto y planificación/desarrollo para definición y lanzamiento de servicios."
-      },
-      {
-        "competency": "team_onboarding",
-        "type": "managerial",
-        "level": "mid",
-        "source": "experience",
-        "evidence": "Formación de nuevas incorporaciones."
-      },
-      {
-        "competency": "vendor_coordination",
-        "type": "functional",
-        "level": "mid",
-        "source": "experience",
-        "evidence": "Configuración servicios FTTH (ultimas millas con proveedores Offnet)—direct dealings with provider technical teams."
+        "evidence": "Trato directo con... Jefes de Proyecto... Planificación/Desarrollo (participación en conjunto para definición de nuevos servicios)."
       }
     ],
-    "disambiguation_map": {
+    "disambiguation": {
       "Carrier Ethernet": {
-        "meaning": "A standardized, high-capacity Ethernet-based network service and technology used by telecommunications carriers to deliver Metro Ethernet, WAN, and business-class Ethernet connectivity to customers.",
-        "domain": "telecommunications_network_operations",
+        "meaning": "Carrier Ethernet (Metro Ethernet) – a standardized, high-capacity Ethernet protocol and technology for telecommunications service providers used to connect customer networks across metropolitan or wide area networks.",
+        "domain": "telecommunications_network_engineering",
         "confidence": 1.0
       },
       "MPLS-IP": {
-        "meaning": "Multi-Protocol Label Switching over Internet Protocol, a method for efficiently routing network packets leveraging labels over IP-based networks, used for wide-area and carrier-class data connectivity within telecom and enterprise backbone infrastructures.",
-        "domain": "telecommunications_network_operations",
+        "meaning": "MPLS-IP – Multi-Protocol Label Switching over IP; a protocol for efficiently routing data in telecommunications networks, often used by ISPs and telecom operators.",
+        "domain": "telecommunications_network_engineering",
         "confidence": 1.0
       },
       "FTTH": {
-        "meaning": "Fiber to the Home; a telecommunications technology in which optical fiber extends from a central point directly to individual buildings, homes, or businesses, providing high-speed broadband access.",
-        "domain": "telecommunications_network_operations",
+        "meaning": "FTTH – 'Fiber To The Home'; a method of providing high-speed fiber optic internet connections directly to customer premises.",
+        "domain": "telecommunications_network_engineering",
         "confidence": 1.0
       },
       "ISP/Tránsito": {
-        "meaning": "Internet Service Provider (ISP) and transit, referring to ISP services and IP transit, which is the network service enabling traffic to cross or 'transit' a provider's network, critical in telecom routing and global internet connectivity.",
-        "domain": "telecommunications_network_operations",
-        "confidence": 1.0
-      },
-      "Red": {
-        "meaning": "A telecommunications data network for transmitting voice, data, and video, including both physical (fiber, copper) and logical (IP, MPLS) layers.",
-        "domain": "telecommunications_network_operations",
-        "confidence": 1.0
-      },
-      "Servicios": {
-        "meaning": "Provisioned telecommunications network services (i.e., broadband, Carrier Ethernet, MPLS, FTTH, ISP connectivity) offered to clients by a telecom operator/service provider.",
-        "domain": "telecommunications_network_operations",
-        "confidence": 0.95
-      },
-      "Provisiones": {
-        "meaning": "Provisioning—the technical process of configuring and activating telecommunications network connections, circuits, or services for new or existing customers.",
-        "domain": "telecommunications_network_operations",
-        "confidence": 1.0
-      },
-      "Puestas en servicio": {
-        "meaning": "Commissioning or activating network services or devices so they are operational for end users, including validation and integration steps within telecom environments.",
-        "domain": "telecommunications_network_operations",
-        "confidence": 1.0
-      },
-      "Configuración": {
-        "meaning": "The technical setup and parameterization of networking devices or services (routers, switches, customer premises equipment, etc.) to enable or modify telecom network services (Carrier Ethernet, MPLS, FTTH).",
-        "domain": "telecommunications_network_operations",
-        "confidence": 1.0
-      },
-      "Capacidad": {
-        "meaning": "Network capacity; the maximum data bandwidth or throughput that a telecommunications service or connection (e.g., Carrier Ethernet) can provide.",
-        "domain": "telecommunications_network_operations",
-        "confidence": 0.95
-      },
-      "Offnet": {
-        "meaning": "A telecommunications term referring to access or services that are delivered via third-party providers outside the primary carrier's own physical network infrastructure ('off-net'), often for last-mile connections to locations the carrier does not directly serve.",
-        "domain": "telecommunications_network_operations",
-        "confidence": 1.0
-      },
-      "Trato directo": {
-        "meaning": "Direct communication and interaction, especially with clients and technical/project stakeholders, central to client-facing technical support or project delivery in telecom.",
-        "domain": "telecommunications_network_operations",
-        "confidence": 0.95
-      },
-      "Clientes": {
-        "meaning": "Business or enterprise customers who are end-users or buyers of telecommunications services (e.g., broadband, Carrier Ethernet, network connectivity).",
-        "domain": "telecommunications_network_operations",
-        "confidence": 1.0
-      },
-      "Técnicos": {
-        "meaning": "Technical staff, such as network engineers, field technicians, or IT/telecom specialists involved in support, configuration, or deployment of telecom network services.",
-        "domain": "telecommunications_network_operations",
-        "confidence": 1.0
-      },
-      "Jefes de Proyecto": {
-        "meaning": "Project Managers overseeing delivery of network/telecom installations, service launches, or infrastructure change projects.",
-        "domain": "telecommunications_network_operations",
-        "confidence": 1.0
-      },
-      "Planificación/Desarrollo": {
-        "meaning": "Departments or roles within a telecom company responsible for planning and developing new network services or infrastructure.",
-        "domain": "telecommunications_network_operations",
-        "confidence": 0.98
-      },
-      "Integración de equipos": {
-        "meaning": "Technical process of onboarding and configuring network devices (such as switches, routers, or CPE) into the telecom operational network.",
-        "domain": "telecommunications_network_operations",
+        "meaning": "ISP/Tránsito – Internet Service Provider and Internet Transit; in telecom, provisioning connectivity between networks (transit) and end-clients (ISP)",
+        "domain": "telecommunications_network_engineering",
         "confidence": 1.0
       },
       "Configuración de red": {
-        "meaning": "Configuration and parameterization of network infrastructure devices (routers, switches, etc.) in order to ensure desired telecom network function and connectivity.",
-        "domain": "telecommunications_network_operations",
+        "meaning": "Network configuration – process of setting, provisioning, and adjusting network devices (routers, switches, etc.) for telecom/ISP services.",
+        "domain": "telecommunications_network_engineering",
+        "confidence": 1.0
+      },
+      "Capacidad": {
+        "meaning": "Capacity – in networking, refers specifically to bandwidth or throughput provided by a service (how much data can be carried).",
+        "domain": "telecommunications_network_engineering",
+        "confidence": 0.95
+      },
+      "Puestas en servicio": {
+        "meaning": "Commissioning – the process of making technical network services operational (turn-up/activation) after provisioning and configuration, specific to telecommunications networks.",
+        "domain": "telecommunications_network_engineering",
         "confidence": 1.0
       },
       "Documentación técnica": {
-        "meaning": "Preparation and management of technical documentation related to telecom network configuration, service activation, troubleshooting procedures, or infrastructure specifications.",
-        "domain": "telecommunications_network_operations",
+        "meaning": "Technical documentation – creation and maintenance of documents (manuals, guides, configuration records) specific to telecom/network engineering.",
+        "domain": "telecommunications_network_engineering",
         "confidence": 1.0
+      },
+      "Configuración": {
+        "meaning": "Configuration (networking) – setting properties or parameters of network devices (routers, switches, etc.), especially in telecom environments.",
+        "domain": "telecommunications_network_engineering",
+        "confidence": 1.0
+      },
+      "Direcionamiento": {
+        "meaning": "Addressing – assignment of network IP addresses within telecom network infrastructure.",
+        "domain": "telecommunications_network_engineering",
+        "confidence": 1.0
+      },
+      "Tránsito": {
+        "meaning": "Internet transit – the process of an ISP providing its customers with access to the global Internet; a term used in telecommunications for upstream connectivity.",
+        "domain": "telecommunications_network_engineering",
+        "confidence": 1.0
+      },
+      "Servicios": {
+        "meaning": "Telecommunications/network services (network connectivity, Internet access, etc.) provided to customers (business or residential) in a managed network context.",
+        "domain": "telecommunications_network_engineering",
+        "confidence": 0.95
+      },
+      "Offnet": {
+        "meaning": "Offnet – refers to telecommunications services/providers that are not part of the main service provider’s own network infrastructure (third-party or external carriers for last-mile access).",
+        "domain": "telecommunications_network_engineering",
+        "confidence": 0.95
       }
     },
-    "synonym_map": {
-      "Carrier Ethernet": [
-        "Carrier Ethernet",
-        "Carrier-grade Ethernet"
-      ],
-      "MPLS-IP": [
-        "MPLS-IP",
-        "MPLS over IP",
-        "MPLS/IP",
-        "MPLS"
-      ],
-      "FTTH": [
-        "FTTH",
-        "Fiber to the Home"
-      ],
-      "ISP/Tránsito": [
-        "ISP/Tránsito",
-        "ISP y Tránsito",
-        "ISP & Transit",
-        "IP Transit"
-      ],
-      "Red": [
-        "Red",
-        "Red de telecomunicaciones",
-        "Red de datos",
-        "Telecom network",
-        "Telecommunications network"
-      ],
-      "Servicios": [
-        "Servicios",
-        "Servicios de red",
-        "Servicios de telecomunicaciones",
-        "Servicios de conectividad"
-      ],
-      "Provisiones": [
-        "Provisiones",
-        "Network provisioning",
-        "Provisioning"
-      ],
-      "Puestas en servicio": [
-        "Puestas en servicio",
-        "Service commissioning",
-        "Commissioning",
-        "Activación de servicios"
-      ],
-      "Configuración": [
-        "Configuración",
-        "Network configuration",
-        "Configuración de red"
-      ],
-      "Capacidad": [
-        "Capacidad",
-        "Network capacity",
-        "Throughput"
-      ],
-      "Offnet": [
-        "Offnet",
-        "Off-net",
-        "Proveedor externo"
-      ],
-      "Trato directo": [
-        "Trato directo",
-        "Cliente directo",
-        "Direct interaction"
-      ],
-      "Clientes": [
-        "Clientes",
-        "Customers",
-        "Business clients",
-        "End-users"
-      ],
-      "Técnicos": [
-        "Técnicos",
-        "Technical staff",
-        "Technicians",
-        "Network engineers"
-      ],
-      "Jefes de Proyecto": [
-        "Jefes de Proyecto",
-        "Project managers",
-        "PMs"
-      ],
-      "Planificación/Desarrollo": [
-        "Planificación/Desarrollo",
-        "Planning and development department",
-        "Planning/Development"
-      ],
-      "Integración de equipos": [
-        "Integración de equipos",
-        "Device integration",
-        "Onboarding devices"
-      ],
-      "Configuración de red": [
-        "Configuración de red",
-        "Network configuration",
-        "Network setup"
-      ],
-      "Documentación técnica": [
-        "Documentación técnica",
-        "Technical documentation"
-      ],
-      "Cisco": [
-        "Cisco",
-        "Cisco Systems"
-      ],
-      "Huawei": [
-        "Huawei"
-      ],
-      "RAD": [
-        "RAD",
-        "RAD Data Communications"
-      ],
-      "Raisecom": [
-        "Raisecom"
-      ],
-      "Liderazgo de equipo": [
-        "Liderazgo de equipo",
-        "Team leadership",
-        "Leadership"
-      ],
-      "Servicio al cliente": [
-        "Servicio al cliente",
-        "Customer service"
-      ],
-      "Resolución de problemas": [
-        "Resolución de problemas",
-        "Problem solving"
-      ],
-      "Gestión del tiempo": [
-        "Gestión del tiempo",
-        "Time management"
-      ],
-      "Gestión de proyectos": [
-        "Gestión de proyectos",
-        "Project management"
-      ],
-      "Technical troubleshooting skills": [
-        "Technical troubleshooting skills",
-        "Resolución de problemas técnicos"
-      ],
-      "Capacitación y desarrollo": [
-        "Capacitación y desarrollo",
-        "Training and development"
-      ],
-      "Collaboration": [
-        "Collaboration",
-        "Colaboración"
-      ],
-      "Habilidades analíticas": [
-        "Habilidades analíticas",
-        "Analytical skills"
-      ],
-      "Adaptability": [
-        "Adaptability",
-        "Adaptabilidad"
-      ],
-      "habilidades de comunicación": [
-        "habilidades de comunicación",
-        "Communication skills"
-      ],
-      "Client relationship management": [
-        "Client relationship management",
-        "Gestión de relaciones con clientes"
-      ],
-      "Mejora de procesos": [
-        "Mejora de procesos",
-        "Process improvement"
-      ],
-      "Attention to detail": [
-        "Attention to detail",
-        "Atención al detalle"
-      ]
-    },
     "canonical_terms": {
-      "Carrier-grade Ethernet": "Carrier Ethernet",
+      "Metro Ethernet": "Carrier Ethernet",
       "MPLS over IP": "MPLS-IP",
-      "MPLS/IP": "MPLS-IP",
+      "Multi-Protocol Label Switching over IP": "MPLS-IP",
       "MPLS": "MPLS-IP",
-      "Fiber to the Home": "FTTH",
-      "ISP y Tránsito": "ISP/Tránsito",
-      "ISP & Transit": "ISP/Tránsito",
-      "IP Transit": "ISP/Tránsito",
-      "Red de telecomunicaciones": "Red",
-      "Red de datos": "Red",
-      "Telecom network": "Red",
-      "Telecommunications network": "Red",
-      "Servicios de red": "Servicios",
-      "Servicios de telecomunicaciones": "Servicios",
-      "Servicios de conectividad": "Servicios",
-      "Network provisioning": "Provisiones",
-      "Provisioning": "Provisiones",
-      "Service commissioning": "Puestas en servicio",
-      "Commissioning": "Puestas en servicio",
-      "Activación de servicios": "Puestas en servicio",
+      "Multiprotocol Label Switching": "MPLS-IP",
+      "Fiber To The Home": "FTTH",
+      "Fibre to the Home": "FTTH",
+      "Internet Service Provider and Transit": "ISP/Tránsito",
+      "Internet Transit": "ISP/Tránsito",
+      "ISP Transit": "ISP/Tránsito",
       "Network configuration": "Configuración",
-      "Configuración de red": "Configuración",
-      "Network capacity": "Capacidad",
-      "Throughput": "Capacidad",
-      "Off-net": "Offnet",
-      "Proveedor externo": "Offnet",
-      "Cliente directo": "Trato directo",
-      "Direct interaction": "Trato directo",
-      "Customers": "Clientes",
-      "Business clients": "Clientes",
-      "End-users": "Clientes",
-      "Technical staff": "Técnicos",
-      "Technicians": "Técnicos",
-      "Network engineers": "Técnicos",
-      "Project managers": "Jefes de Proyecto",
-      "PMs": "Jefes de Proyecto",
-      "Planning and development department": "Planificación/Desarrollo",
-      "Planning/Development": "Planificación/Desarrollo",
-      "Device integration": "Integración de equipos",
-      "Onboarding devices": "Integración de equipos",
       "Network setup": "Configuración de red",
+      "Network capacity": "Capacidad",
+      "Bandwidth": "Capacidad",
+      "Throughput": "Capacidad",
+      "Commissioning": "Puestas en servicio",
+      "Turn-up": "Puestas en servicio",
+      "Service activation": "Puestas en servicio",
       "Technical documentation": "Documentación técnica",
-      "Cisco Systems": "Cisco",
-      "RAD Data Communications": "RAD",
+      "Tech docs": "Documentación técnica",
+      "Configuration": "Configuración",
+      "Device configuration": "Configuración",
+      "IP addressing": "Direccionamiento",
+      "Network addressing": "Direccionamiento",
+      "Address assignment": "Direccionamiento",
+      "Internet transit": "Tránsito",
+      "IP transit": "Tránsito",
+      "Telecommunications service": "Servicios",
+      "Network service": "Servicios",
+      "Connectivity service": "Servicios",
+      "Off-net": "Offnet",
+      "Third-party provider": "Offnet",
+      "External carrier": "Offnet",
       "Team leadership": "Liderazgo de equipo",
-      "Leadership": "Liderazgo de equipo",
+      "Technical team leadership": "Liderazgo de equipo",
       "Customer service": "Servicio al cliente",
-      "Problem solving": "Resolución de problemas",
+      "Client service": "Servicio al cliente",
+      "Problem-solving": "Resolución de problemas",
+      "Troubleshooting": "Technical troubleshooting skills",
       "Time management": "Gestión del tiempo",
       "Project management": "Gestión de proyectos",
-      "Resolución de problemas técnicos": "Technical troubleshooting skills",
+      "Technical troubleshooting skills": "Technical troubleshooting skills",
+      "Problemas técnicos": "Technical troubleshooting skills",
+      "Technical issue resolution": "Technical troubleshooting skills",
       "Training and development": "Capacitación y desarrollo",
+      "Staff development": "Capacitación y desarrollo",
+      "Team collaboration": "Collaboration",
       "Colaboración": "Collaboration",
       "Analytical skills": "Habilidades analíticas",
-      "Adaptabilidad": "Adaptability",
-      "Communication skills": "habilidades de comunicación",
+      "Analytical ability": "Habilidades analíticas",
+      "Flexibility": "Adaptability",
+      "Adaptación": "Adaptability",
+      "CRM": "Client relationship management",
       "Gestión de relaciones con clientes": "Client relationship management",
       "Process improvement": "Mejora de procesos",
-      "Atención al detalle": "Attention to detail"
+      "Operational improvement": "Mejora de procesos",
+      "Detail-oriented": "Attention to detail",
+      "Attention to details": "Attention to detail",
+      "Habilidades de comunicación": "Habilidades de comunicación",
+      "Communication skills": "Habilidades de comunicación",
+      "Comunicación": "Habilidades de comunicación"
     },
     "ideal_roles": {
-      "primary_role": {
+      "primary": {
         "role_name": "Technical Support Manager - Managed Services",
         "fit_score": 0.92,
-        "reasoning": "Noelia has been working as a Managed Services - Technical Support Manager for the past several years, indicating a clear shift into management and technical support leadership. This recent, sustained experience—combined with her trajectory from technical execution to coordination and now management—makes this role the highest fit. Her skills in team leadership, technical troubleshooting, client communication, and cross-functional collaboration align well with this role's demands. The seniority and sector are also a strong match.",
+        "reasoning": "Noelia's most recent and current position is as a Technical Support Manager in a managed services context, demonstrating leadership in both technical support and network provisioning environments. Over the last 2-3 years, her career has centered on managing support operations, technical troubleshooting, leading teams, and direct client engagement within telecommunications. Her technical skillset, combined with her leadership and process improvement capacity, aligns perfectly with the expectations for this senior-level technical management role in Spain’s telecommunications sector.",
         "required_skills_match": [
-          "Liderazgo de equipo",
-          "Gestión de proyectos",
-          "Servicio al cliente",
-          "Technical troubleshooting skills",
-          "Collaboration",
-          "Client relationship management"
+          "team_leadership",
+          "client_communication",
+          "technical_troubleshooting",
+          "network provisioning (Carrier Ethernet, MPLS, FTTH, ISP)",
+          "process improvement",
+          "project support",
+          "technical_mentorship"
         ],
         "growth_areas": [
-          "Deepen advanced technical troubleshooting (beyond 'beginner')",
-          "Strengthen project and team management from 'novice' to advanced",
-          "Enhance analytical/reporting capabilities"
+          "strategic planning",
+          "advanced project and service delivery management"
         ]
       },
-      "alternative_roles": [
+      "alternatives": [
         {
           "role_name": "IT Service Delivery Manager",
           "fit_score": 0.84,
-          "reasoning": "Given Noelia's experience managing service delivery in a telecom context, she would be well suited for an IT Service Delivery Manager position. This leverages her process improvement, client management, and leadership skills, while increasing her focus on end-to-end service performance and stakeholder relationship management.",
+          "reasoning": "Given Noelia’s hands-on management of support delivery, network rollout, and client success, she could transition smoothly to an IT Service Delivery Manager role. This would leverage her operations experience, cross-functional collaboration, and continuous process improvement focus, applying them to broader IT and service delivery settings.",
           "required_skills_match": [
-            "Gestión de proyectos",
-            "Client relationship management",
-            "Mejora de procesos",
-            "Gestión del tiempo",
-            "Documentación técnica"
+            "service delivery management",
+            "client relationship management",
+            "cross_functional_collaboration",
+            "process improvement",
+            "technical troubleshooting",
+            "documentation"
           ],
           "growth_areas": [
-            "Gain deeper expertise in ITIL/service governance frameworks",
-            "Broaden experience with service-level agreements and vendor management"
+            "exposure to broader ITIL/service delivery models",
+            "multi-team coordination at scale"
           ]
         },
         {
           "role_name": "Managed Services Operations Lead",
-          "fit_score": 0.8,
-          "reasoning": "Her dual recent focus on both technical service provisioning and management make her a good candidate for Managed Services Operations Lead—a role responsible for overseeing both operations and delivery in a managed services environment. Her strengths in technical documentation, collaboration, and cross-functional leadership fit this role well.",
+          "fit_score": 0.81,
+          "reasoning": "Her extensive recent and past operations and technical leadership within managed services make her an excellent contender for an Operations Lead role. This would involve higher responsibility for service quality, operational metrics, and people/process management.",
           "required_skills_match": [
-            "Technical troubleshooting skills",
-            "Configuración de red",
-            "Collaboration",
-            "Gestión de proyectos",
-            "Capacitación y desarrollo"
+            "managed services operations",
+            "team_leadership",
+            "technical_support",
+            "process optimization",
+            "troubleshooting",
+            "analytical_thinking"
           ],
           "growth_areas": [
-            "Advance operational process automation skills",
-            "Further develop leadership of larger/multidisciplinary teams"
+            "business operations KPIs",
+            "financial management in operations"
           ]
         },
         {
-          "role_name": "Customer Success Manager - Technical",
-          "fit_score": 0.75,
-          "reasoning": "Noelia's client-facing experience and technical background position her well for a Customer Success Manager - Technical role, particularly in technology or telecom organizations. This would emphasize her ability to drive customer satisfaction and technical onboarding while leveraging her process and documentation abilities.",
+          "role_name": "Senior Network Operations Engineer",
+          "fit_score": 0.77,
+          "reasoning": "Should Noelia wish to focus more on technical depth over management, her advanced provisioning and operational troubleshooting expertise match a senior technical engineering role. This draws upon her strong technical foundation in network services delivery (Carrier Ethernet, MPLS, FTTH, ISP integration).",
           "required_skills_match": [
-            "Servicio al cliente",
-            "Client relationship management",
-            "Mejora de procesos",
-            "Documentación técnica",
-            "Technical troubleshooting skills"
+            "network provisioning",
+            "technical troubleshooting",
+            "documentation",
+            "collaboration",
+            "attention to detail"
           ],
           "growth_areas": [
-            "Enhance customer-facing communication and advocacy skills",
-            "Build experience in commercial/account expansion responsibilities"
+            "upskilling on cutting-edge network technologies",
+            "deepening automation and scripting skills"
           ]
         }
       ],
-      "career_trajectory": "Noelia began her career in technical provisioning roles, advanced to provisioning coordination with increased customer interaction and group coordination, and over the past 2+ years, has transitioned to a technical management position in managed services. This shows clear upward progression from hands-on technical roles to technical management and service delivery leadership.",
-      "recent_focus": "Her main focus over the last 2-3 years has been on technical support management and managed services delivery—including leading a technical support group, handling customer requirements, coordinating service implementations, and ensuring successful provisioning within the telecommunications/managed services sector."
-    }
-  },
-  "explainability": {
-    "sector_reasoning": "The combination of job titles (Technical Support Manager, Network Provisioning Technician), company types (Makenai Solutions, Indra - both operating in advanced IT/telecommunications domains), and specific technologies and activities (Ethernet, MPLS, FTTH configuration, ISP services, network commissioning) makes it clear that the candidate operates primarily within telecommunications network operations. The focus on managed services, hands-on network configuration, provider coordination, and technical support all point toward this sector over general IT support or software development. Technical specificity (e.g., mentioning provider-grade technologies and protocols) further rules out purely enterprise IT or general technical support as a primary domain.",
-    "sector_evidence": [
-      "Current role: \"Managed Services - Technical Support Manager\" at Makenai Solutions, Innovation & Creative Ideas",
-      "Past role: \"Provisiones de red y puestas en servicio\" at Indra with activities such as 'Carrier Ethernet', 'MPLS-IP', 'FTTH', 'ISP/Tránsito', 'configuración de red'",
-      "Technical activities: Network provisioning, commissioning, technical support, client and project stakeholder interaction, documentation, process improvement",
-      "Technologies: Carrier Ethernet (Raisecom, RAD, Cisco), MPLS-IP (Cisco, Huawei), FTTH, ISP/Tránsito"
-    ],
-    "seniority_reasoning": "Noelia Antelo holds 16 years of experience in the telecommunications industry, consistently taking on increasingly complex technical and leadership roles. Her current and recent positions include managerial/leadership scope ('Technical Support Manager', group coordination, team onboarding), signaling autonomous responsibility over teams and projects. She demonstrates advanced technical expertise in configuring and launching sophisticated network services across a variety of platforms and vendors, as well as effective stakeholder engagement and cross-functional collaboration. While her explicit skills are self-rated as 'Beginner', this is contradicted by her advanced applied skills and the complexity of her technical and leadership responsibilities. There is insufficient direct evidence of industry-wide strategic vision or thought leadership (as expected for principal/expert), but she amply fulfills and exceeds the expectations for 'Lead'—meeting criteria in experience, domain expertise, team management, and organizational impact. Confidence is high due to the clear alignment between career trajectory, technical/leadership demands, and stated years of service.",
-    "seniority_evidence": [
-      "16 years stated experience in telecommunications roles, surpassing the 12-year threshold for principal/expert but with limited evidence of industry-wide influence.",
-      "Current title: 'Managed Services - Technical Support Manager' and previous leadership responsibilities ('Coordinación del grupo y formación de nuevas incorporaciones') indicate both technical and team leadership.",
-      "Prolonged responsibility for advanced technical work: provisioning and configuring complex telecom services (Carrier Ethernet, MPLS-IP, FTTH, ISP/Transit) with multi-vendor platforms, sustained over multiple positions and companies (Indra, Makenai Solutions).",
-      "Evidence of direct decision-making, client and stakeholder management: 'Trato directo con: Clientes... Técnicos... Jefes de Proyecto... Planificación/Desarrollo'.",
-      "Project and process contribution: active involvement in service definition, technical documentation, and process improvement.",
-      "Mentorship and onboarding activities: explicit responsibility for onboarding/training new team members."
-    ],
-    "disambiguation_summary": "All potentially ambiguous terms in Noelia Antelo’s profile have been disambiguated in the context of telecommunications network operations. The recurring pattern is that all major terms align with provisioning, configuration, delivery, and support of advanced telecom network services (Carrier Ethernet, MPLS, FTTH, ISP/Transit, equipment integration), always with reference to technical activities and client-facing delivery within telecom/IT infrastructure contexts. No terms identified as having software development, industrial automation, or generic business meaning that would override this sectoral context. Highest confidence is attributed thanks to roles, technologies, and detailed task listings. Alternative meanings from IT, hospitality, logistics, retail, or HR domains are ruled out for each term as not supported by context or co-occurring terms. There are no conflicting domain usages or unresolved ambiguities in the analyzed profile.",
-    "ideal_roles_reasoning": "The candidate's trajectory demonstrates a steady progression from technical execution to technical leadership. The most recent roles, which are weighted more heavily, focus squarely on technical team management and service delivery in telecommunications and managed services contexts. Accordingly, senior management roles in technical support and service delivery are the strongest fits—leveraging both her industry expertise and recently developed leadership competencies. Alternative roles suggested are realistic pivots that build on her recent experience, competencies, and evident career direction."
+      "career_trajectory": "Noelia’s career shows steady progression from technical network provisioning and implementation to technical team coordination and, for the last several years, into technical support management within managed services. She has increasingly taken on roles with more leadership, cross-functional collaboration, and client engagement, moving from hands-on technical to strategic team leadership and service delivery.",
+      "recent_focus": "Management of technical support and network provisioning teams for managed telecommunications services, direct client engagement, process optimization, technical staff training, and cross-functional collaboration. Strong focus on managing operational excellence and complex support delivery in telecom environments (2021-present).",
+      "reasoning": "The analysis applies 3x recency weight to Noelia’s role as Technical Support Manager (Managed Services), making it the strongest fit given her leadership, client-facing support, and advanced network provisioning knowledge. Her trajectory also supports movement into adjacent operations or service delivery management roles, with potential for deeper technical specialization as a senior network engineer if desired. Recommendations are informed by the Spanish telecommunications context, emphasizing seniority, technical breadth, and proven management skills."
+    },
+    "languages": [
+      {
+        "language": "Spanish",
+        "proficiency": "Native",
+        "source": "inferred",
+        "evidence": "Profile likely written in Spanish (skill names in Spanish), lives and works in Getafe, Spain, all roles at Spanish companies, role titles in Spanish",
+        "confidence": 0.9
+      },
+      {
+        "language": "English",
+        "proficiency": "Professional",
+        "source": "inferred",
+        "evidence": "Some skills in English (e.g., \"Technical troubleshooting skills\", \"Collaboration\") on a Spanish profile in a technical/telecom context, suggesting use of English in work environment, common in telecom sector in Spain",
+        "confidence": 0.7
+      }
+    ]
   }
 }
