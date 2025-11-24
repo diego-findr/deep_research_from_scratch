@@ -1161,9 +1161,253 @@ Each Language object:
 </output_requirements>
 
 <critical_rules>
-1. Don't assume English is Native just because the profile is in English (it's often Professional/Intermediate).
-2. Always infer the local language of their current/past locations.
-3. Be specific about the source of evidence.
-4. If no explicit languages are found, you MUST try to infer based on context.
+1. **IGNORE SKILLS**: Do NOT use skill names as evidence for language proficiency. Skills like "Gestão do tempo" or "Skills de communication" are often auto-translated by LinkedIn and do NOT reflect actual language usage.
+
+2. **USE ONLY**:
+   - **Work Location History**: Countries/cities where the candidate worked (e.g., lived in London 5 years → English)
+   - **Education Location**: Countries where they studied (e.g., degree from TU Munich → German)
+   - **Company Language Context**: International companies usually require English
+   - **Profile Narrative Language**: The language in which descriptions/summaries are written
+
+3. **CALCULATE YEARS OF EXPOSURE**:
+   - If worked in a country for 2+ years → Professional level
+   - If studied in a country for 3+ years → Advanced/Fluent level
+   - Short stints (< 1 year) → Basic/Intermediate
+
+4. **EXAMPLES OF STRONG EVIDENCE**:
+   - ✅ "Worked at Arcadis London from 2016-2021" → English (Professional, 5 years exposure)
+   - ✅ "Master's degree at Universidad Politécnica Madrid" → Spanish (Native/Advanced)
+   - ✅ "Profile descriptions written in English" → English (at least Intermediate)
+   - ❌ Skill name "Análise de dados" → NOT evidence for Portuguese
+
+5. **BE CONSERVATIVE**: Only infer languages with strong, location/education-based evidence. Confidence < 0.6 = don't include.
+
+6. If no explicit languages are found, you MUST try to infer based on context.
+</critical_rules>
+"""
+
+
+# ===== MISC ENRICHMENT PROMPT (Credentials & Environment) =====
+
+MISC_ENRICHMENT_PROMPT = """You are an expert talent analyst.
+
+<task>
+Analyze the candidate's profile to infer:
+1. **Required Credentials**: Degrees or certifications that are legally or professionally MANDATORY for their role, even if not explicitly listed.
+2. **Work Environment Fit**: The physical and cultural environment they are accustomed to (e.g., industrial plant, corporate office, field work).
+</task>
+
+<profile_data>
+{profile_data}
+</profile_data>
+
+<context>
+Primary Sector: {sector}
+Location: {location}
+</context>
+
+<instructions>
+1. **Inferred Credentials**:
+   - Look at the candidate's PRIMARY ROLE.
+   - Does this role typically require a specific license or degree by law/standard?
+   - Examples:
+     - "Veterinarian" -> Requires "Licenciatura/Grado en Veterinaria" (Degree).
+     - "Truck Driver" -> Requires "Commercial Driver's License" (License).
+     - "Lawyer" -> Requires "Bar Admission/Law Degree".
+     - "Software Engineer" -> No strict legal requirement, but "Computer Science Degree" is common (mark as NOT required if just common).
+   - ONLY infer if it is a STRONG requirement.
+
+2. **Work Environment Fit**:
+   - Analyze the **Companies** and **Locations**.
+   - "Agropecuaria Obanos" (Farm/Feed) -> Industrial/Field environment, rural/semi-rural.
+   - "Deloitte" (Consulting) -> Corporate Office, high-paced.
+   - "Remote Tech Co" -> Home Office/Remote.
+   - Infer the **Physical Demands** (sedentary, standing, travel, heavy lifting).
+   - Infer **Culture** (hands-on, bureaucratic, startup, academic).
+
+</instructions>
+
+<output_requirements>
+Return structured JSON with:
+- inferred_credentials: List of InferredCredential objects
+- work_environment: WorkEnvironment object
+</output_requirements>
+"""
+
+
+# ===== EDUCATION INFERENCE PROMPT =====
+
+EDUCATION_INFERENCE_PROMPT = """You are an expert education analyst and credential evaluator.
+
+<task>
+Analyze the candidate's education history and structure it in a clean, standardized format.
+Identify the highest degree, remove duplicates, and assess relevance to their career.
+</task>
+
+<profile_data>
+{profile_data}
+</profile_data>
+
+<context>
+Primary Sector: {sector}
+Current Role: {current_role}
+</context>
+
+<instructions>
+1. **Clean and Deduplicate**:
+   - The raw education data may contain duplicates (same degree listed multiple times).
+   - Remove entries where both `degree` and `name` are null.
+   - Merge duplicate entries (same institution, same degree, overlapping dates).
+
+2. **Identify Highest Degree**:
+   - Determine the highest academic level achieved.
+   - Hierarchy: PhD/Doctorate > Master's/MBA/MSc > Bachelor's/BEng/BSc > Associate > Diploma > Certificate
+   - Consider completion status (completed degrees rank higher than incomplete).
+
+3. **Assess Relevance**:
+   - For each education entry, explain how it relates to the candidate's career path.
+   - Example: "Master's in Civil Engineering directly supports 10+ year career in water infrastructure projects."
+   - Example: "Recent Data Analysis certification shows upskilling for data-driven decision making."
+
+4. **Standardize Degree Names**:
+   - Use clear, standard degree names (e.g., "Master of Science in Computer Science" instead of "MSc CS").
+   - If the degree name is unclear, infer from the field and institution.
+
+5. **Handle Edge Cases**:
+   - If no education is listed, return empty lists and state "No formal education data available."
+   - If only certifications/courses are listed, identify the highest one.
+
+</instructions>
+
+<examples>
+Example 1 - Standard Case:
+Raw Data:
+- Master's degree, Civil Engineering, Universidad Alfonso X, 2011-2013
+- Bachelor of Engineering, Civil Engineering, Universidad Politécnica, 2008-2011
+- Data Fellowship Level 4, Data Analysis, Multiverse, 2024-2025
+
+Analysis:
+- Highest: Master's degree in Civil Engineering (2013)
+- All Education: 3 entries (Master's, Bachelor's, Data Fellowship)
+- Summary: "Master's level education in Civil Engineering with recent upskilling in Data Analysis"
+
+Example 2 - Duplicates:
+Raw Data:
+- Master's degree, Computer Science, MIT, 2015-2017
+- null, null, MIT, 2015-2017
+- Master's degree, Computer Science, MIT, 2015-2017
+
+Analysis:
+- Cleaned to 1 entry (Master's degree, Computer Science, MIT, 2015-2017)
+- Highest: Master's degree
+- Summary: "Master's level"
+</examples>
+
+<output_requirements>
+Return structured JSON with:
+- highest_degree: EducationEntry object (or null if none)
+- all_education: List of EducationEntry objects (cleaned, no duplicates)
+- education_level_summary: String summary
+- reasoning: Explanation of analysis
+
+Each EducationEntry:
+- degree: Standardized degree name
+- field: Field of study (or null)
+- institution: Institution name
+- start_year: Integer year (or null)
+- end_year: Integer year (or null)
+- is_completed: Boolean
+- relevance_to_career: String explanation
+</output_requirements>
+
+<critical_rules>
+1. Remove ALL duplicate entries.
+2. Ignore entries with null degree AND null field.
+3. Be conservative: if unsure about completion, mark as completed if end_date exists.
+4. Provide clear, actionable relevance explanations.
+</critical_rules>
+"""
+
+
+# ===== SKILLS CURATION PROMPT =====
+
+SKILLS_CURATION_PROMPT = """You are an expert talent analyst and skill curator.
+
+<task>
+From the full list of skills identified for this candidate, select the TOP 10-12 MOST RELEVANT skills.
+Your selection should focus on skills that best represent their career value and marketability.
+</task>
+
+<candidate_context>
+Current Role: {current_role}
+Sector: {sector}
+Seniority: {seniority}
+Career Trajectory: {career_trajectory}
+</candidate_context>
+
+<all_skills>
+{all_skills}
+</all_skills>
+
+<selection_criteria>
+1. **Career Relevance**:
+   - Prioritize skills directly relevant to their current role and sector
+   - Skills that differentiate this candidate from others in their field
+   - Skills that support their ideal next career move
+
+2. **Market Value**:
+   - Skills in high demand for their sector
+   - Skills that justify their seniority level
+   - Skills that open opportunities (not generic/commodity skills)
+
+3. **Balance**:
+   - Mix of domain-specific (60-70%) and transversal (30-40%) skills
+   - Mix of technical and soft skills
+   - Avoid redundancy (e.g., don't include both "Java" and "Java Programming")
+
+4. **Depth over Breadth**:
+   - Advanced/Expert skills > Intermediate/Basic skills
+   - Proven skills (from experience) > Claimed skills (from profile)
+
+</selection_criteria>
+
+<examples>
+Example 1 - Senior Water Infrastructure PM:
+From 30+ skills, select:
+- ✅ Project Management (transversal, expert) - Core to current role
+- ✅ Water Infrastructure Engineering (domain, expert) - Sector specialization
+- ✅ Risk Management (transversal, advanced) - High-value PM skill
+- ✅ Stakeholder Engagement (transversal, advanced) - Critical for PM
+- ✅ Contract Management (domain, advanced) - Sector-specific need
+- ❌ Microsoft Excel (transversal, intermediate) - Commodity skill, low differentiation
+- ❌ Time Management (transversal, basic) - Too generic
+
+Example 2 - Senior Veterinarian in Agri-Food:
+From 25+ skills, select:
+- ✅ Diagnostic Veterinary Medicine (domain, advanced) - Core expertise
+- ✅ Quality Assurance (domain, advanced) - High-value for sector
+- ✅ Regulatory Compliance (domain, advanced) - Critical for agri-food
+- ❌ Communication Skills (transversal, intermediate) - Too generic
+- ❌ Microsoft Office (transversal, basic) - Commodity
+</examples>
+
+<output_requirements>
+Return:
+- top_skills: List of 10-12 CuratedSkill objects
+- reasoning: Overall explanation of selection strategy
+
+Each CuratedSkill:
+- name: Skill name
+- type: 'domain_specific' or 'transversal'
+- level: Proficiency level
+- relevance_score: 0.0-1.0 (how relevant to THIS candidate)
+- relevance_reasoning: 1-sentence explanation
+</output_requirements>
+
+<critical_rules>
+1. **Quality > Quantity**: 10-12 high-value skills beats 30+ noisy skills
+2. **Context-Specific**: Skills selected FOR THIS CANDIDATE, not generic "good skills"
+3. **No Fluff**: Exclude generic skills like "teamwork", "communication" unless truly exceptional
+4. **Differentiation**: What makes THIS person valuable?
 </critical_rules>
 """

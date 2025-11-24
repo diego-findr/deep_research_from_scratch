@@ -1,0 +1,312 @@
+{
+  "id": "2c1d6b90-4de4-4cd0-8025-084d6b0a7216",
+  "full_name": "José Colino Martín-Aragón CEng MICE, PMP",
+  "email": null,
+  "phone_number": null,
+  "linkedin_url": "https://www.linkedin.com/in/josecolinomartinaragon",
+  "picture_url": "https://bzembqluzmwrjuidwley.supabase.co/storage/v1/object/public/profile_images/profile_2c1d6b90-4de4-4cd0-8025-084d6b0a7216_1759262516100.jpg",
+  "heading": "Senior Project Manager at Mott MacDonald",
+  "description": "I have strong technical and management experience in water/wastewater projects from my work as a Civil Engineer and Project Manager, working from preliminary design to construction and commissioning. I build strong relationships with existing parties and stakeholders as part of my daily work. I prepare bids, budgets, project programmes, risks and change registers. I manage the team to deliver the projects in accordance with the contract ensuring that projects are completed on time and to the required cost and quality standards.",
+  "sector": null,
+  "experience_years": 11,
+  "current_location": {
+    "city": "Madrid",
+    "country": "Spain"
+  },
+  "preferred_location": null,
+  "salary_range": null,
+  "show_salary": true,
+  "skills": [
+    {
+      "id": "2702fdd7-20f2-49cb-ac46-4a9c6a4b5677",
+      "name": "Habilidades de negociación",
+      "level": "Beginner"
+    },
+    {
+      "id": "d2487f3a-43b0-46e6-930b-8c642b1cec94",
+      "name": "Customer relationship management",
+      "level": "Beginner"
+    },
+    {
+      "id": "ac8b227a-164b-4f06-8f45-006887a56985",
+      "name": "Aseguramiento de la calidad",
+      "level": "Beginner"
+    },
+    {
+      "id": "05304d92-3298-49a4-bdfe-34b32d5e4381",
+      "name": "Adaptability",
+      "level": "Beginner"
+    },
+    {
+      "id": "302646ba-fc03-48a1-9eed-bcc023f86cc7",
+      "name": "Skills de communication",
+      "level": "Beginner"
+    },
+    {
+      "id": "1585d4c0-3f35-48f7-9067-444fa0b22faa",
+      "name": "Planificación de proyectos",
+      "level": "Beginner"
+    },
+    {
+      "id": "408ee72a-1920-4416-bf25-6c61a6675308",
+      "name": "Planificación estratégica",
+      "level": "Beginner"
+    },
+    {
+      "id": "4426108c-0288-40ff-a147-d174dd338ce0",
+      "name": "Colaboración interfuncional",
+      "level": "Beginner"
+    },
+    {
+      "id": "e9d2120b-7fc5-4b74-847e-6b1f64237321",
+      "name": "Resolución de problemas",
+      "level": "Beginner"
+    },
+    {
+      "id": "05ad7dc6-1337-4629-a3fd-18342dd5fb9c",
+      "name": "Gestão do tempo",
+      "level": "Beginner"
+    },
+    {
+      "id": "3c8a9a1f-1e9f-446f-800d-b8a5cb2f2139",
+      "name": "Análise de dados",
+      "level": "Beginner"
+    },
+    {
+      "id": "0e9b0027-3e62-4733-bdf2-3bb1f85e950f",
+      "name": "Toma de decisiones",
+      "level": "Beginner"
+    },
+    {
+      "id": "441ad47c-d0b6-49bb-8367-32882e10fee6",
+      "name": "Engagement des parties prenantes",
+      "level": "Beginner"
+    },
+    {
+      "id": "5f8c6783-2fe8-482d-9811-2a2fb0f1b99e",
+      "name": "Gestión de riesgos",
+      "level": "Beginner"
+    },
+    {
+      "id": "3a1a818b-3ca2-4917-9ba8-a512e9fe6d7d",
+      "name": "Gestión del presupuesto",
+      "level": "Beginner"
+    },
+    {
+      "id": "6234489b-b834-4666-a736-07a35a5e0ee0",
+      "name": "Liderazgo de equipos",
+      "level": "Beginner"
+    },
+    {
+      "id": "ebf40335-8151-43ad-8080-00044a946863",
+      "name": "Contract management",
+      "level": "Beginner"
+    },
+    {
+      "id": "a134e2e7-45c6-4f3a-82d0-e1b1f80361ce",
+      "name": "Documentación técnica",
+      "level": "Beginner"
+    },
+    {
+      "id": "6553631c-b1d8-442c-9a1a-36844e35b790",
+      "name": "Feasibility Analysis",
+      "level": "Beginner"
+    },
+    {
+      "id": "07fb7799-ee55-47d2-90b3-4ade97088571",
+      "name": "Salud y seguridad compliance",
+      "level": "Beginner"
+    },
+    {
+      "id": "f196f1f8-31cc-4099-a075-6f83ce1f95a0",
+      "name": "Environmental Regulations",
+      "level": "Beginner"
+    }
+  ],
+  "languages": [
+    {
+      "id": "5a967ee9-bcba-4263-84ab-0d6ae76b70cf",
+      "name": "Spanish",
+      "level": "C2"
+    },
+    {
+      "id": "157b643b-ba14-4cbc-893f-ef9e57e69238",
+      "name": "English",
+      "level": "C1"
+    }
+  ],
+  "experiences": [
+    {
+      "id": "c19d55f7-2f22-4fb3-b0ba-a956c8ca5c6d",
+      "created_at": "2025-09-30T20:03:03.055342+00:00",
+      "candidate_id": "2c1d6b90-4de4-4cd0-8025-084d6b0a7216",
+      "role": null,
+      "description": null,
+      "start_date": null,
+      "end_date": null,
+      "location": "London, England, United Kingdom",
+      "contract": null,
+      "company": "Arcadis"
+    },
+    {
+      "id": "811a2619-5dca-484a-a738-efc4c7e3c593",
+      "created_at": "2025-09-30T20:03:03.055342+00:00",
+      "candidate_id": "2c1d6b90-4de4-4cd0-8025-084d6b0a7216",
+      "role": null,
+      "description": null,
+      "start_date": null,
+      "end_date": null,
+      "location": "Londres, Inglaterra, Reino Unido",
+      "contract": null,
+      "company": null
+    },
+    {
+      "id": "892c7236-1176-4ecf-a25d-901e8bdf60eb",
+      "created_at": "2025-09-30T20:03:03.055342+00:00",
+      "candidate_id": "2c1d6b90-4de4-4cd0-8025-084d6b0a7216",
+      "role": "Senior Project Manager",
+      "description": null,
+      "start_date": "2025-03-01",
+      "end_date": null,
+      "location": "Madrid, Spain",
+      "contract": null,
+      "company": "Mott MacDonald"
+    },
+    {
+      "id": "ed0a2927-7371-45e4-9057-43120f887c1d",
+      "created_at": "2025-09-30T20:03:03.055342+00:00",
+      "candidate_id": "2c1d6b90-4de4-4cd0-8025-084d6b0a7216",
+      "role": "Project Manager",
+      "description": null,
+      "start_date": "2023-10-01",
+      "end_date": "2025-03-31",
+      "location": "London, England, United Kingdom",
+      "contract": null,
+      "company": "Arcadis"
+    },
+    {
+      "id": "32e854da-8290-4890-aabf-476695ba78ca",
+      "created_at": "2025-09-30T20:03:03.055342+00:00",
+      "candidate_id": "2c1d6b90-4de4-4cd0-8025-084d6b0a7216",
+      "role": "Project Manager",
+      "description": "Managing several projects within the Water and Environment Sector\n- Preparation of proposals and bids \n- Preparation of programmes, risks and budgets\n- Management of the technical team \n- Control and monitoring of the programme, costs and resources\n- Client liaison\n- Stakeholder management",
+      "start_date": "2021-09-01",
+      "end_date": "2023-10-31",
+      "location": "London",
+      "contract": null,
+      "company": "Jacobs"
+    },
+    {
+      "id": "6aab2e89-e3eb-4739-b93a-7e120f6b069f",
+      "created_at": "2025-09-30T20:03:03.055342+00:00",
+      "candidate_id": "2c1d6b90-4de4-4cd0-8025-084d6b0a7216",
+      "role": "Senior Civil Engineer",
+      "description": "Project: Slough Sewage Treatment Works Refurbishment, (PE. 250,000), Thames Water.\nResponsible for the Civil Deliverables and coordination with the multidisciplinary team.",
+      "start_date": "2021-01-01",
+      "end_date": "2021-10-31",
+      "location": "London, England, United Kingdom",
+      "contract": null,
+      "company": "Jacobs"
+    },
+    {
+      "id": "05e48bb3-6957-484f-b6f0-b08e8a0833c6",
+      "created_at": "2025-09-30T20:03:03.055342+00:00",
+      "candidate_id": "2c1d6b90-4de4-4cd0-8025-084d6b0a7216",
+      "role": "Project Engineer",
+      "description": "Experience in design and management of projects in Water Treatment Works and Reservoirs projects.\n\n• Preparation and completion of technical documentation and NEC Contracts.\n• Preparation of tender documents.\n• Design Management.\n• Carry out preliminary assessments and feasibility studies for Water Treatment Works and reservoirs.\n• Carry out reservoir and Water Treatment Works inspections and write technical reports with the findings and recommendations for remedial/refurbishment works.\n• Provide the Civil Engineering input into the Contractor´s design and calculations.\n• Preparation of Health and Safety documents.\n• Liaise and building relationships with both partner and contractor and deal with technical queries.\n• Supervise the site works to ensure that they comply with the specifications, Health and Safety and Environmental Regulations.\n• Assist the Project Manager and coordinate the other disciplines, so that the whole project is consistent and can meet the requirements.\n• Review project programmes and KPIs.\n• Regular communication and liaison with third parties and stakeholders.",
+      "start_date": "2016-10-01",
+      "end_date": "2021-01-31",
+      "location": "Londres, Inglaterra, Reino Unido",
+      "contract": null,
+      "company": "Jacobs"
+    },
+    {
+      "id": "6469f153-3c53-4bfc-b93b-d3953d84f273",
+      "created_at": "2025-09-30T20:03:03.055342+00:00",
+      "candidate_id": "2c1d6b90-4de4-4cd0-8025-084d6b0a7216",
+      "role": "Assistant Civil Engineer",
+      "description": "I worked as a Civil Engineer for clean water and wastewater projects.\nMy responsibilities were the following:\n\n- Preparation of designs, drawings, studies and reports undertaken to the correct standards and specifications.\n- Provide technical expertise in the civils aspects of water such as hydraulics and flotation calculations, pipework arrangements and geotechnical reports.\n- Carry out cost estimations and whole life costs.\n- Preparation of Health and Safety documents as well as Environmental and Quality Standards.\n- Liaise and building relationships with both partner and contractor.\n- Support the other disciplines and work very close to them so that the Civil Design is consistent with the entire process on site, i.e. preparation of the Work Information Pack documents.\n\nAlso, having worked in other projects such as 'Control and Shutdown Investigation',I gained a broad knowledge of the water industry not only from the Civil Engineering point of view, but also from others disciplines perspectives.",
+      "start_date": "2014-09-01",
+      "end_date": "2016-09-30",
+      "location": "Brighton, United Kingdom",
+      "contract": null,
+      "company": "Southern Water"
+    }
+  ],
+  "education": [
+    {
+      "id": "3efe0010-96cb-4ea3-8dc6-42e581bd18d2",
+      "created_at": "2025-09-30T20:02:03.705987+00:00",
+      "candidate_id": "2c1d6b90-4de4-4cd0-8025-084d6b0a7216",
+      "name": "Data Analysis and Management ",
+      "degree": "Data Fellowship Level 4 Programme",
+      "description": "Module 1: Foundations of Data Analysis\n\nModule 2: Fundamentals of Data Management\n\nModule 4: Visualizing Your Data for Stakeholders\n\nModule 5: Integrating Your Data to Find Business Trends\n\nModule 7: Analyzing Data with Python\n\nModule 8: Using Stats to Gain Powerful Business Insights\n\nModule 10: Building Machine Learning Models\n\nModule 11: Predicting the Future with Time Series Forecasting",
+      "start_date": "2024-06-01",
+      "end_date": "2025-07-31",
+      "institute_name": "Multiverse",
+      "institute_city": null
+    },
+    {
+      "id": "1d6b863c-fd3f-41f1-be89-f22556685459",
+      "created_at": "2025-09-30T20:02:03.705987+00:00",
+      "candidate_id": "2c1d6b90-4de4-4cd0-8025-084d6b0a7216",
+      "name": null,
+      "degree": null,
+      "description": "Module 1: Foundations of Data Analysis Module 2: Fundamentals of Data Management Module 4: Visualizing Your Data for Stakeholders Module 5: Integrating Your Data to Find Business Trends Module 7: Analyzing Data with Python Module 8: Using Stats to Gain Powerful Business Insights Module 10: Building Machine Learning Models Module 11: Predicting the Future with Time Series Forecasting",
+      "start_date": "2024-01-01",
+      "end_date": "2025-12-31",
+      "institute_name": "Multiverse",
+      "institute_city": null
+    },
+    {
+      "id": "1073dd44-d200-4943-86c6-769d6bf17e0f",
+      "created_at": "2025-09-30T20:02:03.705987+00:00",
+      "candidate_id": "2c1d6b90-4de4-4cd0-8025-084d6b0a7216",
+      "name": "Ingeniería de Caminos, Canales y Puertos - Spanish 5-year Official Civil Engineering",
+      "degree": "Master's degree",
+      "description": null,
+      "start_date": "2011-01-01",
+      "end_date": "2013-12-31",
+      "institute_name": "Universidad Alfonso X El Sabio",
+      "institute_city": null
+    },
+    {
+      "id": "b0579805-c786-4370-8860-c34253dae66e",
+      "created_at": "2025-09-30T20:02:03.705987+00:00",
+      "candidate_id": "2c1d6b90-4de4-4cd0-8025-084d6b0a7216",
+      "name": null,
+      "degree": null,
+      "description": null,
+      "start_date": "2011-01-01",
+      "end_date": "2013-12-31",
+      "institute_name": "Universidad Alfonso X El Sabio",
+      "institute_city": null
+    },
+    {
+      "id": "d10fa0da-cbc3-4c46-bff6-1047e14d21aa",
+      "created_at": "2025-09-30T20:02:03.705987+00:00",
+      "candidate_id": "2c1d6b90-4de4-4cd0-8025-084d6b0a7216",
+      "name": "Ingeniería Técnica de Obras Públicas - Spanish 3-year Official Civil Engineering",
+      "degree": "Bachelor of Engineering (BEng)",
+      "description": null,
+      "start_date": "2008-01-01",
+      "end_date": "2011-12-31",
+      "institute_name": "Universidad Politécnica de Madrid",
+      "institute_city": null
+    },
+    {
+      "id": "e5365539-07f4-47b5-b892-a56db1dc6293",
+      "created_at": "2025-09-30T20:02:03.705987+00:00",
+      "candidate_id": "2c1d6b90-4de4-4cd0-8025-084d6b0a7216",
+      "name": null,
+      "degree": null,
+      "description": null,
+      "start_date": "2008-01-01",
+      "end_date": "2011-12-31",
+      "institute_name": "Universidad Politécnica de Madrid",
+      "institute_city": null
+    }
+  ],
+  "verified": false,
+  "last_updated": "2025-09-30T20:01:55.924388+00:00"
+}

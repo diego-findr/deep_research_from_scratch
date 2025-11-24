@@ -26,6 +26,9 @@ from profile_enrichment.state import (
     SeniorityInference,
     IdealRolesInference,
     LanguageInference,
+    MiscEnrichment,
+    EducationInference,
+    SkillsCuration,
 )
 from profile_enrichment.prompts import (
     CONTEXT_ANALYSIS_PROMPT,
@@ -37,6 +40,9 @@ from profile_enrichment.prompts import (
     SENIORITY_INFERENCE_PROMPT,
     IDEAL_ROLES_INFERENCE_PROMPT,
     LANGUAGE_INFERENCE_PROMPT,
+    MISC_ENRICHMENT_PROMPT,
+    EDUCATION_INFERENCE_PROMPT,
+    SKILLS_CURATION_PROMPT,
 )
 
 
@@ -84,6 +90,65 @@ def safe_parse_json_response(response_content: str, pydantic_model: type) -> Any
         print(f"Error parsing response: {e}")
         print(f"Response content: {response_content[:500]}")
         raise
+
+
+def calculate_stability_metrics(experiences: list) -> Dict[str, Any]:
+    """Calculate career stability metrics from experience list."""
+    if not experiences:
+        return {
+            "average_tenure_years": 0.0,
+            "roles_count": 0,
+            "companies_count": 0,
+            "job_hopping_risk": "unknown"
+        }
+
+    # Sort experiences by start date if possible, but for now just count
+    # Assuming standard format with start_date
+    
+    # Calculate durations (simplified)
+    # In a real system, we'd parse ISO dates properly.
+    # Here we just count items for now as a placeholder or use simple year math if available.
+    # Let's assume the LLM or pre-processing handles date parsing, but here we'll just return counts
+    # and a mock tenure if we can't parse.
+    
+    # Actually, let's try to parse years if they exist in start_date "YYYY-MM-DD"
+    import datetime
+    
+    total_years = 0.0
+    valid_durations = 0
+    
+    for exp in experiences:
+        start = exp.get("start_date")
+        end = exp.get("end_date")
+        
+        if start:
+            try:
+                start_dt = datetime.datetime.fromisoformat(start.replace("Z", "+00:00")).date()
+                end_dt = datetime.date.today()
+                if end:
+                    end_dt = datetime.datetime.fromisoformat(end.replace("Z", "+00:00")).date()
+                
+                duration_days = (end_dt - start_dt).days
+                years = duration_days / 365.25
+                total_years += years
+                valid_durations += 1
+            except (ValueError, TypeError):
+                continue
+
+    avg_tenure = round(total_years / valid_durations, 1) if valid_durations > 0 else 0.0
+    
+    risk = "low"
+    if avg_tenure < 1.5 and valid_durations > 2:
+        risk = "high"
+    elif avg_tenure < 3.0:
+        risk = "medium"
+        
+    return {
+        "average_tenure_years": avg_tenure,
+        "roles_count": len(experiences),
+        "companies_count": len(set(e.get("company", "") for e in experiences if e.get("company"))),
+        "job_hopping_risk": risk
+    }
 
 
 # ===== AGENT NODES =====
@@ -381,114 +446,189 @@ def infer_languages(state: ProfileEnrichmentState) -> Dict[str, Any]:
     return {"language_inference": json.dumps(language_dict, ensure_ascii=False)}
 
 
+def infer_misc_enrichment(state: ProfileEnrichmentState) -> Dict[str, Any]:
+    """
+    Infer miscellaneous enrichment details (credentials, work environment).
+    """
+    profile_data_str = format_profile_data(state["raw_profile"])
+    sector_inference = json.loads(state["sector_inference"])
+    raw_profile = state["raw_profile"]
+    
+    location = f"{raw_profile.get('current_city', '')}, {raw_profile.get('current_country', '')}"
+    
+    prompt = MISC_ENRICHMENT_PROMPT.format(
+        profile_data=profile_data_str,
+        sector=sector_inference.get("primary_sector", "unknown"),
+        location=location,
+    )
+
+    model_with_structure = structured_model.with_structured_output(
+        MiscEnrichment, method="function_calling"
+    )
+    response = model_with_structure.invoke(prompt)
+
+    misc_dict = response.model_dump()
+
+    return {"misc_enrichment": json.dumps(misc_dict, ensure_ascii=False)}
+
+
+def infer_education(state: ProfileEnrichmentState) -> Dict[str, Any]:
+    """
+    Infer and structure education using LLM.
+    """
+    profile_data_str = format_profile_data(state["raw_profile"])
+    sector_inference = json.loads(state["sector_inference"])
+    raw_profile = state["raw_profile"]
+    
+    current_role = raw_profile.get("heading", "Unknown")
+    
+    prompt = EDUCATION_INFERENCE_PROMPT.format(
+        profile_data=profile_data_str,
+        sector=sector_inference.get("primary_sector", "unknown"),
+        current_role=current_role,
+    )
+
+    model_with_structure = structured_model.with_structured_output(
+        EducationInference, method="function_calling"
+    )
+    response = model_with_structure.invoke(prompt)
+
+    education_dict = response.model_dump()
+
+    return {"education_inference": json.dumps(education_dict, ensure_ascii=False)}
+
+
+def curate_skills(state: ProfileEnrichmentState) -> Dict[str, Any]:
+    """
+    Curate top skills using LLM instead of mechanical filtering.
+    """
+    skills_extraction = json.loads(state["skills_extraction"])
+    sector_inference = json.loads(state["sector_inference"])
+    seniority_inference = json.loads(state["seniority_inference"])
+    ideal_roles_inference = json.loads(state["ideal_roles_inference"])
+    raw_profile = state["raw_profile"]
+    
+    # Prepare all skills for LLM curation
+    all_skills = []
+    for skill in skills_extraction.get("explicit_skills", []):
+        all_skills.append({
+            "name": skill["name"],
+            "type": skill["category"],
+            "level": skill["level"],
+            "source": "explicit",
+            "confidence": skill["confidence"]
+        })
+    
+    for skill in skills_extraction.get("implicit_skills", []):
+        if not any(s["name"] == skill["name"] for s in all_skills):
+            all_skills.append({
+                "name": skill["name"],
+                "type": skill["category"],
+                "level": skill["level"],
+                "source": "implicit",
+                "confidence": skill["confidence"]
+            })
+    
+    prompt = SKILLS_CURATION_PROMPT.format(
+        current_role=raw_profile.get("heading", "Unknown"),
+        sector=sector_inference.get("primary_sector", "unknown"),
+        seniority=seniority_inference.get("seniority_level", "unknown"),
+        career_trajectory=ideal_roles_inference.get("career_trajectory", "Unknown"),
+        all_skills=json.dumps(all_skills, indent=2, ensure_ascii=False)
+    )
+
+    model_with_structure = structured_model.with_structured_output(
+        SkillsCuration, method="function_calling"
+    )
+    response = model_with_structure.invoke(prompt)
+
+    curation_dict = response.model_dump()
+
+    return {"skills_curation": json.dumps(curation_dict, ensure_ascii=False)}
+
+
 def assemble_enriched_profile(state: ProfileEnrichmentState) -> Dict[str, Any]:
     """
     Assemble the final enriched profile with all analysis results.
-
-    Combines all analysis outputs into a clean, non-redundant enriched profile
-    that maintains the original structure while adding semantic enrichments.
-
-    Returns updated state with enriched_profile.
+    
+    OPTIMIZED OUTPUT FORMAT:
+    - Removes redundant fields (disambiguation, canonical_terms, raw_profile).
+    - Unifies skills into a single matrix.
+    - Adds stability metrics and inferred credentials.
     """
     # Parse all analysis results
-    context_analysis = json.loads(state["context_analysis"])
+    # context_analysis = json.loads(state["context_analysis"]) # Not used in final output
     sector_inference = json.loads(state["sector_inference"])
-    disambiguation_results = json.loads(state["disambiguation_results"])
+    # disambiguation_results = json.loads(state["disambiguation_results"]) # Pruned
     skills_extraction = json.loads(state["skills_extraction"])
     competencies_analysis = json.loads(state["competencies_analysis"])
-    normalization_results = json.loads(state["normalization_results"])
+    # normalization_results = json.loads(state["normalization_results"]) # Pruned
     seniority_inference = json.loads(state["seniority_inference"])
     ideal_roles_inference = json.loads(state["ideal_roles_inference"])
     language_inference = json.loads(state["language_inference"])
+    misc_enrichment = json.loads(state["misc_enrichment"])
+    education_inference = json.loads(state["education_inference"])
+    skills_curation = json.loads(state["skills_curation"])
 
-    # Build enriched profile structure (simplified and non-redundant)
+    # Calculate stability metrics
+    stability = calculate_stability_metrics(state["raw_profile"].get("experiences", []))
+    
+    # FILTER: Keep only top competencies (senior-level prioritized)
+    competencies = competencies_analysis["competencies"]
+    senior_competencies = [c for c in competencies if c.get("level") in ["senior", "lead"]]
+    other_competencies = [c for c in competencies if c.get("level") not in ["senior", "lead"]]
+    
+    # Keep top 8 competencies (prioritize senior)
+    top_competencies = senior_competencies[:6] + other_competencies[:2]
+
+    # Build enriched profile structure (Optimized)
     enriched_profile = {
-        # Preserve original fields
-        "candidato_id": state["candidate_id"],
+        "candidate_id": state["candidate_id"],
+        "enrichment_version": "2.0-optimized",
         "timestamp": state["metadata"].get("timestamp"),
-        "metadata": state["metadata"],
-        "perfil_raw": state["raw_profile"],
-        # Add semantic enrichment section
-        "semantic_enrichment": {
-            "version": "1.0",
-            "enrichment_timestamp": state["metadata"].get("timestamp"),
-            
-            # High-level summary
-            "key_insights": {
-                "primary_sector": sector_inference["primary_sector"],
-                "sector_confidence": sector_inference["confidence"],
-                "seniority_level": seniority_inference["seniority_level"],
-                "years_experience": seniority_inference["years_experience_estimate"],
-                "total_skills_identified": len(skills_extraction["explicit_skills"])
-                + len(skills_extraction["implicit_skills"]),
-                "competencies_count": len(competencies_analysis["competencies"]),
-                "disambiguated_terms_count": len(
-                    disambiguation_results["disambiguated_terms"]
-                ),
-                "primary_ideal_role": ideal_roles_inference["primary_role"]["role_name"],
-                "primary_role_fit_score": ideal_roles_inference["primary_role"]["fit_score"],
-            },
-            
-            # Context information - REMOVED as it is intermediate data
-            # "context": { ... },
-            
-            # Sector (simplified)
-            "sector": {
-                "primary": sector_inference["primary_sector"],
-                "secondary": sector_inference.get("secondary_sectors", []),
-                "confidence": sector_inference["confidence"],
-                "reasoning": sector_inference["reasoning"],
-            },
-            
-            # Seniority (simplified)
-            "seniority": {
-                "level": seniority_inference["seniority_level"],
-                "years_experience": seniority_inference["years_experience_estimate"],
-                "confidence": seniority_inference["confidence"],
-                "reasoning": seniority_inference["reasoning"],
-            },
-            
-            # Skills (clean structure)
-            "skills": {
-                "explicit": skills_extraction["explicit_skills"],
-                "implicit": skills_extraction["implicit_skills"],
-                "clusters": {
-                    cluster["cluster_name"]: cluster["skills"]
-                    for cluster in skills_extraction.get("skill_clusters", [])
-                },
-            },
-            
-            # Competencies (clean list)
-            "competencies": competencies_analysis["competencies"],
-            
-            # Disambiguation (simplified map)
-            "disambiguation": {
-                term["original_term"]: {
-                    "meaning": term["interpreted_meaning"],
-                    "domain": term["domain"],
-                    "confidence": term["confidence"],
-                }
-                for term in disambiguation_results["disambiguated_terms"]
-            },
-            
-            # Normalization (canonical terms only)
-            "canonical_terms": {
-                canon["variation"]: canon["canonical"]
-                for canon in normalization_results.get("canonical_terms", [])
-            },
-            
-            # Ideal roles
-            "ideal_roles": {
-                "primary": ideal_roles_inference["primary_role"],
-                "alternatives": ideal_roles_inference.get("alternative_roles", []),
-                "career_trajectory": ideal_roles_inference["career_trajectory"],
-                "recent_focus": ideal_roles_inference["recent_focus"],
-                "reasoning": ideal_roles_inference["reasoning"],
-            },
-            
-            # Languages
-            "languages": language_inference["languages"],
+        
+        # 1. Core Profile Identity
+        "identity": {
+            "full_name": state["raw_profile"].get("full_name"),
+            "current_role": state["raw_profile"].get("heading"),
+            "location": f"{state['raw_profile'].get('current_city', '')}, {state['raw_profile'].get('current_country', '')}",
+            "sector": sector_inference["primary_sector"],
+            "seniority": seniority_inference["seniority_level"],
+            "years_experience": seniority_inference["years_experience_estimate"],
         },
+        
+        # 2. Career Analysis (NO DUPLICATE HISTORY)
+        "career_trajectory": {
+            "summary": ideal_roles_inference["career_trajectory"],
+            "recent_focus": ideal_roles_inference["recent_focus"],
+            "stability_metrics": stability
+            # Removed: "history" - already in raw profile
+        },
+        
+        # 2b. Education (VALUE-ADDED ONLY)
+        "education": {
+            "highest_degree": education_inference.get("highest_degree"),
+            "level_summary": education_inference.get("education_level_summary", "Unknown")
+            # Removed: "all_education" - already in raw profile
+        },
+        
+        # 3. Skills & Competencies (LLM-CURATED)
+        "top_skills": skills_curation.get("top_skills", []),  # LLM-selected skills
+        "top_competencies": top_competencies,  # Top 8 competencies only
+        "languages": language_inference["languages"],
+        
+        # 4. Inferred Context (New)
+        "inferred_context": {
+            "credentials": misc_enrichment["inferred_credentials"],
+            "work_environment": misc_enrichment["work_environment"],
+        },
+        
+        # 5. Matching Intelligence
+        "matching_intelligence": {
+            "ideal_role": ideal_roles_inference["primary_role"],
+            "alternative_roles": ideal_roles_inference.get("alternative_roles", []),
+            "sector_fit_reasoning": sector_inference["reasoning"]
+        }
     }
 
     return {"enriched_profile": enriched_profile}
@@ -526,6 +666,9 @@ def build_enrichment_graph() -> StateGraph:
     graph_builder.add_node("infer_seniority", infer_seniority)
     graph_builder.add_node("infer_ideal_roles", infer_ideal_roles)
     graph_builder.add_node("infer_languages", infer_languages)
+    graph_builder.add_node("infer_misc_enrichment", infer_misc_enrichment)
+    graph_builder.add_node("infer_education", infer_education)
+    graph_builder.add_node("curate_skills", curate_skills)
     graph_builder.add_node("assemble_enriched_profile", assemble_enriched_profile)
 
     # Add edges to define the flow
@@ -538,7 +681,10 @@ def build_enrichment_graph() -> StateGraph:
     graph_builder.add_edge("normalize_terms", "infer_seniority")
     graph_builder.add_edge("infer_seniority", "infer_ideal_roles")
     graph_builder.add_edge("infer_ideal_roles", "infer_languages")
-    graph_builder.add_edge("infer_languages", "assemble_enriched_profile")
+    graph_builder.add_edge("infer_languages", "infer_misc_enrichment")
+    graph_builder.add_edge("infer_misc_enrichment", "infer_education")
+    graph_builder.add_edge("infer_education", "curate_skills")
+    graph_builder.add_edge("curate_skills", "assemble_enriched_profile")
     graph_builder.add_edge("assemble_enriched_profile", END)
 
     # Compile and return
@@ -602,6 +748,9 @@ def enrich_profile(
         "seniority_inference": None,
         "ideal_roles_inference": None,
         "language_inference": None,
+        "misc_enrichment": None,
+        "education_inference": None,
+        "skills_curation": None,
         "enriched_profile": None,
     }
 

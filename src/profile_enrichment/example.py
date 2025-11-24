@@ -114,47 +114,100 @@ def run_example(input_file: str = None):
 
     print("✅ Enrichment completed\n")
 
-    # Display key insights
-    key_insights = enriched["semantic_enrichment"]["key_insights"]
+    # Display key insights from Identity
+    identity = enriched["identity"]
     print("📊 KEY INSIGHTS")
     print("=" * 50)
-    print(f"Primary Sector: {key_insights['primary_sector']}")
-    print(f"Sector Confidence: {key_insights['sector_confidence']:.2f}")
-    print(f"Seniority Level: {key_insights['seniority_level']}")
-    print(f"Years Experience: {key_insights['years_experience']}")
-    print(f"Total Skills: {key_insights['total_skills_identified']}")
-    print(f"Competencies: {key_insights['competencies_count']}")
-    print(f"Disambiguated Terms: {key_insights['disambiguated_terms_count']}")
-    print(f"\n🎯 Primary Ideal Role: {key_insights['primary_ideal_role']}")
-    print(f"   Fit Score: {key_insights['primary_role_fit_score']:.2f}")
+    print(f"Primary Sector: {identity['sector']}")
+    print(f"Seniority Level: {identity['seniority']}")
+    print(f"Years Experience: {identity['years_experience']}")
+    print(f"Top Skills: {len(enriched.get('top_skills', []))}")
+    print(f"Top Competencies: {len(enriched.get('top_competencies', []))}")
+    
+    matching = enriched["matching_intelligence"]
+    print(f"\n🎯 Primary Ideal Role: {matching['ideal_role']['role_name']}")
+    print(f"   Fit Score: {matching['ideal_role']['fit_score']:.2f}")
+
+    # Display TOP SKILLS (optimized)
+    print("\n\n⚡ TOP SKILLS (Most Relevant)")
+    print("=" * 50)
+    if enriched.get("top_skills"):
+        domain_skills = [s for s in enriched["top_skills"] if s["type"] == "domain_specific"]
+        transversal_skills = [s for s in enriched["top_skills"] if s["type"] == "transversal"]
+        
+        if domain_skills:
+            print("\n🎯 Domain-Specific:")
+            for skill in domain_skills[:5]:  # Show top 5
+                level_emoji = "⭐" if skill["level"] in ["expert", "advanced"] else "📊"
+                print(f"   {level_emoji} {skill['name']} ({skill['level']})")
+        
+        if transversal_skills:
+            print("\n🔄 Transversal:")
+            for skill in transversal_skills[:5]:  # Show top 5
+                level_emoji = "⭐" if skill["level"] in ["expert", "advanced"] else "📊"
+                print(f"   {level_emoji} {skill['name']} ({skill['level']})")
 
     # Display ideal roles
-    ideal_roles = enriched["semantic_enrichment"]["ideal_roles"]
     print("\n\n🎯 IDEAL ROLES ANALYSIS")
     print("=" * 50)
-    print(f"\n🏆 Primary Role: {ideal_roles['primary']['role_name']}")
-    print(f"   Fit Score: {ideal_roles['primary']['fit_score']:.2f}")
-    print(f"   Reasoning: {ideal_roles['primary']['reasoning']}")
-    print(f"\n📈 Career Trajectory: {ideal_roles['career_trajectory']}")
-    print(f"🎓 Recent Focus: {ideal_roles['recent_focus']}")
+    print(f"\n🏆 Primary Role: {matching['ideal_role']['role_name']}")
+    print(f"   Fit Score: {matching['ideal_role']['fit_score']:.2f}")
+    print(f"   Reasoning: {matching['ideal_role']['reasoning']}")
     
-    if ideal_roles.get('alternatives'):
+    trajectory = enriched["career_trajectory"]
+    print(f"\n📈 Career Trajectory: {trajectory['summary']}")
+    print(f"🎓 Recent Focus: {trajectory['recent_focus']}")
+    
+    # Display Education
+    education = enriched["education"]
+    print("\n\n🎓 EDUCATION")
+    print("=" * 50)
+    
+    if education.get("level_summary"):
+        print(f"\n📊 Level: {education['level_summary']}")
+    
+    if education.get("highest_degree"):
+        hd = education["highest_degree"]
+        print(f"\n🏆 Highest Degree: {hd.get('degree', 'N/A')}")
+        if hd.get('field'):
+            print(f"   Field: {hd['field']}")
+        if hd.get('institution'):
+            print(f"   Institution: {hd['institution']}")
+        if hd.get('end_year'):
+            print(f"   Year: {hd['end_year']}")
+        if hd.get('relevance_to_career'):
+            print(f"   Relevance: {hd['relevance_to_career']}")
+    
+    if education.get("all_education"):
+        print(f"\n📚 All Education ({len(education['all_education'])} entries):")
+        for edu in education["all_education"][:3]:  # Show first 3
+            degree_str = edu.get('degree') or 'N/A'
+            field_str = f" - {edu.get('field')}" if edu.get('field') else ""
+            completed = "✓" if edu.get('is_completed') else "⏳"
+            print(f"   {completed} {degree_str}{field_str}")
+    
+    if matching.get('alternative_roles'):
         print("\n🔄 Alternative Roles:")
-        for i, role in enumerate(ideal_roles['alternatives'][:3], 1):
+        for i, role in enumerate(matching['alternative_roles'][:3], 1):
             print(f"   {i}. {role['role_name']} (fit: {role['fit_score']:.2f})")
     
-    # Display disambiguation results
-    disambiguation_map = enriched["semantic_enrichment"]["disambiguation"]
-    print("\n\n🔍 DISAMBIGUATION (Sample)")
+    # Display Inferred Context (New)
+    context = enriched["inferred_context"]
+    print("\n\n🕵️ INFERRED CONTEXT")
     print("=" * 50)
-    for term, details in list(disambiguation_map.items())[:3]:
-        print(f"\n📌 Term: '{term}'")
-        print(f"   Meaning: {details['meaning']}")
-        print(f"   Domain: {details['domain']}")
-        print(f"   Confidence: {details['confidence']:.2f}")
+    
+    print("\n📜 Credentials:")
+    for cred in context['credentials']:
+        req = "REQUIRED" if cred['is_required_for_role'] else "Optional"
+        print(f"   - {cred['credential_name']} ({cred['type']}) [{req}]")
+        
+    env = context['work_environment']
+    print(f"\n🏢 Work Environment: {env['environment_type']}")
+    print(f"   Culture: {', '.join(env['culture_fit_indicators'])}")
+    print(f"   Physical: {env['physical_demands']}")
 
     # Display inferred languages
-    languages = enriched["semantic_enrichment"]["languages"]
+    languages = enriched["languages"]
     print("\n\n🗣️ INFERRED LANGUAGES")
     print("=" * 50)
     for lang in languages:

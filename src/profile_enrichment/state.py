@@ -37,6 +37,9 @@ class ProfileEnrichmentState(TypedDict):
     seniority_inference: Optional[str]
     ideal_roles_inference: Optional[str]
     language_inference: Optional[str]
+    misc_enrichment: Optional[str]
+    education_inference: Optional[str]
+    skills_curation: Optional[str]
 
     # Final enriched output
     enriched_profile: Optional[Dict[str, Any]]
@@ -326,3 +329,67 @@ class LanguageInference(BaseModel):
     reasoning: str = Field(
         description="Explanation of how languages were inferred",
     )
+
+
+class InferredCredential(BaseModel):
+    """Schema for inferred educational credentials or certifications."""
+
+    credential_name: str = Field(description="Name of the credential (e.g., 'Licenciatura en Veterinaria', 'CSCS Certification')")
+    type: str = Field(description="Type: 'degree', 'certification', 'license'")
+    is_required_for_role: bool = Field(description="Whether this is legally/professionally required for the candidate's primary role")
+    confidence: float = Field(description="Confidence in this inference")
+    evidence: str = Field(description="Why this is inferred (e.g., 'Role title Veterinaria implies degree')")
+
+
+class WorkEnvironment(BaseModel):
+    """Schema for work environment fit analysis."""
+
+    environment_type: str = Field(description="Primary environment: 'office', 'remote', 'industrial', 'field', 'clinical', 'retail'")
+    culture_fit_indicators: List[str] = Field(description="Indicators of cultural fit (e.g., 'fast-paced', 'structured', 'hands-on')")
+    physical_demands: str = Field(description="Assessment of physical requirements (e.g., 'sedentary', 'moderate', 'high')")
+    reasoning: str = Field(description="Reasoning based on location, roles, and sector")
+
+
+class MiscEnrichment(BaseModel):
+    """Schema for miscellaneous enrichment (credentials, environment)."""
+
+    inferred_credentials: List[InferredCredential] = Field(description="Inferred required credentials")
+    work_environment: WorkEnvironment = Field(description="Analysis of work environment fit")
+
+
+class EducationEntry(BaseModel):
+    """Schema for a single education entry."""
+
+    degree: str = Field(description="Degree type (e.g., 'Master of Science', 'Bachelor of Engineering', 'PhD')")
+    field: Optional[str] = Field(description="Field of study (e.g., 'Computer Science', 'Civil Engineering')")
+    institution: str = Field(description="Educational institution name")
+    start_year: Optional[int] = Field(description="Start year")
+    end_year: Optional[int] = Field(description="End year or expected completion")
+    is_completed: bool = Field(description="Whether the degree was completed")
+    relevance_to_career: str = Field(description="How this education relates to the candidate's career path")
+
+
+class EducationInference(BaseModel):
+    """Schema for education analysis and structuring."""
+
+    highest_degree: Optional[EducationEntry] = Field(description="The highest level degree obtained")
+    all_education: List[EducationEntry] = Field(description="All education entries, cleaned and structured")
+    education_level_summary: str = Field(description="Summary of education level (e.g., 'Master's level', 'Bachelor's level', 'PhD level')")
+    reasoning: str = Field(description="Explanation of how education was analyzed and structured")
+
+
+class CuratedSkill(BaseModel):
+    """Schema for a curated skill selected by LLM."""
+
+    name: str = Field(description="Skill name")
+    type: str = Field(description="'domain_specific' or 'transversal'")
+    level: str = Field(description="Proficiency level")
+    relevance_score: float = Field(description="Relevance to candidate's career (0-1)")
+    relevance_reasoning: str = Field(description="Why this skill is relevant to this specific candidate")
+
+
+class SkillsCuration(BaseModel):
+    """Schema for LLM-curated top skills."""
+
+    top_skills: List[CuratedSkill] = Field(description="Top 10-12 most relevant skills for this candidate")
+    reasoning: str = Field(description="Overall reasoning for skill selection")

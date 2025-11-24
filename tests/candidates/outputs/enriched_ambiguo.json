@@ -1,0 +1,305 @@
+{
+  "candidate_id": "2c1d6b90-4de4-4cd0-8025-084d6b0a7216",
+  "enrichment_version": "2.0-optimized",
+  "timestamp": "2025-11-24T16:53:18.390759",
+  "identity": {
+    "full_name": "José Colino Martín-Aragón CEng MICE, PMP",
+    "current_role": "Senior Project Manager at Mott MacDonald",
+    "location": ", ",
+    "sector": "water_infrastructure_engineering",
+    "seniority": "lead",
+    "years_experience": 11
+  },
+  "career_trajectory": {
+    "summary": "José progressed from technical and design-focused civil engineering roles (Assistant Civil Engineer, Project Engineer) in water infrastructure to increasingly senior project management posts from 2021 onward. Over the past 4 years, he has moved through Project Manager roles at Jacobs and Arcadis, culminating in his current senior project management role at Mott MacDonald. His trajectory shows clear advancement from technical engineering to senior leadership and project delivery in water/wastewater sector infrastructure projects.",
+    "recent_focus": "Since 2021, José's primary focus has been on leading multi-disciplinary project teams in the delivery of large-scale water/wastewater infrastructure projects, with responsibility for commercial oversight, risk and programme management, stakeholder engagement, and successful on-time/on-budget project delivery. His current remit is firmly in the domain of high-responsibility project leadership.",
+    "stability_metrics": {
+      "average_tenure_years": 1.9,
+      "roles_count": 8,
+      "companies_count": 4,
+      "job_hopping_risk": "medium"
+    }
+  },
+  "education": {
+    "highest_degree": {
+      "degree": "Master's degree in Civil Engineering",
+      "field": "Civil Engineering",
+      "institution": "Universidad Alfonso X El Sabio",
+      "start_year": 2011,
+      "end_year": 2013,
+      "is_completed": true,
+      "relevance_to_career": "This master's level degree in Civil Engineering forms the foundation of the candidate's career in water and wastewater infrastructure projects, and aligns directly with over a decade of professional experience in the sector."
+    },
+    "level_summary": "Master's level education in Civil Engineering with recent upskilling in Data Analysis."
+  },
+  "top_skills": [
+    {
+      "name": "Project Delivery (Full Lifecycle)",
+      "type": "transversal",
+      "level": "expert",
+      "relevance_score": 1.0,
+      "relevance_reasoning": "José’s senior PM roles require end-to-end delivery expertise, which is the core differentiator for his career progression in water infrastructure."
+    },
+    {
+      "name": "Civil Engineering (Water/Wastewater)",
+      "type": "domain_specific",
+      "level": "expert",
+      "relevance_score": 1.0,
+      "relevance_reasoning": "Deep sectoral technical knowledge underpins his ability to lead complex engineering projects specific to water infrastructure."
+    },
+    {
+      "name": "Stakeholder Engagement",
+      "type": "transversal",
+      "level": "advanced",
+      "relevance_score": 0.98,
+      "relevance_reasoning": "Frequent multi-agency collaboration and client-facing roles are central to senior project delivery in this sector."
+    },
+    {
+      "name": "Contract Management (NEC Contracts)",
+      "type": "domain_specific",
+      "level": "advanced",
+      "relevance_score": 0.96,
+      "relevance_reasoning": "Managing NEC contracts is a rare, sector-specific competency highly prized by top water infrastructure firms."
+    },
+    {
+      "name": "Risk Management",
+      "type": "transversal",
+      "level": "advanced",
+      "relevance_score": 0.96,
+      "relevance_reasoning": "Ability to anticipate and handle project risks distinguishes a senior PM and minimizes costly overruns."
+    },
+    {
+      "name": "Water Industry Regulations & Standards",
+      "type": "domain_specific",
+      "level": "advanced",
+      "relevance_score": 0.95,
+      "relevance_reasoning": "Ensures regulatory compliance—mission-critical for successful and safe project execution in water/wastewater."
+    },
+    {
+      "name": "Health and Safety Compliance",
+      "type": "domain_specific",
+      "level": "advanced",
+      "relevance_score": 0.94,
+      "relevance_reasoning": "Demonstrated ability in H&S is crucial in infrastructure engineering, protecting people and reputation."
+    },
+    {
+      "name": "Budget Management",
+      "type": "transversal",
+      "level": "advanced",
+      "relevance_score": 0.93,
+      "relevance_reasoning": "Large-scale project leadership demands advanced budget control, underpinning commercial success."
+    },
+    {
+      "name": "Design Management (Civil/Infrastructure)",
+      "type": "domain_specific",
+      "level": "advanced",
+      "relevance_score": 0.93,
+      "relevance_reasoning": "Expertise overseeing interdisciplinary design teams adds value at the intersection of project leadership and engineering."
+    },
+    {
+      "name": "Programme Control & Scheduling",
+      "type": "transversal",
+      "level": "advanced",
+      "relevance_score": 0.92,
+      "relevance_reasoning": "Complex infrastructure requires senior control over programmes and timelines, central to PM accountability."
+    },
+    {
+      "name": "Team Leadership",
+      "type": "transversal",
+      "level": "advanced",
+      "relevance_score": 0.91,
+      "relevance_reasoning": "Leadership of multidisciplinary teams is essential at his seniority and differentiates from purely technical engineers."
+    },
+    {
+      "name": "Environmental Regulations Compliance",
+      "type": "domain_specific",
+      "level": "advanced",
+      "relevance_score": 0.9,
+      "relevance_reasoning": "Increasing regulatory focus and project complexity require senior professionals who ensure robust environmental compliance."
+    }
+  ],
+  "top_competencies": [
+    {
+      "competency": "team_leadership",
+      "type": "soft",
+      "level": "senior",
+      "source": "experience",
+      "evidence": "Management and leadership of technical teams; stated 'Liderazgo de equipos' and 'manage the team to deliver the projects'."
+    },
+    {
+      "competency": "communication",
+      "type": "soft",
+      "level": "senior",
+      "source": "experience",
+      "evidence": "Preparation of technical reports, regular client liaison, stakeholder management and engagement, 'building relationships', 'Client liaison', and 'Preparation of technical reports'."
+    },
+    {
+      "competency": "cross_functional_collaboration",
+      "type": "soft",
+      "level": "senior",
+      "source": "experience",
+      "evidence": "Coordination with multidisciplinary teams and other disciplines, 'Management of the technical team', 'coordinate the other disciplines', 'work very close to them so that the Civil Design is consistent with the entire process on site'."
+    },
+    {
+      "competency": "problem_solving",
+      "type": "soft",
+      "level": "senior",
+      "source": "experience",
+      "evidence": "Resolution of project delivery issues, 'Resolution of problems in water/wastewater projects, critical issue handling in project delivery'."
+    },
+    {
+      "competency": "adaptability",
+      "type": "soft",
+      "level": "senior",
+      "source": "experience",
+      "evidence": "Worked across multiple companies and roles (Assistant Engineer to Senior Project Manager), across UK and Spain, handling diverse projects and adapting to new challenges."
+    },
+    {
+      "competency": "process_improvement",
+      "type": "functional",
+      "level": "senior",
+      "source": "experience",
+      "evidence": "Optimization and control of project programmes, implementing improvements for project efficiency (control and monitoring of programme, costs, and resources)."
+    },
+    {
+      "competency": "initiative",
+      "type": "soft",
+      "level": "mid",
+      "source": "experience",
+      "evidence": "Preparation of bids and proposals, management of risks and change registers, proactive liaison with stakeholders."
+    },
+    {
+      "competency": "project_management",
+      "type": "functional",
+      "level": "expert",
+      "source": "experience",
+      "evidence": "Senior Project Manager for large infrastructure projects; end-to-end management from preliminary design to commissioning, 'manage the team to deliver the projects in accordance with the contract ensuring that projects are completed on time and to the required cost and quality standards'."
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "proficiency": "Native",
+      "source": "explicit",
+      "evidence": "Explicitly listed as C2 (Mastery) in the profile's languages section; Bachelor's and Master's degrees from Spanish universities; currently based in Spain.",
+      "confidence": 1.0
+    },
+    {
+      "language": "English",
+      "proficiency": "Professional",
+      "source": "explicit",
+      "evidence": "Explicitly listed as C1 (Advanced) in profile's languages section. Lived and worked in the UK (London, Brighton) continuously from 2014 to 2025 for international companies (Southern Water, Jacobs, Arcadis), totaling over 9 years of English language workplace exposure.",
+      "confidence": 1.0
+    }
+  ],
+  "inferred_context": {
+    "credentials": [
+      {
+        "credential_name": "Master's degree in Civil Engineering (Ingeniería de Caminos, Canales y Puertos)",
+        "type": "degree",
+        "is_required_for_role": true,
+        "confidence": 0.95,
+        "evidence": "The candidate's role as Chartered Engineer (CEng MICE) and Senior Project Manager in civil engineering (notably water infrastructure) in Spain and UK requires a legally recognized civil engineering degree and registration. The Spanish 'Ingeniero de Caminos, Canales y Puertos' and similar degrees are mandatory for signing off on projects in this sector."
+      },
+      {
+        "credential_name": "Chartered Engineer (CEng MICE)",
+        "type": "certification",
+        "is_required_for_role": true,
+        "confidence": 0.95,
+        "evidence": "The title 'CEng MICE' (Chartered Engineer, Member of the Institution of Civil Engineers) is included in the candidate's heading and is required to serve as a lead project engineer or manager in many civil infrastructure projects, especially in the UK. Chartered Engineer status is a legal/professional standard for such responsibilities."
+      }
+    ],
+    "work_environment": {
+      "environment_type": "office/field (engineering consultancies and infrastructure sites)",
+      "culture_fit_indicators": [
+        "structured",
+        "regulated",
+        "multidisciplinary teams",
+        "client-facing",
+        "international exposure"
+      ],
+      "physical_demands": "moderate (mix of office work and regular site visits; not heavy lifting, but exposure to construction sites)",
+      "reasoning": "Candidate has worked at major consultancies (Mott MacDonald, Arcadis, Jacobs, Southern Water) in Spain and the UK, supporting large infrastructure projects. These roles require significant office-based project management, technical documentation, stakeholder management and a presence on construction or remediation sites, especially in the water sector. The environment tends to be highly structured, safety-focused, and multidisciplinary."
+    }
+  },
+  "matching_intelligence": {
+    "ideal_role": {
+      "role_name": "Senior Project Manager – Water Infrastructure",
+      "fit_score": 0.93,
+      "reasoning": "José's last 4 years have been spent in project management roles with increasing seniority (Project Manager at Jacobs, Arcadis, and currently Senior Project Manager at Mott MacDonald) specifically focused on water and wastewater sector infrastructure. He oversees project delivery, stakeholder management, contract/commercial elements, and team leadership—matching precisely the requirements for a senior project management position in water infrastructure engineering. Technical, commercial, and leadership skills align closely with expectations at this level.",
+      "required_skills_match": [
+        "Project Planning",
+        "Risk Management",
+        "Programme Control & Scheduling",
+        "Budget Management",
+        "Contract Management (NEC Contracts)",
+        "Civil Engineering (Water/Wastewater)",
+        "Stakeholder Engagement",
+        "Team Leadership",
+        "Client Relationship Management",
+        "Full Project Lifecycle Delivery"
+      ],
+      "growth_areas": [
+        "Expand data analytics integration into project delivery and reporting",
+        "Further development in digital transformation/project controls technology"
+      ]
+    },
+    "alternative_roles": [
+      {
+        "role_name": "Programme Manager – Water & Environmental Projects",
+        "fit_score": 0.85,
+        "reasoning": "Given José's experience managing multiple concurrent projects and teams, as well as his expertise across project controls, budgeting, and stakeholder engagement, he could transition to a broader programme-level role overseeing clusters of interlinked projects within water/environmental infrastructure. This would require deepening his experience in programme governance and multi-project strategy.",
+        "required_skills_match": [
+          "Project Planning",
+          "Programme Management",
+          "Risk Management",
+          "Stakeholder Engagement",
+          "Budget Management",
+          "Team Leadership",
+          "Cross-functional Collaboration"
+        ],
+        "growth_areas": [
+          "Multi-project governance",
+          "Portfolio resource allocation",
+          "Strategic reporting at programme scale"
+        ]
+      },
+      {
+        "role_name": "Technical Director – Water & Wastewater Engineering",
+        "fit_score": 0.78,
+        "reasoning": "With a technical civil engineering background and a track record in project delivery, José could step into a Technical Director role, guiding technical standards and quality for major projects. He would need to increase strategic input across business development, design innovation, and client-facing thought leadership.",
+        "required_skills_match": [
+          "Civil Engineering (Water/Wastewater)",
+          "Project Delivery",
+          "Technical Documentation",
+          "Feasibility Analysis",
+          "Quality Assurance",
+          "Team Leadership"
+        ],
+        "growth_areas": [
+          "Thought leadership",
+          "Business development",
+          "Mentoring and technical governance"
+        ]
+      },
+      {
+        "role_name": "Head of Project Controls – Infrastructure",
+        "fit_score": 0.73,
+        "reasoning": "José's strengths in programme control, scheduling, risk, and cost management would be valuable in a specialized leadership role focused on project controls for a major consultancy or infrastructure owner/operator. Continued development would be needed in advanced analytics, data-driven reporting, and digital project controls platforms.",
+        "required_skills_match": [
+          "Programme Control & Scheduling",
+          "Risk Management",
+          "Budget Management",
+          "Quality Assurance",
+          "Data Analysis"
+        ],
+        "growth_areas": [
+          "Advanced analytics for project controls",
+          "Digital transformation",
+          "Team development in specialist controls functions"
+        ]
+      }
+    ],
+    "sector_fit_reasoning": "All professional indicators converge on engineering and project management for civil infrastructure, specifically focused on water and wastewater (utilities, treatment works, sewage plants, reservoirs). Both the role history and employers are globally recognized in infrastructure engineering, while the candidate’s own descriptions repeatedly mention water/wastewater, technical project delivery, and compliance with relevant regulations. Data analysis upskilling is supplemental, aimed at informing project delivery rather than signaling a shift to data science or software fields. No substantial ambiguity remains given the alignment of evidence."
+  }
+}
