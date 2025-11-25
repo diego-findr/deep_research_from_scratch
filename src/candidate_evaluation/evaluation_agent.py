@@ -45,7 +45,14 @@ model = init_chat_model(model="openai:gpt-4.1")
 # ===== UTILITY FUNCTIONS =====
 
 def get_sector_from_job(enriched_job: Dict[str, Any]) -> str:
-    """Extract the primary sector from enriched job data."""
+    """Extract the primary sector from enriched job data (handles both old and new formats)."""
+    # New format - check identity field first
+    if 'identity' in enriched_job:
+        sector = enriched_job['identity'].get('sector')
+        if sector:
+            return sector
+    
+    # Old format - semantic_enrichment
     semantic = enriched_job.get("semantic_enrichment", {})
     analysis = semantic.get("analysis_components", {})
     sector_info = analysis.get("sector_inference", {})
@@ -59,7 +66,14 @@ def get_candidate_name(enriched_candidate: Dict[str, Any]) -> str:
 
 
 def get_job_title(enriched_job: Dict[str, Any]) -> str:
-    """Extract job title from enriched data."""
+    """Extract job title from enriched data (handles both old and new formats)."""
+    # New format - check identity field first
+    if 'identity' in enriched_job:
+        title = enriched_job['identity'].get('title')
+        if title:
+            return title
+    
+    # Old format - raw_job_posting
     raw_job = enriched_job.get("raw_job_posting", {})
     return raw_job.get("job_title", "Unknown Role")
 

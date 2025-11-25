@@ -1,0 +1,295 @@
+{
+  "evaluation_metadata": {
+    "candidate_name": "José Colino Martín-Aragón CEng MICE, PMP",
+    "job_title": "Gerente de Soporte Técnico (Construcción)",
+    "timestamp": "2025-11-25T19:25:40.857041",
+    "evaluation_version": "1.0"
+  },
+  "evaluation_results": {
+    "agent_evaluations": [
+      {
+        "agent_name": "cultural_fit_evaluator",
+        "agent_sector_expertise": "unknown",
+        "evaluation_focus": "cultural_fit_and_soft_skills",
+        "score": 0.62,
+        "strengths": [
+          "Strong team leadership and cross-functional collaboration (senior level, evidenced across multiple roles)",
+          "Advanced communication skills, effective with senior stakeholders and multidisciplinary teams",
+          "Demonstrated adaptability from working in both Spain and UK in international, highly structured environments",
+          "High capacity for stakeholder engagement and client-facing interactions, both domestically and internationally",
+          "Native Spanish and advanced English proficiency—effective for multinational and local teams"
+        ],
+        "weaknesses": [
+          "No explicit experience in road/bridge (vial) construction projects; sector mismatch",
+          "Potential lack of motivation for a shift from water infrastructure to road/bridge construction given no clear interest or signal",
+          "Job stability risk—average tenure per role below 2 years, with 'medium' job-hopping risk",
+          "Possible overqualification or expectation mismatch regarding technical vs. managerial focus",
+          "No evidence of Madrid-based work presence or explicit enthusiasm for onsite mobility/field dedication"
+        ],
+        "detailed_reasoning": "José Colino Martín-Aragón displays strong soft skills: leadership, communication (with evidence from client liaison, stakeholder engagement, team management), and cross-functional collaboration. These are strengths for most managerial roles in technical/engineering environments. He thrives in structured, regulated, multidisciplinary and client-facing cultures, as evidenced by success at major international consultancies (Arcadis, Jacobs, Mott MacDonald).\n\nHowever, there is a critical alignment issue. Almost all his senior experience is in water/wastewater infrastructure, not road or bridge construction—the core of this job's cultural and technical context. While many soft/behavioral competencies (leadership, collaboration, communication) are transferable, sector-specific behaviors, pace, and challenge types differ in the road/bridge construction context. There is no explicit motivational evidence for pivoting to highways/bridges, nor explicit experience with the kind of field-anchored, hands-on project execution the job demands. This points to a likely mismatch in day-to-day values, legacy networks, and tacit sector knowledge/culture.\n\nFurther, the candidate has moderate job-hopping risk (avg. tenure ~1.9 years/role). The role is on-site in Madrid with significant travel, but no explicit evidence indicates current Madrid (or Spain) presence or strong preference for ongoing field engagement versus consultancy office-based leadership. While his Spanish fluency and international project exposure mitigate adaptation concerns, the sector/cultural leap and possible stability/motivation risks are significant.\n\nOverall, soft skills are strong and general managerial fit exists, but deficits in sectoral behavioral alignment, motivation, stability, and work style for this specific construction environment lower the score to a moderate fit. This is a 'maybe', not a rejection—but sector-specific probing and motivation validation are essential before consideration.",
+        "recommendation": "maybe",
+        "concerns": [
+          "Lack of direct road/bridge construction sector experience may translate into cultural and soft skill misfit for this particular managerial culture",
+          "Insufficient motivation indicators for sector change—risk of disengagement or short tenure",
+          "Moderate job stability risk (higher-than-average role changes for a lead/manager profile)",
+          "No explicit confirmation of willingness for Madrid on-site presence or frequent travel as required",
+          "Transferability of client engagement and leadership style from water infrastructure to road/bridge context is unproven"
+        ],
+        "timestamp": "2025-11-24T20:13:00Z"
+      },
+      {
+        "agent_name": "experience_trajectory_evaluator",
+        "agent_sector_expertise": "unknown",
+        "evaluation_focus": "experience_and_trajectory",
+        "score": 0.53,
+        "strengths": [
+          "11 years in civil engineering project management, including international experience with top-tier firms (Jacobs, Arcadis, Mott MacDonald)",
+          "Demonstrated upward progression from technical engineering to senior project leadership (lead/senior PM roles)",
+          "Extensive multidisciplinary team management and full project life cycle delivery experience",
+          "Robust experience with commercial and technical aspects of infrastructure projects, including contractual and stakeholder management",
+          "Fluency in Spanish and professional use of English in international contexts"
+        ],
+        "weaknesses": [
+          "No direct experience in road or bridge infrastructure projects (the core requirement of the job)—career focus is water/wastewater infrastructure",
+          "Lack of explicit hands-on involvement with execution of works (construction phase) for roads/bridges",
+          "Unknown/missing evidence of managing bids/tenders and subcontractors specifically for highway or structural civil works",
+          "Sector specialization in water infrastructure is misaligned with the job's core (transport/roads/bridges)",
+          "Moderate job hopping risk (average tenure below 2 years; may concern employers seeking long-term project leaders)"
+        ],
+        "detailed_reasoning": "The candidate's career trajectory is solidly upward and progressive within the civil/water infrastructure domain, with leadership of large teams and responsibility for the delivery, budgeting, and risk of complex projects. He has 11 years of total experience—above the 10-year minimum—and now operates at a 'lead' level, directly aligning with the seniority requirements for a 'Gerente' role.\n\nHowever, the job's critical requirements are explicit and non-negotiable: deep technical and execution expertise in road and bridge (vial) projects, proven experience with hands-on works execution, and sector-specific bid/subcontractor management. All available evidence demonstrates the candidate's focus is on water/wastewater infrastructure—sewage treatment, distribution systems, and similar civil works. There is no direct, recent (or any) mention of highway/bridge project leadership, execution, or technical problem-solving in the transport infrastructure sector, which is essential for this position.\n\nWhile the generalist construction/large infrastructure skills the candidate brings (project delivery, team leadership, contract/risk/budget control) are valuable and theoretically transferable, the red flag raised by a lack of direct road/bridge experience is justified by the explicit job offer language. Recency of experience further compounds this, as the last 4 years have been wholly water sector focused. Furthermore, the candidate's pattern of relatively short tenures may be viewed as a risk for a company seeking stable, committed leadership on long-duration projects.\n\nIn summary, the candidate aligns with team management, project delivery, and international infrastructure experience, but misses the sectoral specialization that is a sine qua non for this job. Thus, the fit is moderate at best, and concerns are significant enough to make a strong recommendation difficult.",
+        "recommendation": "maybe",
+        "concerns": [
+          "No experience in road/bridge (vial) infrastructure; water sector focus is a sectoral mismatch.",
+          "No evidence of hands-on construction execution for roads/bridges.",
+          "Transferability of project management practices from water to roads/bridges is not guaranteed by evidence.",
+          "Potential for skills/knowledge gaps in sector-specific regulations, methodologies, and networks.",
+          "Moderate job hopping risk (average tenure under 2 years)."
+        ],
+        "timestamp": "2025-11-24T19:43:12Z"
+      },
+      {
+        "agent_name": "technical_skills_evaluator",
+        "agent_sector_expertise": "unknown",
+        "evaluation_focus": "technical_skills",
+        "score": 0.55,
+        "strengths": [
+          "Exceptional project management and delivery in water/wastewater infrastructure (senior/expert level)",
+          "Advanced team leadership and cross-functional collaboration in regulated civil engineering environments",
+          "Strong experience in budgeting, contract (NEC), risk, and stakeholder management for large infrastructure projects",
+          "International experience (UK, Spain) in multidisciplinary project settings"
+        ],
+        "weaknesses": [
+          "No direct experience in construction or execution of road/highway/bridge projects—core requirement for the job",
+          "Limited or no explicit expertise in technical support for infrastructure vial (carreteras y puentes), the job's central focus",
+          "Absence of evidence for execution/hands-on field management of road or bridge civil works",
+          "Possible knowledge gap regarding construction-phase issues (buildability, subcontractor management, site logistics) specific to roads/bridges",
+          "Recent trajectory oriented toward project management in water rather than technical construction management of highways/bridges"
+        ],
+        "detailed_reasoning": "The candidate, José Colino Martín-Aragón, is a highly accomplished senior project manager in the water/wastewater sector, with robust technical credentials (Master's in Civil Engineering, Chartered Engineer status) and a proven record managing multidisciplinary engineering teams, large budgets, and regulated project delivery. However, the Gerente de Soporte Técnico (Construcción) role at Acciona requires deep, hands-on technical expertise in vial infrastructure projects—primarily roads and bridges—and direct experience with their construction, execution, and technical field support. The candidate's entire background is anchored in water infrastructure (treatment plants, sewages, reservoirs), with top skills and competencies (project delivery, contract management, regulations compliance) tailored to that vertical. There is no mention (explicit or inferred) of leading the construction or providing technical support specifically for roads, highways, or bridges—the non-negotiable kernel of the job. Furthermore, core requirements like management of subcontractors and hands-on execution (ejecución de obras) in a roads/bridges context are not evidenced. Transferability exists at a PM or general civil engineering level, but the absence of direct, demonstrable experience in the specific construction modality (infraestructura vial) significantly undermines technical fit. While leadership and international project capacity are notable, these cannot compensate for the sector-specific technical gaps. Therefore, the candidate only moderately fits the technical demands of the role.",
+        "recommendation": "maybe",
+        "concerns": [
+          "Lack of road/highway/bridge technical delivery and construction execution experience may be a disqualifier.",
+          "Transferability of project management skills from water infrastructure to technical support in roads/bridges is not guaranteed.",
+          "Absence of explicit evidence for execution-phase leadership and site expertise (carreteras/puentes).",
+          "Unclear if candidate can credibly support technical buildability, subcontracting, and construction methodologies for highways/bridges.",
+          "Risk that the candidate may not meet the mandatory sectoral experience threshold specified by the job's killer questions."
+        ],
+        "timestamp": "2025-11-24T19:15:07Z"
+      }
+    ],
+    "debate_messages": [
+      {
+        "from_agent": "cultural_fit_evaluator",
+        "to_agent": null,
+        "message_type": "argument",
+        "content": "[\n  {\n    \"to_agent\": \"experience_trajectory_evaluator\",\n    \"message_type\": \"agreement\",\n    \"content\": \"I share your concerns about the significant sectoral mismatch, particularly given the absence of any road/bridge (vial) execution or project leadership experience in José's background. While both water and road/bridge infrastructure projects require similar high-level project management and stakeholder engagement skills, the day-to-day operational, regulatory, and behavioral environments are distinct. This lack of direct experience poses both cultural and experiential risks with respect to team fit, expectations, and credibility among site teams and local subcontractors.\",\n    \"references\": [\n      \"No direct experience in road or bridge infrastructure projects (the core requirement of the job)—career focus is water/wastewater infrastructure (experience_trajectory_evaluator)\",\n      \"Sector specialization in water infrastructure is misaligned with the job's core (transport/roads/bridges) (experience_trajectory_evaluator)\",\n      \"No explicit experience in road/bridge (vial) construction projects; sector mismatch (cultural_fit_evaluator)\"\n    ]\n  },\n  {\n    \"to_agent\": \"technical_skills_evaluator\",\n    \"message_type\": \"agreement\",\n    \"content\": \"I agree with your assessment that general project management excellence and cross-functional leadership, even at a senior level, do not automatically translate to technical and cultural competence in the construction-phase context of roads and bridges. The absence of direct evidence for managing buildability challenges, subcontractors, and site logistics in the highway/bridge domain is problematic. Soft skills may bridge some gaps, but tacit knowledge and context-specific behaviors often make or break credibility and effectiveness—especially in high-velocity construction environments.\",\n    \"references\": [\n      \"No direct experience in construction or execution of road/highway/bridge projects—core requirement for the job (technical_skills_evaluator)\",\n      \"Possible knowledge gap regarding construction-phase issues (buildability, subcontractor management, site logistics) specific to roads/bridges (technical_skills_evaluator)\"\n    ]\n  },\n  {\n    \"to_agent\": null,\n    \"message_type\": \"question\",\n    \"content\": \"Given the candidate's strong record in leading multidisciplinary teams and client-facing settings in major European consultancies, do you see any value in leveraging these generalist strengths if the client is open to sector adaptation? Specifically, are there precedents in your experience where candidates from highly regulated but adjacent sectors (e.g., water) have successfully transitioned to large-scale road/bridge construction management roles, and what was decisive for their success or failure?\",\n    \"references\": [\n      \"Strong team leadership and cross-functional collaboration (senior level, evidenced across multiple roles) (cultural_fit_evaluator)\",\n      \"Demonstrated adaptability from working in both Spain and UK in international, highly structured environments (cultural_fit_evaluator)\",\n      \"Generalist construction/large infrastructure skills the candidate brings... are valuable and theoretically transferable (experience_trajectory_evaluator)\"\n    ]\n  }\n]",
+        "references": [],
+        "timestamp": "2025-11-25T18:24:17.355168"
+      },
+      {
+        "from_agent": "experience_trajectory_evaluator",
+        "to_agent": null,
+        "message_type": "argument",
+        "content": "[\n  {\n    \"to_agent\": \"technical_skills_evaluator\",\n    \"message_type\": \"agreement\",\n    \"content\": \"I agree with your detailed breakdown regarding the candidate’s technical match. The lack of hands-on construction and technical delivery experience in roads/bridges is significant, especially since this is not merely a 'nice-to-have' but a core, non-negotiable aspect of the Gerente de Soporte Técnico role. Although the candidate demonstrates advanced project management and contract/budget control for major infrastructure, the explicit absence of field execution and technical support for highways or bridges creates a substantial skills gap. Even with excellent transferability at a general level, the specificity required by this role means the risk of underperformance or steep learning curve is high.\",\n    \"references\": [\n      \"No direct experience in construction or execution of road/highway/bridge projects—core requirement for the job (technical_skills_evaluator weakness 1, my weakness 1)\",\n      \"Absence of evidence for execution/hands-on field management of road or bridge civil works (technical_skills_evaluator weakness 3, my weakness 2)\",\n      \"Sector specialization in water infrastructure is misaligned with the job's core (transport/roads/bridges) (my weakness 4, technical_skills_evaluator detailed_reasoning)\"\n    ]\n  },\n  {\n    \"to_agent\": \"cultural_fit_evaluator\",\n    \"message_type\": \"question\",\n    \"content\": \"You highlight the candidate’s strong soft skills and adaptability, and I agree these are notable, especially for leadership. However, do you see any realistic pathway for this candidate to bridge what appears to be not just a technical but a cultural sector gap? For example, is there evidence or pattern—perhaps in his international transitions or multidisciplinary teamwork—that would suggest a high likelihood of success in adapting to the rather different behavioral norms and pressure points found in road/bridge construction environments? Or is the potential for disengagement/motivation risk too high without direct sector passion/commitment?\",\n    \"references\": [\n      \"Demonstrated adaptability from working in both Spain and UK in international, highly structured environments (cultural_fit_evaluator strength 3)\",\n      \"No explicit motivation for a shift from water infrastructure to road/bridge construction (cultural_fit_evaluator weakness 2)\",\n      \"Lack of direct road/bridge construction sector experience may translate into cultural and soft skill misfit (cultural_fit_evaluator concern 1)\",\n      \"Insufficient motivation indicators for sector change—risk of disengagement or short tenure (cultural_fit_evaluator concern 2)\"\n    ]\n  },\n  {\n    \"to_agent\": null,\n    \"message_type\": \"synthesis\",\n    \"content\": \"After reviewing both of your analyses, I note strong consensus on the major concern: the candidate’s sectoral misalignment—lack of direct experience and technical/cultural immersion in road and bridge construction—is the principal barrier. While managerial, leadership, and general project management capabilities are robust, and soft skills are strong, all of us identify the absence of highway/bridge execution expertise as a disqualifying or at minimum a critical cautionary flag. I am open to further reconsideration if concrete evidence arises indicating rapid, proven cross-sector adaptability or strong sectoral motivation, but currently, the profile best fits a 'maybe'—potentially interviewable for transferability, but with clear caveats and a probable need for backup candidates better aligned to the core technical/sector requirements.\",\n    \"references\": [\n      \"No direct experience in road or bridge infrastructure projects (my weakness 1; cultural_fit_evaluator weakness 1; technical_skills_evaluator weakness 1)\",\n      \"Soft skills are strong and general managerial fit exists (cultural_fit_evaluator detailed_reasoning, my strengths, technical_skills_evaluator strengths)\",\n      \"All evaluators recommend 'maybe', highlighting sectoral gap and questioning transferability/adaptability\"\n    ]\n  }\n]",
+        "references": [],
+        "timestamp": "2025-11-25T18:24:35.038888"
+      },
+      {
+        "from_agent": "technical_skills_evaluator",
+        "to_agent": null,
+        "message_type": "argument",
+        "content": "[\n  {\n    \"to_agent\": \"cultural_fit_evaluator\",\n    \"message_type\": \"argument\",\n    \"content\": \"Thank you for your comprehensive evaluation of cultural and soft skill fit. I recognize your assessment that the candidate displays outstanding leadership, communication, and adaptability across multinational contexts. However, you note potential motivational risks for the sector change and a lack of explicit enthusiasm for field roles in road/bridge construction, which you suggest might impact tenure and engagement. I would argue these concerns carry significant technical weight as well—since the shift from office-based water/wastewater consultancy to hands-on civil works delivery (roads/bridges) demands not just knowledge, but genuine motivation and resilience for a radically different pace and environment. As such, in the absence of explicit drive or a history of similar context transitions, I concur that this is an at-risk profile for both technical delivery and cultural sustainability. Would you agree that lack of proven sectoral motivation compounds our collective reservations, even for a candidate with transferable soft skills?\",\n    \"references\": [\n      \"No explicit motivational evidence for pivoting to highways/bridges\",\n      \"No evidence of Madrid-based work presence or explicit enthusiasm for onsite mobility/field dedication\",\n      \"Sector/cultural leap and possible stability/motivation risks\"\n    ]\n  },\n  {\n    \"to_agent\": \"experience_trajectory_evaluator\",\n    \"message_type\": \"argument\",\n    \"content\": \"Your analysis of the candidate's upward career trajectory and international project management experience is spot on, and you correctly emphasize the alignment at the project leadership level. However, I fully support your emphasis that the technical and sectoral misalignment is a non-trivial concern—not only due to a lack of hands-on road/bridge execution, but also due to missing sector-specific networks, best practices, and solution sets needed for rapid credibility and impact in an Acciona construction context. In your view, do you see any mitigating factors (e.g., evidence of accelerated learning, sector transitions in past roles, or explicit technical adaptability) that might reduce the risk? Or does the historical singular focus on water infrastructure preclude reasonable confidence in cross-sector adaptation at the required senior technical support level?\",\n    \"references\": [\n      \"No direct experience in road or bridge infrastructure projects; career focus is water/wastewater infrastructure\",\n      \"No evidence of hands-on construction execution for roads/bridges\",\n      \"Sector specialization in water infrastructure is misaligned with the job's core (transport/roads/bridges)\"\n    ]\n  },\n  {\n    \"to_agent\": null,\n    \"message_type\": \"agreement\",\n    \"content\": \"Across all three evaluations, there is a clear pattern: the candidate is a high-performing civil engineering leader in water infrastructure and exhibits strong general project management, stakeholder, and leadership competencies. Nonetheless, we all identify a critical alignment gap due to the absence of direct exposure to road/highway/bridge (vial) construction. While sector-agnostic skills are present, this gap undermines fit for a role where deep technical, regulatory, and field execution experience in the transport/road sector is evidently non-negotiable per Acciona's requirements. Thus, unless additional, as-yet-unseen evidence emerges, a 'maybe' (with a strong lean toward a 'no' on technical grounds) remains the most defensible collective recommendation.\",\n    \"references\": [\n      \"No direct experience in road/bridge projects (all evaluations)\",\n      \"All recommendations: 'maybe', citing sectoral/technical mismatch\"\n    ]\n  }\n]",
+        "references": [],
+        "timestamp": "2025-11-25T18:24:48.761085"
+      }
+    ],
+    "questions_asked": [
+      {
+        "agent_name": "cultural_fit_evaluator",
+        "question_text": "```json\n[\n  {\n    \"question_text\": \"Can you share a relevant experience where you led or significantly contributed to a construction project involving road or bridge infrastructure, and what new leadership or operational challenges did you face compared to your previous water sector projects?\",\n    \"question_purpose\": \"To determine the candidate's practical exposure to and understanding of the distinct cultural and operational challenges typical in road/bridge construction, compared to water inf",
+        "question_purpose": "Clarify uncertainties from cultural_fit_and_soft_skills evaluation",
+        "data_gap": "Various gaps identified in evaluation",
+        "priority": "important",
+        "timestamp": "2025-11-25T18:24:59.076977"
+      },
+      {
+        "agent_name": "experience_trajectory_evaluator",
+        "question_text": "[\n  {\n    \"question_text\": \"Can you detail any direct involvement you've had in the execution phase (construction/managing works on site) of civil infrastructure projects outside the water/wastewater sector, particularly those related to roads or bridges?\",\n    \"question_purpose\": \"To establish whether the candidate has any hands-on experience specifically with road/bridge construction, which directly addresses the core sectoral gap identified.\",\n    \"data_gap\": \"No explicit evidence of road/bri",
+        "question_purpose": "Clarify uncertainties from experience_and_trajectory evaluation",
+        "data_gap": "Various gaps identified in evaluation",
+        "priority": "important",
+        "timestamp": "2025-11-25T18:25:08.831025"
+      },
+      {
+        "agent_name": "technical_skills_evaluator",
+        "question_text": "[\n  {\n    \"question_text\": \"Can you provide detailed examples of your direct involvement in the construction or technical field management of road, highway, or bridge projects, including your specific responsibilities during execution phases?\",\n    \"question_purpose\": \"This question aims to determine whether the candidate possesses the essential, hands-on experience in the construction and onsite management of road/highway/bridge works, which is a non-negotiable requirement.\",\n    \"data_gap\": \"D",
+        "question_purpose": "Clarify uncertainties from technical_skills evaluation",
+        "data_gap": "Various gaps identified in evaluation",
+        "priority": "important",
+        "timestamp": "2025-11-25T18:25:17.285529"
+      }
+    ],
+    "consensus_decision": {
+      "liked": false,
+      "overall_score": 0.5666666666666667,
+      "decision_confidence": 0.85,
+      "primary_reasons": [
+        "All agents agree that the candidate lacks direct, hands-on experience in the road/highway/bridge (vial) sector, which is a core, non-negotiable requirement for the role.",
+        "The candidate's expertise is anchored in water/wastewater infrastructure, with no explicit evidence of transferable sector-specific technical or managerial experience for road/bridge construction.",
+        "Strong leadership, stakeholder engagement, and project management skills are evident, but there are concerns about whether these are sufficient given the gap in sector-specific knowledge, methodologies, and regulatory context.",
+        "Motivation and demonstrated commitment for a sectoral shift (from water to roads/bridges) are not evident; agents highlight risk of disengagement or suboptimal tenure.",
+        "Candidate shows moderate job stability risk with average tenure below two years per role, heightening organizational concerns for long-term project leadership."
+      ],
+      "consensus_summary": "The evaluation panel unanimously identifies the candidate as an accomplished civil engineering project manager in water/wastewater infrastructure, possessing robust leadership, general project delivery, and international consultancy experience. However, the absence of any direct, recent, or proven experience in road/highway/bridge (vial) construction, which is clearly a core requirement for this role, represents a critical alignment gap across technical, experiential, and cultural dimensions. All agents reach a 'maybe' recommendation, but the synthesis of their analyses reveals that the sectoral/technical misfit and lack of clear motivation for such a transition are substantial enough to recommend not proceeding with the candidate unless further evidence emerges. This is reached with relatively high confidence due to clear, consistent evidence bases across all agents.",
+      "agent_agreements": [
+        {
+          "agent_name": "cultural_fit_evaluator",
+          "recommendation": "maybe"
+        },
+        {
+          "agent_name": "experience_trajectory_evaluator",
+          "recommendation": "maybe"
+        },
+        {
+          "agent_name": "technical_skills_evaluator",
+          "recommendation": "maybe"
+        }
+      ],
+      "key_strengths": [
+        "Strong project management and leadership experience across large, multidisciplinary, international teams",
+        "Advanced stakeholder engagement and communication skills, especially in regulated environments",
+        "Fluency in Spanish with effective English, enabling performance across multinational settings",
+        "Demonstrated upward trajectory and seniority in project management within civil engineering consultancy environments"
+      ],
+      "key_concerns": [
+        "No direct experience in road/bridge/highway infrastructure construction or technical delivery",
+        "All recent experience and technical knowledge is focused on water/wastewater sector, not transport/vial sector",
+        "No clear motivational indicators for a demanding sector change—risking disengagement or early turnover",
+        "Average tenure per role is under 2 years, presenting potential job stability risk",
+        "No explicit evidence of readiness or willingness for Madrid on-site presence or extensive travel as required for the role"
+      ],
+      "suggested_next_steps": [
+        "Do not proceed unless the client is open to sector transitions and lighter technical alignment.",
+        "If there is interest in exploring, conduct a targeted interview to explicitly probe: (1) motivation for sector shift to roads/bridges, (2) capacity to adapt technical delivery and regulatory knowledge to the transport/road context, (3) willingness and ability for Madrid on-site and field-based project leadership.",
+        "Ask for concrete examples of rapid learning or successful cross-sector transitions (ideally in contextually similar settings).",
+        "Request references that could speak to adaptability, motivation, and tenure in projects outside current sector.",
+        "Prioritize backup candidates with direct roads/bridges experience if the sector requirement remains inflexible."
+      ],
+      "compatibility_breakdown": [
+        {
+          "dimension": "technical",
+          "score": 0.55
+        },
+        {
+          "dimension": "experience",
+          "score": 0.53
+        },
+        {
+          "dimension": "cultural",
+          "score": 0.62
+        }
+      ],
+      "timestamp": "2025-11-25T18:30:00Z"
+    },
+    "reasoning_log": [
+      {
+        "step": "cultural_evaluation",
+        "agent": "cultural_fit_evaluator",
+        "action": "Evaluated candidate's cultural fit and soft skills",
+        "input_summary": "Evaluating soft skills and cultural alignment for unknown sector",
+        "output_summary": "Score: 0.62, Recommendation: maybe",
+        "key_insights": [
+          "Strong team leadership and cross-functional collaboration (senior level, evidenced across multiple roles)",
+          "Advanced communication skills, effective with senior stakeholders and multidisciplinary teams",
+          "Demonstrated adaptability from working in both Spain and UK in international, highly structured environments"
+        ],
+        "timestamp": "2025-11-25T18:23:56.324975"
+      },
+      {
+        "step": "experience_evaluation",
+        "agent": "experience_trajectory_evaluator",
+        "action": "Evaluated candidate's experience and career trajectory",
+        "input_summary": "Candidate experience: 11 years",
+        "output_summary": "Score: 0.53, Recommendation: maybe",
+        "key_insights": [
+          "11 years in civil engineering project management, including international experience with top-tier firms (Jacobs, Arcadis, Mott MacDonald)",
+          "Demonstrated upward progression from technical engineering to senior project leadership (lead/senior PM roles)",
+          "Extensive multidisciplinary team management and full project life cycle delivery experience"
+        ],
+        "timestamp": "2025-11-25T18:24:03.649654"
+      },
+      {
+        "step": "technical_evaluation",
+        "agent": "technical_skills_evaluator",
+        "action": "Evaluated candidate's technical skills and domain knowledge",
+        "input_summary": "Candidate: José Colino Martín-Aragón CEng MICE, PMP, Sector: unknown",
+        "output_summary": "Score: 0.55, Recommendation: maybe",
+        "key_insights": [
+          "Exceptional project management and delivery in water/wastewater infrastructure (senior/expert level)",
+          "Advanced team leadership and cross-functional collaboration in regulated civil engineering environments",
+          "Strong experience in budgeting, contract (NEC), risk, and stakeholder management for large infrastructure projects"
+        ],
+        "timestamp": "2025-11-25T18:23:49.782490"
+      },
+      {
+        "step": "debate_round_1",
+        "agent": null,
+        "action": "Agents exchanged 3 debate messages",
+        "input_summary": "Round 1 with 3 agents",
+        "output_summary": "Generated 3 debate messages",
+        "key_insights": [
+          "Agent cultural_fit_evaluator contributed",
+          "Agent experience_trajectory_evaluator contributed",
+          "Agent technical_skills_evaluator contributed"
+        ],
+        "timestamp": "2025-11-25T18:24:48.761109"
+      },
+      {
+        "step": "question_generation",
+        "agent": null,
+        "action": "Generated specialized questions about candidate",
+        "input_summary": "Based on 3 agent evaluations",
+        "output_summary": "Generated 3 questions",
+        "key_insights": [
+          "Questions from cultural_fit_evaluator",
+          "Questions from experience_trajectory_evaluator",
+          "Questions from technical_skills_evaluator"
+        ],
+        "timestamp": "2025-11-25T18:25:17.285600"
+      },
+      {
+        "step": "consensus_building",
+        "agent": null,
+        "action": "Built final consensus decision from all agents",
+        "input_summary": "3 evaluations, 3 debate messages",
+        "output_summary": "Decision: False, Score: 0.57",
+        "key_insights": [
+          "All agents agree that the candidate lacks direct, hands-on experience in the road/highway/bridge (vial) sector, which is a core, non-negotiable requirement for the role.",
+          "The candidate's expertise is anchored in water/wastewater infrastructure, with no explicit evidence of transferable sector-specific technical or managerial experience for road/bridge construction.",
+          "Strong leadership, stakeholder engagement, and project management skills are evident, but there are concerns about whether these are sufficient given the gap in sector-specific knowledge, methodologies, and regulatory context."
+        ],
+        "timestamp": "2025-11-25T18:25:40.836284"
+      }
+    ]
+  }
+}
