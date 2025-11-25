@@ -1,0 +1,292 @@
+{
+  "evaluation_metadata": {
+    "candidate_name": "Noelia Antelo",
+    "job_title": "Gerente de Soporte Técnico (Construcción)",
+    "timestamp": "2025-11-25T17:11:35.093439",
+    "evaluation_version": "1.0"
+  },
+  "evaluation_results": {
+    "agent_evaluations": [
+      {
+        "agent_name": "cultural_fit_evaluator",
+        "agent_sector_expertise": "unknown",
+        "evaluation_focus": "cultural_fit_and_soft_skills",
+        "score": 0.42,
+        "strengths": [
+          "Demonstrates strong team leadership and mentoring capabilities in technical, structured environments",
+          "Exceptional client relationship management and advanced communication skills, as evidenced by client-facing responsibilities and support for technical teams",
+          "High collaboration and cross-team engagement, indicating positive team-oriented behavioral competencies",
+          "Solid process improvement and adaptability shown by transition to management roles and embracing of new responsibilities"
+        ],
+        "weaknesses": [
+          "No demonstrated experience within the construction sector, especially not in roads/bridges infrastructure context—the domain is entirely telecommunications/IT",
+          "Does not meet the minimum years of experience (10) required for a lead managerial position; only 6 years of professional experience",
+          "No evident experience with onsite construction or execution of civil works—unproven ability to adapt to the physical, practical, and cultural realities of the construction sector",
+          "Possible motivation misalignment; career focused on telecom/network ops rather than field-based, execution-driven environments like construction",
+          "Potential risk of frustration or disengagement in an unfamiliar, less tech-centric workplace with on-site physical demands"
+        ],
+        "detailed_reasoning": "Noelia Antelo offers considerable strengths in areas like leadership, client service, collaboration, and communication, all of which are well-supported through explicit and inferred evidence from several years in telecommunications technical management. Her management style appears structured, process-focused, and client-oriented, aligning in some ways with the collaborative and moderately paced corporate environment described in the job context. However, there is a profound gap in direct sectoral experience—all her achievements and growth are within telecommunications network operations. The behavioral and environmental indicators of the construction sector—particularly field-based leadership, direct execution of works, engagement on-site with multidisciplinary crews, and very hands-on project realities—are absent in her trajectory.\n\nCore job requirements such as experience in the execution of road and bridge works, construction-specific project management, and strategic planning for large-scale infrastructure are unsubstantiated in the evidence. Moreover, the role demands at least 10 years in the construction industry with a focus on technical project delivery, which she cannot demonstrate (6 years total, all in another sector). While her leadership and management skills may be transferable to some extent, the sectoral and environmental leap is considerable and would carry a high risk of misfit, both in daily project realities and in cultural/behavioral expectations. There is insufficient evidence of high adaptability or motivation for such a drastic industry transition, and her likely expectations for workplace technology, structure, and culture may not match the more hands-on, field-based, and physically demanding context of construction project management.",
+        "recommendation": "no",
+        "concerns": [
+          "No sectoral experience in construction, roads, or bridges—major risk for job fit and credibility with teams/stakeholders",
+          "Insufficient total experience and at a different seniority level than required (6 vs. 10+ years lead/execution experience)",
+          "Unproven cultural fit for field-based, site-driven, construction leadership environments",
+          "Possible mismatch in motivational and work environment preferences (from technical/office to hands-on field leadership)",
+          "Potential for frustration or lack of engagement due to inability to leverage core telecom skills"
+        ],
+        "timestamp": "2025-11-24T19:15:22+00:00"
+      },
+      {
+        "agent_name": "experience_trajectory_evaluator",
+        "agent_sector_expertise": "unknown",
+        "evaluation_focus": "experience_and_trajectory",
+        "score": 0.3,
+        "strengths": [
+          "Stable, upward career progression with increasing responsibility",
+          "Demonstrated strong leadership in technical support/managed services",
+          "Deep experience in team leadership, technical troubleshooting, and process improvement",
+          "Solid track record in client relationship management in a technical domain"
+        ],
+        "weaknesses": [
+          "No experience in construction or civil engineering sector (primary mismatch)",
+          "Zero exposure to infrastructure works (roads, bridges, public works) – core to this job",
+          "Years of experience below requirement (6 vs. 10 minimum, with all time in telecom, not construction)",
+          "No evidence of managing construction/field/onsite technical teams or contractors/subcontractors",
+          "No project execution or site management in the context of construction projects"
+        ],
+        "detailed_reasoning": "Noelia Antelo’s career is well-aligned with managerial and technical support roles in telecommunications network operations but does not intersect with the requirements of the construction sector or this specific position. Her roles have focused on network provisioning, managed services, and technical support leadership—progressing logically from hands-on engineering to senior management within her telecommunication niche. The candidate displays strong stability (average tenure ~3.4 years, two employers only in six years) and a clear, upward trajectory with growing team and client responsibility.\n\nHowever, the job at Acciona is for a 'Gerente de Soporte Técnico (Construcción)' requiring at least 10 years of direct experience in construction/infrastructure, specifically in road and bridge projects. None of Noelia’s experience overlaps with construction project management, execution, site operations, or the legal/technical standards of public works. Seniority-wise, she is at a 'senior' level in her own sector, but the experience is neither sufficient in length (6 vs. 10 years) nor in scope (industry-specific field management, technical support for worksites, subcontracting, tenders, etc.). Her excellent leadership, process orientation, and adaptability are valuable but are rooted in a sector with different risk, pace, and technical demands than construction. \n\nSector fit is thus extremely weak: her entire history is telecom/ICT, not construction/engineering. While some transversal skills (team leadership, client management, process improvement) might be somewhat transferable, all domain-critical requirements (e.g., project execution, infrastructure works, subcontractor management, bids/tenders, site management) are missing. Recent focus compounds the mismatch, as her latest years are purely in telecom managed services, with zero exposure to civil works or relevant project types.",
+        "recommendation": "no",
+        "concerns": [
+          "Lack of any construction/civil engineering experience (deal-breaker for role)",
+          "Insufficient years of experience and in non-relevant sector",
+          "No direct project execution, fieldwork, or works management background",
+          "No evidence of managing subcontractors or bidding in a construction context",
+          "Potential culture shock moving from telecom/office to field-based construction operations"
+        ],
+        "timestamp": "2025-11-24T19:35:29Z"
+      },
+      {
+        "agent_name": "technical_skills_evaluator",
+        "agent_sector_expertise": "unknown",
+        "evaluation_focus": "technical_skills",
+        "score": 0.25,
+        "strengths": [
+          "Strong proven team leadership in technical roles",
+          "Advanced skills in technical troubleshooting and network provisioning (telecom context)",
+          "Experienced in technical support management, client relationship management, and process improvement",
+          "Advanced project coordination and documentation skills"
+        ],
+        "weaknesses": [
+          "No experience in construction or civil infrastructure projects (roads/bridges)",
+          "No knowledge or evidence of construction methodologies or execution of works",
+          "No proven experience in construction project management or subcontractor management",
+          "Lacks expertise in bids, tenders, and construction sector compliance",
+          "Does not meet mandatory 10+ years of experience in construction/infrastructure"
+        ],
+        "detailed_reasoning": "The candidate, Noelia Antelo, has a strong track record in telecommunications network operations, technical support management, client service, and network provisioning, with technical and management experience focused on telecom and IT environments. Her skills in team leadership, advanced technical troubleshooting, complex service configuration (Carrier Ethernet, MPLS, FTTH), and process documentation are well-attested. However, the job requires deep domain knowledge of construction—specifically technical support for road and bridge projects, hands-on construction execution, construction-specific project management, and subcontractor/bid management—areas in which the candidate has no demonstrated experience or knowledge. No evidence suggests any work in a construction, civil engineering, or infrastructure project environment. Furthermore, she lacks the minimum sectoral tenure: only 6 years of post-graduate experience (in telecom), well below the 10+ years of construction experience required. The sectoral and technical mismatch is fundamental; while some transversal management skills are transferable, the technical core of the job is entirely in civil construction, which the candidate cannot evidence. Consequently, her fit for this technically specialized construction manager role at Acciona is very weak, with several non-negotiable gaps.",
+        "recommendation": "strong_no",
+        "concerns": [
+          "Complete lack of construction sector or civil infrastructure experience",
+          "Does not meet the minimum experience threshold (10+ years in sector)",
+          "No evidence of construction methodologies, execution, or bid/subcontractor management",
+          "Transferability of telecom technical support skills to construction is highly limited",
+          "Candidate's skills and career focus are technical but in a wholly unrelated domain"
+        ],
+        "timestamp": "2025-11-24T19:36:20Z"
+      }
+    ],
+    "debate_messages": [
+      {
+        "from_agent": "cultural_fit_evaluator",
+        "to_agent": null,
+        "message_type": "argument",
+        "content": "[\n  {\n    \"to_agent\": \"experience_trajectory_evaluator\",\n    \"message_type\": \"agreement\",\n    \"content\": \"I fully align with your assessment regarding the fundamental mismatch in sector experience and insufficient tenure. Your emphasis on the absence of any exposure to infrastructure works and the non-overlapping trajectory with the construction sector solidifies the significant risk of poor role fit. The stability and leadership she displays within telecom are noteworthy, yet they don’t compensate for the lack of field-based or construction industry progression required for this job. I concur that the step-change in both culture and job content is too severe to be addressed solely by transversal skills.\",\n    \"references\": [\n      \"No experience in construction or civil engineering sector (primary mismatch)\",\n      \"Years of experience below requirement (6 vs. 10 minimum, with all time in telecom, not construction)\",\n      \"Stable, upward career progression with increasing responsibility (in telecom domain)\"\n    ]\n  },\n  {\n    \"to_agent\": \"technical_skills_evaluator\",\n    \"message_type\": \"agreement\",\n    \"content\": \"Your strong 'no' recommendation is supported by the clear technical criteria of the role (10+ years construction, execution of works, bid/subcontractor management, etc.), all of which remain unmet by the candidate. I appreciate the distinction you make between transferable leadership/process skills and non-transferable sectoral/technical knowledge. This is a critical point for stakeholders who may overestimate the value of generic management in a sector with specialized regulatory, operational, and technical demands. I see no evidence of sufficient learning agility or motivation in the profile to justify an exception.\",\n    \"references\": [\n      \"Complete lack of construction sector or civil infrastructure experience\",\n      \"Does not meet the minimum experience threshold (10+ years in sector)\",\n      \"Transferability of telecom technical support skills to construction is highly limited\"\n    ]\n  },\n  {\n    \"to_agent\": null,\n    \"message_type\": \"synthesis\",\n    \"content\": \"Across all evaluations, we see consistent and substantial red flags: the candidate lacks any direct experience in construction, falls well short of the required tenure, and has had zero exposure to project execution or site-based work fundamental to the target role. While all agents recognize valuable transversal competencies (leadership, process improvement, client management), sectoral expertise and firsthand experience with field-based project realities are mandatory, not optional, for success in this Acciona construction management role. Unless a radical change in job requirements occurs, it seems collectively prudent to maintain a 'no' recommendation, as the risk of misfit and likely disengagement is extremely high.\",\n    \"references\": [\n      \"All agents note the mismatch in sectoral experience\",\n      \"All raise concern on insufficient years of experience\",\n      \"Transversal skills present but non-substitutive for critical construction knowledge\"\n    ]\n  }\n]",
+        "references": [],
+        "timestamp": "2025-11-25T16:10:24.968780"
+      },
+      {
+        "from_agent": "experience_trajectory_evaluator",
+        "to_agent": null,
+        "message_type": "argument",
+        "content": "[\n  {\n    \"to_agent\": \"technical_skills_evaluator\",\n    \"message_type\": \"agreement\",\n    \"content\": \"I concur with your assessment regarding the candidate's lack of directly relevant technical skills for the construction sector. Noelia's strong leadership and technical proficiency are evident, but her experience remains strictly within telecom and IT, not in construction project management, civil engineering methodologies, or infrastructure execution. As you noted, she does not fulfill fundamental technical requirements—such as hands-on works execution, contractor management, or sector-specific compliance—which are critical for this role. This supports our collective low score and strong reservations about her suitability.\",\n    \"references\": [\n        \"No construction or civil infrastructure project experience\",\n        \"No proven expertise in construction project management or subcontractor management\",\n        \"Only 6 years of experience, all in telecom, not construction\"\n    ]\n  },\n  {\n    \"to_agent\": \"cultural_fit_evaluator\",\n    \"message_type\": \"question\",\n    \"content\": \"You highlight potential adjustment difficulties and cultural misfit stemming from Noelia's corporate/telecom background transitioning into a field-driven, construction environment. Given her demonstrated adaptability (e.g., progressing from engineering to managerial roles), do you see any scenario in which her leadership strengths and process improvement mindset could contribute positively, despite the sector variance? Or do you consider the cultural and environmental leap simply too large regardless of her soft skills?\",\n    \"references\": [\n        \"Demonstrated adaptability and process improvement (as per your strengths list)\",\n        \"Entirely office-based, telecom sector experience\"\n    ]\n  },\n  {\n    \"to_agent\": null,\n    \"message_type\": \"synthesis\",\n    \"content\": \"There is emerging consensus that Noelia Antelo's trajectory, despite showing strong, stable upward movement within telecom technical management, is fundamentally misaligned with the experience and domain demands of a senior construction sector manager. All agents have highlighted the critical mismatch—6 years in telecom versus the required 10+ years in construction/infrastructure, and a lack of hands-on works, contractor, and project execution exposure. While her transversal skills (leadership, client management, process orientation) are notable, none of us have identified compelling evidence of transferable sectoral expertise or sufficient adaptability to justify a recommendation. Unless further evidence emerges, the aggregate judgment leans decisively toward 'no fit.'\",\n    \"references\": [\n        \"Consistent identification of sector/experience mismatch across all evaluations\",\n        \"No evidence of construction-specific project execution, field team leadership, or sectoral tenure\"\n    ]\n  }\n]",
+        "references": [],
+        "timestamp": "2025-11-25T16:10:38.458225"
+      },
+      {
+        "from_agent": "technical_skills_evaluator",
+        "to_agent": null,
+        "message_type": "argument",
+        "content": "[\n  {\n    \"to_agent\": \"cultural_fit_evaluator\",\n    \"message_type\": \"agreement\",\n    \"content\": \"I strongly agree with your analysis regarding the candidate's sectoral misalignment and the risk of poor cultural fit. While Noelia demonstrates strong team leadership and client management in a technical context, none of this has been applied within the specific realities of a construction environment. The practical, field-based, and hands-on culture of road and bridge construction differs fundamentally from telecommunications, and the absence of any adaptation to these settings poses a considerable risk for project effectiveness and team integration.\",\n    \"references\": [\n      \"No demonstrated experience within the construction sector, especially not in roads/bridges infrastructure context—the domain is entirely telecommunications/IT.\",\n      \"Possible risk of frustration or disengagement in an unfamiliar, less tech-centric workplace with on-site physical demands\"\n    ]\n  },\n  {\n    \"to_agent\": \"experience_trajectory_evaluator\",\n    \"message_type\": \"agreement\",\n    \"content\": \"I concur with your conclusion that the candidate’s career is entirely within telecommunications technical management, and that the upward trajectory you note does not substitute for sector-specific expertise. I also agree that the minimum required experience (10+ years in construction) is not met. The absence of any exposure to infrastructure works, site-based operations, or contractor management is especially concerning, as these are core to Acciona's needs for this role.\",\n    \"references\": [\n      \"No experience in construction or civil engineering sector (primary mismatch)\",\n      \"Years of experience below requirement (6 vs. 10 minimum, with all time in telecom, not construction)\"\n    ]\n  },\n  {\n    \"to_agent\": null,\n    \"message_type\": \"question\",\n    \"content\": \"Given that all three evaluations independently highlight the total absence of construction sector experience and the substantial mismatch in required tenure and domain knowledge, does anyone see compelling evidence in Noelia's profile that might indicate a plausible pathway for success with strong internal training or a sectoral transition program? Or is the risk profile simply too high for this particular technically specialized and senior-level role?\",\n    \"references\": [\n      \"No evidence suggests any work in a construction, civil engineering, or infrastructure project environment.\",\n      \"Transferability of telecom technical support skills to construction is highly limited\"\n    ]\n  }\n]",
+        "references": [],
+        "timestamp": "2025-11-25T16:10:47.292640"
+      }
+    ],
+    "questions_asked": [
+      {
+        "agent_name": "cultural_fit_evaluator",
+        "question_text": "[\n  {\n    \"question_text\": \"Can you provide an example where you led a multidisciplinary team in a physically demanding, on-site environment, particularly involving civil or infrastructural works?\",\n    \"question_purpose\": \"To assess her practical leadership experience beyond telecommunications, specifically in environments mirroring the day-to-day realities of construction or similar sectors.\",\n    \"data_gap\": \"Lack of evidence for hands-on, field-based leadership or direct involvement in non-o",
+        "question_purpose": "Clarify uncertainties from cultural_fit_and_soft_skills evaluation",
+        "data_gap": "Various gaps identified in evaluation",
+        "priority": "important",
+        "timestamp": "2025-11-25T16:10:57.401646"
+      },
+      {
+        "agent_name": "experience_trajectory_evaluator",
+        "question_text": "[\n  {\n    \"question_text\": \"Have you ever managed technical support or operational teams in an environment outside of telecommunications, such as infrastructure, utilities, or public works? If so, can you describe the context and your responsibilities?\",\n    \"question_purpose\": \"To determine if the candidate has any transferable team management experience relevant to sectors similar to construction or civil engineering.\",\n    \"data_gap\": \"Lack of demonstrated leadership/team management outside t",
+        "question_purpose": "Clarify uncertainties from experience_and_trajectory evaluation",
+        "data_gap": "Various gaps identified in evaluation",
+        "priority": "important",
+        "timestamp": "2025-11-25T16:11:10.216730"
+      },
+      {
+        "agent_name": "technical_skills_evaluator",
+        "question_text": "[\n  {\n    \"question_text\": \"Have you had direct, hands-on technical involvement in the execution or management of large-scale construction projects (such as roads, bridges, or civil infrastructure)? If so, please detail your role, responsibilities, and the project scope.\",\n    \"question_purpose\": \"Clarifies whether the candidate has any practical experience directly in the construction/infrastructure sector, which is currently not evidenced.\",\n    \"data_gap\": \"Direct construction sector hands-on",
+        "question_purpose": "Clarify uncertainties from technical_skills evaluation",
+        "data_gap": "Various gaps identified in evaluation",
+        "priority": "important",
+        "timestamp": "2025-11-25T16:11:21.404406"
+      }
+    ],
+    "consensus_decision": {
+      "liked": false,
+      "overall_score": 0.32,
+      "decision_confidence": 0.98,
+      "primary_reasons": [
+        "Complete absence of construction sector or civil infrastructure experience (all work in telecommunications/IT)",
+        "Does not meet the minimum required years of experience (6 years, all in telecom vs. 10+ in construction/infrastructure)",
+        "No evidence of hands-on project execution, site management, or experience with road/bridge/civil works",
+        "No sector-specific technical skills or exposure to relevant methodologies (bids, tenders, subcontractor management)",
+        "High risk of cultural and motivational misfit due to drastic change from corporate/telecom to field-based construction environment"
+      ],
+      "consensus_summary": "All agents unanimously agree that, despite Noelia Antelo’s notable transversal skills and upward trajectory in the telecommunications sector, she fundamentally lacks essential, non-negotiable qualifications for the target construction management role. There is universal consensus that her career lacks any overlap with required sector experience, project types, or management demands unique to the construction industry. All agents emphasize that transversal skills cannot substitute for deep sectoral knowledge, technical execution history, or project tenure, especially at a senior level. No evidence or plausible pathway for an effective transition could be identified.",
+      "agent_agreements": [
+        {
+          "agent_name": "cultural_fit_evaluator",
+          "recommendation": "no"
+        },
+        {
+          "agent_name": "experience_trajectory_evaluator",
+          "recommendation": "no"
+        },
+        {
+          "agent_name": "technical_skills_evaluator",
+          "recommendation": "strong_no"
+        }
+      ],
+      "key_strengths": [
+        "Strong team leadership and mentoring within technical (telecom) environments",
+        "Excellent client relationship management and advanced communication skills",
+        "Demonstrated adaptability and process improvement in telecom management roles",
+        "Stable, upward career progression; reliable and trusted in prior sectors"
+      ],
+      "key_concerns": [
+        "No sectoral experience in construction, civil engineering, or infrastructure",
+        "Does not meet required years of experience for a senior management role (6 vs. 10+)",
+        "No experience in field/site project execution, contractor management, or construction methodologies",
+        "Potential for cultural, motivational, and practical misfit moving from telecom/office to field-based, hands-on work",
+        "Skills and trajectory are not transferable to the specialized demands of the construction sector"
+      ],
+      "suggested_next_steps": [
+        "Do not progress with candidacy for this construction management role",
+        "If there is future interest in cross-sector talent, consider junior, hybrid, or training positions, but not senior, field-based management posts",
+        "If moving forward is considered (against this consensus), require in-depth interview focus on adaptability, learning agility, and realistic expectations regarding field/cultural shift",
+        "No further references or technical assessments warranted for this particular position"
+      ],
+      "compatibility_breakdown": [
+        {
+          "dimension": "technical",
+          "score": 0.25
+        },
+        {
+          "dimension": "experience",
+          "score": 0.3
+        },
+        {
+          "dimension": "cultural",
+          "score": 0.42
+        }
+      ],
+      "timestamp": "2025-11-25T16:20:00Z"
+    },
+    "reasoning_log": [
+      {
+        "step": "cultural_evaluation",
+        "agent": "cultural_fit_evaluator",
+        "action": "Evaluated candidate's cultural fit and soft skills",
+        "input_summary": "Evaluating soft skills and cultural alignment for unknown sector",
+        "output_summary": "Score: 0.42, Recommendation: no",
+        "key_insights": [
+          "Demonstrates strong team leadership and mentoring capabilities in technical, structured environments",
+          "Exceptional client relationship management and advanced communication skills, as evidenced by client-facing responsibilities and support for technical teams",
+          "High collaboration and cross-team engagement, indicating positive team-oriented behavioral competencies"
+        ],
+        "timestamp": "2025-11-25T16:10:04.894646"
+      },
+      {
+        "step": "experience_evaluation",
+        "agent": "experience_trajectory_evaluator",
+        "action": "Evaluated candidate's experience and career trajectory",
+        "input_summary": "Candidate experience: 6 years",
+        "output_summary": "Score: 0.30, Recommendation: no",
+        "key_insights": [
+          "Stable, upward career progression with increasing responsibility",
+          "Demonstrated strong leadership in technical support/managed services",
+          "Deep experience in team leadership, technical troubleshooting, and process improvement"
+        ],
+        "timestamp": "2025-11-25T16:10:03.034240"
+      },
+      {
+        "step": "technical_evaluation",
+        "agent": "technical_skills_evaluator",
+        "action": "Evaluated candidate's technical skills and domain knowledge",
+        "input_summary": "Candidate: Noelia Antelo, Sector: unknown",
+        "output_summary": "Score: 0.25, Recommendation: strong_no",
+        "key_insights": [
+          "Strong proven team leadership in technical roles",
+          "Advanced skills in technical troubleshooting and network provisioning (telecom context)",
+          "Experienced in technical support management, client relationship management, and process improvement"
+        ],
+        "timestamp": "2025-11-25T16:10:08.751382"
+      },
+      {
+        "step": "debate_round_1",
+        "agent": null,
+        "action": "Agents exchanged 3 debate messages",
+        "input_summary": "Round 1 with 3 agents",
+        "output_summary": "Generated 3 debate messages",
+        "key_insights": [
+          "Agent cultural_fit_evaluator contributed",
+          "Agent experience_trajectory_evaluator contributed",
+          "Agent technical_skills_evaluator contributed"
+        ],
+        "timestamp": "2025-11-25T16:10:47.292666"
+      },
+      {
+        "step": "question_generation",
+        "agent": null,
+        "action": "Generated specialized questions about candidate",
+        "input_summary": "Based on 3 agent evaluations",
+        "output_summary": "Generated 3 questions",
+        "key_insights": [
+          "Questions from cultural_fit_evaluator",
+          "Questions from experience_trajectory_evaluator",
+          "Questions from technical_skills_evaluator"
+        ],
+        "timestamp": "2025-11-25T16:11:21.404434"
+      },
+      {
+        "step": "consensus_building",
+        "agent": null,
+        "action": "Built final consensus decision from all agents",
+        "input_summary": "3 evaluations, 3 debate messages",
+        "output_summary": "Decision: False, Score: 0.32",
+        "key_insights": [
+          "Complete absence of construction sector or civil infrastructure experience (all work in telecommunications/IT)",
+          "Does not meet the minimum required years of experience (6 years, all in telecom vs. 10+ in construction/infrastructure)",
+          "No evidence of hands-on project execution, site management, or experience with road/bridge/civil works"
+        ],
+        "timestamp": "2025-11-25T16:11:35.075763"
+      }
+    ]
+  }
+}

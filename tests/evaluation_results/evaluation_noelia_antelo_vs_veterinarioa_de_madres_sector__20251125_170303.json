@@ -1,0 +1,1232 @@
+{
+  "evaluation_metadata": {
+    "candidate_name": "Noelia Antelo",
+    "job_title": "Veterinario/a de Madres (Sector Porcino)",
+    "timestamp": "2025-11-25T17:03:03.208210",
+    "evaluation_version": "1.0"
+  },
+  "evaluation_results": {
+    "enriched_candidate": {
+      "candidate_id": "19013e2e-c1d7-437b-870e-b7cb1cabf1eb",
+      "enrichment_version": "2.0-optimized",
+      "timestamp": "2025-11-24T14:26:00.282317",
+      "identity": {
+        "full_name": "Noelia Antelo",
+        "current_role": "Managed Services - Technical Support Manager",
+        "location": "Getafe, Spain",
+        "sector": "telecommunications_network_operations",
+        "seniority": "senior",
+        "years_experience": 6
+      },
+      "career_trajectory": {
+        "summary": "Noelia’s career has progressed from hands-on technical roles in network provisioning and implementation, to group coordination and training, and has most recently focused on senior-level management of technical support and managed services. Her evolution shows a clear shift towards leadership, client management, and process improvement within telecommunications and network operations.",
+        "recent_focus": "Last 2-3 years: Managing technical support and managed services teams, leading client relationships, improving operational processes, coordinating service implementations, and developing staff.",
+        "stability_metrics": {
+          "average_tenure_years": 3.4,
+          "roles_count": 3,
+          "companies_count": 2,
+          "job_hopping_risk": "low"
+        },
+        "history": [
+          {
+            "id": "d5669e38-9e9e-4bc0-b798-c6d22f16eac0",
+            "created_at": "2025-10-15T09:35:57.765981+00:00",
+            "candidate_id": "19013e2e-c1d7-437b-870e-b7cb1cabf1eb",
+            "role": "Tecnico Provisiones de red y puestas en servicio",
+            "description": null,
+            "start_date": "2021-10-01",
+            "end_date": null,
+            "location": null,
+            "contract": null,
+            "company": "Makenai Solutions, Innovation & Creative Ideas"
+          },
+          {
+            "id": "2651c59d-d466-4acb-8fc8-ee436df8da90",
+            "created_at": "2025-10-15T09:35:57.765981+00:00",
+            "candidate_id": "19013e2e-c1d7-437b-870e-b7cb1cabf1eb",
+            "role": "Managed Services - Technical Support Manager",
+            "description": null,
+            "start_date": "2021-10-01",
+            "end_date": null,
+            "location": null,
+            "contract": null,
+            "company": "Makenai Solutions, Innovation & Creative Ideas"
+          },
+          {
+            "id": "a4f2f226-581f-45c8-a3d3-e0ba0071168f",
+            "created_at": "2025-10-15T09:35:57.765981+00:00",
+            "candidate_id": "19013e2e-c1d7-437b-870e-b7cb1cabf1eb",
+            "role": "Provisiones de red y puestas en servicio",
+            "description": "- Coordinación del grupo y formación de nuevas incorporaciones.\n- Configuración Servicios de capacidad Carrier Ethernet (Raisecom, RAD, Cisco).\n- Configuración Servicios MPLS-IP (Cisco, Huawei).\n- Configuración servicios FTTH (ultimas millas con proveedores Offnet).\n- Configuración servicios ISP/Tránsito.\n- Asignación direccionamiento y configuraciones necesarias para integración de equipos en red.\n- Trato directo con:\no Clientes (facilitar información técnica y apoyo en la puesta en marcha del servicio).\no Técnicos (apoyo en configuraciones e instalaciones)\no Jefes de Proyecto (apoyo técnico para nuevos servicios, así como análisis de cambios necesarios sobre servicios ya existentes).\no Planificación/Desarrollo (participación en conjunto para definición de nuevos servicios).",
+            "start_date": "2019-11-01",
+            "end_date": "2021-10-31",
+            "location": null,
+            "contract": null,
+            "company": "Indra"
+          }
+        ]
+      },
+      "skills_matrix": [
+        {
+          "name": "Liderazgo de equipo",
+          "type": "transversal",
+          "level": "intermediate",
+          "source": "explicit",
+          "confidence": 0.9
+        },
+        {
+          "name": "Servicio al cliente",
+          "type": "transversal",
+          "level": "advanced",
+          "source": "explicit",
+          "confidence": 0.95
+        },
+        {
+          "name": "Resolución de problemas",
+          "type": "transversal",
+          "level": "advanced",
+          "source": "explicit",
+          "confidence": 0.95
+        },
+        {
+          "name": "Gestión del tiempo",
+          "type": "transversal",
+          "level": "intermediate",
+          "source": "explicit",
+          "confidence": 0.85
+        },
+        {
+          "name": "Gestión de proyectos",
+          "type": "transversal",
+          "level": "intermediate",
+          "source": "explicit",
+          "confidence": 0.85
+        },
+        {
+          "name": "Technical troubleshooting skills",
+          "type": "transversal",
+          "level": "advanced",
+          "source": "explicit",
+          "confidence": 0.95
+        },
+        {
+          "name": "Capacitación y desarrollo",
+          "type": "transversal",
+          "level": "intermediate",
+          "source": "explicit",
+          "confidence": 0.9
+        },
+        {
+          "name": "Collaboration",
+          "type": "transversal",
+          "level": "advanced",
+          "source": "explicit",
+          "confidence": 0.9
+        },
+        {
+          "name": "Habilidades analíticas",
+          "type": "transversal",
+          "level": "intermediate",
+          "source": "explicit",
+          "confidence": 0.85
+        },
+        {
+          "name": "Adaptability",
+          "type": "transversal",
+          "level": "intermediate",
+          "source": "explicit",
+          "confidence": 0.8
+        },
+        {
+          "name": "Configuración de red",
+          "type": "transversal",
+          "level": "advanced",
+          "source": "explicit",
+          "confidence": 0.98
+        },
+        {
+          "name": "Habilidades de comunicación",
+          "type": "transversal",
+          "level": "advanced",
+          "source": "explicit",
+          "confidence": 0.9
+        },
+        {
+          "name": "Client relationship management",
+          "type": "transversal",
+          "level": "advanced",
+          "source": "explicit",
+          "confidence": 0.9
+        },
+        {
+          "name": "Mejora de procesos",
+          "type": "transversal",
+          "level": "intermediate",
+          "source": "explicit",
+          "confidence": 0.85
+        },
+        {
+          "name": "Documentación técnica",
+          "type": "transversal",
+          "level": "advanced",
+          "source": "explicit",
+          "confidence": 0.9
+        },
+        {
+          "name": "Attention to detail",
+          "type": "transversal",
+          "level": "advanced",
+          "source": "explicit",
+          "confidence": 0.9
+        },
+        {
+          "name": "Carrier Ethernet provisioning and configuration",
+          "type": "transversal",
+          "level": "advanced",
+          "source": "implicit",
+          "confidence": 0.97
+        },
+        {
+          "name": "MPLS-IP configuration and troubleshooting",
+          "type": "transversal",
+          "level": "advanced",
+          "source": "implicit",
+          "confidence": 0.97
+        },
+        {
+          "name": "FTTH service activation and configuration",
+          "type": "transversal",
+          "level": "advanced",
+          "source": "implicit",
+          "confidence": 0.95
+        },
+        {
+          "name": "ISP/Tránsito service configuration",
+          "type": "transversal",
+          "level": "advanced",
+          "source": "implicit",
+          "confidence": 0.9
+        },
+        {
+          "name": "Network equipment integration (Cisco, Huawei, RAD, Raisecom)",
+          "type": "transversal",
+          "level": "advanced",
+          "source": "implicit",
+          "confidence": 0.9
+        },
+        {
+          "name": "Technical support management (telecommunications)",
+          "type": "transversal",
+          "level": "advanced",
+          "source": "implicit",
+          "confidence": 0.9
+        },
+        {
+          "name": "Onboarding and mentoring technical staff",
+          "type": "transversal",
+          "level": "advanced",
+          "source": "implicit",
+          "confidence": 0.9
+        },
+        {
+          "name": "Telecommunications service provisioning (end-to-end)",
+          "type": "domain_specific",
+          "level": "advanced",
+          "source": "implicit",
+          "confidence": 0.95
+        }
+      ],
+      "competencies": [
+        {
+          "competency": "team_leadership",
+          "type": "soft",
+          "level": "senior",
+          "source": "experience",
+          "evidence": "Coordinación del grupo y formación de nuevas incorporaciones. Role: Managed Services - Technical Support Manager."
+        },
+        {
+          "competency": "mentoring_and_training",
+          "type": "soft",
+          "level": "senior",
+          "source": "experience",
+          "evidence": "formación de nuevas incorporaciones; Capacitación y desarrollo; Onboarding and mentoring technical staff."
+        },
+        {
+          "competency": "collaboration",
+          "type": "soft",
+          "level": "senior",
+          "source": "experience",
+          "evidence": "participación en conjunto para definición de nuevos servicios; Cross-team responsibility in project and provisioning roles."
+        },
+        {
+          "competency": "client_relationship_management",
+          "type": "functional",
+          "level": "senior",
+          "source": "experience",
+          "evidence": "Trato directo con clientes; Servicio al cliente; Client relationship management skills advanced."
+        },
+        {
+          "competency": "technical_troubleshooting",
+          "type": "functional",
+          "level": "senior",
+          "source": "experience",
+          "evidence": "Technical troubleshooting skills; Resolución de problemas; Configuración y soporte de servicios avanzados de telecomunicaciones."
+        },
+        {
+          "competency": "project_management",
+          "type": "functional",
+          "level": "mid",
+          "source": "role",
+          "evidence": "Gestión de proyectos; Project support, coordination of group, technical service rollouts."
+        },
+        {
+          "competency": "process_improvement",
+          "type": "functional",
+          "level": "mid",
+          "source": "role",
+          "evidence": "Mejora de procesos; Participates in analysis and definition of new services, continual improvement."
+        },
+        {
+          "competency": "communication_skills",
+          "type": "soft",
+          "level": "senior",
+          "source": "experience",
+          "evidence": "Direct interaction with clients; Apoyo en la puesta en marcha del servicio; Habilidades de comunicación."
+        },
+        {
+          "competency": "adaptability",
+          "type": "soft",
+          "level": "mid",
+          "source": "experience",
+          "evidence": "Multiple technical roles and adapting to various telecom technologies and teams."
+        },
+        {
+          "competency": "analytical_thinking",
+          "type": "soft",
+          "level": "mid",
+          "source": "role",
+          "evidence": "Habilidades analíticas; Analysis of service changes and troubleshooting."
+        },
+        {
+          "competency": "attention_to_detail",
+          "type": "soft",
+          "level": "senior",
+          "source": "experience",
+          "evidence": "Critical for network provisioning, configuration, and process quality control."
+        },
+        {
+          "competency": "technical_support_management",
+          "type": "functional",
+          "level": "senior",
+          "source": "role",
+          "evidence": "Managed Services - Technical Support Manager. Manages technical support functions for telecom clients/services."
+        }
+      ],
+      "languages": [
+        {
+          "language": "Spanish",
+          "proficiency": "Native",
+          "source": "inferred",
+          "evidence": "Candidate lives and works in Getafe, Spain. All role descriptions, skills, and job titles contain Spanish vocabulary. All employers are local Spanish companies.",
+          "confidence": 0.9
+        },
+        {
+          "language": "English",
+          "proficiency": "Professional",
+          "source": "inferred",
+          "evidence": "Profile includes several skills stated in English (e.g., 'Technical troubleshooting skills', 'Collaboration', 'Adaptability'), which is atypical for a profile otherwise written in Spanish. The roles (Technical Support Manager) in telecommunications often demand professional English in Spain, especially in companies like Indra that serve international markets.",
+          "confidence": 0.7
+        }
+      ],
+      "inferred_context": {
+        "credentials": [
+          {
+            "credential_name": "Relevant technical degree (Telecommunications, IT, or Network Engineering)",
+            "type": "degree",
+            "is_required_for_role": false,
+            "confidence": 0.7,
+            "evidence": "Role is Technical Support Manager in telecommunications network operations. In Spain, this is not a legally regulated profession requiring a specific degree, although employers commonly expect a technical degree."
+          }
+        ],
+        "work_environment": {
+          "environment_type": "office",
+          "culture_fit_indicators": [
+            "structured",
+            "collaborative",
+            "moderate-paced",
+            "client-facing",
+            "process-driven"
+          ],
+          "physical_demands": "sedentary to light (desk work with occasional meetings and possible field visits)",
+          "reasoning": "The candidate works in telecommunications companies (Makenai Solutions, Indra) in roles like network provisioning and technical support management. This sector is corporate/technical, with primary activities at office locations (network operations centers or corporate offices) with some potential interaction with technical staff and clients. Physical demands are low (mostly desk/computer-based), with occasional requirements for technical site visits or in-person meetings. Culture is structured, moderately paced, collaborative, and process-driven, typical of established telecom/IT organizations."
+        }
+      },
+      "matching_intelligence": {
+        "ideal_role": {
+          "role_name": "Senior Technical Support Manager",
+          "fit_score": 0.92,
+          "reasoning": "Noelia's recent experience (last 2+ years) has been in a leadership role managing technical support and managed services, aligning closely with the requirements of a Senior Technical Support Manager. Her proven skills in team leadership, client relationship management, technical troubleshooting, and process improvement, combined with advanced communication and documentation abilities, directly support this role at a senior level.",
+          "required_skills_match": [
+            "team_leadership",
+            "client_relationship_management",
+            "technical_troubleshooting",
+            "collaboration",
+            "communication_skills",
+            "process_improvement",
+            "analytical_thinking"
+          ],
+          "growth_areas": [
+            "Advanced people management and coaching",
+            "Strategic planning for technical support organizations"
+          ]
+        },
+        "alternative_roles": [
+          {
+            "role_name": "IT Service Delivery Manager",
+            "fit_score": 0.83,
+            "reasoning": "Her recent leadership in managed services and technical support operations translates well to broader IT service delivery management. She demonstrates advanced skills in project management, service quality, customer engagement, and cross-functional collaboration, making her a strong candidate for overseeing service delivery across technical teams.",
+            "required_skills_match": [
+              "project_management",
+              "client_relationship_management",
+              "team_leadership",
+              "process_improvement",
+              "communication_skills"
+            ],
+            "growth_areas": [
+              "Budget and resource allocation",
+              "Vendor management"
+            ]
+          },
+          {
+            "role_name": "Managed Services Operations Lead",
+            "fit_score": 0.8,
+            "reasoning": "Her expertise in managed services, shown through current roles and technical coordination, makes her well-suited to oversee daily operations within a managed services organization, connecting technical execution with client success and process improvement.",
+            "required_skills_match": [
+              "client_relationship_management",
+              "technical_troubleshooting",
+              "process_improvement",
+              "collaboration",
+              "service delivery"
+            ],
+            "growth_areas": [
+              "End-to-end service metrics analysis",
+              "Operational scalability strategies"
+            ]
+          },
+          {
+            "role_name": "Senior Network Operations Engineer",
+            "fit_score": 0.75,
+            "reasoning": "Her hands-on technical background in network provisioning and service implementation across multiple vendors (Cisco, Huawei, etc.), paired with analytic and troubleshooting skills, allows her to excel in a senior engineering role focused on network operations, though her management trajectory suggests she may prioritize leadership roles.",
+            "required_skills_match": [
+              "network_configuration",
+              "technical_troubleshooting",
+              "analytical_thinking",
+              "documentation",
+              "collaboration"
+            ],
+            "growth_areas": [
+              "Deep technical specialization (certifications)",
+              "Network automation"
+            ]
+          }
+        ],
+        "sector_fit_reasoning": "The candidate's roles consistently center on technical management and provisioning within the domain of network communications, with strong emphasis on telecommunications network operation and service deployment (e.g., Carrier Ethernet, MPLS-IP, FTTH). Both company contexts (Makenai, Indra) are heavily oriented toward ICT/telecom services, and tasks such as network provisioning, service activation, and technical support mapping directly onto telecommunications network operations. Supporting activities (team management, documentation, process improvement) are typical in network operations centers (NOCs) within telecommunications, while the technologies mentioned (Cisco, Huawei, ISP/FTTH infrastructure) reinforce the core domain as telecommunications rather than generic IT or software."
+      }
+    },
+    "enriched_job": {
+      "job_id": "33f69f97-ba05-413b-a8f3-75723a5ac605",
+      "timestamp": "2025-11-17T12:23:12.666562",
+      "metadata": {
+        "timestamp": "2025-11-17T12:23:12.666562",
+        "source": "database"
+      },
+      "raw_job_posting": {
+        "id": "33f69f97-ba05-413b-a8f3-75723a5ac605",
+        "job_title": "Veterinario/a de Madres (Sector Porcino)",
+        "company_name": "Grupo Costa",
+        "company_description": "Grupo Empresarial Costa es uno de los principales grupos agroalimentarios en España, en plena transformación digital. Apostamos por la tecnología y buscamos talento que quiera crecer con nosotros en proyectos reales de impacto.",
+        "remote": false,
+        "remote_amount": 0,
+        "description": "Buscamos un Veterinario/a de Madres especializado en el sector porcino para unirse a nuestro equipo en la provincia de Huesca. Este rol es ideal para graduados en veterinaria que deseen desarrollar su carrera en el ámbito de la cría porcina, con un enfoque en el cuidado y manejo de madres. No se requiere experiencia previa, pero se valorará el interés y la disposición para aprender y crecer en el sector.",
+        "min_salary_range": 26000,
+        "max_salary_range": 31000,
+        "responsibilities": [
+          "Supervisar la salud y bienestar de las madres porcinas.",
+          "Implementar programas de salud y vacunación.",
+          "Colaborar con el equipo para mejorar prácticas de cría.",
+          "Realizar diagnósticos y tratamientos veterinarios.",
+          "Mantener registros precisos de salud animal."
+        ],
+        "experience_required": 0,
+        "published_date": "2025-11-13",
+        "locations": [
+          "Barbastro, Aragon, Spain",
+          "Monzón, Aragon, Spain"
+        ],
+        "mandatory_skills": [],
+        "optional_skills": [],
+        "mandatory_languages": [],
+        "optional_languages": []
+      },
+      "semantic_enrichment": {
+        "version": "1.0",
+        "enrichment_timestamp": "2025-11-17T12:23:12.666562",
+        "analysis_components": {
+          "context_analysis": {
+            "key_indicators": [
+              "Company: Grupo Costa",
+              "Role: Veterinario/a de Madres (Sector Porcino)",
+              "Department: Veterinary/Animal Health, specifically swine management",
+              "Entry-level (no experience required)",
+              "Location: Barbastro and Monzón, Aragon, Spain",
+              "Key responsibilities: Supervising health and wellbeing of sow pigs, implementing health and vaccination programs, collaborating to improve breeding practices, performing diagnostics and treatments, record keeping"
+            ],
+            "domain_signals": [
+              "Agroalimentario (Agri-food) sector",
+              "Porcine/swine industry focus",
+              "Veterinary specialization",
+              "Animal breeding and health"
+            ],
+            "technology_mentions": [
+              "Digital transformation (company level, not specific to tools)"
+            ],
+            "responsibility_patterns": [
+              "Technical (animal healthcare, diagnostics, treatments)",
+              "Operational (implementing programs, record-keeping)",
+              "Collaborative (teamwork to improve breeding practices)",
+              "No explicit leadership or strategic management expectations (entry-level)"
+            ],
+            "company_context": "Grupo Costa is one of Spain's leading agri-food business groups, currently undergoing digital transformation. The company values technology adoption and offers real-impact projects. It seeks talent open to growth and learning in a technologically evolving, large-scale agricultural environment."
+          },
+          "sector_inference": {
+            "primary_sector": "agriculture_livestock",
+            "secondary_sectors": [
+              "veterinary_services",
+              "agri-food"
+            ],
+            "confidence": 0.98,
+            "evidence": [
+              "Role is 'Veterinario/a de Madres (Sector Porcino)' with direct responsibility for swine health and breeding",
+              "Company (Grupo Costa) is a leading agri-food business with a focus on livestock (porcine/swine sector)",
+              "Responsibilities center on animal health, breeding, and operational care of livestock (sow pigs)",
+              "Explicit mention of the porcine sector and animal management",
+              "Veterinary expertise required, focusing on food animal production livestock"
+            ],
+            "reasoning": "The core activity of the job—veterinary work focused on the health and breeding of swine (sow pigs)—is central to the agriculture/livestock sector. The company operates in the agri-food value chain and the job involves direct management of farm animals for food production, making agriculture/livestock the most appropriate primary sector. Veterinary services are a critical adjacent sector, along with the wider agri-food industry context."
+          },
+          "skills_extraction": {
+            "explicit_skills": [
+              {
+                "name": "Veterinaria",
+                "category": "domain_specific",
+                "importance": "required",
+                "source": "explicit",
+                "evidence": "Buscamos un Veterinario/a de Madres especializado en el sector porcino; este rol es ideal para graduados en veterinaria."
+              }
+            ],
+            "implicit_skills": [
+              {
+                "name": "Manejo y cuidado de madres porcinas",
+                "category": "domain_specific",
+                "importance": "required",
+                "source": "implicit",
+                "evidence": "Supervisar la salud y bienestar de las madres porcinas."
+              },
+              {
+                "name": "Supervisión de salud animal",
+                "category": "technical",
+                "importance": "required",
+                "source": "implicit",
+                "evidence": "Supervisar la salud y bienestar de las madres porcinas."
+              },
+              {
+                "name": "Implementación de programas de salud y vacunación",
+                "category": "technical",
+                "importance": "required",
+                "source": "implicit",
+                "evidence": "Implementar programas de salud y vacunación."
+              },
+              {
+                "name": "Diagnóstico veterinario",
+                "category": "technical",
+                "importance": "required",
+                "source": "implicit",
+                "evidence": "Realizar diagnósticos y tratamientos veterinarios."
+              },
+              {
+                "name": "Tratamiento veterinario",
+                "category": "technical",
+                "importance": "required",
+                "source": "implicit",
+                "evidence": "Realizar diagnósticos y tratamientos veterinarios."
+              },
+              {
+                "name": "Colaboración y trabajo en equipo",
+                "category": "soft",
+                "importance": "required",
+                "source": "implicit",
+                "evidence": "Colaborar con el equipo para mejorar prácticas de cría."
+              },
+              {
+                "name": "Mejora continua de prácticas de cría",
+                "category": "functional",
+                "importance": "preferred",
+                "source": "implicit",
+                "evidence": "Colaborar con el equipo para mejorar prácticas de cría."
+              },
+              {
+                "name": "Registro y documentación de datos",
+                "category": "functional",
+                "importance": "required",
+                "source": "implicit",
+                "evidence": "Mantener registros precisos de salud animal."
+              },
+              {
+                "name": "Interés y disposición para aprender",
+                "category": "soft",
+                "importance": "required",
+                "source": "implicit",
+                "evidence": "Se valorará el interés y la disposición para aprender y crecer en el sector."
+              },
+              {
+                "name": "Adaptabilidad al entorno tecnológico",
+                "category": "soft",
+                "importance": "nice_to_have",
+                "source": "implicit",
+                "evidence": "Grupo Costa es una empresa en plena transformación digital y apuesta por la tecnología."
+              },
+              {
+                "name": "Comunicación efectiva",
+                "category": "soft",
+                "importance": "preferred",
+                "source": "implicit",
+                "evidence": "Colaborar con el equipo para mejorar prácticas de cría."
+              }
+            ],
+            "skill_clusters": []
+          },
+          "seniority_inference": {
+            "required_seniority": "junior",
+            "confidence": 0.98,
+            "evidence": [
+              "Description states 'No se requiere experiencia previa' (No previous experience required).",
+              "The role is described as ideal for recent graduates in veterinary medicine.",
+              "No leadership or supervisory tasks are mentioned.",
+              "Responsibilities focus on learning, executing, and collaboration, rather than autonomy or strategy.",
+              "Salary range aligns with entry-level roles in the veterinary/agro sector."
+            ],
+            "years_experience_required": 0,
+            "reasoning": "The job explicitly states that no previous experience is required and encourages recent graduates to apply. Responsibilities are operational and supervised, with a strong focus on learning and executing defined tasks. There are no requirements for leadership, independent project management, or strategic responsibility. The position title lacks seniority indicators and the scope is limited to tactical and hands-on caregiving, consistent with a junior level."
+          },
+          "competencies_analysis": {
+            "required_competencies": [
+              {
+                "competency": "Veterinaria y conocimiento en salud animal porcina",
+                "type": "functional",
+                "importance": "required",
+                "evidence": "Buscamos un Veterinario/a de Madres especializado en el sector porcino; este rol es ideal para graduados en veterinaria."
+              },
+              {
+                "competency": "Manejo y cuidado de madres porcinas",
+                "type": "functional",
+                "importance": "required",
+                "evidence": "Supervisar la salud y bienestar de las madres porcinas."
+              },
+              {
+                "competency": "Implementación de programas de salud y vacunación",
+                "type": "functional",
+                "importance": "required",
+                "evidence": "Implementar programas de salud y vacunación."
+              },
+              {
+                "competency": "Diagnóstico y tratamiento veterinario",
+                "type": "functional",
+                "importance": "required",
+                "evidence": "Realizar diagnósticos y tratamientos veterinarios."
+              },
+              {
+                "competency": "Registro y documentación precisa de datos",
+                "type": "functional",
+                "importance": "required",
+                "evidence": "Mantener registros precisos de salud animal."
+              },
+              {
+                "competency": "Colaboración y trabajo en equipo",
+                "type": "soft",
+                "importance": "required",
+                "evidence": "Colaborar con el equipo para mejorar prácticas de cría."
+              },
+              {
+                "competency": "Interés y disposición para aprender y desarrollarse",
+                "type": "soft",
+                "importance": "required",
+                "evidence": "Se valorará el interés y la disposición para aprender y crecer en el sector."
+              },
+              {
+                "competency": "Mejora continua de prácticas de cría",
+                "type": "functional",
+                "importance": "preferred",
+                "evidence": "Colaborar con el equipo para mejorar prácticas de cría."
+              },
+              {
+                "competency": "Comunicación efectiva",
+                "type": "soft",
+                "importance": "preferred",
+                "evidence": "Colaborar con el equipo para mejorar prácticas de cría."
+              },
+              {
+                "competency": "Adaptabilidad al entorno tecnológico/digital",
+                "type": "soft",
+                "importance": "nice_to_have",
+                "evidence": "Grupo Costa es una empresa en plena transformación digital y apuesta por la tecnología."
+              }
+            ],
+            "leadership_level": "individual_contributor",
+            "autonomy_level": "supervised",
+            "collaboration_scope": "team"
+          },
+          "ideal_candidate_profile": {
+            "ideal_background": "Licenciatura o grado en Veterinaria, con especial interés en el sector porcino, especialmente en la gestión y cuidado de madres. Trayectoria académica sólida y alguna experiencia práctica (por ejemplo, prácticas o pasantías) en entornos de ganadería porcina es valorada pero no imprescindible. Marcada orientación hacia el aprendizaje continuo, el trabajo colaborativo, y la adaptación a procesos y tecnologías en evolución en el sector agroalimentario.",
+            "must_have_experience": [
+              "Título universitario en Veterinaria reconocido en España",
+              "Conocimientos básicos de manejo y salud animal, especialmente porcino (pueden proceder de estudios, prácticas o formación)",
+              "Interés genuino en la cría y cuidado de madres porcinas",
+              "Capacidad para trabajar en equipo y comunicarte claramente",
+              "Interés y disposición para aprender y adaptarse al entorno y protocolo de trabajo",
+              "Habilidad para documentar y registrar información relevante"
+            ],
+            "preferred_experience": [
+              "Prácticas universitarias en explotaciones porcinas, especialmente orientadas a madres",
+              "Experiencia previa (aunque sea breve) en manejo o supervisión de madres porcinas",
+              "Participación en proyectos de mejora continua o innovación en salud animal",
+              "Familiaridad con programas de salud y vacunación animal",
+              "Experiencia básica en el uso de herramientas digitales para registros sanitarios"
+            ],
+            "career_trajectory": "Graduado/a reciente en Veterinaria, idealmente con prácticas en granjas porcinas o proyectos de salud animal. Puede provenir de roles de apoyo o pasantías relacionadas con animales de granja, preferiblemente porcinos. Busca desarrollar su carrera en un entorno de producción animal profesionalizado en el sector agroalimentario.",
+            "key_differentiators": [
+              "Experiencia práctica significativa en granjas porcinas, especialmente en el manejo de madres",
+              "Iniciativa para proponer mejoras en los sistemas de cuidado y manejo animal",
+              "Capacidad de adaptación al cambio y a la incorporación de nuevas tecnologías",
+              "Actitud proactiva de aprendizaje y desarrollo profesional",
+              "Excelentes habilidades interpersonales y de comunicación con personal de campo y equipos multidisciplinares",
+              "Aporte demostrado a proyectos de digitalización o modernización en el entorno agroalimentario (aunque sean a nivel junior)"
+            ],
+            "potential_red_flags": [
+              "Falta del título de Veterinaria homologado en España",
+              "Desinterés o aversión por el entorno rural o la producción animal intensiva",
+              "Falta de disposición para trabajo de campo o tareas rutinarias",
+              "Dificultad para trabajar en equipo o comunicarse con el personal de granja",
+              "Actitud poco comprometida hacia el aprendizaje o el desarrollo en el sector porcino",
+              "Expectativas excesivas de teletrabajo (es puesto 100% presencial)"
+            ],
+            "reasoning": "El puesto está orientado a perfiles junior en Veterinaria, sin requerir experiencia laboral previa pero sí interés, conocimientos básicos y disposición para aprender en entorno porcino. Requiere personas abiertas, colaborativas y con ganas de desarrollar carrera en uno de los principales grupos agroalimentarios de España, en un entorno que apuesta por la digitalización y la mejora continua. Prácticas previas, interés en la innovación y la actitud proactiva diferenciarán a los mejores candidatos. La falta de interés en el sector, problemas de comunicación, o expectativas no realistas en cuanto a condiciones (presencialidad, poca rotación o trabajo rutinario) serían claros desajustes."
+          },
+          "normalization": {
+            "normalized_synonyms": [],
+            "canonical_terms": [],
+            "technology_taxonomy": []
+          }
+        },
+        "key_insights": {
+          "primary_sector": "agriculture_livestock",
+          "sector_confidence": 0.98,
+          "required_seniority": "junior",
+          "years_experience_required": 0,
+          "total_skills_identified": 12,
+          "required_competencies_count": 10,
+          "leadership_level": "individual_contributor"
+        },
+        "structured_skills": {
+          "explicit": [
+            {
+              "name": "Veterinaria",
+              "category": "domain_specific",
+              "importance": "required",
+              "source": "explicit",
+              "evidence": "Buscamos un Veterinario/a de Madres especializado en el sector porcino; este rol es ideal para graduados en veterinaria."
+            }
+          ],
+          "implicit": [
+            {
+              "name": "Manejo y cuidado de madres porcinas",
+              "category": "domain_specific",
+              "importance": "required",
+              "source": "implicit",
+              "evidence": "Supervisar la salud y bienestar de las madres porcinas."
+            },
+            {
+              "name": "Supervisión de salud animal",
+              "category": "technical",
+              "importance": "required",
+              "source": "implicit",
+              "evidence": "Supervisar la salud y bienestar de las madres porcinas."
+            },
+            {
+              "name": "Implementación de programas de salud y vacunación",
+              "category": "technical",
+              "importance": "required",
+              "source": "implicit",
+              "evidence": "Implementar programas de salud y vacunación."
+            },
+            {
+              "name": "Diagnóstico veterinario",
+              "category": "technical",
+              "importance": "required",
+              "source": "implicit",
+              "evidence": "Realizar diagnósticos y tratamientos veterinarios."
+            },
+            {
+              "name": "Tratamiento veterinario",
+              "category": "technical",
+              "importance": "required",
+              "source": "implicit",
+              "evidence": "Realizar diagnósticos y tratamientos veterinarios."
+            },
+            {
+              "name": "Colaboración y trabajo en equipo",
+              "category": "soft",
+              "importance": "required",
+              "source": "implicit",
+              "evidence": "Colaborar con el equipo para mejorar prácticas de cría."
+            },
+            {
+              "name": "Mejora continua de prácticas de cría",
+              "category": "functional",
+              "importance": "preferred",
+              "source": "implicit",
+              "evidence": "Colaborar con el equipo para mejorar prácticas de cría."
+            },
+            {
+              "name": "Registro y documentación de datos",
+              "category": "functional",
+              "importance": "required",
+              "source": "implicit",
+              "evidence": "Mantener registros precisos de salud animal."
+            },
+            {
+              "name": "Interés y disposición para aprender",
+              "category": "soft",
+              "importance": "required",
+              "source": "implicit",
+              "evidence": "Se valorará el interés y la disposición para aprender y crecer en el sector."
+            },
+            {
+              "name": "Adaptabilidad al entorno tecnológico",
+              "category": "soft",
+              "importance": "nice_to_have",
+              "source": "implicit",
+              "evidence": "Grupo Costa es una empresa en plena transformación digital y apuesta por la tecnología."
+            },
+            {
+              "name": "Comunicación efectiva",
+              "category": "soft",
+              "importance": "preferred",
+              "source": "implicit",
+              "evidence": "Colaborar con el equipo para mejorar prácticas de cría."
+            }
+          ],
+          "clusters": []
+        },
+        "structured_competencies": [
+          {
+            "competency": "Veterinaria y conocimiento en salud animal porcina",
+            "type": "functional",
+            "importance": "required",
+            "evidence": "Buscamos un Veterinario/a de Madres especializado en el sector porcino; este rol es ideal para graduados en veterinaria."
+          },
+          {
+            "competency": "Manejo y cuidado de madres porcinas",
+            "type": "functional",
+            "importance": "required",
+            "evidence": "Supervisar la salud y bienestar de las madres porcinas."
+          },
+          {
+            "competency": "Implementación de programas de salud y vacunación",
+            "type": "functional",
+            "importance": "required",
+            "evidence": "Implementar programas de salud y vacunación."
+          },
+          {
+            "competency": "Diagnóstico y tratamiento veterinario",
+            "type": "functional",
+            "importance": "required",
+            "evidence": "Realizar diagnósticos y tratamientos veterinarios."
+          },
+          {
+            "competency": "Registro y documentación precisa de datos",
+            "type": "functional",
+            "importance": "required",
+            "evidence": "Mantener registros precisos de salud animal."
+          },
+          {
+            "competency": "Colaboración y trabajo en equipo",
+            "type": "soft",
+            "importance": "required",
+            "evidence": "Colaborar con el equipo para mejorar prácticas de cría."
+          },
+          {
+            "competency": "Interés y disposición para aprender y desarrollarse",
+            "type": "soft",
+            "importance": "required",
+            "evidence": "Se valorará el interés y la disposición para aprender y crecer en el sector."
+          },
+          {
+            "competency": "Mejora continua de prácticas de cría",
+            "type": "functional",
+            "importance": "preferred",
+            "evidence": "Colaborar con el equipo para mejorar prácticas de cría."
+          },
+          {
+            "competency": "Comunicación efectiva",
+            "type": "soft",
+            "importance": "preferred",
+            "evidence": "Colaborar con el equipo para mejorar prácticas de cría."
+          },
+          {
+            "competency": "Adaptabilidad al entorno tecnológico/digital",
+            "type": "soft",
+            "importance": "nice_to_have",
+            "evidence": "Grupo Costa es una empresa en plena transformación digital y apuesta por la tecnología."
+          }
+        ],
+        "ideal_candidate": {
+          "background": "Licenciatura o grado en Veterinaria, con especial interés en el sector porcino, especialmente en la gestión y cuidado de madres. Trayectoria académica sólida y alguna experiencia práctica (por ejemplo, prácticas o pasantías) en entornos de ganadería porcina es valorada pero no imprescindible. Marcada orientación hacia el aprendizaje continuo, el trabajo colaborativo, y la adaptación a procesos y tecnologías en evolución en el sector agroalimentario.",
+          "must_have_experience": [
+            "Título universitario en Veterinaria reconocido en España",
+            "Conocimientos básicos de manejo y salud animal, especialmente porcino (pueden proceder de estudios, prácticas o formación)",
+            "Interés genuino en la cría y cuidado de madres porcinas",
+            "Capacidad para trabajar en equipo y comunicarte claramente",
+            "Interés y disposición para aprender y adaptarse al entorno y protocolo de trabajo",
+            "Habilidad para documentar y registrar información relevante"
+          ],
+          "preferred_experience": [
+            "Prácticas universitarias en explotaciones porcinas, especialmente orientadas a madres",
+            "Experiencia previa (aunque sea breve) en manejo o supervisión de madres porcinas",
+            "Participación en proyectos de mejora continua o innovación en salud animal",
+            "Familiaridad con programas de salud y vacunación animal",
+            "Experiencia básica en el uso de herramientas digitales para registros sanitarios"
+          ],
+          "career_trajectory": "Graduado/a reciente en Veterinaria, idealmente con prácticas en granjas porcinas o proyectos de salud animal. Puede provenir de roles de apoyo o pasantías relacionadas con animales de granja, preferiblemente porcinos. Busca desarrollar su carrera en un entorno de producción animal profesionalizado en el sector agroalimentario.",
+          "key_differentiators": [
+            "Experiencia práctica significativa en granjas porcinas, especialmente en el manejo de madres",
+            "Iniciativa para proponer mejoras en los sistemas de cuidado y manejo animal",
+            "Capacidad de adaptación al cambio y a la incorporación de nuevas tecnologías",
+            "Actitud proactiva de aprendizaje y desarrollo profesional",
+            "Excelentes habilidades interpersonales y de comunicación con personal de campo y equipos multidisciplinares",
+            "Aporte demostrado a proyectos de digitalización o modernización en el entorno agroalimentario (aunque sean a nivel junior)"
+          ],
+          "potential_red_flags": [
+            "Falta del título de Veterinaria homologado en España",
+            "Desinterés o aversión por el entorno rural o la producción animal intensiva",
+            "Falta de disposición para trabajo de campo o tareas rutinarias",
+            "Dificultad para trabajar en equipo o comunicarse con el personal de granja",
+            "Actitud poco comprometida hacia el aprendizaje o el desarrollo en el sector porcino",
+            "Expectativas excesivas de teletrabajo (es puesto 100% presencial)"
+          ]
+        },
+        "synonym_map": [],
+        "canonical_terms": []
+      },
+      "explainability": {
+        "sector_reasoning": "The core activity of the job—veterinary work focused on the health and breeding of swine (sow pigs)—is central to the agriculture/livestock sector. The company operates in the agri-food value chain and the job involves direct management of farm animals for food production, making agriculture/livestock the most appropriate primary sector. Veterinary services are a critical adjacent sector, along with the wider agri-food industry context.",
+        "sector_evidence": [
+          "Role is 'Veterinario/a de Madres (Sector Porcino)' with direct responsibility for swine health and breeding",
+          "Company (Grupo Costa) is a leading agri-food business with a focus on livestock (porcine/swine sector)",
+          "Responsibilities center on animal health, breeding, and operational care of livestock (sow pigs)",
+          "Explicit mention of the porcine sector and animal management",
+          "Veterinary expertise required, focusing on food animal production livestock"
+        ],
+        "seniority_reasoning": "The job explicitly states that no previous experience is required and encourages recent graduates to apply. Responsibilities are operational and supervised, with a strong focus on learning and executing defined tasks. There are no requirements for leadership, independent project management, or strategic responsibility. The position title lacks seniority indicators and the scope is limited to tactical and hands-on caregiving, consistent with a junior level.",
+        "seniority_evidence": [
+          "Description states 'No se requiere experiencia previa' (No previous experience required).",
+          "The role is described as ideal for recent graduates in veterinary medicine.",
+          "No leadership or supervisory tasks are mentioned.",
+          "Responsibilities focus on learning, executing, and collaboration, rather than autonomy or strategy.",
+          "Salary range aligns with entry-level roles in the veterinary/agro sector."
+        ],
+        "ideal_candidate_reasoning": "El puesto está orientado a perfiles junior en Veterinaria, sin requerir experiencia laboral previa pero sí interés, conocimientos básicos y disposición para aprender en entorno porcino. Requiere personas abiertas, colaborativas y con ganas de desarrollar carrera en uno de los principales grupos agroalimentarios de España, en un entorno que apuesta por la digitalización y la mejora continua. Prácticas previas, interés en la innovación y la actitud proactiva diferenciarán a los mejores candidatos. La falta de interés en el sector, problemas de comunicación, o expectativas no realistas en cuanto a condiciones (presencialidad, poca rotación o trabajo rutinario) serían claros desajustes."
+      }
+    },
+    "agent_evaluations": [
+      {
+        "agent_name": "cultural_fit_evaluator",
+        "agent_sector_expertise": "agriculture_livestock",
+        "evaluation_focus": "cultural_fit_and_soft_skills",
+        "score": 0.42,
+        "strengths": [
+          "Demonstrated strong collaboration and teamwork in technical/corporate settings",
+          "Proven communication skills, both with internal teams and clients",
+          "High attention to detail and commitment to process improvement",
+          "Advanced documentation and record-keeping competency",
+          "Adaptability shown through transition between technical and leadership roles"
+        ],
+        "weaknesses": [
+          "No education or experience in veterinary science or animal health",
+          "No demonstrated interest or exposure to rural, animal, or agriculture environments",
+          "Career and motivation focus strictly on high-technology, office-based, and telecom sectors",
+          "Work style evidence suggests strong fit for structured office settings, not hands-on field/farm tasks",
+          "Likely overqualified, high risk for misaligned expectations and rapid disengagement"
+        ],
+        "detailed_reasoning": "Noelia Antelo brings notable soft skill strengths such as advanced collaboration, process documentation, effective communication, and adaptability within structured, technical office environments. However, the cultural and sectoral gap with the agriculture/livestock (livestock veterinary) world is profound:\n\n1. The role at Grupo Costa is for a junior, on-site veterinarian specializing in sows—requiring not just technical ability in animal care, but also a strong interest and comfort with hands-on, rural, and physically present work. All evidence suggests Noelia thrives in telecommunications/technical sectors, leading teams in office/network operations centers; there's no mention of exposure to or interest in rural/agro/animal environments, nor any veterinary or animal science education (required for this position, even at entry level).\n\n2. The desired work style is collaborative and process-driven, which aligns partly with Noelia’s experience, but the setting (physical farm/ranches, production animal routines, non-corporate hierarchies) is fundamentally different. The candidate's context and documentation (e.g., technical troubleshooting, network provisioning) indicate a strong preference for corporate, structured, and moderate-paced office cultures—not animal husbandry or farm-based teamwork.\n\n3. Language and communication are not a barrier—Noelia is a native Spanish speaker with professional English capability, and excellent documented communication; however, the content, context, and style are not aligned with interacting with farm or veterinary staff.\n\n4. Motivation/alignment: No evidence exists that Noelia seeks a drastic field, domain, or sector change toward agriculture or hands-on veterinary practice, nor is there indication of willingness to relocate to rural Aragon or engage in intensive farm work. This gap is a substantial risk for both retention and immediate performance, regardless of soft skill quality.\n\n5. Red flags include potential lack of required degree (veterinary), likely cultural and motivational misalignment, and high probability of overqualification or disengagement in a junior, non-technical, highly manual role.\n\nConclusion: While Noelia excels in soft skills and team settings within her domain, the profound lack of sector fit, motivation evidence, and educational background for this specific job offer preclude a positive recommendation in the agriculture/livestock veterinary context.",
+        "recommendation": "no",
+        "concerns": [
+          "No veterinary degree or animal health background—a legal and practical requirement",
+          "No experience or stated motivation for rural/agro/animal sector work",
+          "Likely overqualified and may quickly disengage from highly routine/manual tasks",
+          "Strong history of office/technical leadership, not compatible with hands-on animal care",
+          "Potential for negative impact on team dynamics due to misaligned expectations"
+        ],
+        "timestamp": "2025-11-24T15:15:00+00:00"
+      },
+      {
+        "agent_name": "experience_trajectory_evaluator",
+        "agent_sector_expertise": "agriculture_livestock",
+        "evaluation_focus": "experience_and_trajectory",
+        "score": 0.15,
+        "strengths": [
+          "Demonstrated team leadership and collaboration skills in technical environments",
+          "Strong abilities in documentation, process improvement, and data management",
+          "Evident adaptability and willingness to learn new tools/processes (digital transformation context)"
+        ],
+        "weaknesses": [
+          "No academic background or experience in veterinary science or animal health",
+          "Zero direct exposure to agriculture, livestock, or swine production environments",
+          "Current and prior roles are exclusively in telecommunications network operations, not animal care",
+          "Seniority level (senior) is far above the required junior/entry-level for the role",
+          "No sign of hands-on or theoretical knowledge in animal welfare, breeding, or veterinary duties"
+        ],
+        "detailed_reasoning": "The candidate, Noelia Antelo, has built her career in the telecommunications and network operations sector, with a recent focus on senior managerial roles connected to technical support teams. Her competencies and skills matrix demonstrate advanced abilities in team leadership, client relationship management, technical troubleshooting, and process improvement, but these are entirely situated within the context of telecommunications. There is no evidence of academic qualifications in veterinary science (the core must-have requirement for the job) or any experience with animal health, livestock production, or agriculture environments. The job is for a newly graduated veterinarian, with zero experience required but a mandatory degree and a clear focus on practical, hands-on care for swine in an agricultural context. Not only does the candidate lack the degree, but there's also an overqualification in terms of leadership/seniority, potentially leading to frustration or misfit if placed in a junior, field-based, and routine veterinary apprentice role. Thus, the candidate is a fundamentally poor match for the career expectations, seniority, and sectoral requirements of the offer. Transferable soft skills (teamwork, documentation, adaptability) are positives but insufficient to bridge the major sector and qualifications gap.",
+        "recommendation": "strong_no",
+        "concerns": [
+          "No veterinary degree or animal health knowledge (absolute blocker)",
+          "No hands-on or practical livestock/agriculture experience",
+          "Candidate's seniority/role focus is incompatible with a junior, field-based veterinary role",
+          "Unclear motivation or interest in making a radical sector switch to entry-level animal husbandry",
+          "Possible overqualification or lack of engagement in a role focused on routine animal care and learning"
+        ],
+        "timestamp": "2025-11-24T14:45:22Z"
+      },
+      {
+        "agent_name": "technical_skills_evaluator",
+        "agent_sector_expertise": "agriculture_livestock",
+        "evaluation_focus": "technical_skills",
+        "score": 0.15,
+        "strengths": [
+          "Advanced technical troubleshooting and process improvement experience (telecommunications)",
+          "Strong documentation and record-keeping abilities",
+          "Proven experience in leading technical teams and collaborating in multidisciplinary settings",
+          "High level of adaptability and ability to learn new technical information"
+        ],
+        "weaknesses": [
+          "No degree or training in veterinary medicine (required for the role)",
+          "No demonstrated experience in animal health, livestock management, or handling swine (core job function)",
+          "Zero exposure to animal production, welfare, or veterinary diagnostic/treatment protocols",
+          "All career experience is in telecommunications/network operations, a non-transferable domain for this job",
+          "Unclear willingness or background for hands-on routine work in rural/agricultural environments"
+        ],
+        "detailed_reasoning": "The candidate, Noelia Antelo, has an entirely telecommunications-focused background, reaching a senior level in technical support and managed services. Her skills matrix and competencies strongly support tech operations, process improvement, documentation, detailed troubleshooting, and technical team management within network/infrastructure environments. However, the core and required skills for this agricultural/livestock role are completely absent: there is no evidence of a veterinary degree (or enrollment), nor any hands-on experience with animal health, livestock (particularly swine), or veterinary procedures such as diagnostics, treatment, or health/vaccination programs. None of her experience is transferable to direct animal healthcare, and while her learning agility and adaptability are positives, they do not bridge the fundamental technical/professional gap in this context. The job post requires (at minimum) a university degree in veterinary medicine, which is not present, and specifically seeks individuals interested and prepared for hands-on farm/animal care—something her profile simply does not reflect. Her experience is at a far higher professional seniority than required, but in an entirely different sector, making it impossible to meet even the entry-level technical requirements for this job in agriculture/livestock.",
+        "recommendation": "strong_no",
+        "concerns": [
+          "Absence of veterinary degree or qualifications (deal-breaker for the job)",
+          "No exposure or demonstrated interest in the agriculture, livestock, or animal health sector",
+          "Significant sector misalignment (telecom vs. swine vet medicine)",
+          "Unproven willingness for the physical/rural context required in the job",
+          "No evidence of animal health, diagnostics, vaccination, or treatment skills"
+        ],
+        "timestamp": "2025-11-24T15:27:00Z"
+      }
+    ],
+    "debate_messages": [
+      {
+        "from_agent": "cultural_fit_evaluator",
+        "to_agent": null,
+        "message_type": "argument",
+        "content": "[\n  {\n    \"to_agent\": \"experience_trajectory_evaluator\",\n    \"message_type\": \"agreement\",\n    \"content\": \"I strongly agree with your assessment regarding Noelia's lack of relevant experience and academic background. The absence of a veterinary degree or any animal health qualifications is an incontestable blocker. Additionally, her entire career being shaped within telecommunications—with its own culture, pace, and work style—makes the leap to an entry-level, field-based animal care setting especially unrealistic, both in terms of retention and cultural fit.\",\n    \"references\": [\n      \"Noelia has 'no academic background or experience in veterinary science or animal health' (your weaknesses)\",\n      \"'Current and prior roles are exclusively in telecommunications network operations, not animal care'\",\n      \"'Seniority level (senior) is far above the required junior/entry-level for the role'\"\n    ]\n  },\n  {\n    \"to_agent\": \"technical_skills_evaluator\",\n    \"message_type\": \"agreement\",\n    \"content\": \"I endorse your point that Noelia's technical acumen, though strong in her own sector, is not transferable to the practical requirements of on-site veterinary work. The lack of exposure to any form of animal handling or veterinary protocols, and no evidence of willingness to immerse herself in the agricultural context, are critical gaps. I would add that such a dramatic sector/culture shift is particularly high-risk for engagement and team integration.\",\n    \"references\": [\n      \"'No degree or training in veterinary medicine (required for the role)'\",\n      \"'No demonstrated experience in animal health, livestock management, or handling swine'\",\n      \"'Unclear willingness or background for hands-on routine work in rural/agricultural environments'\"\n    ]\n  },\n  {\n    \"to_agent\": null,\n    \"message_type\": \"question\",\n    \"content\": \"Do either of you see any viable scenario in which Noelia's soft skills or process orientation could add value as a cross-sector candidate, provided there was an internal pathway for technical requalification (e.g., an internship or support/admin role adjacent to veterinary teams)? Or is the sectoral/cultural and credential gap, in your view, simply too wide even for that level of lateral entry?\",\n    \"references\": [\n      \"Noelia's 'adaptability', 'documentation', and 'process improvement competency'\",\n      \"Absence of veterinary degree\"\n    ]\n  }\n]",
+        "references": [],
+        "timestamp": "2025-11-25T16:01:31.755589"
+      },
+      {
+        "from_agent": "experience_trajectory_evaluator",
+        "to_agent": null,
+        "message_type": "argument",
+        "content": "[\n  {\n    \"to_agent\": \"cultural_fit_evaluator\",\n    \"message_type\": \"agreement\",\n    \"content\": \"I strongly concur with your assessment regarding the pronounced cultural and sectoral gap. The candidate's extensive history in technical, office-based telecommunications roles—with no explicit or implicit exposure to rural/agricultural/animal environments—makes it extremely unlikely she'd thrive or remain engaged in a junior veterinary position on-site at livestock facilities. Your point about the misalignment in 'work style' and the probable lack of motivation for a drastic domain switch is well-taken and adds weight to a strong rejection recommendation.\",\n    \"references\": [\n      \"Career focus strictly in telecom/network operations (CV/work experience)\",\n      \"No mention of animal/agriculture/rural/context in any form\",\n      \"Job requires on-site, hands-on farm work with sows\"\n    ]\n  },\n  {\n    \"to_agent\": \"technical_skills_evaluator\",\n    \"message_type\": \"agreement\",\n    \"content\": \"I echo your identification of an 'absolute blocker' regarding technical requirements. The absence of a veterinary degree is a hard stop—legally and practically—for this entry-level role, regardless of soft or transferable skills. Your breakdown of her technical leadership in telecom versus the veterinary diagnostics/treatment skills required is accurate and decisive. The domain gap is not bridgeable via adaptability alone.\",\n    \"references\": [\n      \"Job requires university degree in veterinary medicine (MUST HAVE)\",\n      \"No evidence of academic background in animal health/veterinary science (CV/education section)\"\n    ]\n  },\n  {\n    \"to_agent\": null,\n    \"message_type\": \"synthesis\",\n    \"content\": \"There is strong consensus across all evaluations: While the candidate shows high-level soft skills (collaboration, adaptability, documentation) and leadership, the universal absence of veterinary qualification, practical animal care experience, and any sign of rural/agro motivation renders her fundamentally unsuitable for this opportunity. Regardless of her proven success in another sector, the legal, technical, cultural, and motivational requirements of the role are not met at any core level.\",\n    \"references\": [\n      \"All agents' rejection recommendations\",\n      \"Repeatedly noted lack of veterinary degree and animal experience\",\n      \"Documented overqualification and sector misalignment\"\n    ]\n  }\n]",
+        "references": [],
+        "timestamp": "2025-11-25T16:01:43.976229"
+      },
+      {
+        "from_agent": "technical_skills_evaluator",
+        "to_agent": null,
+        "message_type": "argument",
+        "content": "[\n  {\n    \"to_agent\": \"cultural_fit_evaluator\",\n    \"message_type\": \"agreement\",\n    \"content\": \"I concur with your assessment regarding the profound cultural and sectoral gap. While Noelia's communication, documentation, and teamwork skills are strong, the lack of any demonstrated motivation or exposure to rural/agricultural environments is a critical risk for both retention and on-the-job adaptability. The candidate's background is entirely in technical/office settings, which creates legitimate concern about willingness and suitability for hands-on, routine animal care and farm work—the absolute core of this veterinarian role.\",\n    \"references\": [\n      \"cultural_fit_evaluator.detailed_reasoning: 'All evidence suggests Noelia thrives in telecommunications/technical sectors, leading teams in office/network operations centers...no mention of exposure to or interest in rural/agro/animal environments, nor any veterinary or animal science education (required for this position, even at entry level)'\",\n      \"cultural_fit_evaluator.concerns: 'No experience or stated motivation for rural/agro/animal sector work', 'Strong history of office/technical leadership, not compatible with hands-on animal care'\"\n    ]\n  },\n  {\n    \"to_agent\": \"experience_trajectory_evaluator\",\n    \"message_type\": \"agreement\",\n    \"content\": \"Your point about the mismatch in seniority is well taken. Not only does Noelia lack the required veterinary credentials and animal health experience, but her current and prior roles are far more advanced (senior/leadership in telecom) than the junior, apprentice-level scope this job demands. This overqualification, combined with the sectoral shift, heightens the likelihood of early disengagement or frustration. Combined with the absence of degree and direct animal experience, these are definitive blockers.\",\n    \"references\": [\n      \"experience_trajectory_evaluator.detailed_reasoning: 'Seniority level (senior) is far above the required junior/entry-level for the role... potentially leading to frustration or misfit if placed in a junior, field-based, and routine veterinary apprentice role.'\",\n      \"experience_trajectory_evaluator.weaknesses: 'No academic background or experience in veterinary science or animal health', 'No sign of hands-on or theoretical knowledge in animal welfare, breeding, or veterinary duties'\"\n    ]\n  },\n  {\n    \"to_agent\": null,\n    \"message_type\": \"question\",\n    \"content\": \"Does anyone see any realistic potential for transferable skills that could be leveraged in an accelerated onboarding or retraining scenario, provided the degree was not a legal requirement? Or is the combination of sector misalignment, lack of credentials, and missing motivation too fundamental a barrier, even with intensive internal training?\",\n    \"references\": [\n      \"All agents: None of the evaluations found any exposure to animal health, veterinary procedures, or agricultural/rural comfort\",\n      \"Job requirement: 'university degree in veterinary medicine', cited as 'absolute blocker' by both experience_trajectory_evaluator and myself\"\n    ]\n  }\n]",
+        "references": [],
+        "timestamp": "2025-11-25T16:01:58.604677"
+      }
+    ],
+    "questions_asked": [
+      {
+        "agent_name": "cultural_fit_evaluator",
+        "question_text": "[\n  {\n    \"question_text\": \"Do you hold a veterinary degree and, if so, could you detail your practical experience with swine (sows) or large livestock in on-farm settings?\",\n    \"question_purpose\": \"To determine if the candidate meets the basic legal and technical requirements for the role, specifically the possession of a veterinary degree and hands-on animal care experience relevant to the position.\",\n    \"data_gap\": \"No evidence of veterinary education or practical livestock (swine) experien",
+        "question_purpose": "Clarify uncertainties from cultural_fit_and_soft_skills evaluation",
+        "data_gap": "Various gaps identified in evaluation",
+        "priority": "important",
+        "timestamp": "2025-11-25T16:02:15.668797"
+      },
+      {
+        "agent_name": "experience_trajectory_evaluator",
+        "question_text": "[\n  {\n    \"question_text\": \"Do you possess a degree in veterinary medicine or have you completed any formal training related to animal health, livestock management, or swine production?\",\n    \"question_purpose\": \"To verify if the candidate fulfils the core academic prerequisite for practicing as a veterinarian in the swine sector.\",\n    \"data_gap\": \"No information on veterinary degree, licensure, or sector-specific academic qualifications.\",\n    \"priority\": \"critical\"\n  },\n  {\n    \"question_text",
+        "question_purpose": "Clarify uncertainties from experience_and_trajectory evaluation",
+        "data_gap": "Various gaps identified in evaluation",
+        "priority": "important",
+        "timestamp": "2025-11-25T16:02:26.872774"
+      },
+      {
+        "agent_name": "technical_skills_evaluator",
+        "question_text": "[\n  {\n    \"question_text\": \"Do you hold, or are you currently pursuing, a university degree in veterinary medicine or an equivalent qualification required for hands-on veterinary work in livestock (especially swine) operations?\",\n    \"question_purpose\": \"To confirm compliance with the fundamental educational and regulatory requirement for the position.\",\n    \"data_gap\": \"Lack of evidence for a veterinary medicine degree or enrollment.\",\n    \"priority\": \"critical\"\n  },\n  {\n    \"question_text\": \"P",
+        "question_purpose": "Clarify uncertainties from technical_skills evaluation",
+        "data_gap": "Various gaps identified in evaluation",
+        "priority": "important",
+        "timestamp": "2025-11-25T16:02:35.560115"
+      }
+    ],
+    "consensus_decision": {
+      "liked": false,
+      "overall_score": 0.24,
+      "decision_confidence": 1.0,
+      "primary_reasons": [
+        "Candidate lacks the required university degree in veterinary medicine—an absolute legal and practical blocker.",
+        "No direct or indirect experience in veterinary, animal health, livestock, or agriculture settings; all experience is in telecommunications.",
+        "No stated motivation or evidence of interest in rural/agricultural work, or willingness to transition to hands-on animal care roles.",
+        "Seniority and background are misaligned; candidate is highly experienced in a different field and overqualified for an entry-level/junior veterinary position.",
+        "All agents strongly agree that there are fundamental technical, sector, and cultural mismatches that cannot realistically be bridged."
+      ],
+      "consensus_summary": "All agents unanimously agree that Noelia Antelo demonstrates strong skills in collaboration, process improvement, and leadership within telecommunications, but she lacks the core requirements (degree, experience, motivation, and context familiarity) essential for the Veterinario/a de Madres (Sector Porcino) role. The sectoral, technical, and motivational gaps are insurmountable within the scope of this position; as such, the candidate is not recommended for further pursuit for this role.",
+      "agent_agreements": [
+        {
+          "agent_name": "cultural_fit_evaluator",
+          "recommendation": "no"
+        },
+        {
+          "agent_name": "experience_trajectory_evaluator",
+          "recommendation": "strong_no"
+        },
+        {
+          "agent_name": "technical_skills_evaluator",
+          "recommendation": "strong_no"
+        }
+      ],
+      "key_strengths": [
+        "Advanced collaboration and teamwork in technical/corporate environments.",
+        "Exceptional documentation, process improvement, and communication skills.",
+        "High adaptability to new tools and organizational processes."
+      ],
+      "key_concerns": [
+        "No veterinary degree or relevant animal health education (deal-breaker for the position).",
+        "No experience or exposure to animal care, livestock, or agricultural/rural environments.",
+        "Overqualification and misalignment in job seniority and career trajectory.",
+        "Questionable motivation or willingness to change sectors/roles drastically.",
+        "Risk of early disengagement or inability to thrive in highly manual, on-site, field settings."
+      ],
+      "suggested_next_steps": [
+        "No further steps recommended for this candidate for this role, as core requirements (degree, experience, sector fit) cannot be bridged by training or assessment.",
+        "If candidate expresses authentic and sustained motivation to pivot to agriculture/livestock, recommend pursuing relevant academic qualifications first."
+      ],
+      "compatibility_breakdown": [
+        {
+          "dimension": "technical",
+          "score": 0.15
+        },
+        {
+          "dimension": "experience",
+          "score": 0.15
+        },
+        {
+          "dimension": "cultural",
+          "score": 0.42
+        }
+      ],
+      "timestamp": "2025-11-25T16:12:00Z"
+    },
+    "reasoning_log": [
+      {
+        "step": "cultural_evaluation",
+        "agent": "cultural_fit_evaluator",
+        "action": "Evaluated candidate's cultural fit and soft skills",
+        "input_summary": "Evaluating soft skills and cultural alignment for agriculture_livestock sector",
+        "output_summary": "Score: 0.42, Recommendation: no",
+        "key_insights": [
+          "Demonstrated strong collaboration and teamwork in technical/corporate settings",
+          "Proven communication skills, both with internal teams and clients",
+          "High attention to detail and commitment to process improvement"
+        ],
+        "timestamp": "2025-11-25T16:01:19.809121"
+      },
+      {
+        "step": "experience_evaluation",
+        "agent": "experience_trajectory_evaluator",
+        "action": "Evaluated candidate's experience and career trajectory",
+        "input_summary": "Candidate experience: 6 years",
+        "output_summary": "Score: 0.15, Recommendation: strong_no",
+        "key_insights": [
+          "Demonstrated team leadership and collaboration skills in technical environments",
+          "Strong abilities in documentation, process improvement, and data management",
+          "Evident adaptability and willingness to learn new tools/processes (digital transformation context)"
+        ],
+        "timestamp": "2025-11-25T16:01:07.274983"
+      },
+      {
+        "step": "technical_evaluation",
+        "agent": "technical_skills_evaluator",
+        "action": "Evaluated candidate's technical skills and domain knowledge",
+        "input_summary": "Candidate: Noelia Antelo, Sector: agriculture_livestock",
+        "output_summary": "Score: 0.15, Recommendation: strong_no",
+        "key_insights": [
+          "Advanced technical troubleshooting and process improvement experience (telecommunications)",
+          "Strong documentation and record-keeping abilities",
+          "Proven experience in leading technical teams and collaborating in multidisciplinary settings"
+        ],
+        "timestamp": "2025-11-25T16:01:08.150363"
+      },
+      {
+        "step": "debate_round_1",
+        "agent": null,
+        "action": "Agents exchanged 3 debate messages",
+        "input_summary": "Round 1 with 3 agents",
+        "output_summary": "Generated 3 debate messages",
+        "key_insights": [
+          "Agent cultural_fit_evaluator contributed",
+          "Agent experience_trajectory_evaluator contributed",
+          "Agent technical_skills_evaluator contributed"
+        ],
+        "timestamp": "2025-11-25T16:01:58.604700"
+      },
+      {
+        "step": "question_generation",
+        "agent": null,
+        "action": "Generated specialized questions about candidate",
+        "input_summary": "Based on 3 agent evaluations",
+        "output_summary": "Generated 3 questions",
+        "key_insights": [
+          "Questions from cultural_fit_evaluator",
+          "Questions from experience_trajectory_evaluator",
+          "Questions from technical_skills_evaluator"
+        ],
+        "timestamp": "2025-11-25T16:02:35.560164"
+      },
+      {
+        "step": "consensus_building",
+        "agent": null,
+        "action": "Built final consensus decision from all agents",
+        "input_summary": "3 evaluations, 3 debate messages",
+        "output_summary": "Decision: False, Score: 0.24",
+        "key_insights": [
+          "Candidate lacks the required university degree in veterinary medicine—an absolute legal and practical blocker.",
+          "No direct or indirect experience in veterinary, animal health, livestock, or agriculture settings; all experience is in telecommunications.",
+          "No stated motivation or evidence of interest in rural/agricultural work, or willingness to transition to hands-on animal care roles."
+        ],
+        "timestamp": "2025-11-25T16:03:03.189896"
+      }
+    ],
+    "debate_round": 2,
+    "max_debate_rounds": 2
+  }
+}
