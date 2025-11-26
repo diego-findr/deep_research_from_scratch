@@ -22,8 +22,10 @@ from .state import (
     Question,
     ConsensusDecision,
     ReasoningLogEntry,
+    GatekeeperDecision,
 )
 from .prompts import (
+    GATEKEEPER_EVALUATOR_PROMPT,
     TECHNICAL_SKILLS_EVALUATOR_PROMPT,
     EXPERIENCE_TRAJECTORY_EVALUATOR_PROMPT,
     CULTURAL_FIT_EVALUATOR_PROMPT,
@@ -120,6 +122,90 @@ def add_reasoning_log(
 
 
 # ===== AGENT NODES =====
+
+def evaluate_gatekeeper(state: CandidateEvaluationState) -> Dict[str, Any]:
+    """
+    Gatekeeper Agent.
+    
+    Performs an initial knockout assessment to determine if the candidate
+    is worth a full multi-agent evaluation.
+    """
+    print("🛡️ Gatekeeper Agent analyzing candidate...")
+    
+    sector = get_sector_from_job(state["enriched_job"])
+    
+    # Prepare prompt
+    prompt = GATEKEEPER_EVALUATOR_PROMPT.format(
+        enriched_candidate=format_enriched_data(state["enriched_candidate"]),
+        enriched_job=format_enriched_data(state["enriched_job"]),
+    )
+    
+    # Get structured evaluation
+    structured_llm = model.with_structured_output(GatekeeperDecision)
+    response = structured_llm.invoke([HumanMessage(content=prompt)])
+    
+    decision = response.model_dump()
+    
+    print(f"   Proceed: {decision['proceed']} | Confidence: {decision['confidence']:.2f}")
+    if not decision['proceed']:
+        print(f"   Knockout Reasons: {', '.join(decision['knockout_reasons'])}")
+    
+    # Add to reasoning log
+    log_entry = add_reasoning_log(
+        state,
+        step="gatekeeper_evaluation",
+        agent="gatekeeper",
+        action="Performed initial knockout assessment",
+        input_summary=f"Candidate vs Job in {sector}",
+        output_summary=f"Proceed: {decision['proceed']}, Reasons: {decision['knockout_reasons']}",
+        key_insights=[decision['reasoning']],
+    )
+    
+    return {
+        "gatekeeper_decision": decision,
+        **log_entry,
+    }
+
+
+def fast_reject(state: CandidateEvaluationState) -> Dict[str, Any]:
+    """
+    Fast Reject Node.
+    
+    Creates a rejection consensus immediately after Gatekeeper knockout.
+    """
+    print("⛔ Fast Reject triggered. Skipping full evaluation.")
+    
+    gatekeeper_decision = state["gatekeeper_decision"]
+    
+    # Create a negative consensus decision
+    consensus = ConsensusDecision(
+        liked=False,
+        overall_score=0.0,
+        decision_confidence=gatekeeper_decision["confidence"],
+        primary_reasons=gatekeeper_decision["knockout_reasons"],
+        consensus_summary=f"Candidate was rejected by Gatekeeper due to critical mismatches: {gatekeeper_decision['reasoning']}",
+        agent_agreements=[],
+        key_strengths=[],
+        key_concerns=gatekeeper_decision["knockout_reasons"],
+        suggested_next_steps=["Do not proceed."],
+        compatibility_breakdown=[],
+    )
+    
+    # Add to reasoning log
+    log_entry = add_reasoning_log(
+        state,
+        step="fast_reject",
+        agent="system",
+        action="Generated fast rejection based on Gatekeeper",
+        input_summary="Gatekeeper knockout",
+        output_summary="Decision: False (Fast Reject)",
+        key_insights=gatekeeper_decision["knockout_reasons"],
+    )
+    
+    return {
+        "consensus_decision": consensus.model_dump(),
+        **log_entry,
+    }
 
 def evaluate_technical_skills(state: CandidateEvaluationState) -> Dict[str, Any]:
     """
@@ -487,6 +573,8 @@ def create_evaluation_graph() -> StateGraph:
     workflow = StateGraph(CandidateEvaluationState)
     
     # Add evaluation nodes (will execute in parallel)
+    workflow.add_node("gatekeeper", evaluate_gatekeeper)
+    workflow.add_node("fast_reject", fast_reject)
     workflow.add_node("technical_evaluation", evaluate_technical_skills)
     workflow.add_node("experience_evaluation", evaluate_experience_trajectory)
     workflow.add_node("cultural_evaluation", evaluate_cultural_fit)
@@ -500,10 +588,24 @@ def create_evaluation_graph() -> StateGraph:
     # Add consensus building node
     workflow.add_node("consensus", build_consensus)
     
-    # Set entry point - all three evaluations start in parallel
-    workflow.set_entry_point("technical_evaluation")
-    workflow.set_entry_point("experience_evaluation")
-    workflow.set_entry_point("cultural_evaluation")
+    # Set entry point - start with Gatekeeper
+    workflow.set_entry_point("gatekeeper")
+    
+    # Conditional edge from Gatekeeper
+    def route_gatekeeper(state: CandidateEvaluationState):
+        if state["gatekeeper_decision"]["proceed"]:
+            return ["technical_evaluation", "experience_evaluation", "cultural_evaluation"]
+        else:
+            return "fast_reject"
+
+    workflow.add_conditional_edges(
+        "gatekeeper",
+        route_gatekeeper,
+        ["technical_evaluation", "experience_evaluation", "cultural_evaluation", "fast_reject"]
+    )
+    
+    # After fast_reject, end
+    workflow.add_edge("fast_reject", END)
     
     # After evaluations, go to debate
     workflow.add_edge("technical_evaluation", "debate")

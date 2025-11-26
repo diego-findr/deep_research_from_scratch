@@ -1,641 +1,276 @@
 {
-  "candidato_id": "9e8f54c8-0574-411f-bfe1-79f481b73ee6",
-  "timestamp": "2025-11-24T12:12:23.732313",
-  "metadata": {
-    "timestamp": "2025-11-24T12:12:23.732313",
-    "source": "database",
-    "sector_objetivo": "industrial|utilities"
-  },
-  "perfil_raw": {
-    "id": "9e8f54c8-0574-411f-bfe1-79f481b73ee6",
-    "first_name": "Sergio",
-    "last_name": "Salmerón",
+  "candidate_id": "9e8f54c8-0574-411f-bfe1-79f481b73ee6",
+  "enrichment_version": "2.0-optimized",
+  "timestamp": "2025-11-26T10:34:37.538998",
+  "identity": {
     "full_name": "Sergio Salmerón",
-    "heading": "Analista/Programador Senior D365F&O",
-    "description": "Programador senior con más de 15 años de experiencia, enfocado a dar solución y resolver las dudas y problemas surgidos al plasmar la lógica de negocio del cliente en AX / D365FO. \nExperiencia en sectores de transporte, construcción, seguridad, producción, textil, alimenación.\n\nÁreas:\n- AX 2012\n- D365FO\n- DMF\n- Integración de datos con software externo a través de :\n   > Web Services\n   > OData\n   > Business Events\n \nTareas realizadas\n- Análisis y realización de los requerimientos del cliente, asegurando que las soluciones propuestas cumplían con sus necesidades específicas.\n- Realización de integraciones de datos E/S a través de Business Events, Web Services y OData, mejorando la interoperabilidad de los sistemas.\n- Integraciones EDI\n- Optimización de código en procesos lentos, resultando en una mejora significativa del rendimiento y la eficiencia operativa\n- Formador de las nuevas incorporaciones a la empresa.\n- Formador a los programadores de cliente.\n- Marcar las pautas y gestionar las best practices de programación dentro de la empresa.\n- Llevar equipos de programación.\n- Technical leader.\n- Gestión de evolutivos y mantenimiento de la aplicación del cliente.",
-    "linkedin_url": "https://www.linkedin.com/in/sergio-salmer%C3%B3n/",
-    "email": null,
-    "current_city": "Balaguer",
-    "current_country": "Spain",
-    "experience_years": 20,
-    "verified": false,
-    "skills": [
-      {
-        "id": "c141a3c3-4d48-4135-9be0-a0dd2f2cc92d",
-        "name": "Visual studio",
-        "level": "Beginner"
-      },
-      {
-        "id": "5ed6217b-2f2d-4ae1-b4d6-ea129a11bbfb",
-        "name": "Windows Mobile",
-        "level": "Beginner"
-      },
-      {
-        "id": "ac45f5a9-cda3-4064-b5e2-f77870c1b185",
-        "name": "Silverlight",
-        "level": "Beginner"
-      },
-      {
-        "id": "35bd0090-599a-4d13-8192-b9ce87b1ef46",
-        "name": "Microsoft dynamics 365 finance and operations",
-        "level": "Beginner"
-      },
-      {
-        "id": "f55776df-c250-4153-8841-c8ec76d87936",
-        "name": "Microsoft Dynamics 365",
-        "level": "Beginner"
-      },
-      {
-        "id": "dd26eb60-b685-44c5-a077-159b48608875",
-        "name": "Business intelligence",
-        "level": "Beginner"
-      },
-      {
-        "id": "d78bf52e-d8b3-4625-9b14-2683ca681d91",
-        "name": "SharePoint",
-        "level": "Beginner"
-      },
-      {
-        "id": "0a88a93b-ce2d-4c2c-bcc0-d528bcf48a6b",
-        "name": "Microsoft dynamics 365 erp",
-        "level": "Beginner"
-      },
-      {
-        "id": "703d65ad-b24e-4080-bccf-5783c28b120f",
-        "name": "SQL",
-        "level": "Beginner"
-      },
-      {
-        "id": "be8cc256-6c6d-40eb-a07e-4be369cb633c",
-        "name": "XNA",
-        "level": "Beginner"
-      },
-      {
-        "id": "4b4e3165-8bb3-4ee0-8f7d-6c829cf16b47",
-        "name": "XAML",
-        "level": "Beginner"
-      },
-      {
-        "id": "ebee9194-2da1-453d-b1d9-1b7a2c5aee56",
-        "name": "Microsoft sql server",
-        "level": "Beginner"
-      },
-      {
-        "id": "44dcdbbd-6ae2-4c72-849d-931dcf33b7a4",
-        "name": ".NET",
-        "level": "Beginner"
-      }
-    ],
-    "languages": [],
-    "experiences": [
-      {
-        "id": "7398e04c-e20a-4f40-b165-be200e60320f",
-        "created_at": "2025-11-14T16:24:54.563456+00:00",
-        "candidate_id": "9e8f54c8-0574-411f-bfe1-79f481b73ee6",
-        "role": "Analista/Programador D365F&O",
-        "description": null,
-        "start_date": "2025-09-01",
-        "end_date": null,
-        "location": null,
-        "contract": null,
-        "company": "Piensos Costa"
-      },
-      {
-        "id": "d49daa7b-d4fa-4ff4-b4ac-21d0cc7b4dc5",
-        "created_at": "2025-11-14T16:24:54.563456+00:00",
-        "candidate_id": "9e8f54c8-0574-411f-bfe1-79f481b73ee6",
-        "role": "Freelance Software Engineer",
-        "description": "Analista programador Microsoft Dynamics AX",
-        "start_date": "2018-09-01",
-        "end_date": "2025-08-31",
-        "location": null,
-        "contract": null,
-        "company": "Autónomo"
-      },
-      {
-        "id": "0461a8af-9091-43c1-b1d4-693910f4ea73",
-        "created_at": "2025-11-14T16:24:54.563456+00:00",
-        "candidate_id": "9e8f54c8-0574-411f-bfe1-79f481b73ee6",
-        "role": "Analista programador sénior y coordinador técnico",
-        "description": null,
-        "start_date": "2013-02-01",
-        "end_date": "2018-09-30",
-        "location": "Lleida",
-        "contract": null,
-        "company": "Marquès PS"
-      }
-    ]
+    "current_role": "Analista/Programador Senior D365F&O",
+    "location": "Balaguer, Spain",
+    "sector": "enterprise_software_erp_development",
+    "seniority": "principal",
+    "years_experience": 12
   },
-  "semantic_enrichment": {
-    "version": "1.0",
-    "enrichment_timestamp": "2025-11-24T12:12:23.732313",
-    "key_insights": {
-      "primary_sector": "enterprise_software_development",
-      "sector_confidence": 0.9,
-      "seniority_level": "principal",
-      "years_experience": 12,
-      "total_skills_identified": 17,
-      "competencies_count": 13,
-      "disambiguated_terms_count": 15,
-      "primary_ideal_role": "Senior Dynamics 365 Finance & Operations Technical Lead",
-      "primary_role_fit_score": 0.93
+  "career_trajectory": {
+    "summary": "Sergio began as a developer and technical analyst, eventually becoming a freelance specialist focused on Microsoft Dynamics AX/D365F&O projects. Over time, he progressed to senior analyst and technical lead roles, managing teams, leading complex ERP integrations, and mentoring less experienced staff. The last 7+ years have solidified his expertise in Microsoft ERP solutions, technical leadership, and solution design.",
+    "recent_focus": "Leading development and technical implementation projects for D365F&O, with a strong emphasis on integration (Business Events, OData, Web Services), requirements analysis, technical best practices, and mentoring both junior staff and clients’ own developers.",
+    "stability_metrics": {
+      "average_tenure_years": 4.3,
+      "roles_count": 3,
+      "companies_count": 3,
+      "job_hopping_risk": "low"
+    }
+  },
+  "education": {
+    "highest_degree": null,
+    "level_summary": "No formal education data available."
+  },
+  "top_skills": [
+    {
+      "name": "Microsoft Dynamics 365 Finance and Operations (D365F&O)",
+      "type": "domain_specific",
+      "level": "advanced",
+      "relevance_score": 1.0,
+      "relevance_reasoning": "Core platform of expertise, anchors the candidate’s market value as a senior ERP specialist."
     },
-    "sector": {
-      "primary": "enterprise_software_development",
-      "secondary": [
-        "software_development",
-        "business_it_consulting",
-        "erp_consulting"
-      ],
-      "confidence": 0.9,
-      "reasoning": "The candidate's entire career centers on implementing, programming, integrating, and optimizing Microsoft Dynamics AX and D365F&O (ERP platforms) for diverse industry clients, focusing almost exclusively on ERP systems integration and enterprise-level software solutions. Key activities—business logic translation, data integration, client requirements analysis, technical leadership—are specific to enterprise business application development rather than general software/product development or pure IT consulting. Cross-sector client experience reflects ERP as a horizontal business solution; the technologies and terms used are unique to enterprise/ERP software contexts, not industry-specific automation or generic software development roles."
+    {
+      "name": "Microsoft Dynamics AX 2012",
+      "type": "domain_specific",
+      "level": "advanced",
+      "relevance_score": 0.95,
+      "relevance_reasoning": "Critical legacy platform, showcases depth in both legacy and current Microsoft ERP technologies."
     },
-    "seniority": {
-      "level": "principal",
-      "years_experience": 12,
-      "confidence": 1.0,
-      "reasoning": "The candidate's CURRENT focus is as a senior analyst/programmer specializing in Microsoft Dynamics 365 Finance & Operations (D365F&O) and earlier Dynamics AX. All recent and prior roles (spanning at least 12 consecutive years: 2013–2025) are directly relevant—their freelance and employment roles were all dedicated to AX/D365F&O solution design, development, integration, and technical leadership. There is no evidence of unrelated roles outside software engineering for enterprise Microsoft ERP products. The level of scope in projects (leading teams, technical mentorship, setting best practices, project owner for integrations, requirements analysis across industries) further confirms principal/expert level—not only doing, but organizing, shaping, and training the domain."
+    {
+      "name": "ERP Customization & Business Logic Implementation",
+      "type": "domain_specific",
+      "level": "expert",
+      "relevance_score": 1.0,
+      "relevance_reasoning": "Demonstrates high-level problem solving and hands-on technical impact in ERP solutions."
     },
-    "skills": {
-      "explicit": [
-        {
-          "name": "Microsoft Dynamics AX (AX 2012)",
-          "category": "technical",
-          "level": "expert",
-          "source": "explicit",
-          "evidence": "Áreas:\n- AX 2012; Core role as 'Analista programador Microsoft Dynamics AX'; 15+ years experience implementing business logic and integrations; worked for various clients as AX/D365F&O specialist",
-          "confidence": 1.0
-        },
-        {
-          "name": "Microsoft Dynamics 365 Finance & Operations (D365FO)",
-          "category": "technical",
-          "level": "expert",
-          "source": "explicit",
-          "evidence": "Áreas:\n- D365FO; Heading: 'Analista/Programador Senior D365F&O'; 15+ years of experience including D365FO; focus on business logic for client needs",
-          "confidence": 1.0
-        },
-        {
-          "name": "Data Integration (Web Services, OData, Business Events, EDI)",
-          "category": "technical",
-          "level": "advanced",
-          "source": "explicit",
-          "evidence": "'Integración de datos con software externo a través de : Web Services, OData, Business Events'; 'Integraciones EDI'; responsible for planning and executing integrations in enterprise ERP environments",
-          "confidence": 0.98
-        },
-        {
-          "name": "Data Management Framework (DMF) (Dynamics)",
-          "category": "technical",
-          "level": "advanced",
-          "source": "explicit",
-          "evidence": "Áreas:\n- DMF; Used in AX/D365FO projects for data migration/integration. Typically advanced usage in solution design roles in ERP context.",
-          "confidence": 0.95
-        },
-        {
-          "name": "Technical Leadership (ERP teams)",
-          "category": "soft",
-          "level": "advanced",
-          "source": "explicit",
-          "evidence": "'Technical leader'; 'Llevar equipos de programación'; 'Formador de las nuevas incorporaciones'; Role as 'coordinador técnico'; mentoring/setting best practices",
-          "confidence": 0.99
-        },
-        {
-          "name": "ERP Solution Analysis & Requirements Engineering",
-          "category": "functional",
-          "level": "advanced",
-          "source": "explicit",
-          "evidence": "Tareas: 'Análisis y realización de los requerimientos del cliente, asegurando que las soluciones propuestas cumplían con sus necesidades específicas.' Exposed to multiple sectors, responsible for matching business needs to system config/customization.",
-          "confidence": 0.98
-        },
-        {
-          "name": "Code Optimization (ERP/software performance tuning)",
-          "category": "technical",
-          "level": "advanced",
-          "source": "explicit",
-          "evidence": "Tareas: 'Optimización de código en procesos lentos, resultando en una mejora significativa del rendimiento y la eficiencia operativa'",
-          "confidence": 0.98
-        },
-        {
-          "name": "Programming Best Practices (ERP context)",
-          "category": "technical",
-          "level": "advanced",
-          "source": "explicit",
-          "evidence": "Tareas: 'Marcar las pautas y gestionar las best practices de programación dentro de la empresa.'",
-          "confidence": 0.99
-        }
-      ],
-      "implicit": [
-        {
-          "name": "X++ (Dynamics AX/D365FO programming language)",
-          "category": "technical",
-          "level": "expert",
-          "source": "implicit",
-          "evidence": "15+ years developing custom business logic in AX/D365FO; all analysis, integration, and performance code tuning in AX/D365FO are done with X++.",
-          "confidence": 1.0
-        },
-        {
-          "name": ".NET Framework (Advanced, ERP integrations)",
-          "category": "technical",
-          "level": "advanced",
-          "source": "implicit",
-          "evidence": "All major AX/D365FO development and integration with external systems (EDI, OData, Web Services) in the Microsoft ecosystem involves .NET/Visual Studio. The skill is listed, experience makes level advanced.",
-          "confidence": 0.98
-        },
-        {
-          "name": "SQL & Microsoft SQL Server (ERP data modelling/query)",
-          "category": "technical",
-          "level": "advanced",
-          "source": "implicit",
-          "evidence": "'SQL', 'Microsoft SQL Server' listed; all ERP config, reporting, integration, and migration require solid SQL/db skills; large-scale data tasks as core part of ERP consultant/developer roles.",
-          "confidence": 0.97
-        },
-        {
-          "name": "ERP Training & Knowledge Transfer",
-          "category": "soft",
-          "level": "advanced",
-          "source": "implicit",
-          "evidence": "'Formador de las nuevas incorporaciones a la empresa. Formador a los programadores de cliente.' (Direct training of junior devs and client teams in AX/D365FO)",
-          "confidence": 0.99
-        },
-        {
-          "name": "Client Communication (technical/functional)",
-          "category": "soft",
-          "level": "advanced",
-          "source": "implicit",
-          "evidence": "'Análisis y realización de los requerimientos del cliente'; solution design/presentation; adapting business logic—all require strong communication.",
-          "confidence": 0.95
-        },
-        {
-          "name": "Project Management (software evolution & maintenance)",
-          "category": "functional",
-          "level": "intermediate",
-          "source": "implicit",
-          "evidence": "'Gestión de evolutivos y mantenimiento de la aplicación del cliente.' Though not project manager per se, implies tracking enhancements, supervising progress, stakeholder mgmt.",
-          "confidence": 0.92
-        },
-        {
-          "name": "Business Process Modelling (ERP domains)",
-          "category": "functional",
-          "level": "advanced",
-          "source": "implicit",
-          "evidence": "Repeatedly mapping client's business needs into AX/D365FO business logic; successful analysis/solutioning for diverse industries (transporte, construcción, seguridad, etc.)",
-          "confidence": 0.96
-        },
-        {
-          "name": "Multi-industry ERP domain knowledge",
-          "category": "domain_specific",
-          "level": "advanced",
-          "source": "implicit",
-          "evidence": "Experiencia en sectores de transporte, construcción, seguridad, producción, textil, alimentación. Designed/adapted ERP solutions for each sector.",
-          "confidence": 0.95
-        },
-        {
-          "name": "EDI Standards and Integration (ERP context)",
-          "category": "technical",
-          "level": "advanced",
-          "source": "implicit",
-          "evidence": "'Integraciones EDI'; not only implemented but must have deep understanding of EDI flows, protocols, mapping with AX/D365FO.",
-          "confidence": 0.95
-        }
-      ],
-      "clusters": {
-        "Microsoft Dynamics AX/D365FO Stack": [
-          "Microsoft Dynamics AX (AX 2012)",
-          "Microsoft Dynamics 365 Finance & Operations (D365FO)",
-          "X++ (Dynamics AX/D365FO programming language)",
-          "Data Management Framework (DMF) (Dynamics)",
-          "Programming Best Practices (ERP context)"
-        ],
-        "Enterprise Data Integration": [
-          "Data Integration (Web Services, OData, Business Events, EDI)",
-          ".NET Framework (Advanced, ERP integrations)",
-          "EDI Standards and Integration (ERP context)"
-        ],
-        "Database & Performance Engineering": [
-          "SQL & Microsoft SQL Server (ERP data modelling/query)",
-          "Code Optimization (ERP/software performance tuning)"
-        ],
-        "ERP Solution Delivery & Leadership": [
-          "Technical Leadership (ERP teams)",
-          "ERP Training & Knowledge Transfer",
-          "ERP Solution Analysis & Requirements Engineering",
-          "Project Management (software evolution & maintenance)",
-          "Client Communication (technical/functional)"
-        ],
-        "Business & Domain Knowledge": [
-          "Business Process Modelling (ERP domains)",
-          "Multi-industry ERP domain knowledge"
-        ]
-      }
+    {
+      "name": "Data Integration (ERP systems)",
+      "type": "domain_specific",
+      "level": "advanced",
+      "relevance_score": 1.0,
+      "relevance_reasoning": "Key differentiator for large-scale ERP projects, integrating disparate business processes."
     },
-    "competencies": [
+    {
+      "name": "Web Services (Integration)",
+      "type": "domain_specific",
+      "level": "advanced",
+      "relevance_score": 0.95,
+      "relevance_reasoning": "Represents competencies in modern, API-driven enterprise architecture in ERP contexts."
+    },
+    {
+      "name": "SQL (Microsoft SQL Server) – ERP data",
+      "type": "transversal",
+      "level": "advanced",
+      "relevance_score": 0.93,
+      "relevance_reasoning": "Essential for ERP data management, migrations, and reporting—strong transversal technical skill."
+    },
+    {
+      "name": "Technical Leadership (ERP projects)",
+      "type": "transversal",
+      "level": "expert",
+      "relevance_score": 1.0,
+      "relevance_reasoning": "Anchors seniority—leads teams and complex projects, supporting candidate’s principal status."
+    },
+    {
+      "name": "Team Management (Development teams)",
+      "type": "transversal",
+      "level": "advanced",
+      "relevance_score": 0.9,
+      "relevance_reasoning": "Proven ability to manage technical staff; vital for senior consulting/project delivery roles."
+    },
+    {
+      "name": "Requirements Analysis (ERP projects)",
+      "type": "transversal",
+      "level": "advanced",
+      "relevance_score": 0.96,
+      "relevance_reasoning": "Critical for bridging business needs and technical solutions in senior analyst roles."
+    },
+    {
+      "name": "Enterprise Systems Integration (ERP context)",
+      "type": "domain_specific",
+      "level": "advanced",
+      "relevance_score": 0.92,
+      "relevance_reasoning": "Valuable for clients seeking unified business solutions; highlights end-to-end ERP expertise."
+    },
+    {
+      "name": "Best Practices Enforcement (Programming)",
+      "type": "transversal",
+      "level": "advanced",
+      "relevance_score": 0.88,
+      "relevance_reasoning": "Demonstrates ability to maintain code quality and mentor teams, boosting maintainability at enterprise scale."
+    },
+    {
+      "name": "Training & Onboarding (Technical)",
+      "type": "transversal",
+      "level": "advanced",
+      "relevance_score": 0.85,
+      "relevance_reasoning": "Directly supports technical leadership and scaling of knowledge across teams; aids client adoption and internal growth."
+    }
+  ],
+  "top_competencies": [
+    {
+      "competency": "team_management",
+      "type": "managerial",
+      "level": "senior",
+      "source": "experience",
+      "evidence": "Llevar equipos de programación."
+    },
+    {
+      "competency": "mentorship_training_onboarding",
+      "type": "soft",
+      "level": "senior",
+      "source": "experience",
+      "evidence": "Formador de las nuevas incorporaciones a la empresa; Formador a los programadores de cliente."
+    },
+    {
+      "competency": "problem_solving_optimization",
+      "type": "soft",
+      "level": "senior",
+      "source": "experience",
+      "evidence": "Optimización de código en procesos lentos, resultando en una mejora significativa del rendimiento y la eficiencia operativa."
+    },
+    {
+      "competency": "requirements_analysis",
+      "type": "functional",
+      "level": "senior",
+      "source": "experience",
+      "evidence": "Análisis y realización de los requerimientos del cliente, asegurando que las soluciones propuestas cumplían con sus necesidades específicas."
+    },
+    {
+      "competency": "client_needs_assessment",
+      "type": "functional",
+      "level": "senior",
+      "source": "experience",
+      "evidence": "Asegurando que las soluciones propuestas cumplían con sus necesidades específicas."
+    },
+    {
+      "competency": "best_practices_enforcement",
+      "type": "functional",
+      "level": "senior",
+      "source": "experience",
+      "evidence": "Marcar las pautas y gestionar las best practices de programación dentro de la empresa."
+    },
+    {
+      "competency": "technical_leadership",
+      "type": "soft",
+      "level": "expert",
+      "source": "experience",
+      "evidence": "Technical leader; Llevar equipos de programación; Formador de las nuevas incorporaciones a la empresa."
+    }
+  ],
+  "languages": [
+    {
+      "language": "Spanish",
+      "proficiency": "Native",
+      "source": "inferred",
+      "evidence": "Profile written in Spanish; name is Spanish; all roles and companies based in Spain (Balaguer, Lleida, Piensos Costa, Autónomo, Marquès PS); lifelong residence and work history in Spain.",
+      "confidence": 0.95
+    },
+    {
+      "language": "English",
+      "proficiency": "Professional",
+      "source": "inferred",
+      "evidence": "Long career in enterprise software (Microsoft Dynamics AX/D365), roles like 'Analista/Programador D365F&O', and technical context strongly suggest working knowledge of English, as much technical documentation, tools, and programming in this sector are in English. However, all companies are domestic Spanish firms, so no direct international work context is evident.",
+      "confidence": 0.7
+    }
+  ],
+  "inferred_context": {
+    "credentials": [
       {
-        "competency": "team_leadership",
-        "type": "soft",
-        "level": "senior",
-        "source": "experience",
-        "evidence": "Llevar equipos de programación. Technical leader. Coordinador técnico. Formador de las nuevas incorporaciones a la empresa. Formador a los programadores de cliente."
-      },
-      {
-        "competency": "technical_mentorship",
-        "type": "soft",
-        "level": "senior",
-        "source": "experience",
-        "evidence": "Formador de las nuevas incorporaciones a la empresa. Formador a los programadores de cliente. Marcar las pautas y gestionar las best practices de programación dentro de la empresa."
-      },
-      {
-        "competency": "communication",
-        "type": "soft",
-        "level": "senior",
-        "source": "experience",
-        "evidence": "Análisis y realización de los requerimientos del cliente, asegurando que las soluciones propuestas cumplían con sus necesidades específicas."
-      },
-      {
-        "competency": "cross_functional_collaboration",
-        "type": "soft",
-        "level": "senior",
-        "source": "experience",
-        "evidence": "Experiencia en sectores de transporte, construcción, seguridad, producción, textil, alimentación. Adaptando lógica de negocio del cliente y coordinando integraciones con sistemas externos."
-      },
-      {
-        "competency": "problem_solving",
-        "type": "soft",
-        "level": "senior",
-        "source": "experience",
-        "evidence": "Optimización de código en procesos lentos, resultando en una mejora significativa del rendimiento y la eficiencia operativa."
-      },
-      {
-        "competency": "adaptability",
-        "type": "soft",
-        "level": "senior",
-        "source": "experience",
-        "evidence": "Experiencia en sectores de transporte, construcción, seguridad, producción, textil, alimentación. Adaptación de soluciones ERP a cada sector."
-      },
-      {
-        "competency": "initiative",
-        "type": "soft",
-        "level": "senior",
-        "source": "experience",
-        "evidence": "Marcar las pautas y gestionar las best practices de programación dentro de la empresa."
-      },
-      {
-        "competency": "project_management",
-        "type": "functional",
-        "level": "mid-senior",
-        "source": "experience",
-        "evidence": "Gestión de evolutivos y mantenimiento de la aplicación del cliente."
-      },
-      {
-        "competency": "process_optimization",
-        "type": "functional",
-        "level": "senior",
-        "source": "experience",
-        "evidence": "Optimización de código en procesos lentos, resultando en una mejora significativa del rendimiento y la eficiencia operativa."
-      },
-      {
-        "competency": "requirements_analysis",
-        "type": "functional",
-        "level": "senior",
-        "source": "experience",
-        "evidence": "Análisis y realización de los requerimientos del cliente, asegurando que las soluciones propuestas cumplían con sus necesidades específicas."
-      },
-      {
-        "competency": "system_integration",
-        "type": "functional",
-        "level": "senior",
-        "source": "experience",
-        "evidence": "Realización de integraciones de datos E/S a través de Business Events, Web Services y OData, mejorando la interoperabilidad de los sistemas. Integraciones EDI."
-      },
-      {
-        "competency": "quality_assurance",
-        "type": "functional",
-        "level": "mid-senior",
-        "source": "experience",
-        "evidence": "Marcar las pautas y gestionar las best practices de programación dentro de la empresa."
-      },
-      {
-        "competency": "stakeholder_management",
-        "type": "managerial",
-        "level": "senior",
-        "source": "experience",
-        "evidence": "Análisis y realización de los requerimientos del cliente, asegurando que las soluciones propuestas cumplían con sus necesidades específicas."
+        "credential_name": "Bachelor's degree in Computer Science or related field",
+        "type": "degree",
+        "is_required_for_role": false,
+        "confidence": 0.85,
+        "evidence": "Roles such as 'Analista/Programador Senior D365F&O' and 'Software Engineer' in Spain typically expect a degree in Computer Science or related area, but it is not legally required."
       }
     ],
-    "disambiguation": {
-      "AX / D365FO": {
-        "meaning": "Microsoft Dynamics AX (AX 2012) and Dynamics 365 Finance & Operations (D365FO) enterprise resource planning (ERP) software platforms by Microsoft.",
-        "domain": "enterprise_software_development",
-        "confidence": 1.0
-      },
-      "DMF": {
-        "meaning": "Data Management Framework (DMF), a toolset within Microsoft Dynamics AX/D365FO used for data integration, migration, and management.",
-        "domain": "enterprise_software_development",
-        "confidence": 1.0
-      },
-      "Web Services": {
-        "meaning": "Machine-to-machine communication protocols for software integration, specifically SOAP/REST web services used for connecting ERP systems (Dynamics AX/D365FO) to other software.",
-        "domain": "enterprise_software_development",
-        "confidence": 1.0
-      },
-      "OData": {
-        "meaning": "Open Data Protocol (OData), a RESTful API standard commonly used for integration and data exchange in enterprise software platforms like Dynamics 365 FO.",
-        "domain": "enterprise_software_development",
-        "confidence": 1.0
-      },
-      "Business Events": {
-        "meaning": "Event-driven integration mechanism in Microsoft Dynamics 365 Finance & Operations, used to trigger external processes or data flows based on business actions in the ERP.",
-        "domain": "enterprise_software_development",
-        "confidence": 1.0
-      },
-      "Integraciones EDI": {
-        "meaning": "Electronic Data Interchange (EDI) integrations, digital exchange of business documents (invoices, orders, etc.) between ERP and other enterprise systems.",
-        "domain": "enterprise_software_development",
-        "confidence": 1.0
-      },
-      "Optimización de código": {
-        "meaning": "Refactoring and improving software source code within enterprise/ERP solutions for performance and efficiency.",
-        "domain": "enterprise_software_development",
-        "confidence": 1.0
-      },
-      "Formador": {
-        "meaning": "Trainer/mentor responsible for onboarding new developers and upskilling existing staff (both internally and on client side) in enterprise/ERP software technologies and best practices.",
-        "domain": "enterprise_software_development",
-        "confidence": 1.0
-      },
-      "Best practices de programación": {
-        "meaning": "Established standards and guidelines for professional software development, specifically within enterprise/ERP programming teams.",
-        "domain": "enterprise_software_development",
-        "confidence": 1.0
-      },
-      "Evolutivos y mantenimiento de la aplicación": {
-        "meaning": "Ongoing enhancements (continuous development) and maintenance of ERP/enterprise business software deployed at client organizations.",
-        "domain": "enterprise_software_development",
-        "confidence": 1.0
-      },
-      "AX 2012": {
-        "meaning": "Microsoft Dynamics AX 2012, a version of Microsoft’s ERP solution, used for enterprise business management processes.",
-        "domain": "enterprise_software_development",
-        "confidence": 1.0
-      },
-      "D365FO": {
-        "meaning": "Microsoft Dynamics 365 Finance and Operations, the current cloud-based ERP platform by Microsoft (abbreviated use throughout).",
-        "domain": "enterprise_software_development",
-        "confidence": 1.0
-      },
-      "E/S": {
-        "meaning": "Entrada/Salida (Input/Output), referring to data flows between ERP system and external software during integrations.",
-        "domain": "enterprise_software_development",
-        "confidence": 0.98
-      },
-      "Technical leader": {
-        "meaning": "Team lead responsible for guiding technical aspects of programming teams and projects, specifically in enterprise ERP software context.",
-        "domain": "enterprise_software_development",
-        "confidence": 1.0
-      },
-      ".NET": {
-        "meaning": "Microsoft’s .NET (dotnet) development framework for building enterprise business applications, including integrations with Dynamics 365/AX.",
-        "domain": "enterprise_software_development",
-        "confidence": 1.0
-      }
+    "work_environment": {
+      "environment_type": "office",
+      "culture_fit_indicators": [
+        "structured",
+        "collaborative",
+        "client-facing",
+        "medium to large company",
+        "enterprise software development"
+      ],
+      "physical_demands": "sedentary",
+      "reasoning": "Enterprise ERP consultants and programmers in Spain, especially with roles at companies like Piensos Costa and Marquès PS, predominantly work in office or remote-office settings, focusing on analytical and collaborative tasks with minimal physical labor."
+    }
+  },
+  "matching_intelligence": {
+    "ideal_role": {
+      "role_name": "Senior D365 F&O Solution Architect",
+      "fit_score": 0.93,
+      "reasoning": "Sergio has over 15 years of experience with a strong focus on Microsoft Dynamics AX and D365 F&O for the last 7+ years, including advanced expertise in technical leadership and requirements analysis. His recent roles emphasize both deep technical implementation and leading development teams, making Solution Architect (senior) his most direct upward step, combining technical, client-facing, and leadership skills.",
+      "required_skills_match": [
+        "Microsoft Dynamics 365 Finance and Operations (D365F&O)",
+        "Microsoft Dynamics AX 2012",
+        "Technical Leadership",
+        "Requirements Analysis",
+        "Data Integration (ERP systems)",
+        "Team Management",
+        "Business Events, Web Services, OData",
+        "Mentorship and onboarding"
+      ],
+      "growth_areas": [
+        "Greater exposure to multi-country/global ERP deployments",
+        "Strategic stakeholder management beyond technical requirement analysis"
+      ]
     },
-    "canonical_terms": {
-      "AX 2012": "Microsoft Dynamics AX 2012",
-      "Dynamics AX 2012": "Microsoft Dynamics AX 2012",
-      "AX": "Microsoft Dynamics AX 2012",
-      "MS Dynamics AX": "Microsoft Dynamics AX 2012",
-      "D365FO": "Microsoft Dynamics 365 Finance & Operations",
-      "Dynamics 365 Finance and Operations": "Microsoft Dynamics 365 Finance & Operations",
-      "Microsoft Dynamics 365 Finance and Operations": "Microsoft Dynamics 365 Finance & Operations",
-      "MS Dynamics 365 FO": "Microsoft Dynamics 365 Finance & Operations",
-      "D365F&O": "Microsoft Dynamics 365 Finance & Operations",
-      "Microsoft Dynamics 365 F&O": "Microsoft Dynamics 365 Finance & Operations",
-      "DMF": "Data Management Framework",
-      "Data Management Framework (DMF)": "Data Management Framework",
-      "Dynamics Data Management Framework": "Data Management Framework",
-      "SOAP": "Web Services",
-      "REST Web Services": "Web Services",
-      "SOAP Web Services": "Web Services",
-      "REST": "Web Services",
-      "Open Data Protocol": "OData",
-      "D365FO Business Events": "Business Events",
-      "Dynamics 365 Business Events": "Business Events",
-      "EDI": "Electronic Data Interchange",
-      "Integraciones EDI": "Electronic Data Interchange",
-      "Code Optimization": "Optimización de código",
-      "Code Refactoring": "Optimización de código",
-      "Performance Tuning": "Optimización de código",
-      ".NET Framework": ".NET",
-      ".Net": ".NET",
-      "dotnet": ".NET",
-      "Microsoft Visual Studio": "Visual Studio",
-      "Microsoft Windows Mobile": "Windows Mobile",
-      "Microsoft Silverlight": "Silverlight",
-      "BI": "Business Intelligence",
-      "Microsoft SharePoint": "SharePoint",
-      "Dynamics 365 ERP": "Microsoft Dynamics 365 ERP",
-      "D365 ERP": "Microsoft Dynamics 365 ERP",
-      "Structured Query Language": "SQL",
-      "SQL Server": "Microsoft SQL Server",
-      "MS SQL Server": "Microsoft SQL Server",
-      "Microsoft XNA": "XNA",
-      ".xaml": "XAML",
-      "Dynamics AX X++": "X++",
-      "D365FO X++": "X++"
-    },
-    "ideal_roles": {
-      "primary": {
-        "role_name": "Senior Dynamics 365 Finance & Operations Technical Lead",
-        "fit_score": 0.93,
-        "reasoning": "Sergio's most recent and extensive experience centers around technical leadership, solution architecture, and advanced integration within Microsoft Dynamics 365 Finance & Operations (D365FO) and AX. Over the last 2-5 years, he has acted as both an advanced programmer and technical leader, frequently managing team best practices, performing ERP-specific code optimization, and leading integration solutions for clients. This role directly leverages his seniority, sector focus, ERP expertise, leadership, and deep technical skill set.",
+    "alternative_roles": [
+      {
+        "role_name": "ERP Technical Lead - Microsoft Dynamics",
+        "fit_score": 0.89,
+        "reasoning": "Sergio’s record as a technical leader and development team manager in ERP projects fits squarely with a principal-level technical lead role, where he would own technical vision, oversee code quality, and mentor teams.",
         "required_skills_match": [
-          "Microsoft Dynamics AX (AX 2012)",
-          "Microsoft Dynamics 365 Finance & Operations (D365FO)",
-          "X++",
-          "Technical Leadership (ERP teams)",
-          "ERP Solution Analysis & Requirements Engineering",
-          "Data Integration (Web Services, OData, Business Events, EDI)",
-          ".NET Framework",
-          "SQL & Microsoft SQL Server",
-          "Programming Best Practices (ERP context)",
-          "ERP Training & Knowledge Transfer"
+          "Technical Leadership",
+          "Team Management",
+          "Microsoft Dynamics 365 Finance and Operations (D365F&O)",
+          "Code Optimization",
+          ".NET Framework (ERP context)",
+          "Integration (Business Events, OData, Web Services)"
         ],
         "growth_areas": [
-          "Cloud-native ERP architecture",
-          "Wider digital transformation strategy involvement",
-          "Agile delivery frameworks at scale"
+          "Upskill in DevOps and Continuous Delivery for ERP environments"
         ]
       },
-      "alternatives": [
-        {
-          "role_name": "ERP Solutions Architect (Microsoft Dynamics 365)",
-          "fit_score": 0.86,
-          "reasoning": "Sergio's breadth of experience in requirements analysis, solution scoping, and integration projects—particularly on D365FO/AX—make an ERP Solutions Architect role a natural progression. He already acts as a de facto architect in prior roles, and with further emphasis on business process modelling and design, he could fully own architecture for larger-scale ERP initiatives.",
-          "required_skills_match": [
-            "Microsoft Dynamics AX (AX 2012)",
-            "Microsoft Dynamics 365 Finance & Operations (D365FO)",
-            "ERP Solution Analysis & Requirements Engineering",
-            "Business Process Modelling (ERP domains)",
-            "Data Integration",
-            "Project Management"
-          ],
-          "growth_areas": [
-            "Stakeholder management at C-level",
-            "Enterprise-wide architecture patterns",
-            "Solution cost-modelling and ROI analysis"
-          ]
-        },
-        {
-          "role_name": "ERP Practice Lead / Team Manager (Microsoft Technologies)",
-          "fit_score": 0.81,
-          "reasoning": "His hands-on team leadership, mentorship, and technical governance are a strong foundation for a broader ERP practice lead or managerial role. In this context, he would expand beyond technical leadership to responsibilities for team growth, project pipeline oversight, and cross-project best practices.",
-          "required_skills_match": [
-            "Technical Leadership (ERP teams)",
-            "Programming Best Practices",
-            "ERP Training & Knowledge Transfer",
-            "Team Leadership",
-            "Process Optimization"
-          ],
-          "growth_areas": [
-            "Budget ownership",
-            "Talent acquisition and retention",
-            "High-level strategic planning"
-          ]
-        },
-        {
-          "role_name": "Senior ERP Integration Specialist",
-          "fit_score": 0.78,
-          "reasoning": "Sergio's consistent experience delivering complex integrations (OData, Web Services, Business Events, EDI) positions him well as a senior-level ERP integration expert, able to lead interoperability and digital transformation projects across enterprise clients.",
-          "required_skills_match": [
-            "Data Integration (Web Services, OData, Business Events, EDI)",
-            ".NET Framework",
-            "SQL & Microsoft SQL Server",
-            "Microsoft Dynamics ERP ecosystems"
-          ],
-          "growth_areas": [
-            "Integration with cloud SaaS platforms",
-            "API management frameworks",
-            "Enterprise security governance for integrations"
-          ]
-        }
-      ],
-      "career_trajectory": "Sergio has enjoyed progressive advancement from senior analyst/programmer focused on Microsoft Dynamics AX/D365FO to technical coordinator and leader, culminating in a strong, recent focus on technical leadership and solution delivery in enterprise ERP environments. He demonstrates deep subject-matter expertise, growing into broader architectural and leadership responsibilities.",
-      "recent_focus": "In the last 2-5 years, Sergio has acted as both senior developer and technical lead on D365FO/AX projects, specializing in requirements analysis, technical mentorship, advanced data integrations, and direct client solution delivery. Leadership of programming teams and governance of best practices are key hallmarks.",
-      "reasoning": "Recent work as a D365F&O Analista/Programador and freelance Dynamics AX specialist receives the greatest weighting and highlights Sergio's leadership, real-world ERP delivery expertise, and technical mentoring focus. These features—combined with a senior career arc and enterprise software sector alignment—make senior technical lead, ERP solution architect, and practice manager roles the best fit, with a particular emphasis on Microsoft enterprise technologies."
-    },
-    "languages": [
       {
-        "language": "Spanish",
-        "proficiency": "Native",
-        "source": "inferred",
-        "evidence": "Profile written entirely in Spanish; candidate lives and works in Spain (Balaguer, Lleida); all roles at Spanish companies.",
-        "confidence": 0.9
+        "role_name": "Senior ERP Integration Architect",
+        "fit_score": 0.82,
+        "reasoning": "His specialization in data integration, EDI, and optimization across ERP environments makes him highly suitable for a principal architect role focused on integration, particularly for enterprise digital transformation projects.",
+        "required_skills_match": [
+          "Data Integration (ERP systems)",
+          "Business Events, Web Services, OData",
+          "Electronic Data Interchange (EDI)",
+          "Requirements Analysis",
+          "SQL",
+          "Business Intelligence"
+        ],
+        "growth_areas": [
+          "Broader exposure to cloud-native integration technologies",
+          "Certifications in cloud platforms (Azure, AWS) for ERP integration"
+        ]
       },
       {
-        "language": "English",
-        "proficiency": "Professional",
-        "source": "inferred",
-        "evidence": "Extensive experience (20 years) as a senior programmer/analyst in enterprise software (Microsoft Dynamics AX/D365FO); field requires reading technical documentation and likely collaboration in English, even in Spain. However, no explicit mention and hasn't worked for international companies, so strong professional context but not certain of fluency.",
-        "confidence": 0.7
+        "role_name": "ERP Development Manager",
+        "fit_score": 0.78,
+        "reasoning": "His history of team leadership, onboarding new developers, enforcing best practices, and managing client evolutive needs enables a strong match for a development manager role overseeing large ERP dev teams.",
+        "required_skills_match": [
+          "Team Management",
+          "Mentorship & onboarding",
+          "Best Practices Enforcement",
+          "Technical Leadership",
+          "Microsoft Dynamics AX and D365F&O"
+        ],
+        "growth_areas": [
+          "People management at greater scale (20+ headcount)",
+          "Broaden strategic alignment with business units"
+        ]
       }
-    ]
+    ],
+    "sector_fit_reasoning": "The candidate’s career is centered on the development, integration, and optimization of Microsoft Dynamics AX and D365 Finance & Operations ERP systems. Their work involves technical leadership, bespoke business logic implementation for clients, EDI/data integrations, and application lifecycle management, all explicitly within the ERP/enterprise software ecosystem. The language, projects, and technologies referenced consistently align with enterprise software focused on ERP implementation and customization. Secondary sectors are included due to overlap in required skill sets (general software development, technical/business software consulting, and business intelligence/data integration work)."
   }
 }

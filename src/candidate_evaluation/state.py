@@ -44,6 +44,9 @@ class CandidateEvaluationState(TypedDict):
     # Control flags
     debate_round: int
     max_debate_rounds: int
+    
+    # Gatekeeper decision
+    gatekeeper_decision: Optional[Dict[str, Any]]
 
 
 # ===== STRUCTURED OUTPUT SCHEMAS =====
@@ -210,6 +213,38 @@ class ConsensusDecision(BaseModel):
     
     compatibility_breakdown: List[CompatibilityScore] = Field(
         description="Compatibility scores by dimension",
+    )
+    
+    timestamp: str = Field(
+        default_factory=lambda: datetime.utcnow().isoformat(),
+    )
+
+
+    timestamp: str = Field(
+        default_factory=lambda: datetime.utcnow().isoformat(),
+    )
+
+
+class GatekeeperDecision(BaseModel):
+    """Schema for the initial gatekeeper decision."""
+    
+    proceed: bool = Field(
+        description="Whether to proceed with full evaluation (True) or fast reject (False)",
+    )
+    
+    confidence: float = Field(
+        description="Confidence in the decision (0.0-1.0)",
+        ge=0.0,
+        le=1.0,
+    )
+    
+    reasoning: str = Field(
+        description="Reasoning for the decision, highlighting key knockout factors if rejected",
+    )
+    
+    knockout_reasons: List[str] = Field(
+        description="List of knockout criteria met (if any), e.g., 'Sector Mismatch', 'Seniority Gap'",
+        default_factory=list,
     )
     
     timestamp: str = Field(
