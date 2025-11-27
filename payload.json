@@ -1,0 +1,511 @@
+{
+  "enriched_candidate": {
+    "candidate_id": "82cc6dec-65f1-4ff4-a0bf-c44c2f4184b1",
+    "enrichment_version": "2.0-optimized",
+    "timestamp": "2025-11-26T17:52:55.324917",
+    "identity": {
+      "full_name": "Pilar Lasheras Lausín",
+      "current_role": "Profesional de PRL",
+      "location": ", ",
+      "sector": "occupational_health_and_safety",
+      "seniority": "principal",
+      "years_experience": 18
+    },
+    "career_trajectory": {
+      "summary": "Pilar's career began in administrative, notary, and management roles before moving into occupational health and safety (PRL), quality, and environment-focused positions. Over the past decade, she steadily advanced from technical PRL positions to department responsibility, and most recently to senior technical roles with leadership capacity in large organizations. The trajectory reveals increasing technical and regulatory specialization, as well as deeper integration of quality, safety, and environmental management duties, emphasizing expert-level knowledge and operational leadership.",
+      "recent_focus": "In the last 2-3 years, Pilar focused on technical and system leadership in PRL, quality, and environmental compliance for major companies (ACCIONA, Sorigué). Her work involved regulatory audits, compliance oversight, internal training, project management, and direct interaction with regulatory agencies, solidifying her status as a senior specialist in integrated HSE-management systems.",
+      "stability_metrics": {
+        "average_tenure_years": 3.0,
+        "roles_count": 14,
+        "companies_count": 7,
+        "job_hopping_risk": "low"
+      }
+    },
+    "education": {
+      "highest_degree": {
+        "degree": "Master's in Labor Advisory and Personnel Management",
+        "field": "Labor Advisory and Personnel Management",
+        "institution": "Colegio Oficial de Sociólogos de Madrid",
+        "start_year": 2012,
+        "end_year": 2013,
+        "is_completed": true,
+        "relevance_to_career": "Directly supports senior roles in HR, Occupational Health, and Labor Risk Prevention, providing critical expertise for workplace safety and personnel management."
+      },
+      "level_summary": "Multiple Master's level degrees with deep specialization in HR, Labor Risk Prevention, and foundational Law education."
+    },
+    "top_skills": [
+      {
+        "name": "Prevención de Riesgos Laborales (PRL)",
+        "type": "domain_specific",
+        "level": "expert",
+        "relevance_score": 1.0,
+        "relevance_reasoning": "This is the candidate’s core expertise and main differentiator, central to her sector and seniority; critical for leadership in large organizations."
+      },
+      {
+        "name": "Sistemas de gestión de la seguridad y salud (OHSAS 18001)",
+        "type": "domain_specific",
+        "level": "advanced",
+        "relevance_score": 0.99,
+        "relevance_reasoning": "Key industry standard, vital for large-scale safety system implementation and compliance at her senior level."
+      },
+      {
+        "name": "Aseguramiento de la calidad",
+        "type": "domain_specific",
+        "level": "advanced",
+        "relevance_score": 0.97,
+        "relevance_reasoning": "High-value for integrated management roles, blending safety, quality, and regulatory functions."
+      },
+      {
+        "name": "Gestión ambiental",
+        "type": "domain_specific",
+        "level": "advanced",
+        "relevance_score": 0.95,
+        "relevance_reasoning": "Increasingly important in combined QHSE roles and highly demanded across principal-level positions."
+      },
+      {
+        "name": "Coordinación de Actividades Empresariales (CAE)",
+        "type": "domain_specific",
+        "level": "advanced",
+        "relevance_score": 0.93,
+        "relevance_reasoning": "Critical for PRL leadership in complex organizations managing contractors and partnerships."
+      },
+      {
+        "name": "Gestión documental de cumplimiento normativo (OHS/Quality/Environment)",
+        "type": "transversal",
+        "level": "advanced",
+        "relevance_score": 0.95,
+        "relevance_reasoning": "Ensures operational adherence to evolving regulations; a key differentiator for senior staff with cross-functional oversight."
+      },
+      {
+        "name": "Gestión de auditorías y certificaciones externas",
+        "type": "transversal",
+        "level": "advanced",
+        "relevance_score": 0.92,
+        "relevance_reasoning": "Principal for companies seeking/maintaining certifications, and for operational credibility at senior level."
+      },
+      {
+        "name": "Investigación y análisis de accidentes laborales",
+        "type": "domain_specific",
+        "level": "advanced",
+        "relevance_score": 0.92,
+        "relevance_reasoning": "Indicates deep technical capability to mitigate and learn from workplace incidents—valuable for organizational safety culture."
+      },
+      {
+        "name": "Gestión de subcontratistas y proveedores (PRL y Calidad)",
+        "type": "transversal",
+        "level": "advanced",
+        "relevance_score": 0.91,
+        "relevance_reasoning": "Shows ability to extend QHSE standards throughout the supply chain, critical in large, regulated environments."
+      },
+      {
+        "name": "Formación en seguridad y salud laboral",
+        "type": "transversal",
+        "level": "advanced",
+        "relevance_score": 0.9,
+        "relevance_reasoning": "Demonstrates authority and ability to upskill others, supporting risk prevention at scale."
+      },
+      {
+        "name": "Elaboración y gestión de procedimientos e instrucciones técnicas",
+        "type": "transversal",
+        "level": "advanced",
+        "relevance_score": 0.9,
+        "relevance_reasoning": "Vital for codifying best practices, a key marker of senior technical and operational leadership."
+      },
+      {
+        "name": "Gestión operacional de APPCC (HACCP)",
+        "type": "domain_specific",
+        "level": "advanced",
+        "relevance_score": 0.85,
+        "relevance_reasoning": "Relevant for roles requiring food safety integration with occupational health, increasing cross-sector versatility."
+      }
+    ],
+    "top_competencies": [
+      {
+        "competency": "team_leadership",
+        "type": "soft",
+        "level": "senior",
+        "source": "role (RESPONSABLE DEPARTAMENTO DE RR.HH. Y P.R.L.)",
+        "evidence": "Responsable de departamento, gestión y control de equipos y subcontratistas. Sustained department management responsibility (2014-2021) and direct people oversight."
+      },
+      {
+        "competency": "communication",
+        "type": "soft",
+        "level": "senior",
+        "source": "experience/project",
+        "evidence": "Comunicación con organismos públicos (Inspección de Trabajo, Gobierno de Aragón), formación e información del personal, elaboración de informes y procedimientos."
+      },
+      {
+        "competency": "cross_functional_collaboration",
+        "type": "soft",
+        "level": "senior",
+        "source": "role/experience",
+        "evidence": "Gestión de CAE, trato y coordinación con subcontratistas, organismos públicos, personal interno y clientes. Cross-functional document management and regulatory interface."
+      },
+      {
+        "competency": "analytical_thinking",
+        "type": "soft",
+        "level": "senior",
+        "source": "experience/project",
+        "evidence": "Investigación de accidentes, análisis de causas, planificación de actividades preventivas, auditoría e implantación de sistemas de gestión."
+      },
+      {
+        "competency": "initiative",
+        "type": "soft",
+        "level": "senior",
+        "source": "role/project",
+        "evidence": "Puesta en marcha de APPCC de la empresa, implantación systemas OHSAS 18001, desarrollo y actualización de procedimientos técnicos."
+      },
+      {
+        "competency": "adaptability",
+        "type": "soft",
+        "level": "senior",
+        "source": "experience",
+        "evidence": "Cambio de sectores (notaría, RR.HH., PRL, calidad, medio ambiente), más de 21 años en distintos roles y empresas, transición a puestos de responsabilidad."
+      },
+      {
+        "competency": "quality_assurance",
+        "type": "functional",
+        "level": "expert",
+        "source": "experience/role",
+        "evidence": "Aseguramiento de la calidad, control y auditoría de sistemas ISO 9001 y APPCC en diferentes compañías."
+      }
+    ],
+    "languages": [
+      {
+        "language": "Spanish",
+        "proficiency": "Native",
+        "source": "inferred",
+        "evidence": "All experience, education, and role descriptions occurred in Spain (Zaragoza, El Burgo de Ebro, etc). Profile information and job roles are written in Spanish. Over 21 years of career exclusively in Spain.",
+        "confidence": 0.98
+      },
+      {
+        "language": "English",
+        "proficiency": "Professional",
+        "source": "inferred",
+        "evidence": "Explicit language section mentions English. Candidate has worked for large Spanish multinationals (e.g., ACCIONA, SAICA NATUR) where English is commonly required. Advanced educational background (two master's degrees), long professional career (21+ years), and exposure to international standards and documentation increase the likelihood of professional English proficiency. No evidence of studying or working in an English-speaking country, so not likely fluent.",
+        "confidence": 0.7
+      }
+    ],
+    "inferred_context": {
+      "credentials": [
+        {
+          "credential_name": "Máster en Prevención de Riesgos Laborales (con las 3 especialidades: Seguridad en el Trabajo, Higiene Industrial, Ergonomía y Psicosociología Aplicada)",
+          "type": "degree",
+          "is_required_for_role": true,
+          "confidence": 0.95,
+          "evidence": "En España, el rol de Técnico Superior en Prevención de Riesgos Laborales (PRL) exige legalmente un título oficial de Máster en PRL con las 3 especialidades para ejercer funciones de nivel superior en prevención. El candidato ostenta repetidamente ese rol."
+        }
+      ],
+      "work_environment": {
+        "environment_type": "industrial/office",
+        "culture_fit_indicators": [
+          "burocrático",
+          "estructurado",
+          "orientado a normativas",
+          "colaborativo con departamentos diversos (RRHH, calidad, medio ambiente, contratas)"
+        ],
+        "physical_demands": "moderadas a bajas, con presencia frecuente en oficinas y visitas esporádicas o regulares a plantas, almacenes o entornos industriales para auditorías, formación y control documental.",
+        "reasoning": "Empresas: ACCIONA, Sorigué, SAICA Natur, Chemik Group, y Transportes Peña Ortín son grandes empresas industriales y de servicios con fuerte carga de cumplimiento normativo en PRL y calidad. La experiencia y funciones implican trabajo principalmente de oficina/administrativo, pero con desplazamientos a entornos productivos e industriales (visitas, formación, auditoría, inspección)."
+      }
+    },
+    "matching_intelligence": {
+      "ideal_role": {
+        "role_name": "Senior HSE (Health, Safety & Environment) Specialist",
+        "fit_score": 0.92,
+        "reasoning": "Pilar's most recent experience, spanning the last 2-3 years at ACCIONA and Sorigué, is highly focused on technical leadership in health, safety, environment, and quality roles. She demonstrates advanced expertise in occupational health and safety (PRL), quality systems (ISO 9001), environmental management (ISO 14001), and managing compliance across complex corporate settings. The recurring focus on technical, regulatory, and process improvement responsibilities, coupled with seniority-level project and people management, make a Senior HSE Specialist role the most relevant next step.",
+        "required_skills_match": [
+          "Prevención de Riesgos Laborales (PRL)",
+          "Gestión ambiental",
+          "Aseguramiento de la calidad",
+          "Auditoría interna (calidad, ambiente, PRL)",
+          "Gestión documental de cumplimiento normativo",
+          "Sistemas de gestión de la calidad (ISO 9001)",
+          "Sistemas de gestión ambiental (ISO 14001)",
+          "Sistemas de gestión de la seguridad y salud (OHSAS 18001)",
+          "Formación en seguridad y salud laboral",
+          "Gestión de subcontratistas y proveedores",
+          "Analytical thinking",
+          "Project management"
+        ],
+        "growth_areas": [
+          "Further specialization in cross-country HSE regulation",
+          "Uptake of digital tools for HSE data analytics"
+        ]
+      },
+      "alternative_roles": [
+        {
+          "role_name": "HSE Compliance Manager",
+          "fit_score": 0.86,
+          "reasoning": "Pilar has shown increasing responsibility in compliance, including PRL, quality, and environmental documentation control at both technical and managerial levels. Her frequent interactions with regulatory bodies and implementation of compliance programs align with a transition to a managerial compliance role, overseeing all aspects of OHS, environment, and quality system compliance across business units.",
+          "required_skills_match": [
+            "Gestión documental de cumplimiento normativo",
+            "Prevención de Riesgos Laborales (PRL)",
+            "Coordinación CAE",
+            "Gestión de proyectos",
+            "Gestión ambiental",
+            "Sistemas de gestión de la calidad",
+            "Auditoría interna"
+          ],
+          "growth_areas": [
+            "Broader people management at compliance team scale",
+            "Deeper legal expertise for multinational compliance"
+          ]
+        },
+        {
+          "role_name": "Quality, Health & Safety Lead",
+          "fit_score": 0.81,
+          "reasoning": "With both senior project management and deep technical roots in quality, health, and safety (demonstrated via ISO/OHSAS system leadership), Pilar is well-suited to lead QHSE teams, drive improvement initiatives, and act as a main point of contact during audits. Leadership in process improvement is also a natural fit for this role.",
+          "required_skills_match": [
+            "Aseguramiento de la calidad",
+            "Mejora de procesos",
+            "Formación en seguridad y salud laboral",
+            "Gestión ambiental",
+            "Project management",
+            "People management"
+          ],
+          "growth_areas": [
+            "Strategic planning at corporate level",
+            "Cross-site consistency for global operations"
+          ]
+        },
+        {
+          "role_name": "Environment, Health & Safety (EHS) Project Manager",
+          "fit_score": 0.78,
+          "reasoning": "Recent multi-disciplinary responsibilities (PRL, quality, environment) prepare Pilar for project-based leadership on EHS improvement programs, major audits, and system rollouts, especially in technical environments. She aligns with roles that bridge technical EHS expertise and complex project coordination.",
+          "required_skills_match": [
+            "Gestión de proyectos",
+            "Gestión ambiental",
+            "Auditoría interna",
+            "PRL",
+            "Process improvement",
+            "Cross-functional collaboration"
+          ],
+          "growth_areas": [
+            "Change management for major transformation projects",
+            "Stakeholder communication for large-scale programs"
+          ]
+        }
+      ],
+      "sector_fit_reasoning": "The candidate's core professional identity is built around specialized roles in Prevención de Riesgos Laborales (PRL) — occupational health and safety — across industrial and logistics companies (ACCIONA, Sorigué, SAICA NATUR, Copcisa, Chemik Group, Transportes Peña Ortin). Every recent job title and description directly references PRL as a primary function, including technical administration, accident prevention, risk analysis, compliance to safety standards (OHSAS 18001), and use of sector-specific platforms (CAE, CMS). Secondary skills cluster around quality (ISO 9001), environmental management (ISO 14001), and strategic HR, making these clear adjacent sectors. The language, activities, and education all reference occupational H&S best practices and regulatory compliance above all, with a strong, sustained focus for 15+ years. This points unambiguously to 'occupational_health_and_safety' as the primary sector, with 0.95 confidence as HR and quality are relevant but consistently subordinate to the PRL focus."
+    }
+  },
+  "enriched_job": {
+    "job_id": "0eb26e0f-9401-4fca-8baa-bde9d6c82f61",
+    "enrichment_version": "2.0-optimized",
+    "timestamp": "2025-11-26T11:30:37.210044",
+    "identity": {
+      "title": "Técnico de PRL",
+      "company": "Acciona",
+      "sector": "construction",
+      "seniority_required": "mid",
+      "years_experience_required": 3
+    },
+    "requirements": {
+      "top_skills": [
+        {
+          "name": "Prevención de Riesgos Laborales (PRL)",
+          "type": "domain_specific",
+          "importance": "required",
+          "criticality_score": 1.0,
+          "reasoning": "Core domain expertise; the main function of the role is developing and supervising safety plans in construction environments."
+        },
+        {
+          "name": "Evaluación de riesgos en obra",
+          "type": "technical",
+          "importance": "required",
+          "criticality_score": 0.95,
+          "reasoning": "The ability to accurately assess on-site risks is crucial for implementing prevention strategies and ensuring worker safety."
+        },
+        {
+          "name": "Investigación de incidentes y accidentes",
+          "type": "technical",
+          "importance": "required",
+          "criticality_score": 0.9,
+          "reasoning": "Incident investigation is critical for legal compliance and for improving site safety by correcting root causes."
+        },
+        {
+          "name": "Conocimiento actualizado de normativa legal en PRL",
+          "type": "domain_specific",
+          "importance": "required",
+          "criticality_score": 1.0,
+          "reasoning": "Strict legal compliance is essential in the sector and failure can have legal and financial repercussions for the company."
+        },
+        {
+          "name": "Capacitación en seguridad y formación interna",
+          "type": "functional",
+          "importance": "required",
+          "criticality_score": 0.85,
+          "reasoning": "Training personnel ensures everyone understands safe procedures, reducing incidents and legal claims."
+        },
+        {
+          "name": "Experiencia en construcción de infraestructuras singulares",
+          "type": "domain_specific",
+          "importance": "required",
+          "criticality_score": 0.9,
+          "reasoning": "Sector-specific experience (e.g., data centers or similar complex builds) ensures candidates can anticipate unique risks."
+        },
+        {
+          "name": "Auditoría de seguridad en obra",
+          "type": "technical",
+          "importance": "required",
+          "criticality_score": 0.8,
+          "reasoning": "Systematic audits are needed to identify hazards, track compliance and drive improvements."
+        },
+        {
+          "name": "Comunicación efectiva con equipos de obra",
+          "type": "transversal",
+          "importance": "required",
+          "criticality_score": 0.8,
+          "reasoning": "Clear, real-time communication is vital for enforcing safety procedures and for rapid incident response."
+        },
+        {
+          "name": "Colaboración interdepartamental",
+          "type": "transversal",
+          "importance": "preferred",
+          "criticality_score": 0.7,
+          "reasoning": "The ability to collaborate across teams (engineering, site management, etc.) is important for integrating safety into all project phases."
+        }
+      ],
+      "top_competencies": [
+        {
+          "competency": "Prevención de riesgos laborales (PRL)",
+          "type": "functional",
+          "importance": "required",
+          "evidence": "Es esencial que el candidato posea formación en PRL, ya sea a nivel universitario, grado superior o máster."
+        },
+        {
+          "competency": "Conocimiento de normativa legal en PRL",
+          "type": "functional",
+          "importance": "required",
+          "evidence": "Responsable de garantizar el cumplimiento de las normativas de prevención de riesgos laborales."
+        },
+        {
+          "competency": "Evaluaciones de riesgos y auditorías de seguridad",
+          "type": "functional",
+          "importance": "required",
+          "evidence": "Realizar evaluaciones de riesgos y auditorías de seguridad en el sitio."
+        },
+        {
+          "competency": "Capacitación en seguridad y procedimientos de emergencia",
+          "type": "functional",
+          "importance": "required",
+          "evidence": "Capacitar al personal en prácticas seguras y procedimientos de emergencia."
+        },
+        {
+          "competency": "Investigación de incidentes y análisis de causas",
+          "type": "functional",
+          "importance": "required",
+          "evidence": "Investigar incidentes y accidentes para determinar causas y prevenir recurrencias."
+        },
+        {
+          "competency": "Comunicación efectiva",
+          "type": "soft",
+          "importance": "required",
+          "evidence": "Capacitar al personal en prácticas seguras y colaboración con equipos de proyecto implica habilidades de comunicación clara y efectiva."
+        },
+        {
+          "competency": "Colaboración interdepartamental",
+          "type": "soft",
+          "importance": "required",
+          "evidence": "Colaborar con equipos de proyecto para integrar medidas de seguridad en todas las fases de construcción."
+        },
+        {
+          "competency": "Análisis y resolución de problemas",
+          "type": "soft",
+          "importance": "required",
+          "evidence": "Investigar incidentes y accidentes para determinar causas y prevenir recurrencias implica capacidades analíticas y de resolución."
+        }
+      ],
+      "non_negotiables": [
+        {
+          "requirement": "Formación específica en PRL a nivel universitario, grado superior o máster",
+          "type": "credential",
+          "verification_method": "Diploma/certificate check",
+          "reasoning": "Legal and operational requirement explicitly stated by employer and mandated in the sector."
+        },
+        {
+          "requirement": "Mínimo 3 años de experiencia relevante en PRL en construcción",
+          "type": "experience",
+          "verification_method": "CV/resume check and reference calls",
+          "reasoning": "Ensures practical, sector-relevant skills and familiarity with infrastructure project risks."
+        },
+        {
+          "requirement": "Disponibilidad para trabajar en Zaragoza de manera presencial",
+          "type": "location",
+          "verification_method": "Interview confirmation",
+          "reasoning": "On-site presence is required for this construction-focused safety role."
+        },
+        {
+          "requirement": "Permiso de trabajo válido en España",
+          "type": "legal",
+          "verification_method": "Work permit check",
+          "reasoning": "Legally necessary to work in Spain."
+        }
+      ],
+      "red_flags": [
+        {
+          "flag": "Sin titulación oficial en Prevención de Riesgos Laborales",
+          "severity": "high",
+          "reasoning": "Cannot fulfill the legal and operational core requirements of the position."
+        },
+        {
+          "flag": "Sin experiencia previa en proyectos de construcción complejos o de edificación singular",
+          "severity": "high",
+          "reasoning": "Likely unable to handle the specific safety risks and challenges in complex construction environments."
+        },
+        {
+          "flag": "Expectativa de trabajo remoto o híbrido",
+          "severity": "medium",
+          "reasoning": "Role requires 100% on-site involvement in Zaragoza; remote expectations suggest a mismatch."
+        },
+        {
+          "flag": "Desconocimiento de la normativa española de PRL",
+          "severity": "high",
+          "reasoning": "Legal compliance is not negotiable in the construction sector in Spain."
+        }
+      ],
+      "killer_questions": [
+        {
+          "question": "¿Posees titulación oficial en PRL a nivel universitario, grado superior o máster?",
+          "expected_answer": "sí",
+          "reasoning": "Core legal and operational requirement for the role."
+        },
+        {
+          "question": "¿Tienes al menos 3 años de experiencia en PRL en obras de construcción?",
+          "expected_answer": "sí",
+          "reasoning": "Direct sector experience is essential for autonomous and effective performance."
+        },
+        {
+          "question": "¿Puedes trabajar de forma presencial en Zaragoza, sin restricciones?",
+          "expected_answer": "sí",
+          "reasoning": "Physical presence is essential due to the on-site nature of construction safety roles."
+        },
+        {
+          "question": "¿Tienes permiso de trabajo válido para desempeñar este puesto en España?",
+          "expected_answer": "sí",
+          "reasoning": "Legal condition for hiring and employment."
+        }
+      ]
+    },
+    "compensation": {
+      "salary_range": {
+        "min": 30000,
+        "max": 40000
+      },
+      "remote_policy": "on-site",
+      "locations": [
+        "Zaragoza, Aragon, Spain"
+      ]
+    },
+    "sector_intelligence": {
+      "primary_sector": "construction",
+      "secondary_sectors": [
+        "renewable_energy",
+        "consulting"
+      ],
+      "confidence": 0.95,
+      "reasoning": "Acciona is a major player in infrastructure and renewable energy, but the job is specifically focused on occupational risk prevention for onsite construction projects. The daily activities, responsibilities, and direct context are centered on construction site health & safety. Therefore, the primary sector is construction, with renewable energy and consulting as adjacent sectors due to Acciona's general focus and some overlap in safety consulting."
+    }
+  },
+  "max_debate_rounds": 2
+}
