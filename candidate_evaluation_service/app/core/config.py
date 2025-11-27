@@ -7,6 +7,7 @@ load_dotenv()
 class Settings(BaseSettings):
     OPENAI_API_KEY: str
     MODEL_NAME: str = "openai:gpt-4.1"
+    MODEL_TEMPERATURE: float = 0.0
     MAX_DEBATE_ROUNDS: int = 2
     
     class Config:

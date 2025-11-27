@@ -67,7 +67,7 @@ class CandidateEvaluationState(TypedDict):
 
 def get_model():
     """Get the configured chat model."""
-    return init_chat_model(model=settings.MODEL_NAME)
+    return init_chat_model(model=settings.MODEL_NAME, temperature=settings.MODEL_TEMPERATURE)
 
 def get_sector_from_job(enriched_job: Dict[str, Any]) -> str:
     """Extract the primary sector from enriched job data."""
